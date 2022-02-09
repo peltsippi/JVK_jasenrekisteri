@@ -1,0 +1,256 @@
+﻿{
+  "Info": {
+    "Class": "clsVCSIndex",
+    "Description": "Version Control System Index"
+  },
+  "Items": {
+    "MergeBuildDate": null,
+    "FullBuildDate": null,
+    "ExportDate": "9.2.2022 11.50.13",
+    "FullExportDate": "9.2.2022 11.50.13",
+    "OptionsHash": "294517a",
+    "LastMergedCommit": "",
+    "Components": {
+      "Forms": {
+        "KorjaaKortinLatauksia.bas": {
+          "Hash": "9313290",
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "db40939"
+        },
+        "KorjaaKortinMaksuja.bas": {
+          "Hash": "d2ef9b2",
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "b7f83b8"
+        },
+        "LatausListaus.bas": {
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "a820fb2"
+        },
+        "LisaaKortinLinkitys.bas": {
+          "Hash": "f36a055",
+          "ExportDate": "9.2.2022 11.50.10",
+          "SourceModified": "9.2.2022 11.50.10",
+          "FilePropertiesHash": "8b5512a"
+        },
+        "MaksuListaus.bas": {
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "02ba209"
+        },
+        "MuokkaaHinnastoa.bas": {
+          "Hash": "5d6b1b3",
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "4c58b98"
+        },
+        "PoistaKortinLinkitys.bas": {
+          "Hash": "0b907b9",
+          "ExportDate": "9.2.2022 11.50.10",
+          "SourceModified": "9.2.2022 11.50.10",
+          "FilePropertiesHash": "6467ede"
+        },
+        "RekisteroiLataus.bas": {
+          "Hash": "d540f61",
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "4e1d9be"
+        },
+        "RekisteroiMaksu.bas": {
+          "Hash": "1a990e4",
+          "ExportDate": "9.2.2022 11.50.11",
+          "SourceModified": "9.2.2022 11.50.11",
+          "FilePropertiesHash": "ef66aa8"
+        },
+        "Tervetuloa.bas": {
+          "Hash": "09647e7",
+          "ExportDate": "9.2.2022 11.50.10",
+          "SourceModified": "9.2.2022 11.50.10",
+          "FilePropertiesHash": "d74e94b"
+        },
+        "YhteystietojenMuokkaus.bas": {
+          "Hash": "ff523c5",
+          "ExportDate": "9.2.2022 11.50.10",
+          "SourceModified": "9.2.2022 11.50.10",
+          "FilePropertiesHash": "4aa11f3"
+        }
+      },
+      "Modules": {
+        "Common.bas": {
+          "Hash": "102e3c2",
+          "ExportDate": "9.2.2022 11.50.13",
+          "SourceModified": "9.2.2022 11.50.13",
+          "FilePropertiesHash": "3f43a29"
+        }
+      },
+      "Project": {
+        "project.json": {
+          "Hash": "19c3478",
+          "ExportDate": "9.2.2022 11.50.03",
+          "SourceModified": "9.2.2022 11.50.03",
+          "FilePropertiesHash": "d8b2ae7"
+        }
+      },
+      "Queries": {
+        "Hae nimi.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "95228be"
+        },
+        "Hae yhteystiedon kortit.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "42f2939"
+        },
+        "HaeHinta.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "8bbdc58"
+        },
+        "HaeIlmaiseksiLadattavat.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "9a87ce5"
+        },
+        "HistoriaListaus.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "4c1b4de"
+        },
+        "KaikkiLatauksetKorttinumerolla.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "55036b4"
+        },
+        "KaikkiMaksutKorttinumerolla.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "118c082"
+        },
+        "KortinTapahtumat.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "43fdb45"
+        },
+        "KorttienSaldoKysely.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "03fc82c"
+        },
+        "Korttilistaus.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "110325f"
+        },
+        "LatauksetKaikki.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "adf7303"
+        },
+        "ListaaEdustusjasenet.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "961f333"
+        },
+        "ListaaKaikkiYhteystiedot.bas": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "a9caf2b"
+        },
+        "ListaaKortitJaLataukset.bas": {
+          "ExportDate": "9.2.2022 11.50.09",
+          "SourceModified": "9.2.2022 11.50.09",
+          "FilePropertiesHash": "61b01d7"
+        },
+        "YhteystiedonLatauksetJaMaksut.bas": {
+          "ExportDate": "9.2.2022 11.50.09",
+          "SourceModified": "9.2.2022 11.50.09",
+          "FilePropertiesHash": "0f41b5f"
+        }
+      },
+      "Reports": {
+        "HaeIlmaiseksiLadattavat.bas": {
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "a6c13a0"
+        },
+        "HistoriaListaus.bas": {
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "2586717"
+        },
+        "KortinTapahtumat.bas": {
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "96ab8db"
+        },
+        "KortitMaksamatta.bas": {
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "8a356a0"
+        },
+        "LatauksetKaikki.bas": {
+          "Hash": "4f07f79",
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "9f014d2"
+        },
+        "ListaaEdustusjasenet.bas": {
+          "ExportDate": "9.2.2022 11.50.12",
+          "SourceModified": "9.2.2022 11.50.12",
+          "FilePropertiesHash": "b35efe0"
+        }
+      },
+      "Tables": {
+        "Hinnasto.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "17f8a7c"
+        },
+        "Historia.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "5121baa"
+        },
+        "Kortit.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "fda2bcf"
+        },
+        "Lataukset.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "1b3b725"
+        },
+        "Maksut.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "f7a536e"
+        },
+        "Yhteystiedot.xml": {
+          "ExportDate": "9.2.2022 11.50.08",
+          "SourceModified": "9.2.2022 11.50.08",
+          "FilePropertiesHash": "af2a663"
+        }
+      },
+      "VB Project": {
+        "vbe-project.json": {
+          "Hash": "288a038",
+          "ExportDate": "9.2.2022 11.50.03",
+          "SourceModified": "9.2.2022 11.50.03",
+          "FilePropertiesHash": "2e1693d"
+        }
+      },
+      "VBE References": {
+        "vbe-references.json": {
+          "Hash": "9521cdc",
+          "ExportDate": "9.2.2022 11.50.03",
+          "SourceModified": "9.2.2022 11.50.03",
+          "FilePropertiesHash": "f110692"
+        }
+      }
+    }
+  }
+}

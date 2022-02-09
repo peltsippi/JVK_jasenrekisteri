@@ -1,0 +1,11 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "punttilogo_pieni_invert",
+    "FileName": "punttilogo_pieni_invert.jpg",
+    "Extension": "jpg"
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "YhteystiedotKortit",
+    "Attributes": 2,
+    "Table": "Yhteystiedot",
+    "ForeignTable": "Kortit",
+    "Fields": [
+      {
+        "Name": "UID",
+        "ForeignName": "Omistaja"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "KortitLataukset",
+    "Attributes": 2,
+    "Table": "Kortit",
+    "ForeignTable": "Lataukset",
+    "Fields": [
+      {
+        "Name": "CID",
+        "ForeignName": "Kortti"
+      }
+    ]
+  }
+}
