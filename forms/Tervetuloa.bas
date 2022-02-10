@@ -17,9 +17,9 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =221
+    ItemSuffix =228
     Left =4044
-    Top =3456
+    Top =3468
     Right =17796
     Bottom =11712
     RecSrcDt = Begin
@@ -352,7 +352,7 @@ Begin Form
                     LayoutCachedTop =3685
                     LayoutCachedWidth =9048
                     LayoutCachedHeight =7297
-                    TabIndex =22
+                    TabIndex =23
                 End
                 Begin Rectangle
                     Visible = NotDefault
@@ -361,13 +361,13 @@ Begin Form
                     Left =307
                     Top =3377
                     Width =9000
-                    Height =3103
+                    Height =3331
                     BackColor =62207
                     Name ="Korttikorjaukset"
                     LayoutCachedLeft =307
                     LayoutCachedTop =3377
                     LayoutCachedWidth =9307
-                    LayoutCachedHeight =6480
+                    LayoutCachedHeight =6708
                 End
                 Begin Rectangle
                     SpecialEffect =0
@@ -871,12 +871,12 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =255
                     Left =3118
                     Top =5858
                     Width =3266
                     Height =550
-                    TabIndex =21
+                    TabIndex =22
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
                     OnClick ="[Event Procedure]"
@@ -1129,6 +1129,112 @@ Begin Form
                     WebImagePaddingBottom =2
                     Overlaps =1
                 End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =588
+                    Top =5772
+                    Width =1560
+                    Height =804
+                    TabIndex =21
+                    Name ="ListaaKaikkiMaksut"
+                    Caption ="Listaa kaikki maksut"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =588
+                    LayoutCachedTop =5772
+                    LayoutCachedWidth =2148
+                    LayoutCachedHeight =6576
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
+                Begin EmptyCell
+                    Left =2220
+                    Top =5772
+                    Width =1584
+                    Height =804
+                    Name ="TyhjäSolu224"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =2220
+                    LayoutCachedTop =5772
+                    LayoutCachedWidth =3804
+                    LayoutCachedHeight =6576
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =3876
+                    Top =5772
+                    Width =1728
+                    Height =804
+                    Name ="TyhjäSolu225"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =3876
+                    LayoutCachedTop =5772
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =6576
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =5676
+                    Top =5772
+                    Height =804
+                    Name ="TyhjäSolu226"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5676
+                    LayoutCachedTop =5772
+                    LayoutCachedWidth =7116
+                    LayoutCachedHeight =6576
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =7188
+                    Top =5772
+                    Height =804
+                    Name ="TyhjäSolu227"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7188
+                    LayoutCachedTop =5772
+                    LayoutCachedWidth =8628
+                    LayoutCachedHeight =6576
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
             End
         End
         Begin FormFooter
@@ -1254,6 +1360,12 @@ Private Sub ListaaEdustusj_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi edustusjäsenlistauksen")
     DoCmd.OpenReport "ListaaEdustusjasenet", acViewPreview
+End Sub
+
+Private Sub ListaaKaikkiMaksut_Click()
+    Dim succs
+    succus = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi maksulistauksen")
+    DoCmd.OpenReport "ListaaMaksut", acViewPreview
 End Sub
 
 Private Sub Main_jäsenmuokkaus_Click()

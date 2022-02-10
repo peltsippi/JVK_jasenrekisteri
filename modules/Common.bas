@@ -241,6 +241,8 @@ Public Function EnableDisableButtons()
         [Form_Tervetuloa].RaportitLoppu.Visible = False
         [Form_Tervetuloa].LatauksetKaikki.Visible = False
         [Form_Tervetuloa].ListaaEdustusj.Visible = False
+        [Form_Tervetuloa].ListaaKaikkiMaksut.Visible = False
+        
     Else
         If ([Form_Tervetuloa].KorjaaTietoja.Value) Then
             If Not (IsNull([Form_Tervetuloa].Korttivalinta) Or ([Form_Tervetuloa].Korttivalinta.Value = "")) Then
@@ -258,7 +260,8 @@ Public Function EnableDisableButtons()
             [Form_Tervetuloa].LatauksetKaikki.Visible = True
             [Form_Tervetuloa].ListaaEdustusj.Visible = True
             [Form_Tervetuloa].IlmaiseksiLadattavat.Visible = True
-            Form_Tervetuloa.PaymentMethods.Visible = True
+            [Form_Tervetuloa].PaymentMethods.Visible = True
+            [Form_Tervetuloa].ListaaKaikkiMaksut.Visible = True
         End If
     End If
     
