@@ -18,14 +18,14 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =10
     Left =4044
-    Top =3468
+    Top =3456
     Right =17796
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
-        0x9bcc8cfed1c6e540
+        0xa8077c0f5dc7e540
     End
-    RecordSource ="Kortit"
+    RecordSource ="MaksuListaus"
     Caption ="Korjaa kortin maksuja"
     DatasheetFontName ="Calibri"
     AllowDatasheetView =0
@@ -264,9 +264,8 @@ Begin Form
                     BorderColor =10921638
                     Name ="MaksuLuetteo"
                     SourceObject ="Form.MaksuListaus"
-                    LinkChildFields ="Kortti"
-                    LinkMasterFields ="CID"
                     GridlineColor =10921638
+                    FilterOnEmptyMaster =0
 
                     LayoutCachedLeft =453
                     LayoutCachedTop =1424

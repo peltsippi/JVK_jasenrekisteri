@@ -19,7 +19,7 @@ Begin Form
     ItemSuffix =11
     Left =4044
     Top =3468
-    Right =22788
+    Right =17796
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -243,9 +243,8 @@ Begin Form
                     BorderColor =10921638
                     Name ="LatausListaus"
                     SourceObject ="Form.LatausListaus"
-                    LinkChildFields ="Kortti"
-                    LinkMasterFields ="CID"
                     GridlineColor =10921638
+                    FilterOnEmptyMaster =0
 
                     LayoutCachedLeft =427
                     LayoutCachedTop =1247

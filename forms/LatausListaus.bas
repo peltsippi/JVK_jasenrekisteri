@@ -3,24 +3,21 @@ VersionRequired =20
 Begin Form
     NavigationButtons = NotDefault
     DividingLines = NotDefault
-    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
+    AllowUpdating =1
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
     Width =9225
     DatasheetFontHeight =11
     ItemSuffix =10
-    Left =264
-    Top =876
-    Right =14952
-    Bottom =5076
-    OrderBy ="[Lataukset].[Ajankohta]"
+    Right =13752
+    Bottom =8256
     RecSrcDt = Begin
-        0xcf4c6b05d1c6e540
+        0xef95c8375dc7e540
     End
-    RecordSource ="Lataukset"
+    RecordSource ="LatausListaus"
     Caption ="LatausListaus"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0
@@ -86,6 +83,8 @@ Begin Form
             Begin
                 Begin TextBox
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2640
                     Top =342
@@ -107,6 +106,8 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =342
                             Top =342
                             Width =2208
@@ -128,6 +129,8 @@ Begin Form
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2640
                     Top =741
@@ -150,6 +153,8 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =342
                             Top =741
                             Width =2208
@@ -171,6 +176,8 @@ Begin Form
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2640
                     Top =1425
@@ -193,6 +200,8 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =342
                             Top =1425
                             Width =2208
@@ -212,6 +221,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2640
                     Top =2109
@@ -234,6 +245,8 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =342
                             Top =2109
                             Width =2208
@@ -253,6 +266,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2640
                     Top =2508
@@ -278,6 +293,8 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =342
                             Top =2508
                             Width =2208

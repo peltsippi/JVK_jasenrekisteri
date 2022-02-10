@@ -4,7 +4,6 @@ Begin Form
     NavigationButtons = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
-    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -13,13 +12,14 @@ Begin Form
     Width =9225
     DatasheetFontHeight =11
     ItemSuffix =8
-    Right =13752
-    Bottom =8244
-    OrderBy ="[Maksut].[PVM]"
+    Left =804
+    Top =1644
+    Right =14028
+    Bottom =5592
     RecSrcDt = Begin
-        0xc1709afed1c6e540
+        0x245d5aff5cc7e540
     End
-    RecordSource ="Maksut"
+    RecordSource ="MaksuListaus"
     Caption ="MaksuLuetteo"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0
