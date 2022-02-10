@@ -15,16 +15,17 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =9544
+    Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =214
+    ItemSuffix =221
     Left =4044
-    Top =3468
+    Top =3456
     Right =17796
     Bottom =11712
     RecSrcDt = Begin
-        0x377662ec10c5e540
+        0x23fa53ee5dc7e540
     End
+    RecordSource ="KorttejaVoimassa"
     AfterUpdate ="[Event Procedure]"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
@@ -162,7 +163,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =2527
+            Height =2544
             BackColor =8421504
             Name ="FormHeader"
             Begin
@@ -188,15 +189,15 @@ Begin Form
                     Enabled = NotDefault
                     Locked = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =93
+                    OverlapFlags =85
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4299
-                    Top =1842
-                    Width =5103
+                    Left =8409
+                    Top =1795
+                    Width =1119
                     Height =300
                     BorderColor =10921638
                     ForeColor =16777215
@@ -206,10 +207,10 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4299
-                    LayoutCachedTop =1842
-                    LayoutCachedWidth =9402
-                    LayoutCachedHeight =2142
+                    LayoutCachedLeft =8409
+                    LayoutCachedTop =1795
+                    LayoutCachedWidth =9528
+                    LayoutCachedHeight =2095
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
@@ -217,16 +218,16 @@ Begin Form
                     Enabled = NotDefault
                     Locked = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =255
+                    OverlapFlags =85
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4299
-                    Top =2078
-                    Width =5103
-                    Height =300
+                    Left =8598
+                    Top =2173
+                    Width =1083
+                    Height =288
                     TabIndex =1
                     BorderColor =10921638
                     ForeColor =16777215
@@ -236,10 +237,10 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4299
-                    LayoutCachedTop =2078
-                    LayoutCachedWidth =9402
-                    LayoutCachedHeight =2378
+                    LayoutCachedLeft =8598
+                    LayoutCachedTop =2173
+                    LayoutCachedWidth =9681
+                    LayoutCachedHeight =2461
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
@@ -256,7 +257,7 @@ Begin Form
                     LayoutCachedTop =141
                     LayoutCachedWidth =2409
                     LayoutCachedHeight =2078
-                    TabIndex =2
+                    TabIndex =3
                 End
                 Begin Label
                     OverlapFlags =215
@@ -278,17 +279,58 @@ Begin Form
                     LayoutCachedHeight =1618
                 End
                 Begin Label
-                    OverlapFlags =247
-                    Left =2574
-                    Top =2055
+                    OverlapFlags =223
+                    Left =2740
+                    Top =1653
                     Width =3213
                     Height =472
                     Name ="copyrightteksti"
                     Caption ="(C) Timo Pelkonen, 2022"
-                    LayoutCachedLeft =2574
-                    LayoutCachedTop =2055
-                    LayoutCachedWidth =5787
-                    LayoutCachedHeight =2527
+                    LayoutCachedLeft =2740
+                    LayoutCachedTop =1653
+                    LayoutCachedWidth =5953
+                    LayoutCachedHeight =2125
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =165
+                    Top =2149
+                    Width =2316
+                    Height =300
+                    Name ="Selite216"
+                    Caption ="KK-kortt.aktiivisena:"
+                    LayoutCachedLeft =165
+                    LayoutCachedTop =2149
+                    LayoutCachedWidth =2481
+                    LayoutCachedHeight =2449
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =2031
+                    Top =2125
+                    Width =1229
+                    Height =300
+                    TabIndex =2
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="VuosikAkt"
+                    ControlSource ="Kuukausikortit"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2031
+                    LayoutCachedTop =2125
+                    LayoutCachedWidth =3260
+                    LayoutCachedHeight =2425
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
                 End
             End
         End
@@ -1061,7 +1103,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =247
-                    Left =4548
+                    Left =4560
                     Top =4116
                     Width =1248
                     Height =588
@@ -1071,9 +1113,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =4548
+                    LayoutCachedLeft =4560
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =5796
+                    LayoutCachedWidth =5808
                     LayoutCachedHeight =4704
                     ColumnStart =3
                     ColumnEnd =3
