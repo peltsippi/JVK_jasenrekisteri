@@ -4,6 +4,7 @@ Begin Form
     NavigationButtons = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,8 +13,9 @@ Begin Form
     Width =9225
     DatasheetFontHeight =11
     ItemSuffix =8
-    Right =12744
+    Right =13752
     Bottom =8244
+    OrderBy ="[Maksut].[PVM]"
     RecSrcDt = Begin
         0xc1709afed1c6e540
     End

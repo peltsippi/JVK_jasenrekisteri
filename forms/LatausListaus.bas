@@ -3,6 +3,7 @@ VersionRequired =20
 Begin Form
     NavigationButtons = NotDefault
     DividingLines = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -11,8 +12,11 @@ Begin Form
     Width =9225
     DatasheetFontHeight =11
     ItemSuffix =10
-    Right =12744
-    Bottom =8244
+    Left =264
+    Top =876
+    Right =14952
+    Bottom =5076
+    OrderBy ="[Lataukset].[Ajankohta]"
     RecSrcDt = Begin
         0xcf4c6b05d1c6e540
     End

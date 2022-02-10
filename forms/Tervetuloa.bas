@@ -17,9 +17,9 @@ Begin Form
     GridY =24
     Width =9544
     DatasheetFontHeight =11
-    ItemSuffix =211
+    ItemSuffix =214
     Left =4044
-    Top =3456
+    Top =3468
     Right =17796
     Bottom =11712
     RecSrcDt = Begin
@@ -310,7 +310,7 @@ Begin Form
                     LayoutCachedTop =3685
                     LayoutCachedWidth =9048
                     LayoutCachedHeight =7297
-                    TabIndex =21
+                    TabIndex =22
                 End
                 Begin Rectangle
                     Visible = NotDefault
@@ -667,7 +667,7 @@ Begin Form
                     OverlapFlags =247
                     Left =564
                     Top =4116
-                    Width =1572
+                    Width =1332
                     Height =588
                     TabIndex =11
                     Name ="MuokkaaLatauksia"
@@ -677,7 +677,7 @@ Begin Form
 
                     LayoutCachedLeft =564
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =2136
+                    LayoutCachedWidth =1896
                     LayoutCachedHeight =4704
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
@@ -691,8 +691,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =247
-                    Left =2208
+                    Left =1968
                     Top =4116
+                    Width =1212
                     Height =588
                     TabIndex =12
                     Name ="MuokkaaMaksuja"
@@ -700,9 +701,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =2208
+                    LayoutCachedLeft =1968
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =3648
+                    LayoutCachedWidth =3180
                     LayoutCachedHeight =4704
                     ColumnStart =1
                     ColumnEnd =1
@@ -769,9 +770,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =247
-                    Left =3720
+                    Left =3252
                     Top =4116
-                    Width =1512
+                    Width =1236
                     Height =588
                     TabIndex =13
                     Name ="Hinnat"
@@ -779,9 +780,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =3720
+                    LayoutCachedLeft =3252
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =5232
+                    LayoutCachedWidth =4488
                     LayoutCachedHeight =4704
                     ColumnStart =2
                     ColumnEnd =2
@@ -801,7 +802,7 @@ Begin Form
                     Top =4908
                     Width =1584
                     Height =804
-                    TabIndex =16
+                    TabIndex =17
                     Name ="RaporttiMaksamatta"
                     Caption ="Tarkasta maksamattomat kortit"
                     OnClick ="[Event Procedure]"
@@ -833,7 +834,7 @@ Begin Form
                     Top =5858
                     Width =3266
                     Height =550
-                    TabIndex =20
+                    TabIndex =21
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
                     OnClick ="[Event Procedure]"
@@ -902,7 +903,7 @@ Begin Form
                     Top =4346
                     Width =1961
                     Height =300
-                    TabIndex =14
+                    TabIndex =15
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -940,7 +941,7 @@ Begin Form
                     Top =4908
                     Width =1728
                     Height =804
-                    TabIndex =17
+                    TabIndex =18
                     Name ="LatauksetKaikki"
                     Caption ="Korttilatausten kokonaisraportti"
                     OnClick ="[Event Procedure]"
@@ -972,7 +973,7 @@ Begin Form
                     Top =4908
                     Width =1560
                     Height =804
-                    TabIndex =15
+                    TabIndex =16
                     Name ="KortinTapahtumat"
                     Caption ="Valitun kortin tapahtumat"
                     OnClick ="[Event Procedure]"
@@ -1001,7 +1002,7 @@ Begin Form
                     Left =5676
                     Top =4908
                     Height =804
-                    TabIndex =18
+                    TabIndex =19
                     Name ="ListaaEdustusj"
                     Caption ="Listaa edustusjäsenet"
                     OnClick ="[Event Procedure]"
@@ -1032,7 +1033,7 @@ Begin Form
                     Left =7188
                     Top =4908
                     Height =804
-                    TabIndex =19
+                    TabIndex =20
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
@@ -1052,6 +1053,34 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =4548
+                    Top =4116
+                    Width =1248
+                    Height =588
+                    TabIndex =14
+                    Name ="PaymentMethods"
+                    Caption ="Muokkaa maksutapoja"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =6
+
+                    LayoutCachedLeft =4548
+                    LayoutCachedTop =4116
+                    LayoutCachedWidth =5796
+                    LayoutCachedHeight =4704
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =6
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -1203,10 +1232,17 @@ End Sub
 
 Private Sub MuokkaaMaksuja_Click()
     Dim succs
-    succs = Common.SaveToLog(Puumerkki & " aloitti kortin " & [Form_Tervetuloa].Korttivalinta.Value & " maksujen muokkaamisen")
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " aloitti kortin " & [Form_Tervetuloa].Korttivalinta.Value & " maksujen muokkaamisen")
     DoCmd.OpenForm "KorjaaKortinMaksuja"
     succs = Common.SendMessageToMainScreen("Kortin " & [Form_Tervetuloa].Korttivalinta.Value & " maksumuokkaus aloitettu")
     
+End Sub
+
+Private Sub PaymentMethods_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi maksutapojen muokkausikkunan.")
+    DoCmd.OpenForm "MuokkaaMaksutapoja"
+    succs = Common.SendMessageToMainScreen("Maksutapojen muokkaus aloitettu")
 End Sub
 
 Private Sub poistalinkitys_Click()

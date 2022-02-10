@@ -1,0 +1,4 @@
+﻿CREATE TABLE [Maksutavat] (
+  [Tunniste] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Maksutapa] LONGTEXT 
+)

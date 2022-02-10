@@ -2,8 +2,8 @@
 Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
-Performing Full Export
-9.2.2022 11.50.03
+Using Fast Save
+10.2.2022 21.28.30
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -18,11 +18,11 @@ Exporting vbe references...
   stdole
 [2]
 -------------------------------------
-No vbe forms found in this database.
+No modified vbe forms found in this database.
 -------------------------------------
-No proj properties found in this database.
+No modified proj properties found in this database.
 -------------------------------------
-No saved specs found in this database.
+No modified saved specs found in this database.
 -------------------------------------
 Exporting db properties...    
   Database Properties (DAO)
@@ -33,141 +33,65 @@ Exporting shared images...
   punttilogo_pieni_invert
   bulldog_pienempi
 [3]
+  Removing orphaned folder: Office Theme
 -------------------------------------
 Exporting themes...           
   Office Theme
 [1]
 -------------------------------------
-No imex specs found in this database.
+No modified imex specs found in this database.
 -------------------------------------
 Exporting tables...           
-  Hinnasto
-    Sanitized in 0,036 seconds.
-  Hinnasto (SQL)
-  Historia
-    Sanitized in 0,003 seconds.
-  Historia (SQL)
-  Kortit
-    Sanitized in 0,005 seconds.
-  Kortit (SQL)
-  Lataukset
-    Sanitized in 0,005 seconds.
-  Lataukset (SQL)
   Maksut
-    Sanitized in 0,004 seconds.
+    Sanitized in 0,036 seconds.
   Maksut (SQL)
-  Yhteystiedot
-    Sanitized in 0,007 seconds.
-  Yhteystiedot (SQL)
-[6]
+  Maksutavat
+    Sanitized in 0,004 seconds.
+  Maksutavat (SQL)
+[2]
 -------------------------------------
 Exporting queries...          
-  Hae nimi
-    Sanitized in 0,006 seconds.
-  Hae nimi (SQL)
-  Hae yhteystiedon kortit
+  HaeMaksutavat
     Sanitized in 0,005 seconds.
-  Hae yhteystiedon kortit (SQL)
-  HaeHinta
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  HaeHinta (SQL)
-  HaeIlmaiseksiLadattavat
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  HaeIlmaiseksiLadattavat (SQL)
-  HistoriaListaus
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  HistoriaListaus (SQL)
-  KaikkiLatauksetKorttinumerolla
-    Sanitized in 0,005 seconds.
-  KaikkiLatauksetKorttinumerolla (SQL)
-  KaikkiMaksutKorttinumerolla
-    Sanitized in 0,005 seconds.
-  KaikkiMaksutKorttinumerolla (SQL)
-  KortinTapahtumat
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  KortinTapahtumat (SQL)
-  KorttienSaldoKysely
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  KorttienSaldoKysely (SQL)
-  Korttilistaus
-    Sanitized in 0,003 seconds.
-  Korttilistaus (SQL)
-  LatauksetKaikki
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  LatauksetKaikki (SQL)
-  ListaaEdustusjasenet
-    Sanitized in 0,003 seconds.
-  ListaaEdustusjasenet (SQL)
+  HaeMaksutavat (SQL)
   ListaaKaikkiYhteystiedot
     Sanitized in 0,004 seconds.
   ListaaKaikkiYhteystiedot (SQL)
   ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
+    Sanitized in 0,004 seconds.
   ListaaKortitJaLataukset (SQL)
-  YhteystiedonLatauksetJaMaksut
-    Sanitized in 0,006 seconds.
-  YhteystiedonLatauksetJaMaksut (SQL)
-[15]
+[3]
 -------------------------------------
 Exporting forms...            
   Tervetuloa
-    Sanitized in 0,046 seconds.
-  YhteystietojenMuokkaus
-    Sanitized in 0,054 seconds.
-  LisaaKortinLinkitys
-    Sanitized in 0,021 seconds.
-  PoistaKortinLinkitys
-    Sanitized in 0,025 seconds.
-  RekisteroiLataus
-    Sanitized in 0,061 seconds.
+    Sanitized in 0,037 seconds.
   RekisteroiMaksu
-    Sanitized in 0,031 seconds.
+    Sanitized in 0,032 seconds.
   LatausListaus
-    Sanitized in 0,012 seconds.
+    Sanitized in 0,013 seconds.
   KorjaaKortinLatauksia
-    Sanitized in 0,019 seconds.
-  KorjaaKortinMaksuja
-    Sanitized in 0,018 seconds.
-  MaksuListaus
-    Sanitized in 0,011 seconds.
-  MuokkaaHinnastoa
     Sanitized in 0,016 seconds.
-[11]
--------------------------------------
-No macros found in this database.
--------------------------------------
-Exporting reports...          
-  ListaaEdustusjasenet
-    Sanitized in 0,035 seconds.
-  KortitMaksamatta
-    Sanitized in 0,029 seconds.
-  HistoriaListaus
-    Sanitized in 0,033 seconds.
-  LatauksetKaikki
-    Sanitized in 0,042 seconds.
-  KortinTapahtumat
-    Sanitized in 0,034 seconds.
-  HaeIlmaiseksiLadattavat
-    Sanitized in 0,038 seconds.
+  MaksuListaus
+    Sanitized in 0,008 seconds.
+  MuokkaaMaksutapoja
+    Sanitized in 0,013 seconds.
 [6]
+-------------------------------------
+No modified macros found in this database.
+-------------------------------------
+No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,015 seconds.
+    Sanitized in 0,004 seconds.
 [1]
 -------------------------------------
 Exporting modules...          
   Common
 [1]
 -------------------------------------
-No table data macros found in this database.
+No modified table data macros found in this database.
 -------------------------------------
 Exporting relations...        
   KortitLataukset
@@ -187,64 +111,66 @@ Exporting hidden attributes...
   Database hidden attributes
 [2]
 -------------------------------------
-Done. (10,41 seconds)
+Done. (4,99 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,02
-VB Project                    1         0,02
-VBE References                2         0,02
-DB Properties                 51        0,12
-Shared Images                 3         0,04
-Themes                        1         4,42
-Tables                        6         0,35
-Queries                       15        0,73
-Forms                         11        2,74
-Reports                       6         1,12
-Table Data                    1         0,42
-Modules                       1         0,04
-Relations                     3         0,07
-Doc Properties                2         0,02
+Project                       1         0,04
+VB Project                    1         0,03
+VBE References                2         0,04
+DB Properties                 51        0,31
+Shared Images                 3         0,06
+Themes                        1         2,05
+Tables                        2         0,16
+Queries                       3         0,28
+Forms                         6         1,08
+Table Data                    1         0,14
+Modules                       1         0,03
+Relations                     3         0,08
+Doc Properties                2         0,03
 Nav Pane Groups               1         0,04
-Hidden Attributes             2         0,01
+Hidden Attributes             2         0,03
 --------------------------------------------------
-TOTALS:                       107       10,18
+TOTALS:                       80        4,40
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Convert to JSON               793       0,64
-Compute SHA256                75        0,01
-Console Updates               6         0,34
-Write File                    80        0,11
-Verify Path                   124       0,03
-Get Modified Date             42        0,02
-Get File Property Hash        42        0,03
-Create Folder                 9         0,00
+Read File                     32        0,18
+Parse JSON                    14        0,03
+Convert to JSON               616       0,50
+Compute SHA256                39        0,02
+Console Updates               4         0,27
+Compare Dictionary            12        0,00
+Get Modified Date             15        0,01
+Get File Property Hash        15        0,01
+Clear Orphaned                8         0,17
+Verify Path                   35        0,01
 Write to Disk                 3         0,01
+Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         4,30
-App.ExportXML()               7         0,46
-Read File                     56        0,21
-Sanitize XML                  7         0,02
-Format XML                    7         0,04
-Save Table SQL                6         0,01
-App.SaveAsText()              32        0,88
-Read File Bytes               49        0,63
-Sanitize File                 32        0,55
-Save Query SQL                15        0,04
-Read File DevMode             17        0,06
-Get VBA Hash                  18        0,02
-Increment Progress            3         0,14
+Extract Theme                 1         1,97
+App.ExportXML()               3         0,16
+Sanitize XML                  3         0,01
+Format XML                    3         0,03
+Write File                    18        0,02
+Save Table SQL                2         0,00
+App.SaveAsText()              9         0,29
+Read File Bytes               15        0,17
+Sanitize File                 9         0,12
+Save Query SQL                3         0,01
+Delete File                   10        0,01
+Get VBA Hash                  20        0,01
+Read File DevMode             6         0,02
+Increment Progress            1         0,08
 Export VBE Module             1         0,01
-Enc. Windows-1252 as utf-8    1         0,02
-Delete File                   2         0,00
+Enc. Windows-1252 as utf-8    1         0,01
 --------------------------------------------------
-Other Operations                        1,85
+Other Operations                        0,88
 --------------------------------------------------
 
 

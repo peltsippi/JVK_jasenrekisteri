@@ -187,6 +187,8 @@ Public Function EnableDisableButtons()
         'Form_Tervetuloa.KorjaaTietoja.Enabled = False
         '[Form_Tervetuloa].Korttikorjaukset.Visible = False
         
+        
+        
     Else
         Form_Tervetuloa.poistalinkitys.Enabled = True
         Form_Tervetuloa.RegisterPayment.Enabled = True
@@ -226,6 +228,7 @@ Public Function EnableDisableButtons()
         [Form_Tervetuloa].RaporttiMaksamatta.Visible = False
         [Form_Tervetuloa].KortinTapahtumat.Visible = False
         [Form_Tervetuloa].IlmaiseksiLadattavat.Visible = False
+        Form_Tervetuloa.PaymentMethods.Visible = False
     
     End If
     
@@ -255,6 +258,7 @@ Public Function EnableDisableButtons()
             [Form_Tervetuloa].LatauksetKaikki.Visible = True
             [Form_Tervetuloa].ListaaEdustusj.Visible = True
             [Form_Tervetuloa].IlmaiseksiLadattavat.Visible = True
+            Form_Tervetuloa.PaymentMethods.Visible = True
         End If
     End If
     

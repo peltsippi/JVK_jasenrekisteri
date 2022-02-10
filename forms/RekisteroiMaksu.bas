@@ -18,7 +18,7 @@ Begin Form
     ItemSuffix =60
     Left =4044
     Top =3468
-    Right =22788
+    Right =17796
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -553,7 +553,6 @@ Begin Form
                     GroupTable =1
                 End
                 Begin ListBox
-                    RowSourceTypeInt =1
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
@@ -566,9 +565,8 @@ Begin Form
                     TabIndex =2
                     ForeColor =4210752
                     Name ="Maksutapa"
-                    RowSourceType ="Value List"
-                    RowSource ="\"Käteinen\";\"Tilisiirto\";\"Mobilepay\";\"Smartum\";\"EPassi\";\"Edenred\";\"M"
-                        "uu\""
+                    RowSourceType ="Table/Query"
+                    RowSource ="HaeMaksutavat"
                     ColumnWidths ="1440"
                     FontName ="Calibri"
                     OnClick ="[Event Procedure]"
