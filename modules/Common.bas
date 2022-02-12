@@ -180,89 +180,84 @@ End Function
 
 Public Function EnableDisableButtons()
     'MsgBox ("EnableDisableButtons called")
-    If IsNull(Form_Tervetuloa.Korttivalinta) Then
-        Form_Tervetuloa.poistalinkitys.Enabled = False
-        Form_Tervetuloa.RegisterPayment.Enabled = False
-        Form_Tervetuloa.Korttilataus.Enabled = False
-        'Form_Tervetuloa.KorjaaTietoja.Enabled = False
-        '[Form_Tervetuloa].Korttikorjaukset.Visible = False
-        
-        
-        
-    Else
-        Form_Tervetuloa.poistalinkitys.Enabled = True
-        Form_Tervetuloa.RegisterPayment.Enabled = True
-        Form_Tervetuloa.Korttilataus.Enabled = True
-        'Form_Tervetuloa.KorjaaTietoja.Enabled = True
-        
-    End If
-
-    If IsNull(Form_Tervetuloa.Yhteystietovalinta) Then
-        Form_Tervetuloa.Lisääkortti.Enabled = False
-        Form_Tervetuloa.poistalinkitys.Enabled = False
-    Else
-        Form_Tervetuloa.Lisääkortti.Enabled = True
-        If Not IsNull(Form_Tervetuloa.Korttivalinta) Then
-        
-            Form_Tervetuloa.poistalinkitys.Enabled = True
-        End If
-        
+    Dim cardSelected As Boolean
+    Dim userSelected As Boolean
+    Dim adminModeOn As Boolean
+    Dim adminInitialsOk As Boolean
     
+    If IsNull([Form_Tervetuloa].Korttivalinta) Then
+        cardSelected = False
+    Else
+        cardSelected = True
+    End If
+    
+    If IsNull(Form_Tervetuloa.Yhteystietovalinta) Then
+        userSelected = False
+    Else
+        userSelected = True
     End If
     
     If ([Form_Tervetuloa].KorjaaTietoja.Value) Then
-        'MsgBox ("Jee enabled korjaa kortteja")
-        [Form_Tervetuloa].Korttikorjaukset.Visible = True
-        [Form_Tervetuloa].Puumerkki.Visible = True
-        [Form_Tervetuloa].Hinnat.Visible = True
-        
+        adminModeOn = True
     Else
-        [Form_Tervetuloa].Korttikorjaukset.Visible = False
-        [Form_Tervetuloa].Puumerkki.Visible = False
-        [Form_Tervetuloa].MuokkaaLatauksia.Visible = False
-        [Form_Tervetuloa].MuokkaaMaksuja.Visible = False
-        [Form_Tervetuloa].Hinnat.Visible = False
-        [Form_Tervetuloa].Puumerkki.Value = ""
-        [Form_Tervetuloa].Historia.Visible = False
-        [Form_Tervetuloa].Raportit.Visible = False
-        [Form_Tervetuloa].RaporttiMaksamatta.Visible = False
-        [Form_Tervetuloa].KortinTapahtumat.Visible = False
-        [Form_Tervetuloa].IlmaiseksiLadattavat.Visible = False
-        Form_Tervetuloa.PaymentMethods.Visible = False
-    
+        adminModeOn = False
     End If
     
     If IsNull([Form_Tervetuloa].Puumerkki) Or ([Form_Tervetuloa].Puumerkki.Value = "") Then
-        [Form_Tervetuloa].MuokkaaLatauksia.Visible = False
-        [Form_Tervetuloa].MuokkaaMaksuja.Visible = False
-        [Form_Tervetuloa].Hinnat.Visible = False
-        [Form_Tervetuloa].Historia.Visible = False
-        [Form_Tervetuloa].RaportitAlku.Visible = False
-        [Form_Tervetuloa].RaportitLoppu.Visible = False
-        [Form_Tervetuloa].LatauksetKaikki.Visible = False
-        [Form_Tervetuloa].ListaaEdustusj.Visible = False
-        [Form_Tervetuloa].ListaaKaikkiMaksut.Visible = False
-        
+        adminInitialsOk = False
     Else
-        If ([Form_Tervetuloa].KorjaaTietoja.Value) Then
-            If Not (IsNull([Form_Tervetuloa].Korttivalinta) Or ([Form_Tervetuloa].Korttivalinta.Value = "")) Then
-                [Form_Tervetuloa].MuokkaaLatauksia.Visible = True
-                [Form_Tervetuloa].MuokkaaMaksuja.Visible = True
-                [Form_Tervetuloa].KortinTapahtumat.Visible = True
-                
-            End If
-            [Form_Tervetuloa].Hinnat.Visible = True
-            [Form_Tervetuloa].Historia.Visible = True
-            [Form_Tervetuloa].Raportit.Visible = True
-            [Form_Tervetuloa].RaporttiMaksamatta.Visible = True
-            [Form_Tervetuloa].RaportitAlku.Visible = True
-            [Form_Tervetuloa].RaportitLoppu.Visible = True
-            [Form_Tervetuloa].LatauksetKaikki.Visible = True
-            [Form_Tervetuloa].ListaaEdustusj.Visible = True
-            [Form_Tervetuloa].IlmaiseksiLadattavat.Visible = True
-            [Form_Tervetuloa].PaymentMethods.Visible = True
-            [Form_Tervetuloa].ListaaKaikkiMaksut.Visible = True
-        End If
+        adminInitialsOk = True
+    End If
+    
+    ' then actual logic
+    
+    If (userSelected) Then
+        Form_Tervetuloa.Lisääkortti.Enabled = True
+    Else
+        Form_Tervetuloa.Lisääkortti.Enabled = False
+    End If
+    
+    
+    
+    If (cardSelected) Then
+         Form_Tervetuloa.poistalinkitys.Enabled = True
+        Form_Tervetuloa.RegisterPayment.Enabled = True
+        Form_Tervetuloa.Korttilataus.Enabled = True
+    Else
+        Form_Tervetuloa.poistalinkitys.Enabled = False
+        Form_Tervetuloa.RegisterPayment.Enabled = False
+        Form_Tervetuloa.Korttilataus.Enabled = False
+    
+    End If
+    
+    If (userSelected) And (cardSelected) Then
+        Form_Tervetuloa.poistalinkitys.Enabled = True
+    Else
+        Form_Tervetuloa.poistalinkitys.Enabled = False
+    End If
+    
+    
+    If (adminModeOn) Then
+        [Form_Tervetuloa].Puumerkki.Visible = True
+    Else
+        [Form_Tervetuloa].Puumerkki.Value = ""
+        [Form_Tervetuloa].Puumerkki.Visible = False
+    End If
+    
+    If (adminModeOn) And (adminInitialsOk) Then
+        [Form_Tervetuloa].Bulldog.Visible = False
+    Else
+        [Form_Tervetuloa].Bulldog.Visible = True
+    End If
+    
+    If (adminModeOn) And (adminInitialsOk) And (cardSelected) Then
+         [Form_Tervetuloa].MuokkaaLatauksia.Enabled = True
+         [Form_Tervetuloa].MuokkaaMaksuja.Enabled = True
+         [Form_Tervetuloa].KortinTapahtumat.Enabled = True
+    Else
+        [Form_Tervetuloa].MuokkaaLatauksia.Enabled = False
+        [Form_Tervetuloa].MuokkaaMaksuja.Enabled = False
+        [Form_Tervetuloa].KortinTapahtumat.Enabled = False
     End If
     
     

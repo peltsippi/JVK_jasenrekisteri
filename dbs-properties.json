@@ -36,8 +36,12 @@
       "Value": 0,
       "Type": 4
     },
+    "AppIcon": {
+      "Value": "rel:punttilogo_icon.ico",
+      "Type": 10
+    },
     "AppTitle": {
-      "Value": "Yhteystietojen hallintatietokanta",
+      "Value": "JVK:n jäsenrekisteri",
       "Type": 10
     },
     "Auto Compact": {
@@ -152,6 +156,10 @@
       "Value": true,
       "Type": 1
     },
+    "StartUpForm": {
+      "Value": "Tervetuloa",
+      "Type": 10
+    },
     "StartUpShowDBWindow": {
       "Value": true,
       "Type": 1
@@ -189,7 +197,7 @@
       "Type": 4
     },
     "UseAppIconForFrmRpt": {
-      "Value": false,
+      "Value": true,
       "Type": 1
     },
     "UseMDIMode": {

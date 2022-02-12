@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": null,
-    "ExportDate": "10.2.2022 23.10.41",
+    "ExportDate": "12.2.2022 16.16.01",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -71,10 +71,10 @@
           "FilePropertiesHash": "16483a2"
         },
         "Tervetuloa.bas": {
-          "Hash": "7f1e332",
-          "ExportDate": "10.2.2022 23.10.40",
-          "SourceModified": "10.2.2022 23.10.40",
-          "FilePropertiesHash": "fee88ee"
+          "Hash": "e5ac2c0",
+          "ExportDate": "12.2.2022 16.16.00",
+          "SourceModified": "12.2.2022 16.16.00",
+          "FilePropertiesHash": "20125dd"
         },
         "YhteystietojenMuokkaus.bas": {
           "Hash": "ff523c5",
@@ -85,16 +85,16 @@
       },
       "Modules": {
         "Common.bas": {
-          "Hash": "f9af89e",
-          "ExportDate": "10.2.2022 23.10.41",
-          "SourceModified": "10.2.2022 23.10.41",
-          "FilePropertiesHash": "31029ea"
+          "Hash": "0a95d91",
+          "ExportDate": "12.2.2022 16.16.00",
+          "SourceModified": "12.2.2022 16.16.00",
+          "FilePropertiesHash": "0207ddd"
         }
       },
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "10.2.2022 23.10.37",
+          "ExportDate": "12.2.2022 16.15.57",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "d8b2ae7"
         }
@@ -146,9 +146,9 @@
           "FilePropertiesHash": "43fdb45"
         },
         "KorttejaVoimassa.bas": {
-          "ExportDate": "10.2.2022 23.10.39",
-          "SourceModified": "10.2.2022 23.10.39",
-          "FilePropertiesHash": "2b46580"
+          "ExportDate": "12.2.2022 16.15.59",
+          "SourceModified": "12.2.2022 16.15.59",
+          "FilePropertiesHash": "fb6596e"
         },
         "KorttienSaldoKysely.bas": {
           "ExportDate": "10.2.2022 21.56.10",
@@ -171,9 +171,9 @@
           "FilePropertiesHash": "adf7303"
         },
         "LatausListaus.bas": {
-          "ExportDate": "10.2.2022 22.55.34",
-          "SourceModified": "10.2.2022 22.55.34",
-          "FilePropertiesHash": "71bd97c"
+          "ExportDate": "12.2.2022 16.15.59",
+          "SourceModified": "12.2.2022 16.15.59",
+          "FilePropertiesHash": "f1d879d"
         },
         "ListaaEdustusjasenet.bas": {
           "ExportDate": "9.2.2022 11.50.08",
@@ -181,14 +181,14 @@
           "FilePropertiesHash": "961f333"
         },
         "ListaaKaikkiYhteystiedot.bas": {
-          "ExportDate": "10.2.2022 23.10.39",
-          "SourceModified": "10.2.2022 23.10.39",
-          "FilePropertiesHash": "c0fdc43"
+          "ExportDate": "12.2.2022 16.15.59",
+          "SourceModified": "12.2.2022 16.15.59",
+          "FilePropertiesHash": "5926022"
         },
         "ListaaKortitJaLataukset.bas": {
-          "ExportDate": "10.2.2022 23.10.39",
-          "SourceModified": "10.2.2022 23.10.39",
-          "FilePropertiesHash": "a68b8dd"
+          "ExportDate": "12.2.2022 16.16.00",
+          "SourceModified": "12.2.2022 16.16.00",
+          "FilePropertiesHash": "20c31e3"
         },
         "ListaaMaksut.bas": {
           "ExportDate": "10.2.2022 23.10.39",
@@ -276,15 +276,15 @@
           "FilePropertiesHash": "6b7b281"
         },
         "Yhteystiedot.xml": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "af2a663"
+          "ExportDate": "12.2.2022 16.15.59",
+          "SourceModified": "12.2.2022 16.15.59",
+          "FilePropertiesHash": "d34379f"
         }
       },
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "10.2.2022 23.10.37",
+          "ExportDate": "12.2.2022 16.15.58",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "2e1693d"
         }
@@ -292,7 +292,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "10.2.2022 23.10.37",
+          "ExportDate": "12.2.2022 16.15.58",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "f110692"
         }
