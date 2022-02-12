@@ -7,7 +7,6 @@ Begin Form
     AutoCenter = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -17,7 +16,7 @@ Begin Form
     GridY =10
     Width =9071
     DatasheetFontHeight =11
-    ItemSuffix =142
+    ItemSuffix =146
     Left =4044
     Top =3468
     Right =17796
@@ -277,7 +276,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
                     Left =7316
@@ -305,7 +306,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =247
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
                     Left =7316
@@ -398,12 +401,15 @@ Begin Form
                     TabStop = NotDefault
                     BorderWidth =2
                     OverlapFlags =215
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2304
                     Top =1020
                     Width =3840
                     Height =312
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Tunnus"
                     ControlSource ="UID"
@@ -450,7 +456,9 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
                             Top =1020
                             Width =1656
@@ -475,16 +483,16 @@ Begin Form
                 End
                 Begin TextBox
                     BorderWidth =2
-                    OverlapFlags =215
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =1536
+                    Top =2028
                     Width =3840
                     Height =312
                     ColumnWidth =3000
-                    TabIndex =1
+                    TabIndex =6
                     ForeColor =4210752
                     Name ="Sukunimi"
                     ControlSource ="Sukunimi"
@@ -494,11 +502,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =1536
+                    LayoutCachedTop =2028
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =1848
-                    RowStart =1
-                    RowEnd =1
+                    LayoutCachedHeight =2340
+                    RowStart =2
+                    RowEnd =2
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -509,9 +517,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =1536
+                            Top =2028
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -524,9 +534,72 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =1536
+                            LayoutCachedTop =2028
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =1848
+                            LayoutCachedHeight =2340
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =2
+                            GroupTable =8
+                        End
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =2
+                    OverlapFlags =215
+                    TextFontCharSet =177
+                    TextAlign =1
+                    TextFontFamily =0
+                    Left =2304
+                    Top =1512
+                    Width =3840
+                    Height =312
+                    ColumnWidth =3000
+                    TabIndex =5
+                    ForeColor =4210752
+                    Name ="Etunimi"
+                    ControlSource ="Etunimi"
+                    FontName ="Calibri"
+                    GroupTable =8
+                    BottomPadding =150
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2304
+                    LayoutCachedTop =1512
+                    LayoutCachedWidth =6144
+                    LayoutCachedHeight =1824
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    BorderThemeColorIndex =5
+                    BorderShade =100.0
+                    GroupTable =8
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            TextFontCharSet =177
+                            TextAlign =1
+                            TextFontFamily =0
+                            Left =564
+                            Top =1512
+                            Width =1656
+                            Height =312
+                            FontWeight =700
+                            BorderColor =8355711
+                            ForeColor =6710886
+                            Name ="Etunimi_Selite"
+                            Caption ="Etunimi"
+                            FontName ="Calibri"
+                            GroupTable =8
+                            BottomPadding =150
+                            GridlineColor =10921638
+                            LayoutCachedLeft =564
+                            LayoutCachedTop =1512
+                            LayoutCachedWidth =2220
+                            LayoutCachedHeight =1824
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =2
@@ -541,72 +614,11 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =2052
+                    Top =2544
                     Width =3840
                     Height =312
                     ColumnWidth =3000
-                    TabIndex =2
-                    ForeColor =4210752
-                    Name ="Etunimi"
-                    ControlSource ="Etunimi"
-                    FontName ="Calibri"
-                    GroupTable =8
-                    BottomPadding =150
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =2304
-                    LayoutCachedTop =2052
-                    LayoutCachedWidth =6144
-                    LayoutCachedHeight =2364
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
-                    BorderThemeColorIndex =5
-                    BorderShade =100.0
-                    GroupTable =8
-                    Begin
-                        Begin Label
-                            BackStyle =1
-                            OverlapFlags =215
-                            TextAlign =1
-                            Left =564
-                            Top =2052
-                            Width =1656
-                            Height =312
-                            FontWeight =700
-                            BorderColor =8355711
-                            ForeColor =6710886
-                            Name ="Etunimi_Selite"
-                            Caption ="Etunimi"
-                            FontName ="Calibri"
-                            GroupTable =8
-                            BottomPadding =150
-                            GridlineColor =10921638
-                            LayoutCachedLeft =564
-                            LayoutCachedTop =2052
-                            LayoutCachedWidth =2220
-                            LayoutCachedHeight =2364
-                            RowStart =2
-                            RowEnd =2
-                            LayoutGroup =2
-                            GroupTable =8
-                        End
-                    End
-                End
-                Begin TextBox
-                    BorderWidth =2
-                    OverlapFlags =223
-                    TextFontCharSet =177
-                    TextAlign =1
-                    TextFontFamily =0
-                    Left =2304
-                    Top =2568
-                    Width =3840
-                    Height =312
-                    ColumnWidth =3000
-                    TabIndex =3
+                    TabIndex =7
                     ForeColor =4210752
                     Name ="Sähköpostiosoite"
                     ControlSource ="Sähköpostiosoite"
@@ -616,9 +628,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =2568
+                    LayoutCachedTop =2544
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =2880
+                    LayoutCachedHeight =2856
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -631,9 +643,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =2568
+                            Top =2544
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -646,9 +660,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =2568
+                            LayoutCachedTop =2544
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =2880
+                            LayoutCachedHeight =2856
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =2
@@ -664,11 +678,11 @@ Begin Form
                     TextFontFamily =0
                     IMEMode =2
                     Left =2304
-                    Top =3084
+                    Top =3060
                     Width =3840
                     Height =312
                     ColumnWidth =2748
-                    TabIndex =4
+                    TabIndex =8
                     ForeColor =4210752
                     Name ="Matkapuhelin"
                     ControlSource ="Matkapuhelin"
@@ -678,9 +692,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =3084
+                    LayoutCachedTop =3060
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =3396
+                    LayoutCachedHeight =3372
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -693,9 +707,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =3084
+                            Top =3060
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -708,9 +724,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =3084
+                            LayoutCachedTop =3060
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =3396
+                            LayoutCachedHeight =3372
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =2
@@ -725,11 +741,11 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =3600
+                    Top =3576
                     Width =3840
                     Height =312
                     ColumnWidth =3000
-                    TabIndex =5
+                    TabIndex =9
                     ForeColor =4210752
                     Name ="Kaupunki"
                     ControlSource ="Kaupunki"
@@ -739,9 +755,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =3600
+                    LayoutCachedTop =3576
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =3912
+                    LayoutCachedHeight =3888
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -754,9 +770,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =3600
+                            Top =3576
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -769,9 +787,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =3600
+                            LayoutCachedTop =3576
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =3912
+                            LayoutCachedHeight =3888
                             RowStart =5
                             RowEnd =5
                             LayoutGroup =2
@@ -790,11 +808,11 @@ Begin Form
                     IMESentenceMode =3
                     ListWidth =1440
                     Left =2304
-                    Top =4116
+                    Top =4092
                     Width =3840
                     Height =312
                     ColumnWidth =3000
-                    TabIndex =6
+                    TabIndex =10
                     ForeColor =3484194
                     Name ="Jäsenyys"
                     ControlSource ="Jäsenyys"
@@ -809,9 +827,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =4116
+                    LayoutCachedTop =4092
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =4428
+                    LayoutCachedHeight =4404
                     RowStart =6
                     RowEnd =6
                     ColumnStart =1
@@ -824,9 +842,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =4116
+                            Top =4092
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -839,9 +859,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =4116
+                            LayoutCachedTop =4092
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =4428
+                            LayoutCachedHeight =4404
                             RowStart =6
                             RowEnd =6
                             LayoutGroup =2
@@ -859,11 +879,11 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2304
-                    Top =4632
+                    Top =4608
                     Width =3840
                     Height =1692
                     ColumnWidth =3000
-                    TabIndex =7
+                    TabIndex =11
                     ForeColor =4210752
                     Name ="Muistiinpanot"
                     ControlSource ="Muistiinpanot"
@@ -874,9 +894,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =4632
+                    LayoutCachedTop =4608
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =6324
+                    LayoutCachedHeight =6300
                     RowStart =7
                     RowEnd =7
                     ColumnStart =1
@@ -889,9 +909,11 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
+                            TextFontCharSet =177
                             TextAlign =1
+                            TextFontFamily =0
                             Left =564
-                            Top =4632
+                            Top =4608
                             Width =1656
                             Height =1692
                             FontWeight =700
@@ -904,9 +926,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =4632
+                            LayoutCachedTop =4608
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =6324
+                            LayoutCachedHeight =6300
                             RowStart =7
                             RowEnd =7
                             LayoutGroup =2
@@ -922,7 +944,7 @@ Begin Form
                     Top =924
                     Width =2724
                     Height =1128
-                    TabIndex =10
+                    TabIndex =2
                     ForeColor =4210752
                     Name ="Tallennus"
                     Caption ="Tallenna"
@@ -961,7 +983,7 @@ Begin Form
                     Top =2124
                     Width =2724
                     Height =1128
-                    TabIndex =11
+                    TabIndex =3
                     ForeColor =4210752
                     Name ="Cancelli"
                     Caption ="Sulje tallentamatta"
@@ -1036,7 +1058,6 @@ Begin Form
                     Top =288
                     Width =2940
                     Height =564
-                    TabIndex =8
                     ForeColor =4210752
                     Name ="uusijasen"
                     Caption ="Uusi jäsen"
@@ -1072,7 +1093,7 @@ Begin Form
                     Top =288
                     Width =2724
                     Height =564
-                    TabIndex =9
+                    TabIndex =1
                     ForeColor =4210752
                     Name ="deletejäsen"
                     Caption ="Poista jäsen"
@@ -1113,7 +1134,7 @@ Begin Form
                     Top =6689
                     Width =6180
                     Height =1928
-                    TabIndex =12
+                    TabIndex =13
                     ForeColor =4210752
                     Name ="Korttilistaus"
                     RowSourceType ="Table/Query"
@@ -1134,6 +1155,8 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =223
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =793
                             Top =6349
                             Width =1812
@@ -1176,7 +1199,7 @@ Begin Form
                     Top =4792
                     Width =276
                     Height =262
-                    TabIndex =13
+                    TabIndex =12
                     BorderColor =10921638
                     Name ="Edustusj"
                     ControlSource ="Edustusjasen"
@@ -1190,6 +1213,8 @@ Begin Form
                         Begin Label
                             BackStyle =1
                             OverlapFlags =247
+                            TextFontCharSet =177
+                            TextFontFamily =0
                             Left =7203
                             Top =4762
                             Width =1560
@@ -1210,6 +1235,8 @@ Begin Form
                 End
                 Begin Label
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =793
                     Top =8674
                     Width =6228
