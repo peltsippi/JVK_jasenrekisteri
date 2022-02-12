@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =228
+    ItemSuffix =245
     Left =4044
     Top =3468
     Right =17796
@@ -28,6 +28,7 @@ Begin Form
     RecordSource ="KorttejaVoimassa"
     AfterUpdate ="[Event Procedure]"
     OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     OnGotFocus ="[Event Procedure]"
     AllowDatasheetView =0
@@ -335,39 +336,28 @@ Begin Form
             End
         End
         Begin Section
-            Height =7370
+            Height =7880
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
-                Begin Image
-                    PictureType =2
-                    Left =614
-                    Top =3685
-                    Width =8434
-                    Height =3612
-                    Name ="Bulldog"
-                    Picture ="bulldog_pienempi"
-
-                    LayoutCachedLeft =614
-                    LayoutCachedTop =3685
-                    LayoutCachedWidth =9048
-                    LayoutCachedHeight =7297
-                    TabIndex =23
-                End
-                Begin Rectangle
-                    Visible = NotDefault
-                    BackStyle =1
-                    OverlapFlags =255
-                    Left =307
-                    Top =3377
-                    Width =9000
-                    Height =3331
-                    BackColor =62207
-                    Name ="Korttikorjaukset"
-                    LayoutCachedLeft =307
-                    LayoutCachedTop =3377
-                    LayoutCachedWidth =9307
-                    LayoutCachedHeight =6708
+                Begin EmptyCell
+                    Left =3876
+                    Top =6660
+                    Width =1728
+                    Height =804
+                    Name ="TyhjäSolu225"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =3876
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
                 End
                 Begin Rectangle
                     SpecialEffect =0
@@ -653,7 +643,7 @@ Begin Form
                     WebImagePaddingBottom =2
                 End
                 Begin Label
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =566
                     Top =2716
                     Width =8511
@@ -669,12 +659,12 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    OverlapFlags =247
+                    OverlapFlags =85
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =5408
-                    Top =3590
+                    Left =5550
+                    Top =3519
                     Width =1744
                     Height =300
                     TabIndex =9
@@ -685,28 +675,28 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =5408
-                    LayoutCachedTop =3590
-                    LayoutCachedWidth =7152
-                    LayoutCachedHeight =3890
+                    LayoutCachedLeft =5550
+                    LayoutCachedTop =3519
+                    LayoutCachedWidth =7294
+                    LayoutCachedHeight =3819
                     Begin
                         Begin Label
-                            OverlapFlags =255
-                            Left =3755
-                            Top =3590
+                            OverlapFlags =85
+                            Left =3732
+                            Top =3543
                             Width =1656
                             Height =300
                             Name ="Selite156"
                             Caption ="Puumerkki + enter:"
-                            LayoutCachedLeft =3755
-                            LayoutCachedTop =3590
-                            LayoutCachedWidth =5411
-                            LayoutCachedHeight =3890
+                            LayoutCachedLeft =3732
+                            LayoutCachedTop =3543
+                            LayoutCachedWidth =5388
+                            LayoutCachedHeight =3843
                         End
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =564
                     Top =4116
                     Width =1332
@@ -732,7 +722,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =1968
                     Top =4116
                     Width =1212
@@ -761,9 +751,9 @@ Begin Form
                 End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =247
-                    Left =7606
-                    Top =3472
+                    OverlapFlags =93
+                    Left =6897
+                    Top =4251
                     Width =1464
                     Height =473
                     FontSize =16
@@ -771,17 +761,17 @@ Begin Form
                     BackColor =8435191
                     Name ="Raportit"
                     Caption ="Raportit:"
-                    LayoutCachedLeft =7606
-                    LayoutCachedTop =3472
-                    LayoutCachedWidth =9070
-                    LayoutCachedHeight =3945
+                    LayoutCachedLeft =6897
+                    LayoutCachedTop =4251
+                    LayoutCachedWidth =8361
+                    LayoutCachedHeight =4724
                 End
                 Begin ToggleButton
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =543
-                    Top =3496
+                    Left =472
+                    Top =3425
                     Width =2997
                     Height =560
                     TabIndex =8
@@ -792,10 +782,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =543
-                    LayoutCachedTop =3496
-                    LayoutCachedWidth =3540
-                    LayoutCachedHeight =4056
+                    LayoutCachedLeft =472
+                    LayoutCachedTop =3425
+                    LayoutCachedWidth =3469
+                    LayoutCachedHeight =3985
                     BackColor =62207
                     BackThemeColorIndex =-1
                     BackTint =100.0
@@ -811,7 +801,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3252
                     Top =4116
                     Width =1236
@@ -839,7 +829,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =2220
                     Top =4908
                     Width =1584
@@ -871,24 +861,33 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =255
-                    Left =3118
-                    Top =5858
-                    Width =3266
-                    Height =550
-                    TabIndex =22
+                    OverlapFlags =93
+                    Left =2220
+                    Top =5784
+                    Width =1584
+                    Height =804
+                    TabIndex =20
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
                     OnClick ="[Event Procedure]"
+                    GroupTable =1
 
-                    LayoutCachedLeft =3118
-                    LayoutCachedTop =5858
-                    LayoutCachedWidth =6384
-                    LayoutCachedHeight =6408
+                    LayoutCachedLeft =2220
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =3804
+                    LayoutCachedHeight =6588
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
                     UseTheme =1
                     BackColor =8435191
                     HoverColor =8435191
                     PressedColor =8435191
+                    GroupTable =1
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -896,12 +895,13 @@ Begin Form
                     Overlaps =1
                 End
                 Begin TextBox
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
+                    TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =7110
-                    Top =4015
+                    Left =7181
+                    Top =4889
                     Width =1961
                     Height =300
                     TabIndex =10
@@ -914,35 +914,36 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =7110
-                    LayoutCachedTop =4015
-                    LayoutCachedWidth =9071
-                    LayoutCachedHeight =4315
+                    LayoutCachedLeft =7181
+                    LayoutCachedTop =4889
+                    LayoutCachedWidth =9142
+                    LayoutCachedHeight =5189
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =255
-                            Left =6283
-                            Top =4015
+                            OverlapFlags =93
+                            TextAlign =1
+                            Left =6354
+                            Top =4889
                             Width =1284
                             Height =300
                             FontWeight =700
                             Name ="Selite166"
                             Caption ="Alkaen"
-                            LayoutCachedLeft =6283
-                            LayoutCachedTop =4015
-                            LayoutCachedWidth =7567
-                            LayoutCachedHeight =4315
+                            LayoutCachedLeft =6354
+                            LayoutCachedTop =4889
+                            LayoutCachedWidth =7638
+                            LayoutCachedHeight =5189
                         End
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =7109
-                    Top =4346
+                    Left =7180
+                    Top =5291
                     Width =1961
                     Height =300
                     TabIndex =15
@@ -955,30 +956,30 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =7109
-                    LayoutCachedTop =4346
-                    LayoutCachedWidth =9070
-                    LayoutCachedHeight =4646
+                    LayoutCachedLeft =7180
+                    LayoutCachedTop =5291
+                    LayoutCachedWidth =9141
+                    LayoutCachedHeight =5591
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =255
-                            Left =6236
-                            Top =4346
+                            OverlapFlags =93
+                            Left =6307
+                            Top =5291
                             Width =1284
                             Height =300
                             FontWeight =700
                             Name ="Selite168"
                             Caption ="Loppuen"
-                            LayoutCachedLeft =6236
-                            LayoutCachedTop =4346
-                            LayoutCachedWidth =7520
-                            LayoutCachedHeight =4646
+                            LayoutCachedLeft =6307
+                            LayoutCachedTop =5291
+                            LayoutCachedWidth =7591
+                            LayoutCachedHeight =5591
                         End
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3876
                     Top =4908
                     Width =1728
@@ -1010,7 +1011,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =588
                     Top =4908
                     Width =1560
@@ -1040,22 +1041,25 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
-                    Left =5676
-                    Top =4908
+                    OverlapFlags =93
+                    Left =3876
+                    Top =5784
+                    Width =1728
                     Height =804
-                    TabIndex =19
+                    TabIndex =21
                     Name ="ListaaEdustusj"
                     Caption ="Listaa edustusjäsenet"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =5676
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =7116
-                    LayoutCachedHeight =5712
-                    ColumnStart =3
-                    ColumnEnd =3
+                    LayoutCachedLeft =3876
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =6588
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -1071,22 +1075,23 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
-                    Left =7188
-                    Top =4908
+                    OverlapFlags =93
+                    Left =588
+                    Top =6660
+                    Width =1560
                     Height =804
-                    TabIndex =20
+                    TabIndex =22
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =7188
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =8628
-                    LayoutCachedHeight =5712
-                    ColumnStart =4
-                    ColumnEnd =4
+                    LayoutCachedLeft =588
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =2148
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -1102,7 +1107,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =4560
                     Top =4116
                     Width =1248
@@ -1130,21 +1135,21 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =588
-                    Top =5772
+                    Top =5784
                     Width =1560
                     Height =804
-                    TabIndex =21
+                    TabIndex =19
                     Name ="ListaaKaikkiMaksut"
                     Caption ="Listaa kaikki maksut"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
                     LayoutCachedLeft =588
-                    LayoutCachedTop =5772
+                    LayoutCachedTop =5784
                     LayoutCachedWidth =2148
-                    LayoutCachedHeight =6576
+                    LayoutCachedHeight =6588
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1162,54 +1167,34 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =2220
-                    Top =5772
-                    Width =1584
+                    Left =5664
+                    Top =6660
                     Height =804
-                    Name ="TyhjäSolu224"
+                    Name ="TyhjäSolu227"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =2220
-                    LayoutCachedTop =5772
-                    LayoutCachedWidth =3804
-                    LayoutCachedHeight =6576
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =1
-                    ColumnEnd =1
+                    LayoutCachedLeft =5664
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =7104
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =3
+                    ColumnEnd =3
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =3876
-                    Top =5772
-                    Width =1728
+                    Left =5664
+                    Top =5784
                     Height =804
-                    Name ="TyhjäSolu225"
+                    Name ="TyhjäSolu241"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =3876
-                    LayoutCachedTop =5772
-                    LayoutCachedWidth =5604
-                    LayoutCachedHeight =6576
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =2
-                    ColumnEnd =2
-                    LayoutGroup =1
-                    GroupTable =1
-                End
-                Begin EmptyCell
-                    Left =5676
-                    Top =5772
-                    Height =804
-                    Name ="TyhjäSolu226"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5676
-                    LayoutCachedTop =5772
-                    LayoutCachedWidth =7116
-                    LayoutCachedHeight =6576
+                    LayoutCachedLeft =5664
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =7104
+                    LayoutCachedHeight =6588
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1218,22 +1203,54 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =7188
-                    Top =5772
+                    Left =2220
+                    Top =6660
+                    Width =1584
                     Height =804
-                    Name ="TyhjäSolu227"
+                    Name ="TyhjäSolu243"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =7188
-                    LayoutCachedTop =5772
-                    LayoutCachedWidth =8628
-                    LayoutCachedHeight =6576
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =4
-                    ColumnEnd =4
+                    LayoutCachedLeft =2220
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =3804
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
                     LayoutGroup =1
                     GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =5664
+                    Top =4908
+                    Height =804
+                    Name ="TyhjäSolu244"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5664
+                    LayoutCachedTop =4908
+                    LayoutCachedWidth =7104
+                    LayoutCachedHeight =5712
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Image
+                    PictureType =2
+                    Left =566
+                    Top =3921
+                    Width =8878
+                    Height =3912
+                    Name ="Bulldog"
+                    Picture ="bulldog_pienempi"
+
+                    LayoutCachedLeft =566
+                    LayoutCachedTop =3921
+                    LayoutCachedWidth =9444
+                    LayoutCachedHeight =7833
+                    TabIndex =23
                 End
             End
         End
@@ -1270,6 +1287,11 @@ End Sub
 
 
 
+Private Sub Form_Close()
+    Dim succs
+    succs = Common.SaveToLog("Sovellus suljettu")
+End Sub
+
 Private Sub Form_GotFocus()
     [Form_Tervetuloa].Refresh
     
@@ -1282,6 +1304,7 @@ Private Sub Form_Open(Cancel As Integer)
     Dim succs
     succs = Common.EnableDisableButtons()
     succs = Common.SendMessageToMainScreen("Tervetuloa!")
+    succs = Common.SaveToLog("Jäsenrekisteri avattiin")
 End Sub
 
 Private Sub Form_SelectionChange()
