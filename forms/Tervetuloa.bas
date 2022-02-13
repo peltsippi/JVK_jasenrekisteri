@@ -20,7 +20,7 @@ Begin Form
     ItemSuffix =245
     Left =4044
     Top =3468
-    Right =17796
+    Right =17484
     Bottom =11712
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
@@ -267,7 +267,7 @@ Begin Form
                     Top =94
                     Width =2568
                     Height =1524
-                    FontSize =20
+                    FontSize =16
                     FontWeight =700
                     ForeColor =255
                     Name ="Selite179"
@@ -398,10 +398,11 @@ Begin Form
                     ColumnWidths ="1440;1440;1440"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Calibri"
+                    OnGotFocus ="[Event Procedure]"
                     OnChange ="[Event Procedure]"
                     GridlineColor =10921638
                     AllowValueListEdits =0
-                    ListItemsEditForm ="d"
+                    ListItemsEditForm ="YhteystietojenMuokkaus"
 
                     LayoutCachedLeft =566
                     LayoutCachedTop =473
@@ -466,7 +467,9 @@ Begin Form
                     ColumnWidths ="1440;1440;1440"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Calibri"
+                    OnGotFocus ="[Event Procedure]"
                     GridlineColor =10921638
+                    ListItemsEditForm ="RekisteroiLataus"
 
                     LayoutCachedLeft =566
                     LayoutCachedTop =1534
@@ -1348,7 +1351,7 @@ Private Sub KortinTapahtumat_Click()
 End Sub
 
 Private Sub Korttivalinta_AfterUpdate()
-Common.EnableDisableButtons
+    Common.EnableDisableButtons
     
     Dim criteria As String
     
@@ -1357,10 +1360,21 @@ Common.EnableDisableButtons
     Dim user As Integer
     user = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
     'MsgBox (user)
-    [Form_Tervetuloa].Yhteystietovalinta.Value = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
+    ''[Form_Tervetuloa].Yhteystietovalinta.
+    '[Form_Tervetuloa].Yhteystietovalinta.Value = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
+    [Form_Tervetuloa].Yhteystietovalinta = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
+    [Form_Tervetuloa].Yhteystietovalinta.Requery
+    
     [Form_Tervetuloa].Refresh
+    [Form_Tervetuloa].Yhteystietovalinta.SetFocus
+    'MsgBox ([Form_Tervetuloa].Yhteystietovalinta.Value)
 End Sub
 
+
+Private Sub Korttivalinta_GotFocus()
+    Common.EnableDisableButtons
+    
+End Sub
 
 Private Sub LatauksetKaikki_Click()
     Dim succs
@@ -1457,7 +1471,8 @@ Private Sub Yhteystietovalinta_AfterUpdate()
 
     'Form_Tervetuoa.Paivita_korttiluettelo()
     Form_Tervetuloa.Paivita_korttiluettelo
-    
+    Common.EnableDisableButtons
+    'MsgBox ([Form_Tervetuloa].Yhteystietovalinta.Value)
     
 End Sub
 
@@ -1465,4 +1480,8 @@ End Sub
 Private Sub Yhteystietovalinta_Change()
     Common.EnableDisableButtons
     
+End Sub
+
+Private Sub Yhteystietovalinta_GotFocus()
+    Common.EnableDisableButtons
 End Sub

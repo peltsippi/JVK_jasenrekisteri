@@ -19,7 +19,7 @@ Begin Form
     ItemSuffix =146
     Left =4044
     Top =3468
-    Right =17796
+    Right =17484
     Bottom =11712
     Filter ="[UID]=[Forms]![Tervetuloa]![Yhteystietovalinta]"
     Picture ="bulldog_pienempi"
@@ -488,7 +488,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =2028
+                    Top =2052
                     Width =3840
                     Height =312
                     ColumnWidth =3000
@@ -502,9 +502,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =2028
+                    LayoutCachedTop =2052
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =2340
+                    LayoutCachedHeight =2364
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -521,7 +521,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =2028
+                            Top =2052
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -534,9 +534,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =2028
+                            LayoutCachedTop =2052
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =2340
+                            LayoutCachedHeight =2364
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =2
@@ -551,7 +551,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =1512
+                    Top =1536
                     Width =3840
                     Height =312
                     ColumnWidth =3000
@@ -565,9 +565,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =1512
+                    LayoutCachedTop =1536
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =1824
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -584,7 +584,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =1512
+                            Top =1536
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -597,9 +597,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =1512
+                            LayoutCachedTop =1536
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =1824
+                            LayoutCachedHeight =1848
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =2
@@ -614,7 +614,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =2544
+                    Top =2568
                     Width =3840
                     Height =312
                     ColumnWidth =3000
@@ -628,9 +628,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =2544
+                    LayoutCachedTop =2568
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =2856
+                    LayoutCachedHeight =2880
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -647,7 +647,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =2544
+                            Top =2568
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -660,9 +660,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =2544
+                            LayoutCachedTop =2568
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =2856
+                            LayoutCachedHeight =2880
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =2
@@ -678,7 +678,7 @@ Begin Form
                     TextFontFamily =0
                     IMEMode =2
                     Left =2304
-                    Top =3060
+                    Top =3084
                     Width =3840
                     Height =312
                     ColumnWidth =2748
@@ -692,9 +692,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =3060
+                    LayoutCachedTop =3084
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =3372
+                    LayoutCachedHeight =3396
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -711,7 +711,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =3060
+                            Top =3084
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -724,9 +724,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =3060
+                            LayoutCachedTop =3084
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =3372
+                            LayoutCachedHeight =3396
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =2
@@ -741,7 +741,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =2304
-                    Top =3576
+                    Top =3600
                     Width =3840
                     Height =312
                     ColumnWidth =3000
@@ -755,9 +755,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =3576
+                    LayoutCachedTop =3600
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =3888
+                    LayoutCachedHeight =3912
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -774,7 +774,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =3576
+                            Top =3600
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -787,9 +787,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =3576
+                            LayoutCachedTop =3600
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =3888
+                            LayoutCachedHeight =3912
                             RowStart =5
                             RowEnd =5
                             LayoutGroup =2
@@ -808,7 +808,7 @@ Begin Form
                     IMESentenceMode =3
                     ListWidth =1440
                     Left =2304
-                    Top =4092
+                    Top =4116
                     Width =3840
                     Height =312
                     ColumnWidth =3000
@@ -827,9 +827,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =4092
+                    LayoutCachedTop =4116
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =4404
+                    LayoutCachedHeight =4428
                     RowStart =6
                     RowEnd =6
                     ColumnStart =1
@@ -846,7 +846,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =4092
+                            Top =4116
                             Width =1656
                             Height =312
                             FontWeight =700
@@ -859,9 +859,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =4092
+                            LayoutCachedTop =4116
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =4404
+                            LayoutCachedHeight =4428
                             RowStart =6
                             RowEnd =6
                             LayoutGroup =2
@@ -879,7 +879,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2304
-                    Top =4608
+                    Top =4632
                     Width =3840
                     Height =1692
                     ColumnWidth =3000
@@ -894,9 +894,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2304
-                    LayoutCachedTop =4608
+                    LayoutCachedTop =4632
                     LayoutCachedWidth =6144
-                    LayoutCachedHeight =6300
+                    LayoutCachedHeight =6324
                     RowStart =7
                     RowEnd =7
                     ColumnStart =1
@@ -913,7 +913,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =564
-                            Top =4608
+                            Top =4632
                             Width =1656
                             Height =1692
                             FontWeight =700
@@ -926,9 +926,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =564
-                            LayoutCachedTop =4608
+                            LayoutCachedTop =4632
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =6300
+                            LayoutCachedHeight =6324
                             RowStart =7
                             RowEnd =7
                             LayoutGroup =2
@@ -947,7 +947,7 @@ Begin Form
                     TabIndex =2
                     ForeColor =4210752
                     Name ="Tallennus"
-                    Caption ="Tallenna"
+                    Caption ="Tallenna ja sulje"
                     OnClick ="[Event Procedure]"
                     FontName ="Calibri"
                     GroupTable =2
@@ -1290,7 +1290,8 @@ Private Sub Korttilistaus_DblClick(Cancel As Integer)
     [Form_Tervetuloa].Korttivalinta.Value = [Form_YhteystietojenMuokkaus].Korttilistaus.Value
     DoCmd.Close
     [Form_Tervetuloa].Korttivalinta.SetFocus
-    [Form_Tervetuloa].Korttivalinta.Dropdown
+    '[Form_Tervetuloa].Korttivalinta.Dropdown
+    [Form_Tervetuloa].Korttivalinta.Requery
     
     
 End Sub
@@ -1302,7 +1303,7 @@ Dim succs
 succs = Common.SaveToLog("Tallennettu muutokset käyttäjälle ID: " & [Form_YhteystietojenMuokkaus].UID.Value)
 succs = Common.SendMessageToMainScreen("Muutokset yhteystietoon tallennettu!")
 
-'DoCmd.Close do not do this, it is not ok.
+DoCmd.Close
 
 End Sub
 

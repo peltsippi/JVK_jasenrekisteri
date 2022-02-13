@@ -19,7 +19,7 @@ Begin Form
     ItemSuffix =381
     Left =4044
     Top =3468
-    Right =22788
+    Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -1240,7 +1240,9 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =215
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     Left =396
                     Top =5328
                     Width =5844
@@ -1327,76 +1329,80 @@ End Sub
 
 
 Private Sub Save_Click()
-Dim Kortti As String
-Dim Korttityyppi As String
-Dim Puumerkki As String
-Dim Hinta As Currency
-Dim Voimassaolo As Date
-Dim arvot As String
+    DoCmd.OpenForm "LatausOhje"
+End Sub
+
+Public Sub SaveStuff()
+    Dim Kortti As String
+    Dim Korttityyppi As String
+    Dim Puumerkki As String
+    Dim Hinta As Currency
+    Dim Voimassaolo As Date
+    Dim arvot As String
+    
+    
+    'check that all required info is ok
+    
+    
+    If IsNull([Form_Tervetuloa].Korttivalinta) Then
+        MsgBox ("Korttia ei valittu pääikkunasta, ei voida jatkaa!")
+        Exit Sub
+    Else
+        Kortti = [Form_RekisteroiLataus].Kortti.Value
+    End If
 
 
-'check that all required info is ok
+
+    If ([Form_RekisteroiLataus].Korttityyppi.Value = "") Or IsNull([Form_RekisteroiLataus].Korttityyppi) Then
+        MsgBox ("Korttityyppiä ei määritelty!")
+        Exit Sub
+    Else
+        Korttityyppi = [Form_RekisteroiLataus].Korttityyppi.Value
+    End If
+    
+    If ([Form_RekisteroiLataus].Puumerkki.Value = "") Or IsNull([Form_RekisteroiLataus].Puumerkki) Then
+        MsgBox ("Puumerkki ei voi olla tyhjä!")
+        Exit Sub
+    Else
+        Puumerkki = [Form_RekisteroiLataus].Puumerkki.Value
+    End If
+    
+    If ([Form_RekisteroiLataus].Hinta.Value = "") Or IsNull([Form_RekisteroiLataus].Hinta) Then
+        MsgBox ("Hintaa ei määritelty!")
+        Exit Sub
+    Else
+        Hinta = [Form_RekisteroiLataus].Hinta.Value
+    End If
+    
+    If ([Form_RekisteroiLataus].Voimassa.Value = "") Or IsNull([Form_RekisteroiLataus].Voimassa) Then
+        MsgBox ("Voimassaoloa ei määritelty!")
+        Exit Sub
+    Else
+        Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
+    End If
+    
+    
+    Dim kortti_id As Integer
+    kortti_id = Common.FetchCardID(Kortti)
+    'MsgBox (kortti_id)
+    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Lataaja = '" & Puumerkki & "' , Korttityyppi = '" & Korttityyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
+    'MsgBox (arvot)
+    
+    'Dim preventDuplicates As String
+    
+    'preventDuplicates = "Kortti " & kortti_id & " , Voimassa = '" & Voimassaolo & "'"
+    'note to self = you need to make sure there are no existing values there so it means fixing the function at common
+    Dim success As Boolean
+    
+    success = Common.InsertOrUpdate("Lataukset", arvot, "")
+
+    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & Korttityyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
+
+    Dim retval
+    retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
 
 
-If IsNull([Form_Tervetuloa].Korttivalinta) Then
-    MsgBox ("Korttia ei valittu pääikkunasta, ei voida jatkaa!")
-    Exit Sub
-Else
-    Kortti = [Form_RekisteroiLataus].Kortti.Value
-End If
-
-
-
-If ([Form_RekisteroiLataus].Korttityyppi.Value = "") Or IsNull([Form_RekisteroiLataus].Korttityyppi) Then
-    MsgBox ("Korttityyppiä ei määritelty!")
-    Exit Sub
-Else
-    Korttityyppi = [Form_RekisteroiLataus].Korttityyppi.Value
-End If
-
-If ([Form_RekisteroiLataus].Puumerkki.Value = "") Or IsNull([Form_RekisteroiLataus].Puumerkki) Then
-    MsgBox ("Puumerkki ei voi olla tyhjä!")
-    Exit Sub
-Else
-    Puumerkki = [Form_RekisteroiLataus].Puumerkki.Value
-End If
-
-If ([Form_RekisteroiLataus].Hinta.Value = "") Or IsNull([Form_RekisteroiLataus].Hinta) Then
-    MsgBox ("Hintaa ei määritelty!")
-    Exit Sub
-Else
-    Hinta = [Form_RekisteroiLataus].Hinta.Value
-End If
-
-If ([Form_RekisteroiLataus].Voimassa.Value = "") Or IsNull([Form_RekisteroiLataus].Voimassa) Then
-    MsgBox ("Voimassaoloa ei määritelty!")
-    Exit Sub
-Else
-    Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
-End If
-
-
-Dim kortti_id As Integer
-kortti_id = Common.FetchCardID(Kortti)
-'MsgBox (kortti_id)
-arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Lataaja = '" & Puumerkki & "' , Korttityyppi = '" & Korttityyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
-'MsgBox (arvot)
-
-'Dim preventDuplicates As String
-
-'preventDuplicates = "Kortti " & kortti_id & " , Voimassa = '" & Voimassaolo & "'"
-'note to self = you need to make sure there are no existing values there so it means fixing the function at common
-Dim success As Boolean
-
-success = Common.InsertOrUpdate("Lataukset", arvot, "")
-
-Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & Korttityyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
-
-Dim retval
-retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
-
-
-DoCmd.Close
+    DoCmd.Close
 
 End Sub
 

@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-12.2.2022 16.18.02
+13.2.2022 22.33.10
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -32,7 +32,8 @@ Exporting shared images...
   OutlookSearchMagnifyingGlassHS
   punttilogo_pieni_invert
   bulldog_pienempi
-[3]
+  JVK_jasenrekisteri_img
+[4]
   Removing orphaned folder: Office Theme
 -------------------------------------
 Exporting themes...           
@@ -44,16 +45,32 @@ No modified imex specs found in this database.
 No modified tables found in this database.
 -------------------------------------
 Exporting queries...          
+  Hae nimi
+    Sanitized in 0,013 seconds.
+  Hae nimi (SQL)
+  KorttejaVoimassa
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,003 seconds.
+  KorttejaVoimassa (SQL)
+  ListaaKaikkiYhteystiedot
+    Sanitized in 0,004 seconds.
+  ListaaKaikkiYhteystiedot (SQL)
   ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,004 seconds.
+    Sanitized in 0,003 seconds.
   ListaaKortitJaLataukset (SQL)
-[1]
+[4]
 -------------------------------------
 Exporting forms...            
+  Tervetuloa
+    Sanitized in 0,048 seconds.
   YhteystietojenMuokkaus
-    Sanitized in 0,035 seconds.
-[1]
+    Sanitized in 0,048 seconds.
+  RekisteroiLataus
+    Sanitized in 0,054 seconds.
+  LatausOhje
+    Sanitized in 0,018 seconds.
+[4]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
@@ -61,7 +78,7 @@ No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,022 seconds.
+    Sanitized in 0,033 seconds.
 [1]
 -------------------------------------
 No modified modules found in this database.
@@ -86,60 +103,61 @@ Exporting hidden attributes...
   Database hidden attributes
 [2]
 -------------------------------------
-Done. (2,51 seconds)
+Done. (4,68 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,02
-VB Project                    1         0,01
-VBE References                2         0,02
-DB Properties                 53        0,22
-Shared Images                 3         0,03
-Themes                        1         1,07
-Queries                       1         0,06
-Forms                         1         0,35
-Table Data                    1         0,14
-Relations                     3         0,05
-Doc Properties                2         0,02
-Nav Pane Groups               1         0,02
-Hidden Attributes             2         0,01
+Project                       1         0,04
+VB Project                    1         0,04
+VBE References                2         0,05
+DB Properties                 53        0,40
+Shared Images                 4         0,08
+Themes                        1         1,75
+Queries                       4         0,25
+Forms                         4         0,99
+Table Data                    1         0,34
+Relations                     3         0,08
+Doc Properties                2         0,03
+Nav Pane Groups               1         0,03
+Hidden Attributes             2         0,02
 --------------------------------------------------
-TOTALS:                       72        2,04
+TOTALS:                       79        4,11
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     19        0,03
-Parse JSON                    15        0,03
-Convert to JSON               613       0,37
-Compute SHA256                23        0,00
-Console Updates               3         0,11
+Read File                     28        0,18
+Parse JSON                    15        0,04
+Convert to JSON               672       0,59
+Compute SHA256                33        0,00
+Console Updates               4         0,21
 Compare Dictionary            13        0,00
-Get Modified Date             5         0,00
-Get File Property Hash        5         0,00
-Clear Orphaned                8         0,18
-Verify Path                   12        0,00
-Write to Disk                 3         0,00
+Get Modified Date             11        0,01
+Get File Property Hash        11        0,01
+Clear Orphaned                8         0,22
+Verify Path                   29        0,01
+Write to Disk                 4         0,01
+Write File                    15        0,02
 Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         1,04
-App.SaveAsText()              2         0,05
-Delete File                   4         0,00
-Read File Bytes               3         0,03
-Sanitize File                 2         0,04
-Write File                    5         0,00
-Save Query SQL                1         0,00
-Get VBA Hash                  20        0,01
-Read File DevMode             1         0,00
-App.ExportXML()               1         0,10
+Extract Theme                 1         1,67
+App.SaveAsText()              8         0,21
+Delete File                   9         0,01
+Read File Bytes               12        0,17
+Sanitize File                 8         0,18
+Save Query SQL                4         0,01
+Get VBA Hash                  21        0,02
+Read File DevMode             4         0,02
+Increment Progress            1         0,08
+App.ExportXML()               1         0,28
 Sanitize XML                  1         0,00
-Format XML                    1         0,02
+Format XML                    1         0,03
 --------------------------------------------------
-Other Operations                        0,53
+Other Operations                        0,76
 --------------------------------------------------
 
 
