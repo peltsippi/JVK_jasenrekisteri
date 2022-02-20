@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =256
+    ItemSuffix =258
     Left =4044
     Top =3468
     Right =17484
@@ -531,7 +531,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =7880
+            Height =8418
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
@@ -899,7 +899,7 @@ Begin Form
                     Top =4116
                     Width =1332
                     Height =588
-                    TabIndex =11
+                    TabIndex =10
                     Name ="MuokkaaLatauksia"
                     Caption ="Muokkaa latauksia"
                     OnClick ="[Event Procedure]"
@@ -925,7 +925,7 @@ Begin Form
                     Top =4116
                     Width =1212
                     Height =588
-                    TabIndex =12
+                    TabIndex =11
                     Name ="MuokkaaMaksuja"
                     Caption ="Muokkaa maksuja"
                     OnClick ="[Event Procedure]"
@@ -1004,7 +1004,7 @@ Begin Form
                     Top =4116
                     Width =1236
                     Height =588
-                    TabIndex =13
+                    TabIndex =12
                     Name ="Hinnat"
                     Caption ="Muokkaa korttihintoja"
                     OnClick ="[Event Procedure]"
@@ -1032,7 +1032,7 @@ Begin Form
                     Top =4908
                     Width =1584
                     Height =804
-                    TabIndex =17
+                    TabIndex =16
                     Name ="RaporttiMaksamatta"
                     Caption ="Tarkasta maksamattomat kortit"
                     OnClick ="[Event Procedure]"
@@ -1064,7 +1064,7 @@ Begin Form
                     Top =5784
                     Width =1584
                     Height =804
-                    TabIndex =20
+                    TabIndex =19
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
                     OnClick ="[Event Procedure]"
@@ -1102,7 +1102,7 @@ Begin Form
                     Top =4889
                     Width =1961
                     Height =300
-                    TabIndex =10
+                    TabIndex =14
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1144,7 +1144,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =15
+                    TabIndex =23
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1182,7 +1182,7 @@ Begin Form
                     Top =4908
                     Width =1728
                     Height =804
-                    TabIndex =18
+                    TabIndex =17
                     Name ="LatauksetKaikki"
                     Caption ="Korttilatausten kokonaisraportti"
                     OnClick ="[Event Procedure]"
@@ -1214,7 +1214,7 @@ Begin Form
                     Top =4908
                     Width =1560
                     Height =804
-                    TabIndex =16
+                    TabIndex =15
                     Name ="KortinTapahtumat"
                     Caption ="Valitun kortin tapahtumat"
                     OnClick ="[Event Procedure]"
@@ -1244,7 +1244,7 @@ Begin Form
                     Top =5784
                     Width =1728
                     Height =804
-                    TabIndex =21
+                    TabIndex =20
                     Name ="ListaaEdustusj"
                     Caption ="Listaa edustusjäsenet"
                     OnClick ="[Event Procedure]"
@@ -1278,7 +1278,7 @@ Begin Form
                     Top =6660
                     Width =1560
                     Height =804
-                    TabIndex =22
+                    TabIndex =21
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
@@ -1310,7 +1310,7 @@ Begin Form
                     Top =4116
                     Width =1248
                     Height =588
-                    TabIndex =14
+                    TabIndex =13
                     Name ="PaymentMethods"
                     Caption ="Muokkaa maksutapoja"
                     OnClick ="[Event Procedure]"
@@ -1338,7 +1338,7 @@ Begin Form
                     Top =5784
                     Width =1560
                     Height =804
-                    TabIndex =19
+                    TabIndex =18
                     Name ="ListaaKaikkiMaksut"
                     Caption ="Listaa kaikki maksut"
                     OnClick ="[Event Procedure]"
@@ -1401,25 +1401,6 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =2220
-                    Top =6660
-                    Width =1584
-                    Height =804
-                    Name ="TyhjäSolu243"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2220
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =3804
-                    LayoutCachedHeight =7464
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =1
-                    GroupTable =1
-                End
-                Begin EmptyCell
                     Left =5664
                     Top =4908
                     Height =804
@@ -1435,6 +1416,40 @@ Begin Form
                     LayoutGroup =1
                     GroupTable =1
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =2220
+                    Top =6660
+                    Width =1584
+                    Height =804
+                    TabIndex =22
+                    Name ="kortitIlmanOmistajaa"
+                    Caption ="Aktiiviset kortit ilman omistajaa"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =2220
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =3804
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
                 Begin Image
                     PictureType =2
                     Left =566
@@ -1448,7 +1463,7 @@ Begin Form
                     LayoutCachedTop =3921
                     LayoutCachedWidth =9444
                     LayoutCachedHeight =7833
-                    TabIndex =23
+                    TabIndex =24
                 End
             End
         End
@@ -1543,6 +1558,13 @@ Private Sub KortinTapahtumat_Click()
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi kortin " & [Form_Tervetuloa].Korttivalinta.Value & " tapahtumaraportin")
     'MsgBox ("[Aika] Between #" & [Form_Tervetuloa].RaportitAlku.Value & " 00:00:00# AND #" & [Form_Tervetuloa].RaportitLoppu.Value & " 23:59:59#")
     DoCmd.OpenReport "KortinTapahtumat", acViewPreview
+End Sub
+
+Private Sub kortitIlmanOmistajaa_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi aktiiviset kortit ilman omistajaa -raportin")
+    DoCmd.OpenReport "VoimassaolevatIlmanOmistajaa", acViewPreview
+    
 End Sub
 
 Private Sub Korttivalinta_AfterUpdate()
