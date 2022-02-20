@@ -18,8 +18,8 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =10
     Left =4044
-    Top =3456
-    Right =17796
+    Top =3468
+    Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin

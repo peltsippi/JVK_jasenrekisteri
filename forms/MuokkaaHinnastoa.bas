@@ -18,8 +18,8 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =10
     Left =4044
-    Top =3456
-    Right =17796
+    Top =3468
+    Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -208,7 +208,7 @@ Begin Form
                     Enabled = NotDefault
                     Locked = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =87
+                    OverlapFlags =95
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
@@ -232,11 +232,11 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin CommandButton
-                    OverlapFlags =85
+                    OverlapFlags =247
                     Left =7143
-                    Top =1190
+                    Top =398
                     Width =3231
-                    Height =340
+                    Height =1132
                     TabIndex =2
                     ForeColor =4210752
                     Name ="Sulje"
@@ -246,7 +246,7 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7143
-                    LayoutCachedTop =1190
+                    LayoutCachedTop =398
                     LayoutCachedWidth =10374
                     LayoutCachedHeight =1530
                     BackColor =15123357

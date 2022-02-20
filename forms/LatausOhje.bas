@@ -14,7 +14,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =60
     Left =4044
-    Top =3456
+    Top =3468
     Right =17484
     Bottom =11712
     RecSrcDt = Begin

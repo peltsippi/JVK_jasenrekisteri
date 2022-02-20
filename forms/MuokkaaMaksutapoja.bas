@@ -17,7 +17,7 @@ Begin Form
     ItemSuffix =4
     Left =4044
     Top =3468
-    Right =17796
+    Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -271,7 +271,7 @@ Option Compare Database
 Private Sub Close_Click()
     Dim succs
     succs = Common.SaveToLog("Maksutapojen muokkaus lopetettu")
-    succs = Common.SendMessageToMainScreen("Valmis!")
+    succs = Common.SendMessageToMainScreen("Maksutapojen muokkaus valmis!")
     DoCmd.Close
     
 End Sub
