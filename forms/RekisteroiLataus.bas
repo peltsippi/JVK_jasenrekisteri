@@ -1085,6 +1085,7 @@ Begin Form
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
                     GridlineColor =10921638
+                    AllowValueListEdits =0
 
                     LayoutCachedLeft =3932
                     LayoutCachedTop =1071
@@ -1140,6 +1141,7 @@ Begin Form
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
                     GridlineColor =10921638
+                    AllowValueListEdits =0
 
                     LayoutCachedLeft =3968
                     LayoutCachedTop =1756

@@ -15,10 +15,10 @@ Begin Form
     GridY =10
     Width =12018
     DatasheetFontHeight =11
-    ItemSuffix =60
+    ItemSuffix =61
     Left =4044
-    Top =3468
-    Right =17796
+    Top =3456
+    Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -573,6 +573,7 @@ Begin Form
                     GroupTable =1
                     BottomPadding =150
                     GridlineColor =10921638
+                    AllowValueListEdits =0
 
                     LayoutCachedLeft =1692
                     LayoutCachedTop =1464
@@ -593,7 +594,7 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =396
-                    Top =2040
+                    Top =1814
                     Width =1116
                     Height =314
                     BorderColor =8355711
@@ -603,9 +604,9 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
                     LayoutCachedLeft =396
-                    LayoutCachedTop =2040
+                    LayoutCachedTop =1814
                     LayoutCachedWidth =1512
-                    LayoutCachedHeight =2354
+                    LayoutCachedHeight =2128
                     BackThemeColorIndex =-1
                 End
                 Begin TextBox
@@ -785,6 +786,24 @@ Begin Form
                     LayoutCachedWidth =11111
                     LayoutCachedHeight =5555
                     BackThemeColorIndex =-1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =396
+                    Top =2381
+                    Width =1104
+                    Height =972
+                    FontSize =8
+                    BorderColor =8355711
+                    ForeColor =6710886
+                    Name ="Selite60"
+                    Caption ="Voit muokata maksutapoja admin moden kautta!"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =396
+                    LayoutCachedTop =2381
+                    LayoutCachedWidth =1500
+                    LayoutCachedHeight =3353
                 End
             End
         End
