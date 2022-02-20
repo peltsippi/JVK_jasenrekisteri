@@ -15,7 +15,7 @@ Begin Report
     DatasheetFontHeight =11
     ItemSuffix =6
     Left =4044
-    Top =3468
+    Top =3456
     RecSrcDt = Begin
         0xfd53d25a93c8e540
     End
@@ -2766,7 +2766,7 @@ Begin Report
             End
         End
         Begin PageHeader
-            Height =414
+            Height =621
             Name ="SivunYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -2775,10 +2775,11 @@ Begin Report
             Begin
                 Begin Label
                     TextAlign =1
-                    Left =342
+                    Left =340
                     Top =57
                     Width =6528
-                    Height =300
+                    Height =564
+                    FontSize =16
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Kortti_Selite"
@@ -2787,16 +2788,16 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =342
+                    LayoutCachedLeft =340
                     LayoutCachedTop =57
-                    LayoutCachedWidth =6870
-                    LayoutCachedHeight =357
+                    LayoutCachedWidth =6868
+                    LayoutCachedHeight =621
                 End
             End
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =426
+            Height =633
             Name ="Tiedot"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -2806,10 +2807,11 @@ Begin Report
                 Begin TextBox
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Left =342
+                    Left =340
                     Top =57
                     Width =6528
-                    Height =312
+                    Height =576
+                    FontSize =16
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Kortti"
@@ -2818,10 +2820,10 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =342
+                    LayoutCachedLeft =340
                     LayoutCachedTop =57
-                    LayoutCachedWidth =6870
-                    LayoutCachedHeight =369
+                    LayoutCachedWidth =6868
+                    LayoutCachedHeight =633
                 End
             End
         End

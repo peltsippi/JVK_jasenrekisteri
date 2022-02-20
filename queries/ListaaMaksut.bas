@@ -87,8 +87,8 @@ Begin
     Bottom =708
     Left =-1
     Top =-1
-    Right =1147
-    Bottom =318
+    Right =1563
+    Bottom =297
     Left =0
     Top =0
     ColumnsShown =539

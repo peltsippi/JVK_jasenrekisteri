@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =258
+    ItemSuffix =260
     Left =4044
     Top =3468
     Right =17484
@@ -535,24 +535,20 @@ Begin Form
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
-                Begin EmptyCell
-                    Left =3876
-                    Top =6660
-                    Width =1728
-                    Height =804
-                    Name ="TyhjäSolu225"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3876
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =5604
-                    LayoutCachedHeight =7464
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =2
-                    ColumnEnd =2
-                    LayoutGroup =1
-                    GroupTable =1
+                Begin Image
+                    PictureType =2
+                    Left =566
+                    Top =3921
+                    Width =8878
+                    Height =3912
+                    Name ="Bulldog"
+                    Picture ="bulldog_pienempi"
+
+                    LayoutCachedLeft =566
+                    LayoutCachedTop =3921
+                    LayoutCachedWidth =9444
+                    LayoutCachedHeight =7833
+                    TabIndex =25
                 End
                 Begin Rectangle
                     SpecialEffect =0
@@ -894,7 +890,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =564
                     Top =4116
                     Width =1332
@@ -920,7 +916,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =1968
                     Top =4116
                     Width =1212
@@ -949,7 +945,7 @@ Begin Form
                 End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =6897
                     Top =4251
                     Width =1464
@@ -965,7 +961,7 @@ Begin Form
                     LayoutCachedHeight =4724
                 End
                 Begin ToggleButton
-                    OverlapFlags =223
+                    OverlapFlags =247
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =472
@@ -999,7 +995,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =3252
                     Top =4116
                     Width =1236
@@ -1027,7 +1023,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =2220
                     Top =4908
                     Width =1584
@@ -1059,7 +1055,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =2220
                     Top =5784
                     Width =1584
@@ -1093,7 +1089,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin TextBox
-                    OverlapFlags =223
+                    OverlapFlags =247
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
@@ -1119,7 +1115,7 @@ Begin Form
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =93
+                            OverlapFlags =255
                             TextAlign =1
                             Left =6354
                             Top =4889
@@ -1136,7 +1132,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =223
+                    OverlapFlags =247
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -1144,7 +1140,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =23
+                    TabIndex =24
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1161,7 +1157,7 @@ Begin Form
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =93
+                            OverlapFlags =255
                             Left =6307
                             Top =5291
                             Width =1284
@@ -1177,7 +1173,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =3876
                     Top =4908
                     Width =1728
@@ -1209,7 +1205,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =588
                     Top =4908
                     Width =1560
@@ -1239,7 +1235,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =3876
                     Top =5784
                     Width =1728
@@ -1273,7 +1269,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =588
                     Top =6660
                     Width =1560
@@ -1305,7 +1301,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =4560
                     Top =4116
                     Width =1248
@@ -1333,7 +1329,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =588
                     Top =5784
                     Width =1560
@@ -1365,15 +1361,15 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =5664
+                    Left =5676
                     Top =6660
                     Height =804
                     Name ="TyhjäSolu227"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =5664
+                    LayoutCachedLeft =5676
                     LayoutCachedTop =6660
-                    LayoutCachedWidth =7104
+                    LayoutCachedWidth =7116
                     LayoutCachedHeight =7464
                     RowStart =2
                     RowEnd =2
@@ -1383,15 +1379,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =5664
+                    Left =5676
                     Top =5784
                     Height =804
                     Name ="TyhjäSolu241"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =5664
+                    LayoutCachedLeft =5676
                     LayoutCachedTop =5784
-                    LayoutCachedWidth =7104
+                    LayoutCachedWidth =7116
                     LayoutCachedHeight =6588
                     RowStart =1
                     RowEnd =1
@@ -1401,15 +1397,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =5664
+                    Left =5676
                     Top =4908
                     Height =804
                     Name ="TyhjäSolu244"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =5664
+                    LayoutCachedLeft =5676
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =7104
+                    LayoutCachedWidth =7116
                     LayoutCachedHeight =5712
                     ColumnStart =3
                     ColumnEnd =3
@@ -1417,7 +1413,7 @@ Begin Form
                     GroupTable =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =247
                     Left =2220
                     Top =6660
                     Width =1584
@@ -1450,20 +1446,39 @@ Begin Form
                     WebImagePaddingBottom =2
                     Overlaps =1
                 End
-                Begin Image
-                    PictureType =2
-                    Left =566
-                    Top =3921
-                    Width =8878
-                    Height =3912
-                    Name ="Bulldog"
-                    Picture ="bulldog_pienempi"
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =3876
+                    Top =6660
+                    Width =1728
+                    Height =804
+                    TabIndex =23
+                    Name ="maksettuEiLadattu"
+                    Caption ="Tarkasta lataamattomat kortit"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
 
-                    LayoutCachedLeft =566
-                    LayoutCachedTop =3921
-                    LayoutCachedWidth =9444
-                    LayoutCachedHeight =7833
-                    TabIndex =24
+                    LayoutCachedLeft =3876
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
                 End
             End
         End
@@ -1623,16 +1638,23 @@ Private Sub ListaaKaikkiMaksut_Click()
 End Sub
 
 Private Sub Main_jäsenmuokkaus_Click()
-Dim succs
-succs = Common.SaveToLog("Yhteystietojen muokkaushommat aloitettu")
-'DoCmd.OpenForm ("Form_YhteystietojenMuokkaus")
-DoCmd.OpenForm "YhteystietojenMuokkaus"
+    Dim succs
+    succs = Common.SaveToLog("Yhteystietojen muokkaushommat aloitettu")
+    'DoCmd.OpenForm ("Form_YhteystietojenMuokkaus")
+    DoCmd.OpenForm "YhteystietojenMuokkaus"
 
+End Sub
+
+Private Sub maksettuEiLadattu_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen maksetuista mutta ei vielä ladatuista korteista.")
+    DoCmd.OpenReport "MaksettuEiLadattu", acViewPreview
+    
 End Sub
 
 Private Sub MuokkaaLatauksia_Click()
     Dim succs
-    succs = Common.SaveToLog(Puumerkki & " aloitti kortin " & [Form_Tervetuloa].Korttivalinta.Value & " latausten muokkaamisen")
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " aloitti kortin " & [Form_Tervetuloa].Korttivalinta.Value & " latausten muokkaamisen")
     DoCmd.OpenForm "KorjaaKortinLatauksia"
     succs = Common.SendMessageToMainScreen("Kortin " & [Form_Tervetuloa].Korttivalinta.Value & " latausmuokkaus aloitettu")
     
