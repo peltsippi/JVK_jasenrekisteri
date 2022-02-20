@@ -15,29 +15,47 @@
 
 Option Compare Database
 
-Public Function DoBackup()
+Public Function DoBackup(treshold As Integer)
 
     Dim succs
+    
+    Dim okString As String
+    
+    okString = "Varmuuskopio ok!"
 
     'check latest backup
     Dim timeStamp As Date
     Dim queryString As String
-    queryString = "SELECT Max(Aika) AS Viimeisin FROM Historia WHERE Kirjaus Like '*varmuuskopion.'"
+    queryString = "SELECT Max(Aika) AS Viimeisin FROM Historia WHERE Kirjaus Like '" & okString & "'"
     Dim sqlRecords As DAO.Recordset
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     If (sqlRecords.RecordCount = 1) Then
-        timeStamp = sqlRecords.Fields.Item(0).Value
+        If (IsNull(sqlRecords.Fields.Item(0).Value)) Then
+            timeStamp = 0
+        Else
+            timeStamp = sqlRecords.Fields.Item(0).Value
+        End If
     Else
         timeStamp = 0
     End If
     
     Dim difference As Integer 'as days
-    difference = (Year(Now()) - Year(timeStamp)) * 365 + (Month(Now()) - Month(timeStamp)) * 30 + (Day(Now()) - Day(timeStamp))
+    difference = (Year(Now()) - Year(timeStamp))
     
-    If (difference < 14) Then
+    If (difference < 2) Then ' calculate years first just to prevent overflow
+    difference = difference * 365
+    difference = difference + (Month(Now()) - Month(timeStamp)) * 30
+    difference = difference + (Day(Now()) - Day(timeStamp))
+    
+    End If
+    
+    
+    If (difference < treshold) Then
     
         'MsgBox ("Too early, not backing up")
         succs = Common.SendMessageToMainScreen("Varmuuskopio on jo otettu hiljattain!")
+        succs = Common.SaveToLog("Varmuuskopiointi peruutettu. Varmuuskopio otettu " & difference & " päivää sitten, raja: " & treshold)
+        
         Exit Function
     
     End If
@@ -66,7 +84,7 @@ Public Function DoBackup()
     'Opens the folder of the file you just created
     'Application.FollowHyperlink Application.CurrentProject.Path
     'this is just confusing...
-    succs = Common.SaveToLog("Järjestelmä otti varmuuskopion.")
+    succs = Common.SaveToLog(okString)
     succs = Common.SendMessageToMainScreen("Varmuuskopio tehty!")
 
 End Function

@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": null,
-    "ExportDate": "20.2.2022 19.32.43",
+    "ExportDate": "20.2.2022 20.32.34",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -77,10 +77,10 @@
           "FilePropertiesHash": "43a2e64"
         },
         "Tervetuloa.bas": {
-          "Hash": "fe453ee",
-          "ExportDate": "20.2.2022 19.32.42",
-          "SourceModified": "20.2.2022 19.32.42",
-          "FilePropertiesHash": "a5eff1b"
+          "Hash": "9001b40",
+          "ExportDate": "20.2.2022 20.32.33",
+          "SourceModified": "20.2.2022 20.32.33",
+          "FilePropertiesHash": "177769b"
         },
         "YhteystietojenMuokkaus.bas": {
           "Hash": "bb5a47e",
@@ -91,16 +91,16 @@
       },
       "Modules": {
         "Common.bas": {
-          "Hash": "4efc30b",
-          "ExportDate": "20.2.2022 19.32.43",
-          "SourceModified": "20.2.2022 19.32.43",
-          "FilePropertiesHash": "3e7c543"
+          "Hash": "b9d4ed1",
+          "ExportDate": "20.2.2022 20.32.34",
+          "SourceModified": "20.2.2022 20.32.34",
+          "FilePropertiesHash": "a6f9ec8"
         }
       },
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "20.2.2022 19.32.40",
+          "ExportDate": "20.2.2022 20.32.31",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "d8b2ae7"
         }
@@ -152,9 +152,9 @@
           "FilePropertiesHash": "43fdb45"
         },
         "KorttejaVoimassa.bas": {
-          "ExportDate": "20.2.2022 19.32.42",
-          "SourceModified": "20.2.2022 19.32.42",
-          "FilePropertiesHash": "8210bff"
+          "ExportDate": "20.2.2022 20.32.33",
+          "SourceModified": "20.2.2022 20.32.33",
+          "FilePropertiesHash": "9fa4a59"
         },
         "KorttienSaldoKysely.bas": {
           "ExportDate": "20.2.2022 17.54.40",
@@ -187,14 +187,14 @@
           "FilePropertiesHash": "961f333"
         },
         "ListaaKaikkiYhteystiedot.bas": {
-          "ExportDate": "20.2.2022 19.32.42",
-          "SourceModified": "20.2.2022 19.32.42",
-          "FilePropertiesHash": "7659bca"
+          "ExportDate": "20.2.2022 20.32.33",
+          "SourceModified": "20.2.2022 20.32.33",
+          "FilePropertiesHash": "5473801"
         },
         "ListaaKortitJaLataukset.bas": {
-          "ExportDate": "20.2.2022 19.32.42",
-          "SourceModified": "20.2.2022 19.32.42",
-          "FilePropertiesHash": "65bea9a"
+          "ExportDate": "20.2.2022 20.32.33",
+          "SourceModified": "20.2.2022 20.32.33",
+          "FilePropertiesHash": "ff987c9"
         },
         "ListaaMaksut.bas": {
           "ExportDate": "20.2.2022 17.54.40",
@@ -212,9 +212,9 @@
           "FilePropertiesHash": "71d5fc9"
         },
         "ViimeisinVarmuuskopio.bas": {
-          "ExportDate": "20.2.2022 19.32.42",
-          "SourceModified": "20.2.2022 19.32.42",
-          "FilePropertiesHash": "9fba7cc"
+          "ExportDate": "20.2.2022 20.32.33",
+          "SourceModified": "20.2.2022 20.32.33",
+          "FilePropertiesHash": "d6645c7"
         },
         "VoimassaolevatIlmanOmistajaa.bas": {
           "ExportDate": "20.2.2022 17.54.41",
@@ -315,7 +315,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "20.2.2022 19.32.40",
+          "ExportDate": "20.2.2022 20.32.31",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "2e1693d"
         }
@@ -323,7 +323,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "20.2.2022 19.32.40",
+          "ExportDate": "20.2.2022 20.32.31",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "f110692"
         }

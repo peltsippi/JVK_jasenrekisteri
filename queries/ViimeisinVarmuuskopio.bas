@@ -1,5 +1,5 @@
-﻿dbMemo "SQL" ="SELECT Max(Aika) AS Viimeisin\015\012FROM Historia\015\012WHERE Kirjaus LIKE \"*"
-    "varmuuskopion.\";\015\012"
+﻿dbMemo "SQL" ="SELECT Max(Aika) AS Viimeisin\015\012FROM Historia\015\012WHERE Kirjaus LIKE \"V"
+    "armuuskopiointi ok\";\015\012"
 dbMemo "Connect" =""
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"

@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =262
+    ItemSuffix =264
     Left =4044
     Top =3468
     Right =17484
@@ -1542,7 +1542,7 @@ End Sub
 
 Private Sub Form_Close()
     Dim succs
-    succs = Common.DoBackup
+    succs = Common.DoBackup(7)  'do not back up unless latest is over 7 days old!
     succs = Common.SaveToLog("Sovellus suljettu")
 End Sub
 
@@ -1698,7 +1698,7 @@ End Sub
 Private Sub otaVarmuuskopio_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " käski ottaa varmuuskopion.")
-    succs = Common.DoBackup()
+    succs = Common.DoBackup(1)
 End Sub
 
 Private Sub PaymentMethods_Click()
