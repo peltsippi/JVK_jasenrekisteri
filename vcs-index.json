@@ -5,327 +5,389 @@
   },
   "Items": {
     "MergeBuildDate": null,
-    "FullBuildDate": null,
-    "ExportDate": "20.2.2022 20.32.34",
+    "FullBuildDate": "20.2.2022 21.03.11",
+    "ExportDate": "20.2.2022 23.44.13",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
     "Components": {
       "Forms": {
         "KorjaaKortinLatauksia.bas": {
-          "Hash": "9313290",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "adb9149"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "364edd4",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "9313290"
         },
         "KorjaaKortinMaksuja.bas": {
-          "Hash": "d2ef9b2",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "2fc0e49"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "fac5bb1",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "d2ef9b2"
         },
         "LatausListaus.bas": {
-          "ExportDate": "10.2.2022 21.56.12",
-          "SourceModified": "10.2.2022 21.56.12",
-          "FilePropertiesHash": "7ec4551"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "a69ba4f",
+          "ImportDate": "20.2.2022 21.03.09"
         },
         "LatausOhje.bas": {
-          "ExportDate": "20.2.2022 14.21.38",
-          "Hash": "055d455",
-          "SourceModified": "20.2.2022 14.21.38",
-          "FilePropertiesHash": "4ecefe5"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "56c9e24",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "055d455"
         },
         "LisaaKortinLinkitys.bas": {
-          "Hash": "f36a055",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "f6576f8"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "48b4959",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "4624032"
         },
         "MaksuListaus.bas": {
-          "ExportDate": "10.2.2022 21.56.12",
-          "SourceModified": "10.2.2022 21.56.12",
-          "FilePropertiesHash": "7043993"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "0ff0cc9",
+          "ImportDate": "20.2.2022 21.03.09"
         },
         "MuokkaaHinnastoa.bas": {
-          "Hash": "5d6b1b3",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "c2c2e2e"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "2ff99cc",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "5d6b1b3"
         },
         "MuokkaaMaksutapoja.bas": {
-          "ExportDate": "20.2.2022 14.21.38",
-          "Hash": "9cd3da3",
-          "SourceModified": "20.2.2022 14.21.38",
-          "FilePropertiesHash": "3fb7f85"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "ce00820",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "9cd3da3"
         },
         "PoistaKortinLinkitys.bas": {
-          "Hash": "8ffaa7d",
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "56cd4b4"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "2a6bc5c",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "0327df6"
         },
         "RekisteroiLataus.bas": {
-          "Hash": "e3b05bf",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "fd018ea"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "278569b",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "e3b05bf"
         },
         "RekisteroiMaksu.bas": {
-          "Hash": "0a87d2b",
-          "ExportDate": "20.2.2022 19.32.43",
-          "SourceModified": "20.2.2022 19.32.43",
-          "FilePropertiesHash": "43a2e64"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "14e201b",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "443fd93"
         },
         "Tervetuloa.bas": {
-          "Hash": "9001b40",
-          "ExportDate": "20.2.2022 20.32.33",
-          "SourceModified": "20.2.2022 20.32.33",
-          "FilePropertiesHash": "177769b"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "c3755b4",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "2a886fe"
         },
         "YhteystietojenMuokkaus.bas": {
-          "Hash": "bb5a47e",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "5805062"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "eac2452",
+          "ImportDate": "20.2.2022 21.03.09",
+          "Hash": "fae8233"
         }
       },
       "Modules": {
         "Common.bas": {
-          "Hash": "b9d4ed1",
-          "ExportDate": "20.2.2022 20.32.34",
-          "SourceModified": "20.2.2022 20.32.34",
-          "FilePropertiesHash": "a6f9ec8"
+          "Hash": "55da9bc",
+          "ExportDate": "20.2.2022 23.44.13",
+          "SourceModified": "20.2.2022 23.44.13",
+          "FilePropertiesHash": "271bc75",
+          "ImportDate": "20.2.2022 21.03.09"
         }
       },
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "20.2.2022 20.32.31",
+          "ExportDate": "20.2.2022 23.44.07",
           "SourceModified": "9.2.2022 11.50.03",
-          "FilePropertiesHash": "d8b2ae7"
+          "FilePropertiesHash": "d8b2ae7",
+          "ImportDate": "20.2.2022 21.03.04"
         }
       },
       "Queries": {
         "Hae nimi.bas": {
-          "ExportDate": "20.2.2022 14.21.36",
-          "SourceModified": "20.2.2022 14.21.36",
-          "FilePropertiesHash": "e6065d4"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "b018ee2",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Hae yhteystiedon kortit.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "42f2939"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "d134b5a",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "HaeHinta.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "8bbdc58"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "84856bd",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "HaeIlmaiseksiLadattavat.bas": {
-          "ExportDate": "20.2.2022 17.54.40",
-          "SourceModified": "20.2.2022 17.54.40",
-          "FilePropertiesHash": "39a4da8"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "7d4829f",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "HaeMaksutavat.bas": {
-          "ExportDate": "20.2.2022 14.21.36",
-          "SourceModified": "20.2.2022 14.21.36",
-          "FilePropertiesHash": "12742b4"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "14db887",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "HistoriaListaus.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "4c1b4de"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "b12e1bc",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "KaikkiLatauksetKorttinumerolla.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "55036b4"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "9e317fa",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "KaikkiMaksutKorttinumerolla.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "118c082"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "8abad00",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "KortinTapahtumat.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "43fdb45"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "7538f99",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "KorttejaVoimassa.bas": {
-          "ExportDate": "20.2.2022 20.32.33",
-          "SourceModified": "20.2.2022 20.32.33",
-          "FilePropertiesHash": "9fa4a59"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "5552298",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "KorttienSaldoKysely.bas": {
-          "ExportDate": "20.2.2022 17.54.40",
-          "SourceModified": "20.2.2022 17.54.40",
-          "FilePropertiesHash": "abc8f61"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "f14f1e2",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Korttilistaus.bas": {
-          "ExportDate": "20.2.2022 14.13.47",
-          "SourceModified": "20.2.2022 14.13.47",
-          "FilePropertiesHash": "27f4546"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "5ca9740",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "KrtKorttejaVoimassa.bas": {
-          "ExportDate": "10.2.2022 22.55.34",
-          "SourceModified": "10.2.2022 22.55.34",
-          "FilePropertiesHash": "202da77"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "8cfd5c9",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "LatauksetKaikki.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "adf7303"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "e2b4096",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "LatausListaus.bas": {
-          "ExportDate": "20.2.2022 14.21.36",
-          "SourceModified": "20.2.2022 14.21.36",
-          "FilePropertiesHash": "ed1b968"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "afe0078",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaEdustusjasenet.bas": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "961f333"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "696a746",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaKaikkiYhteystiedot.bas": {
-          "ExportDate": "20.2.2022 20.32.33",
-          "SourceModified": "20.2.2022 20.32.33",
-          "FilePropertiesHash": "5473801"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "d751784",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaKortitJaLataukset.bas": {
-          "ExportDate": "20.2.2022 20.32.33",
-          "SourceModified": "20.2.2022 20.32.33",
-          "FilePropertiesHash": "ff987c9"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "2585359",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaMaksut.bas": {
-          "ExportDate": "20.2.2022 17.54.40",
-          "SourceModified": "20.2.2022 17.54.40",
-          "FilePropertiesHash": "9fe1704"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "6d813c2",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "MaksettuEiLadattu.bas": {
-          "ExportDate": "20.2.2022 17.54.41",
-          "SourceModified": "20.2.2022 17.54.41",
-          "FilePropertiesHash": "9fb1339"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "e189b05",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "MaksuListaus.bas": {
-          "ExportDate": "20.2.2022 17.54.41",
-          "SourceModified": "20.2.2022 17.54.41",
-          "FilePropertiesHash": "71d5fc9"
+          "ExportDate": "20.2.2022 23.44.10",
+          "SourceModified": "20.2.2022 23.44.10",
+          "FilePropertiesHash": "7ba1850",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "ViimeisinVarmuuskopio.bas": {
-          "ExportDate": "20.2.2022 20.32.33",
-          "SourceModified": "20.2.2022 20.32.33",
-          "FilePropertiesHash": "d6645c7"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "50fcf6a",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "VoimassaolevatIlmanOmistajaa.bas": {
-          "ExportDate": "20.2.2022 17.54.41",
-          "SourceModified": "20.2.2022 17.54.41",
-          "FilePropertiesHash": "f4876ca"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "2e6e848",
+          "ImportDate": "20.2.2022 21.03.06"
         },
         "YhteystiedonLatauksetJaMaksut.bas": {
-          "ExportDate": "9.2.2022 11.50.09",
-          "SourceModified": "9.2.2022 11.50.09",
-          "FilePropertiesHash": "0f41b5f"
+          "ExportDate": "20.2.2022 23.44.11",
+          "SourceModified": "20.2.2022 23.44.11",
+          "FilePropertiesHash": "fdd991a",
+          "ImportDate": "20.2.2022 21.03.06"
         }
       },
       "Reports": {
         "HaeIlmaiseksiLadattavat.bas": {
-          "ExportDate": "20.2.2022 17.54.44",
-          "SourceModified": "20.2.2022 17.54.44",
-          "FilePropertiesHash": "4d2c94b"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "ffa2ee8",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "HistoriaListaus.bas": {
-          "ExportDate": "9.2.2022 11.50.12",
-          "SourceModified": "9.2.2022 11.50.12",
-          "FilePropertiesHash": "2586717"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "9b7df1c",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "KortinTapahtumat.bas": {
-          "ExportDate": "9.2.2022 11.50.12",
-          "SourceModified": "9.2.2022 11.50.12",
-          "FilePropertiesHash": "96ab8db"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "4775bf9",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "KortitMaksamatta.bas": {
-          "ExportDate": "9.2.2022 11.50.12",
-          "SourceModified": "9.2.2022 11.50.12",
-          "FilePropertiesHash": "8a356a0"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "3590ab5",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "LatauksetKaikki.bas": {
           "Hash": "4f07f79",
-          "ExportDate": "9.2.2022 11.50.12",
-          "SourceModified": "9.2.2022 11.50.12",
-          "FilePropertiesHash": "9f014d2"
+          "ExportDate": "20.2.2022 23.44.13",
+          "SourceModified": "20.2.2022 23.44.13",
+          "FilePropertiesHash": "ad3b1cc",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "ListaaEdustusjasenet.bas": {
-          "ExportDate": "9.2.2022 11.50.12",
-          "SourceModified": "9.2.2022 11.50.12",
-          "FilePropertiesHash": "b35efe0"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "c855a4a",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "ListaaMaksut.bas": {
-          "ExportDate": "10.2.2022 23.10.41",
-          "SourceModified": "10.2.2022 23.10.41",
-          "FilePropertiesHash": "bbac5bb"
+          "ExportDate": "20.2.2022 23.44.13",
+          "SourceModified": "20.2.2022 23.44.13",
+          "FilePropertiesHash": "efd5b58",
+          "ImportDate": "20.2.2022 21.03.08"
         },
         "MaksettuEiLadattu.bas": {
-          "ExportDate": "20.2.2022 17.54.43",
-          "SourceModified": "20.2.2022 17.54.43",
-          "FilePropertiesHash": "c0bc9bb"
+          "ExportDate": "20.2.2022 23.44.12",
+          "SourceModified": "20.2.2022 23.44.12",
+          "FilePropertiesHash": "95a78aa",
+          "ImportDate": "20.2.2022 21.03.09"
         },
         "VoimassaolevatIlmanOmistajaa.bas": {
-          "ExportDate": "20.2.2022 17.54.44",
-          "SourceModified": "20.2.2022 17.54.44",
-          "FilePropertiesHash": "7191558"
+          "ExportDate": "20.2.2022 23.44.13",
+          "SourceModified": "20.2.2022 23.44.13",
+          "FilePropertiesHash": "239929b",
+          "ImportDate": "20.2.2022 21.03.09"
         }
       },
       "Tables": {
         "Hinnasto.xml": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "17f8a7c"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "25c5331",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Historia.xml": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "5121baa"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "5d7a802",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Kortit.xml": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "fda2bcf"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "5bfbdc4",
+          "ImportDate": "20.2.2022 21.03.05"
+        },
+        "Korttitilasto.xml": {
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "73cbcd5"
         },
         "Lataukset.xml": {
-          "ExportDate": "9.2.2022 11.50.08",
-          "SourceModified": "9.2.2022 11.50.08",
-          "FilePropertiesHash": "1b3b725"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "fc64cec",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Maksut.xml": {
-          "ExportDate": "10.2.2022 21.28.33",
-          "SourceModified": "10.2.2022 21.28.33",
-          "FilePropertiesHash": "0978a0c"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "eaee987",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Maksutavat.xml": {
-          "ExportDate": "10.2.2022 21.28.33",
-          "SourceModified": "10.2.2022 21.28.33",
-          "FilePropertiesHash": "6b7b281"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "8d0b0f4",
+          "ImportDate": "20.2.2022 21.03.05"
         },
         "Yhteystiedot.xml": {
-          "ExportDate": "12.2.2022 16.15.59",
-          "SourceModified": "12.2.2022 16.15.59",
-          "FilePropertiesHash": "d34379f"
+          "ExportDate": "20.2.2022 23.44.09",
+          "SourceModified": "20.2.2022 23.44.09",
+          "FilePropertiesHash": "e4a0d2e",
+          "ImportDate": "20.2.2022 21.03.05"
         }
       },
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "20.2.2022 20.32.31",
+          "ExportDate": "20.2.2022 23.44.07",
           "SourceModified": "9.2.2022 11.50.03",
-          "FilePropertiesHash": "2e1693d"
+          "FilePropertiesHash": "2e1693d",
+          "ImportDate": "20.2.2022 21.03.04"
         }
       },
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "20.2.2022 20.32.31",
+          "ExportDate": "20.2.2022 23.44.07",
           "SourceModified": "9.2.2022 11.50.03",
-          "FilePropertiesHash": "f110692"
+          "FilePropertiesHash": "f110692",
+          "ImportDate": "20.2.2022 21.03.04"
         }
       }
     }

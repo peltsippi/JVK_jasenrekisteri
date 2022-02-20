@@ -15,6 +15,41 @@
 
 Option Compare Database
 
+Public Function WriteStats()
+    Dim succs
+    Dim arvoParit As String
+    Dim kkKortti As Integer
+    Dim opiskKortti As Integer
+    Dim kertaKortti As Integer
+    Dim apKortti As Integer
+    Dim muuKortti As Integer
+    Dim korttejaYht As Integer
+    
+    kkKortti = [Form_Tervetuloa].kortitKK.Value
+    opiskKortti = [Form_Tervetuloa].kortitOpisk.Value
+    kertaKortti = [Form_Tervetuloa].kortitKrt.Value
+    apKortti = [Form_Tervetuloa].kortitAP.Value
+    muuKortti = [Form_Tervetuloa].kortitMuu.Value
+    korttejaYht = [Form_Tervetuloa].kortitKaikki.Value
+    
+    arvoParit = "Kaikki = " & korttejaYht & " , " _
+    & "KkKortit = " & kkKortti & " , " _
+    & "ApKortit = " & apKortti & " , " _
+    & "KrtKortit = " & kertaKortti & " , " _
+    & "OpiskKortit = " & opiskKortti & " , " _
+    & "MuuKortit = " & muuKortti & " , " _
+    & "PVM = '" & Now() & "'"
+    
+    'MsgBox (arvoParit)
+    
+'    Readme: use always [[ key = value, key = value, key = value ]] syntax!
+'   This shit takes care of the rest!
+    Common.InsertOrUpdate "Korttitilasto", arvoParit, ""
+    
+        
+End Function
+
+
 Public Function DoBackup(treshold As Integer)
 
     Dim succs
@@ -174,6 +209,7 @@ End Function
 Public Function InsertOrUpdate(table As String, values As String, Target As String) As Boolean
 
 '   Readme: use always [[ key = value, key = value, key = value ]] syntax!
+'   note: spaces are extremely important!
 '   This shit takes care of the rest!
 
 
@@ -220,6 +256,7 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         first = True
         
         For Each row In array1
+            'MsgBox (row)
         
             array2 = Split(row, " = ") 'split value pair and put it to 2 different parts
             If (first) Then

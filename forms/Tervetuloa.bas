@@ -18,7 +18,7 @@ Begin Form
     Width =9826
     DatasheetFontHeight =11
     ItemSuffix =264
-    Left =4044
+    Left =2580
     Top =3468
     Right =17484
     Bottom =11712
@@ -982,7 +982,6 @@ Begin Form
                     HoverColor =15652797
                     PressedColor =11957550
                     HoverForeColor =4210752
-                    PressedForeColor =16777215
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =2
                     WebImagePaddingRight =3
@@ -1543,6 +1542,7 @@ End Sub
 Private Sub Form_Close()
     Dim succs
     succs = Common.DoBackup(7)  'do not back up unless latest is over 7 days old!
+    succs = Common.WriteStats 'write stats to own table
     succs = Common.SaveToLog("Sovellus suljettu")
 End Sub
 

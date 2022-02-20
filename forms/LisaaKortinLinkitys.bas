@@ -534,11 +534,11 @@ Private Sub Linkita_Click()
         userNumber = Form_Tervetuloa.Yhteystietovalinta.Value
     End If
     
-    If IsNull([Form_LisaaKortinLinkitys].korttinro) Then
+    If IsNull([Form_LisaaKortinLinkitys].Korttinro) Then
         MsgBox ("Korttinumeroa ei annettu, yritä uudestaan!")
         Exit Sub
     Else
-        kortinNro = [Form_LisaaKortinLinkitys].korttinro.Value
+        kortinNro = [Form_LisaaKortinLinkitys].Korttinro.Value
     '    MsgBox (kortinNro)
     End If
     

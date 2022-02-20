@@ -3083,8 +3083,7 @@ Begin Report
                     ChartTitle ="Myynti korttityypeittäin [€]"
                     TabIndex =4
                     ChartAxisData = Begin
-                        0x01000000240000000e0000005b004b006f007200740074006900740079007900 ,
-                        0x7000700069005d0000000000
+                        0x01000000080000000000000003000000
                     End
                     ChartLegendData = Begin
                         0x0100000049000000060000004d00790079006e007400690000000000005b9bd5 ,
@@ -3092,7 +3091,7 @@ Begin Report
                         0x0079006e00740069000100000000000000
                     End
                     ChartValueData = Begin
-                        0x0100000018000000080000005b004d00790079006e00740069005d0000000000
+                        0x01000000080000000000000000000000
                     End
                     PrimaryValuesAxisFontColor =8355711
                     SecondaryValuesAxisFontColor =8355711

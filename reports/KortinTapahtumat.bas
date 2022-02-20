@@ -3072,7 +3072,7 @@ Begin Report
                     ChartTitle ="Tavoitteena 0"
                     CategoryAxisTitle ="PVM"
                     ChartAxisData = Begin
-                        0x0100000012000000050000005b00500056004d005d0000000000
+                        0x01000000080000000000000003000000
                     End
                     ChartLegendData = Begin
                         0x010000004d00000007000000420061006c0061006e006300650000000000015b ,
@@ -3080,8 +3080,7 @@ Begin Report
                         0x0061006c0061006e00630065000200000000000000
                     End
                     ChartValueData = Begin
-                        0x010000001a000000090000005b00420061006c0061006e00630065005d000000 ,
-                        0x0000
+                        0x01000000080000000000000000000000
                     End
                     PrimaryValuesAxisMinimum =-350.0
                     PrimaryValuesAxisMaximum =350.0

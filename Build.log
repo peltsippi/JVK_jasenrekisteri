@@ -1,0 +1,212 @@
+﻿-------------------------------------
+Beginning Build from Source
+JVK_jasenrekisteri.accdb
+VCS Version 3.4.20
+20.2.2022 21.03.03
+-------------------------------------
+Saving backup of original database...
+Saved as JVK_jasenrekisteri_VCSBackup.accdb.
+Created blank database for import. (v12)
+Removing non built-in references...
+  Removed DAO
+  Removed stdole
+-------------------------------------
+-------------------------------------
+Importing project...          
+  project.json
+[1]
+-------------------------------------
+Importing vb project...       
+  vbe-project.json
+[1]
+-------------------------------------
+Importing vbe references...   
+  vbe-references.json
+[1]
+-------------------------------------
+No vbe forms source files found.
+-------------------------------------
+No proj properties source files found.
+-------------------------------------
+No saved specs source files found.
+-------------------------------------
+Importing db properties...    
+  dbs-properties.json
+[1]
+-------------------------------------
+Importing shared images...    
+  bulldog_pienempi.json
+  JVK_jasenrekisteri_img.json
+  OutlookSearchMagnifyingGlassHS.json
+  punttilogo_pieni_invert.json
+[4]
+-------------------------------------
+Importing themes...           
+  Office Theme
+[1]
+-------------------------------------
+No imex specs source files found.
+-------------------------------------
+Importing tables...           
+  Hinnasto.xml
+  Historia.xml
+  Kortit.xml
+  Lataukset.xml
+  Maksut.xml
+  Maksutavat.xml
+  Yhteystiedot.xml
+[7]
+-------------------------------------
+Importing queries...          
+  Hae nimi.bas
+  Hae yhteystiedon kortit.bas
+  HaeHinta.bas
+  HaeIlmaiseksiLadattavat.bas
+  HaeMaksutavat.bas
+  HistoriaListaus.bas
+  KaikkiLatauksetKorttinumerolla.bas
+  KaikkiMaksutKorttinumerolla.bas
+  KortinTapahtumat.bas
+  KorttejaVoimassa.bas
+  KorttienSaldoKysely.bas
+  Korttilistaus.bas
+  KrtKorttejaVoimassa.bas
+  LatauksetKaikki.bas
+  LatausListaus.bas
+  ListaaEdustusjasenet.bas
+  ListaaKaikkiYhteystiedot.bas
+  ListaaKortitJaLataukset.bas
+  ListaaMaksut.bas
+  MaksettuEiLadattu.bas
+  MaksuListaus.bas
+  ViimeisinVarmuuskopio.bas
+  VoimassaolevatIlmanOmistajaa.bas
+  YhteystiedonLatauksetJaMaksut.bas
+[24]
+-------------------------------------
+Importing forms...            
+  KorjaaKortinLatauksia.bas
+  KorjaaKortinMaksuja.bas
+  LatausListaus.bas
+  LatausOhje.bas
+  LisaaKortinLinkitys.bas
+  MaksuListaus.bas
+  MuokkaaHinnastoa.bas
+  MuokkaaMaksutapoja.bas
+  PoistaKortinLinkitys.bas
+  RekisteroiLataus.bas
+  RekisteroiMaksu.bas
+  Tervetuloa.bas
+  YhteystietojenMuokkaus.bas
+[13]
+-------------------------------------
+No macros source files found.
+-------------------------------------
+Importing reports...          
+  HaeIlmaiseksiLadattavat.bas
+  HistoriaListaus.bas
+  KortinTapahtumat.bas
+  KortitMaksamatta.bas
+  LatauksetKaikki.bas
+  ListaaEdustusjasenet.bas
+  ListaaMaksut.bas
+  MaksettuEiLadattu.bas
+  VoimassaolevatIlmanOmistajaa.bas
+[9]
+-------------------------------------
+Importing table data...       
+  Hinnasto.xml
+[1]
+-------------------------------------
+Importing modules...          
+  Common.bas
+[1]
+-------------------------------------
+No table data macros source files found.
+-------------------------------------
+Importing relations...        
+  KortitLataukset.json
+  KortitMaksut.json
+  YhteystiedotKortit.json
+[3]
+-------------------------------------
+Importing doc properties...   
+  documents.json
+[1]
+-------------------------------------
+Importing nav pane groups...  
+  nav-pane-groups.json
+[1]
+-------------------------------------
+Importing hidden attributes...
+  hidden-attributes.json
+
+-------------------------------------
+ERROR: Error setting hidden attribute for ~TMPCLP135931
+-------------------------------------
+Error 2950: Varattu virhe Source: clsDbHiddenAttribute
+
+-------------------------------------
+ERROR: Error setting hidden attribute for ~TMPCLP4521
+-------------------------------------
+Error 2950: Varattu virhe Source: clsDbHiddenAttribute
+[1]
+Initializing forms...
+-------------------------------------
+Done. (6,02 seconds)
+
+--------------------------------------------------
+                PERFORMANCE REPORTS
+--------------------------------------------------
+Object Type                   Count     Seconds
+--------------------------------------------------
+Project                       1         0,04
+VB Project                    1         0,02
+VBE References                1         0,02
+DB Properties                 1         0,07
+Shared Images                 4         0,05
+Themes                        1         0,70
+Tables                        7         0,37
+Queries                       24        0,63
+Forms                         13        1,51
+Reports                       9         1,32
+Table Data                    1         0,03
+Modules                       1         0,05
+Relations                     3         0,02
+Doc Properties                1         0,01
+Nav Pane Groups               1         0,02
+Hidden Attributes             1         0,01
+--------------------------------------------------
+TOTALS:                       70        4,83
+--------------------------------------------------
+
+--------------------------------------------------
+Operations                    Count     Seconds
+--------------------------------------------------
+Console Updates               6         0,15
+Create new database           1         0,29
+Read File                     37        0,21
+Parse JSON                    26        0,04
+Clear References              1         0,01
+Convert to JSON               20        0,02
+Compute SHA256                86        0,01
+Get Modified Date             70        0,03
+Get File Property Hash        70        0,06
+Add GUID References           2         0,00
+Verify Path                   104       0,02
+Delete File                   105       0,06
+App.SaveAsText()              1         0,00
+Read File Bytes               47        0,41
+Enc. utf-8 as utf-16          46        0,09
+App.LoadFromText()            46        1,82
+Increment Progress            3         0,05
+Get VBA Hash                  23        0,02
+Write File                    11        0,02
+Parse VBA Module              1         0,00
+Import VBE Module             1         0,02
+Initialize Forms              13        0,35
+--------------------------------------------------
+Other Operations                        2,33
+--------------------------------------------------
+
+

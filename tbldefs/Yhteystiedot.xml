@@ -40,7 +40,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="960"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="WSSFieldID" type="10" value="ID"/>
 							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
@@ -61,7 +61,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="2"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="1"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
@@ -86,7 +86,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="3"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="1"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
@@ -111,7 +111,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="2400"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="4"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -143,7 +143,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="5"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -175,7 +175,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="6"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -207,7 +207,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="7"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="1"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
@@ -245,7 +245,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="8"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Description" type="10" value="Sekalaiset muistiinpanot"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
@@ -272,7 +272,7 @@
 						<xsd:appinfo>
 							<od:fieldProperty name="DisplayControl" type="3" value="106"/>
 							<od:fieldProperty name="ColumnWidth" type="3" value="1872"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="9"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Format" type="10" value="Yes/No"/>
 							<od:fieldProperty name="DefaultValue" type="12" value="No"/>
@@ -280,6 +280,7 @@
 							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
 							<od:fieldProperty name="ResultType" type="2" value="0"/>
 							<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+							<od:fieldProperty name="Required" type="1" value="1"/>
 						</xsd:appinfo>
 					</xsd:annotation>
 				</xsd:element>
