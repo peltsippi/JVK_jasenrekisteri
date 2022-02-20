@@ -1542,6 +1542,7 @@ End Sub
 
 Private Sub Form_Close()
     Dim succs
+    succs = Common.DoBackup
     succs = Common.SaveToLog("Sovellus suljettu")
 End Sub
 
@@ -1693,23 +1694,10 @@ Private Sub MuokkaaMaksuja_Click()
     
 End Sub
 
-Private Sub paivitaStatsit_Click()
-    '[Form_Tervetuloa].Requery
-    'Common.EnableDisableButtons
-    
-    '[Form_Tervetuloa].kortitKaikki.Requery
-    '[Form_Tervetuloa].kortitKK.Requery
-    '[Form_Tervetuloa].kortitAP.Requery
-    '[Form_Tervetuloa].kortitKrt.Requery
-    '[Form_Tervetuloa].kortitOpisk.Requery
-    '[Form_Tervetuloa].kortitMuu.Requery
-    
-End Sub
 
 Private Sub otaVarmuuskopio_Click()
     Dim succs
-    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " otti varmuuskopion.")
-    succs = Common.SendMessageToMainScreen("Varmuuskopio tehty!")
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " käski ottaa varmuuskopion.")
     succs = Common.DoBackup()
 End Sub
 

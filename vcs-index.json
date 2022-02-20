@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": null,
-    "ExportDate": "20.2.2022 18.07.55",
+    "ExportDate": "20.2.2022 19.32.43",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -71,16 +71,16 @@
           "FilePropertiesHash": "fd018ea"
         },
         "RekisteroiMaksu.bas": {
-          "Hash": "1a990e4",
-          "ExportDate": "20.2.2022 14.21.37",
-          "SourceModified": "20.2.2022 14.21.37",
-          "FilePropertiesHash": "9b8f825"
+          "Hash": "0a87d2b",
+          "ExportDate": "20.2.2022 19.32.43",
+          "SourceModified": "20.2.2022 19.32.43",
+          "FilePropertiesHash": "43a2e64"
         },
         "Tervetuloa.bas": {
-          "Hash": "839d1b6",
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "c48dc75"
+          "Hash": "fe453ee",
+          "ExportDate": "20.2.2022 19.32.42",
+          "SourceModified": "20.2.2022 19.32.42",
+          "FilePropertiesHash": "a5eff1b"
         },
         "YhteystietojenMuokkaus.bas": {
           "Hash": "bb5a47e",
@@ -91,16 +91,16 @@
       },
       "Modules": {
         "Common.bas": {
-          "Hash": "43f6871",
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "0c91713"
+          "Hash": "4efc30b",
+          "ExportDate": "20.2.2022 19.32.43",
+          "SourceModified": "20.2.2022 19.32.43",
+          "FilePropertiesHash": "3e7c543"
         }
       },
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "20.2.2022 18.07.52",
+          "ExportDate": "20.2.2022 19.32.40",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "d8b2ae7"
         }
@@ -152,9 +152,9 @@
           "FilePropertiesHash": "43fdb45"
         },
         "KorttejaVoimassa.bas": {
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "c2d482e"
+          "ExportDate": "20.2.2022 19.32.42",
+          "SourceModified": "20.2.2022 19.32.42",
+          "FilePropertiesHash": "8210bff"
         },
         "KorttienSaldoKysely.bas": {
           "ExportDate": "20.2.2022 17.54.40",
@@ -187,14 +187,14 @@
           "FilePropertiesHash": "961f333"
         },
         "ListaaKaikkiYhteystiedot.bas": {
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "239f81d"
+          "ExportDate": "20.2.2022 19.32.42",
+          "SourceModified": "20.2.2022 19.32.42",
+          "FilePropertiesHash": "7659bca"
         },
         "ListaaKortitJaLataukset.bas": {
-          "ExportDate": "20.2.2022 18.07.54",
-          "SourceModified": "20.2.2022 18.07.54",
-          "FilePropertiesHash": "b5b7e9f"
+          "ExportDate": "20.2.2022 19.32.42",
+          "SourceModified": "20.2.2022 19.32.42",
+          "FilePropertiesHash": "65bea9a"
         },
         "ListaaMaksut.bas": {
           "ExportDate": "20.2.2022 17.54.40",
@@ -210,6 +210,11 @@
           "ExportDate": "20.2.2022 17.54.41",
           "SourceModified": "20.2.2022 17.54.41",
           "FilePropertiesHash": "71d5fc9"
+        },
+        "ViimeisinVarmuuskopio.bas": {
+          "ExportDate": "20.2.2022 19.32.42",
+          "SourceModified": "20.2.2022 19.32.42",
+          "FilePropertiesHash": "9fba7cc"
         },
         "VoimassaolevatIlmanOmistajaa.bas": {
           "ExportDate": "20.2.2022 17.54.41",
@@ -310,7 +315,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "20.2.2022 18.07.52",
+          "ExportDate": "20.2.2022 19.32.40",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "2e1693d"
         }
@@ -318,7 +323,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "20.2.2022 18.07.52",
+          "ExportDate": "20.2.2022 19.32.40",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "f110692"
         }

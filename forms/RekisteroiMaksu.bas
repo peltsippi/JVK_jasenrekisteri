@@ -894,20 +894,20 @@ Private Sub Tallenna_Click()
     End If
     
     'Form query
-    Dim querystring As String
+    Dim queryString As String
     
     Dim cardID As Integer
     
     cardID = Common.FetchCardID(card)
     
-    querystring = " Puumerkki = '" & Puumerkki & "' , " _
+    queryString = " Puumerkki = '" & Puumerkki & "' , " _
     & " Kortti = " & cardID & " , " _
     & " Summa = " & payment & " , " _
     & " Maksutapa = '" & method & "' , " _
     & " PVM = '" & dateStamp & "' "
     
     Dim success As Boolean
-    success = Common.InsertOrUpdate("Maksut", querystring, "")
+    success = Common.InsertOrUpdate("Maksut", queryString, "")
     
     Common.SaveToLog (Puumerkki & " päivitti maksun kortille " & card & ", maksutapa: " & method & " ja summa: " & payment)
     

@@ -17,6 +17,32 @@ Option Compare Database
 
 Public Function DoBackup()
 
+    Dim succs
+
+    'check latest backup
+    Dim timeStamp As Date
+    Dim queryString As String
+    queryString = "SELECT Max(Aika) AS Viimeisin FROM Historia WHERE Kirjaus Like '*varmuuskopion.'"
+    Dim sqlRecords As DAO.Recordset
+    Set sqlRecords = CurrentDb.OpenRecordset(queryString)
+    If (sqlRecords.RecordCount = 1) Then
+        timeStamp = sqlRecords.Fields.Item(0).Value
+    Else
+        timeStamp = 0
+    End If
+    
+    Dim difference As Integer 'as days
+    difference = (Year(Now()) - Year(timeStamp)) * 365 + (Month(Now()) - Month(timeStamp)) * 30 + (Day(Now()) - Day(timeStamp))
+    
+    If (difference < 14) Then
+    
+        'MsgBox ("Too early, not backing up")
+        succs = Common.SendMessageToMainScreen("Varmuuskopio on jo otettu hiljattain!")
+        Exit Function
+    
+    End If
+    
+    
 
 'thank you http://justin-hampton.com/microsoft-office-tips/access-tips/automate-backing-database-vba/
     Dim Source As String
@@ -38,7 +64,10 @@ Public Function DoBackup()
     Set objFSO = Nothing
     
     'Opens the folder of the file you just created
-    Application.FollowHyperlink Application.CurrentProject.Path
+    'Application.FollowHyperlink Application.CurrentProject.Path
+    'this is just confusing...
+    succs = Common.SaveToLog("Järjestelmä otti varmuuskopion.")
+    succs = Common.SendMessageToMainScreen("Varmuuskopio tehty!")
 
 End Function
 
@@ -50,9 +79,10 @@ Public Function SendMessageToMainScreen(message As String)
 End Function
 
 Public Function FetchCardID(cardnumber As String) As Integer
-    Dim querystring As String
-    querystring = "SELECT CID FROM Kortit WHERE Kortti = '" & cardnumber & "'"
-    Set sqlRecords = CurrentDb.OpenRecordset(querystring)
+    Dim queryString As String
+    Dim sqlRecords As DAO.Recordset
+    queryString = "SELECT CID FROM Kortit WHERE Kortti = '" & cardnumber & "'"
+    Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     If (sqlRecords.RecordCount = 1) Then
         FetchCardID = sqlRecords.Fields.Item(0).Value
     Else
@@ -62,11 +92,11 @@ End Function
 
 
 Public Function FetchGeneralID(table As String, desiredID As String, criteria As String) As Integer
-    Dim querystring As String
+    Dim queryString As String
     Dim sqlRecords As DAO.Recordset
     
-    querystring = "SELECT " & desiredID & " FROM " & table & " WHERE " & criteria
-    Set sqlRecords = CurrentDb.OpenRecordset(querystring)
+    queryString = "SELECT " & desiredID & " FROM " & table & " WHERE " & criteria
+    Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     
     If (sqlRecords.RecordCount = 1) Then
         'MsgBox (sqlRecords.Fields.Item(0).Value)
@@ -83,11 +113,11 @@ Public Function FetchGeneralID(table As String, desiredID As String, criteria As
 End Function
 
 Public Function CheckIfRecordFound(table As String, criteria As String) As Integer
-    Dim querystring As String
-    querystring = "SELECT * FROM " & table & " WHERE " & criteria
+    Dim queryString As String
+    queryString = "SELECT * FROM " & table & " WHERE " & criteria
     
     Dim sqlRecords As DAO.Recordset
-    Set sqlRecords = CurrentDb.OpenRecordset(querystring)
+    Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     
     CheckIfRecordFound = sqlRecords.RecordCount
     
@@ -110,16 +140,16 @@ Public Function SQLQuery(query As String) 'popup only when errors
 End Function
 
 Public Function SaveToLog(message As String)
-    Dim querystring As String
+    Dim queryString As String
 
-    querystring = "INSERT INTO Historia " _
+    queryString = "INSERT INTO Historia " _
         & "(Aika, Kirjaus) " _
         & "VALUES ('" _
         & Now() & "', '" & message & "')"
     
     'MsgBox (querystring)
     Dim success As Integer
-    success = Common.SQLQuery(querystring)
+    success = Common.SQLQuery(queryString)
 
 End Function
 
@@ -135,7 +165,7 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
     toInsert = False ' prefer update
     success = True  '   success unless there is some edge cases later on
     
-    Dim querystring As String
+    Dim queryString As String
     
     'if target not defined : insert
     If (Target = Null) Or (Target = "") Then
@@ -191,16 +221,16 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         part2 = part2 & " ) "
         insertValues = part1 & part2
         
-        querystring = "INSERT INTO " & table & insertValues
+        queryString = "INSERT INTO " & table & insertValues
         
     Else
-        querystring = "UPDATE " & table & " SET " & values & " WHERE " & Target
+        queryString = "UPDATE " & table & " SET " & values & " WHERE " & Target
 
     End If
     
     'DoCmd.RunSQL (querystring)
     Dim success2 As Integer
-    success2 = Common.SQLQuery(querystring)
+    success2 = Common.SQLQuery(queryString)
     
     InsertOrUpdate = success
     'need to fix this later on! some kind of error checking?!?
@@ -367,11 +397,11 @@ End If
 [Form_RekisteroiLataus].Voimassa = expirationDate
 
 Dim listahinta As Currency
-Dim querystring As String
+Dim queryString As String
 
-querystring = "SELECT Hinta FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].Korttityyppi.Value & "'"
+queryString = "SELECT Hinta FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].Korttityyppi.Value & "'"
 Dim sqlRecords As DAO.Recordset
-    Set sqlRecords = CurrentDb.OpenRecordset(querystring)
+    Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     listahinta = sqlRecords!Hinta
     
     sqlRecords.Close
