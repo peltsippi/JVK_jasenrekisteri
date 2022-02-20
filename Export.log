@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-20.2.2022 17.54.37
+20.2.2022 18.07.52
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -45,18 +45,10 @@ No modified imex specs found in this database.
 No modified tables found in this database.
 -------------------------------------
 Exporting queries...          
-  HaeIlmaiseksiLadattavat
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,005 seconds.
-  HaeIlmaiseksiLadattavat (SQL)
   KorttejaVoimassa
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
+    Sanitized in 0,005 seconds.
   KorttejaVoimassa (SQL)
-  KorttienSaldoKysely
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  KorttienSaldoKysely (SQL)
   ListaaKaikkiYhteystiedot
     Sanitized in 0,004 seconds.
   ListaaKaikkiYhteystiedot (SQL)
@@ -64,44 +56,27 @@ Source: modSanitize.SanitizeFile
 Source: modSanitize.SanitizeFile
     Sanitized in 0,002 seconds.
   ListaaKortitJaLataukset (SQL)
-  ListaaMaksut
-    Sanitized in 0,006 seconds.
-  ListaaMaksut (SQL)
-  MaksettuEiLadattu
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  MaksettuEiLadattu (SQL)
-  MaksuListaus
-    Sanitized in 0,005 seconds.
-  MaksuListaus (SQL)
-  VoimassaolevatIlmanOmistajaa
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  VoimassaolevatIlmanOmistajaa (SQL)
-[9]
+[3]
 -------------------------------------
 Exporting forms...            
   Tervetuloa
-    Sanitized in 0,031 seconds.
-[1]
+    Sanitized in 0,042 seconds.
+  PoistaKortinLinkitys
+    Sanitized in 0,015 seconds.
+[2]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
-Exporting reports...          
-  MaksettuEiLadattu
-    Sanitized in 0,032 seconds.
-  VoimassaolevatIlmanOmistajaa
-    Sanitized in 0,033 seconds.
-  HaeIlmaiseksiLadattavat
-    Sanitized in 0,030 seconds.
-[3]
+No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,025 seconds.
+    Sanitized in 0,028 seconds.
 [1]
 -------------------------------------
-No modified modules found in this database.
+Exporting modules...          
+  Common
+[1]
 -------------------------------------
 No modified table data macros found in this database.
 -------------------------------------
@@ -123,7 +98,7 @@ Exporting hidden attributes...
   Database hidden attributes
 [2]
 -------------------------------------
-Done. (6,81 seconds)
+Done. (3,05 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
@@ -135,49 +110,51 @@ VB Project                    1         0,02
 VBE References                2         0,02
 DB Properties                 53        0,23
 Shared Images                 4         0,04
-Themes                        1         2,17
-Queries                       9         0,61
-Forms                         1         2,27
-Reports                       3         0,51
-Table Data                    1         0,18
+Themes                        1         1,25
+Queries                       3         0,16
+Forms                         2         0,43
+Table Data                    1         0,25
+Modules                       1         0,04
 Relations                     3         0,06
 Doc Properties                2         0,02
 Nav Pane Groups               1         0,02
 Hidden Attributes             2         0,01
 --------------------------------------------------
-TOTALS:                       84        6,17
+TOTALS:                       77        2,58
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     35        0,07
-Parse JSON                    17        0,03
-Convert to JSON               733       0,46
-Compute SHA256                38        0,00
-Console Updates               4         0,43
-Compare Dictionary            15        0,00
-Get Modified Date             16        0,02
-Get File Property Hash        16        0,02
-Clear Orphaned                8         0,32
-Verify Path                   44        0,01
+Read File                     23        0,02
+Parse JSON                    15        0,02
+Convert to JSON               600       0,37
+Compute SHA256                31        0,00
+Console Updates               4         0,16
+Compare Dictionary            13        0,00
+Get Modified Date             9         0,00
+Get File Property Hash        9         0,01
+Clear Orphaned                8         0,18
+Verify Path                   22        0,01
 Write to Disk                 4         0,01
 Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         1,87
-App.SaveAsText()              13        0,38
-Delete File                   13        0,01
-Read File Bytes               17        0,37
-Sanitize File                 13        0,14
-Write File                    25        0,04
-Save Query SQL                9         0,02
-Get VBA Hash                  23        0,02
-Read File DevMode             4         0,02
-App.ExportXML()               1         0,13
+Extract Theme                 1         1,17
+App.SaveAsText()              5         0,13
+Delete File                   8         0,01
+Read File Bytes               7         0,08
+Sanitize File                 5         0,06
+Write File                    10        0,01
+Save Query SQL                3         0,01
+Get VBA Hash                  25        0,02
+Read File DevMode             2         0,01
+App.ExportXML()               1         0,17
 Sanitize XML                  1         0,00
 Format XML                    1         0,02
+Export VBE Module             1         0,01
+Enc. Windows-1252 as utf-8    1         0,03
 --------------------------------------------------
-Other Operations                        2,46
+Other Operations                        0,57
 --------------------------------------------------
 
 

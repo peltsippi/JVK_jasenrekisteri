@@ -613,7 +613,7 @@ Private Sub Poista_Click()
     Dim success As Boolean
     Dim table As String
     Dim values As String
-    Dim target As String
+    Dim Target As String
     
     table = "Kortit"
     values = "Omistaja = " & newOwner & ", " _
@@ -621,9 +621,9 @@ Private Sub Poista_Click()
     & "Puumerkki = '" & Puumerkki & "', " _
     & "Muistiinpanot = '" & Muistiinpano & "' "
     
-    target = "Kortti = '" & cardnumber & "'"
+    Target = "Kortti = '" & cardnumber & "'"
     
-    success = Common.InsertOrUpdate(table, values, target)
+    success = Common.InsertOrUpdate(table, values, Target)
     
     If Not (success) Then
         MsgBox ("Jotain meni pieleen sori siitä!")

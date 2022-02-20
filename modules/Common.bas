@@ -15,6 +15,34 @@
 
 Option Compare Database
 
+Public Function DoBackup()
+
+
+'thank you http://justin-hampton.com/microsoft-office-tips/access-tips/automate-backing-database-vba/
+    Dim Source As String
+    Dim Target As String
+    Dim retval As Integer
+    
+    Source = CurrentDb.Name
+
+    'This is the only thing to change - add the path of where you want the file to save here
+    Target = Application.CurrentProject.Path & "\Jasenrekisteri-backup-"
+    Target = Target & Format(Date, "yyyy-mm-dd") & ".accdb"
+    'MsgBox (Target)
+    ' create the backup
+    retval = 0
+    Dim objFSO As Object
+    Set objFSO = CreateObject("Scripting.FileSystemObject")
+    retval = objFSO.CopyFile(Source, Target, True)
+    'MsgBox (retval)
+    Set objFSO = Nothing
+    
+    'Opens the folder of the file you just created
+    Application.FollowHyperlink Application.CurrentProject.Path
+
+End Function
+
+
 Public Function SendMessageToMainScreen(message As String)
     [Form_Tervetuloa].Status.Caption = Now() & " - " & message
     [Form_Tervetuloa].Requery
@@ -95,7 +123,7 @@ Public Function SaveToLog(message As String)
 
 End Function
 
-Public Function InsertOrUpdate(table As String, values As String, target As String) As Boolean
+Public Function InsertOrUpdate(table As String, values As String, Target As String) As Boolean
 
 '   Readme: use always [[ key = value, key = value, key = value ]] syntax!
 '   This shit takes care of the rest!
@@ -110,11 +138,11 @@ Public Function InsertOrUpdate(table As String, values As String, target As Stri
     Dim querystring As String
     
     'if target not defined : insert
-    If (target = Null) Or (target = "") Then
+    If (Target = Null) Or (Target = "") Then
         toInsert = True
     Else
         Dim checkforrows As Integer
-        checkforrows = Common.CheckIfRecordFound(table, target)
+        checkforrows = Common.CheckIfRecordFound(table, Target)
         
         If (checkforrows > 1) Or (checkforrows < 1) Then
             toInsert = True
@@ -166,7 +194,7 @@ Public Function InsertOrUpdate(table As String, values As String, target As Stri
         querystring = "INSERT INTO " & table & insertValues
         
     Else
-        querystring = "UPDATE " & table & " SET " & values & " WHERE " & target
+        querystring = "UPDATE " & table & " SET " & values & " WHERE " & Target
 
     End If
     

@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =260
+    ItemSuffix =262
     Left =4044
     Top =3468
     Right =17484
@@ -350,6 +350,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =3543
                     Top =2101
@@ -389,6 +391,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =3543
                     Top =2456
@@ -428,6 +432,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =5858
                     Top =1771
@@ -467,6 +473,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =1937
                     Top =2149
@@ -491,6 +499,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =5858
                     Top =2149
@@ -535,21 +545,6 @@ Begin Form
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
-                Begin Image
-                    PictureType =2
-                    Left =566
-                    Top =3921
-                    Width =8878
-                    Height =3912
-                    Name ="Bulldog"
-                    Picture ="bulldog_pienempi"
-
-                    LayoutCachedLeft =566
-                    LayoutCachedTop =3921
-                    LayoutCachedWidth =9444
-                    LayoutCachedHeight =7833
-                    TabIndex =25
-                End
                 Begin Rectangle
                     SpecialEffect =0
                     BorderWidth =1
@@ -890,7 +885,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =564
                     Top =4116
                     Width =1332
@@ -916,7 +911,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =1968
                     Top =4116
                     Width =1212
@@ -945,7 +940,7 @@ Begin Form
                 End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =6897
                     Top =4251
                     Width =1464
@@ -961,7 +956,7 @@ Begin Form
                     LayoutCachedHeight =4724
                 End
                 Begin ToggleButton
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =472
@@ -995,7 +990,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3252
                     Top =4116
                     Width =1236
@@ -1023,7 +1018,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =2220
                     Top =4908
                     Width =1584
@@ -1055,7 +1050,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =2220
                     Top =5784
                     Width =1584
@@ -1089,7 +1084,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin TextBox
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
@@ -1115,7 +1110,7 @@ Begin Form
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =255
+                            OverlapFlags =93
                             TextAlign =1
                             Left =6354
                             Top =4889
@@ -1132,7 +1127,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =247
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -1140,7 +1135,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =24
+                    TabIndex =25
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1157,7 +1152,7 @@ Begin Form
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
-                            OverlapFlags =255
+                            OverlapFlags =93
                             Left =6307
                             Top =5291
                             Width =1284
@@ -1173,7 +1168,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3876
                     Top =4908
                     Width =1728
@@ -1205,7 +1200,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =588
                     Top =4908
                     Width =1560
@@ -1235,7 +1230,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3876
                     Top =5784
                     Width =1728
@@ -1269,7 +1264,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =588
                     Top =6660
                     Width =1560
@@ -1301,7 +1296,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =4560
                     Top =4116
                     Width =1248
@@ -1329,7 +1324,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =588
                     Top =5784
                     Width =1560
@@ -1359,24 +1354,6 @@ Begin Form
                     WebImagePaddingRight =2
                     WebImagePaddingBottom =2
                     Overlaps =1
-                End
-                Begin EmptyCell
-                    Left =5676
-                    Top =6660
-                    Height =804
-                    Name ="TyhjäSolu227"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5676
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =7116
-                    LayoutCachedHeight =7464
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =3
-                    ColumnEnd =3
-                    LayoutGroup =1
-                    GroupTable =1
                 End
                 Begin EmptyCell
                     Left =5676
@@ -1413,7 +1390,7 @@ Begin Form
                     GroupTable =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =2220
                     Top =6660
                     Width =1584
@@ -1447,7 +1424,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =247
+                    OverlapFlags =93
                     Left =3876
                     Top =6660
                     Width =1728
@@ -1479,6 +1456,54 @@ Begin Form
                     WebImagePaddingRight =2
                     WebImagePaddingBottom =2
                     Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5676
+                    Top =6660
+                    Height =804
+                    TabIndex =24
+                    Name ="otaVarmuuskopio"
+                    Caption ="Ota varmuuskopio"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =5676
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =7116
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
+                Begin Image
+                    PictureType =2
+                    Left =566
+                    Top =3921
+                    Width =8878
+                    Height =3912
+                    Name ="Bulldog"
+                    Picture ="bulldog_pienempi"
+
+                    LayoutCachedLeft =566
+                    LayoutCachedTop =3921
+                    LayoutCachedWidth =9444
+                    LayoutCachedHeight =7833
+                    TabIndex =26
                 End
             End
         End
@@ -1679,6 +1704,13 @@ Private Sub paivitaStatsit_Click()
     '[Form_Tervetuloa].kortitOpisk.Requery
     '[Form_Tervetuloa].kortitMuu.Requery
     
+End Sub
+
+Private Sub otaVarmuuskopio_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " otti varmuuskopion.")
+    succs = Common.SendMessageToMainScreen("Varmuuskopio tehty!")
+    succs = Common.DoBackup()
 End Sub
 
 Private Sub PaymentMethods_Click()
