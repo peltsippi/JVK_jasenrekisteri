@@ -17,6 +17,7 @@ Option Compare Database
 
 Public Function SendMessageToMainScreen(message As String)
     [Form_Tervetuloa].Status.Caption = Now() & " - " & message
+    [Form_Tervetuloa].Requery
     [Form_Tervetuloa].Refresh
 End Function
 
@@ -179,6 +180,8 @@ Public Function InsertOrUpdate(table As String, values As String, target As Stri
 End Function
 
 Public Function EnableDisableButtons()
+    
+    're-query stats to main form...
     'MsgBox ("EnableDisableButtons called")
     Dim cardSelected As Boolean
     Dim userSelected As Boolean
@@ -259,8 +262,6 @@ Public Function EnableDisableButtons()
         [Form_Tervetuloa].MuokkaaMaksuja.Enabled = False
         [Form_Tervetuloa].KortinTapahtumat.Enabled = False
     End If
-    
-    
     
 End Function
 

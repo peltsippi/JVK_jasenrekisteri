@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =245
+    ItemSuffix =256
     Left =4044
     Top =3468
     Right =17484
@@ -164,7 +164,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =2544
+            Height =2828
             BackColor =8421504
             Name ="FormHeader"
             Begin
@@ -173,8 +173,8 @@ Begin Form
                     TextAlign =1
                     Left =2480
                     Top =188
-                    Width =4644
-                    Height =1524
+                    Width =4836
+                    Height =1776
                     FontSize =28
                     ForeColor =16777215
                     Name ="Auto_Title0"
@@ -183,14 +183,14 @@ Begin Form
                     GridlineColor =-2147483609
                     LayoutCachedLeft =2480
                     LayoutCachedTop =188
-                    LayoutCachedWidth =7124
-                    LayoutCachedHeight =1712
+                    LayoutCachedWidth =7316
+                    LayoutCachedHeight =1964
                 End
                 Begin TextBox
                     Enabled = NotDefault
                     Locked = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =85
+                    OverlapFlags =93
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
@@ -258,15 +258,15 @@ Begin Form
                     LayoutCachedTop =141
                     LayoutCachedWidth =2409
                     LayoutCachedHeight =2078
-                    TabIndex =3
+                    TabIndex =8
                 End
                 Begin Label
-                    OverlapFlags =215
+                    OverlapFlags =255
                     TextAlign =1
                     Left =6944
                     Top =94
-                    Width =2568
-                    Height =1524
+                    Width =2712
+                    Height =1776
                     FontSize =16
                     FontWeight =700
                     ForeColor =255
@@ -276,62 +276,257 @@ Begin Form
                     GridlineColor =-2147483609
                     LayoutCachedLeft =6944
                     LayoutCachedTop =94
-                    LayoutCachedWidth =9512
-                    LayoutCachedHeight =1618
+                    LayoutCachedWidth =9656
+                    LayoutCachedHeight =1870
                 End
                 Begin Label
-                    OverlapFlags =223
-                    Left =2740
-                    Top =1653
+                    OverlapFlags =215
+                    Left =2409
+                    Top =47
                     Width =3213
                     Height =472
                     Name ="copyrightteksti"
                     Caption ="(C) Timo Pelkonen, 2022"
-                    LayoutCachedLeft =2740
-                    LayoutCachedTop =1653
-                    LayoutCachedWidth =5953
-                    LayoutCachedHeight =2125
+                    LayoutCachedLeft =2409
+                    LayoutCachedTop =47
+                    LayoutCachedWidth =5622
+                    LayoutCachedHeight =519
                 End
                 Begin Label
                     OverlapFlags =93
                     Left =165
                     Top =2149
-                    Width =2316
+                    Width =2076
                     Height =300
                     Name ="Selite216"
-                    Caption ="KK-kortt.aktiivisena:"
+                    Caption ="Kortteja aktiivisena:"
                     LayoutCachedLeft =165
                     LayoutCachedTop =2149
-                    LayoutCachedWidth =2481
+                    LayoutCachedWidth =2241
                     LayoutCachedHeight =2449
                     ForeThemeColorIndex =7
                     ForeTint =40.0
                 End
                 Begin TextBox
-                    OverlapFlags =215
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =2031
-                    Top =2125
+                    Left =3543
+                    Top =1818
                     Width =1229
                     Height =300
                     TabIndex =2
                     BackColor =10921638
                     BorderColor =10921638
-                    Name ="VuosikAkt"
+                    Name ="kortitKK"
                     ControlSource ="Kuukausikortit"
                     Format ="General Number"
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2031
-                    LayoutCachedTop =2125
-                    LayoutCachedWidth =3260
-                    LayoutCachedHeight =2425
+                    LayoutCachedLeft =3543
+                    LayoutCachedTop =1818
+                    LayoutCachedWidth =4772
+                    LayoutCachedHeight =2118
                     BackShade =65.0
                     ForeThemeColorIndex =7
                     ForeTint =60.0
+                End
+                Begin Label
+                    OverlapFlags =223
+                    Left =3023
+                    Top =1818
+                    Width =492
+                    Height =300
+                    Name ="Selite245"
+                    Caption ="KK:"
+                    LayoutCachedLeft =3023
+                    LayoutCachedTop =1818
+                    LayoutCachedWidth =3515
+                    LayoutCachedHeight =2118
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =3543
+                    Top =2101
+                    Width =1229
+                    Height =300
+                    TabIndex =3
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="kortitAP"
+                    ControlSource ="Aamupvkortit"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3543
+                    LayoutCachedTop =2101
+                    LayoutCachedWidth =4772
+                    LayoutCachedHeight =2401
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =3023
+                    Top =2101
+                    Width =492
+                    Height =300
+                    Name ="Selite247"
+                    Caption ="AP:"
+                    LayoutCachedLeft =3023
+                    LayoutCachedTop =2101
+                    LayoutCachedWidth =3515
+                    LayoutCachedHeight =2401
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3543
+                    Top =2456
+                    Width =1229
+                    Height =300
+                    TabIndex =4
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="kortitOpisk"
+                    ControlSource ="Opiskelijakortit"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3543
+                    LayoutCachedTop =2456
+                    LayoutCachedWidth =4772
+                    LayoutCachedHeight =2756
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2787
+                    Top =2479
+                    Width =648
+                    Height =300
+                    Name ="Selite249"
+                    Caption ="OPISK:"
+                    LayoutCachedLeft =2787
+                    LayoutCachedTop =2479
+                    LayoutCachedWidth =3435
+                    LayoutCachedHeight =2779
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =5858
+                    Top =1771
+                    Width =1229
+                    Height =300
+                    TabIndex =5
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="kortitKrt"
+                    ControlSource ="Kertakortit"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5858
+                    LayoutCachedTop =1771
+                    LayoutCachedWidth =7087
+                    LayoutCachedHeight =2071
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =5149
+                    Top =1795
+                    Width =696
+                    Height =300
+                    Name ="Selite251"
+                    Caption ="Kertak:"
+                    LayoutCachedLeft =5149
+                    LayoutCachedTop =1795
+                    LayoutCachedWidth =5845
+                    LayoutCachedHeight =2095
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1937
+                    Top =2149
+                    Width =941
+                    Height =300
+                    TabIndex =6
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="kortitKaikki"
+                    ControlSource ="Kaikki"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =1937
+                    LayoutCachedTop =2149
+                    LayoutCachedWidth =2878
+                    LayoutCachedHeight =2449
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5858
+                    Top =2149
+                    Width =1229
+                    Height =300
+                    TabIndex =7
+                    BackColor =10921638
+                    BorderColor =10921638
+                    Name ="kortitMuu"
+                    ControlSource ="Muut"
+                    Format ="General Number"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5858
+                    LayoutCachedTop =2149
+                    LayoutCachedWidth =7087
+                    LayoutCachedHeight =2449
+                    BackShade =65.0
+                    ForeThemeColorIndex =7
+                    ForeTint =60.0
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =5102
+                    Top =2125
+                    Width =696
+                    Height =300
+                    Name ="Selite254"
+                    Caption ="Muu:"
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =2125
+                    LayoutCachedWidth =5798
+                    LayoutCachedHeight =2425
+                    ForeThemeColorIndex =7
+                    ForeTint =40.0
                 End
             End
         End
@@ -1426,6 +1621,19 @@ Private Sub MuokkaaMaksuja_Click()
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " aloitti kortin " & [Form_Tervetuloa].Korttivalinta.Value & " maksujen muokkaamisen")
     DoCmd.OpenForm "KorjaaKortinMaksuja"
     succs = Common.SendMessageToMainScreen("Kortin " & [Form_Tervetuloa].Korttivalinta.Value & " maksumuokkaus aloitettu")
+    
+End Sub
+
+Private Sub paivitaStatsit_Click()
+    '[Form_Tervetuloa].Requery
+    'Common.EnableDisableButtons
+    
+    '[Form_Tervetuloa].kortitKaikki.Requery
+    '[Form_Tervetuloa].kortitKK.Requery
+    '[Form_Tervetuloa].kortitAP.Requery
+    '[Form_Tervetuloa].kortitKrt.Requery
+    '[Form_Tervetuloa].kortitOpisk.Requery
+    '[Form_Tervetuloa].kortitMuu.Requery
     
 End Sub
 
