@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9826
     DatasheetFontHeight =11
-    ItemSuffix =264
+    ItemSuffix =269
     Left =2580
     Top =3468
     Right =17484
@@ -1134,7 +1134,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =25
+                    TabIndex =26
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1489,6 +1489,73 @@ Begin Form
                     WebImagePaddingBottom =2
                     Overlaps =1
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =7176
+                    Top =6660
+                    Height =804
+                    TabIndex =25
+                    Name ="korttiTilastot"
+                    Caption ="Näytä korttitilastot"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =7176
+                    LayoutCachedTop =6660
+                    LayoutCachedWidth =8616
+                    LayoutCachedHeight =7464
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
+                Begin EmptyCell
+                    Left =7176
+                    Top =4908
+                    Height =804
+                    Name ="TyhjäSolu266"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7176
+                    LayoutCachedTop =4908
+                    LayoutCachedWidth =8616
+                    LayoutCachedHeight =5712
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =7176
+                    Top =5784
+                    Height =804
+                    Name ="TyhjäSolu267"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7176
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =8616
+                    LayoutCachedHeight =6588
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
                 Begin Image
                     PictureType =2
                     Left =566
@@ -1502,7 +1569,7 @@ Begin Form
                     LayoutCachedTop =3921
                     LayoutCachedWidth =9444
                     LayoutCachedHeight =7833
-                    TabIndex =26
+                    TabIndex =27
                 End
             End
         End
@@ -1605,6 +1672,13 @@ Private Sub kortitIlmanOmistajaa_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi aktiiviset kortit ilman omistajaa -raportin")
     DoCmd.OpenReport "VoimassaolevatIlmanOmistajaa", acViewPreview
+    
+End Sub
+
+Private Sub korttiTilastot_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi korttitilasto-raportin")
+    DoCmd.OpenReport "Korttitilasto", acViewPreview
     
 End Sub
 
