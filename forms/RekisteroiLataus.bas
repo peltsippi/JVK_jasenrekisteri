@@ -1324,7 +1324,7 @@ Private Sub Puumerkki_Change()
     'this needs to be moved to under Paivita_UI()!
     [Form_RekisteroiLataus].Hinta.Visible = True
     [Form_RekisteroiLataus].Voimassa.Visible = True
-    [Form_RekisteroiLataus].Korttityyppi.Visible = True
+    [Form_RekisteroiLataus].KorttiTyyppi.Visible = True
     [Form_RekisteroiLataus].Save.Visible = True
     
 End Sub
@@ -1336,7 +1336,7 @@ End Sub
 
 Public Sub SaveStuff()
     Dim Kortti As String
-    Dim Korttityyppi As String
+    Dim KorttiTyyppi As String
     Dim Puumerkki As String
     Dim Hinta As Currency
     Dim Voimassaolo As Date
@@ -1355,11 +1355,11 @@ Public Sub SaveStuff()
 
 
 
-    If ([Form_RekisteroiLataus].Korttityyppi.Value = "") Or IsNull([Form_RekisteroiLataus].Korttityyppi) Then
+    If ([Form_RekisteroiLataus].KorttiTyyppi.Value = "") Or IsNull([Form_RekisteroiLataus].KorttiTyyppi) Then
         MsgBox ("Korttityyppiä ei määritelty!")
         Exit Sub
     Else
-        Korttityyppi = [Form_RekisteroiLataus].Korttityyppi.Value
+        KorttiTyyppi = [Form_RekisteroiLataus].KorttiTyyppi.Value
     End If
     
     If ([Form_RekisteroiLataus].Puumerkki.Value = "") Or IsNull([Form_RekisteroiLataus].Puumerkki) Then
@@ -1387,7 +1387,7 @@ Public Sub SaveStuff()
     Dim kortti_id As Integer
     kortti_id = Common.FetchCardID(Kortti)
     'MsgBox (kortti_id)
-    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Lataaja = '" & Puumerkki & "' , Korttityyppi = '" & Korttityyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
+    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Lataaja = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
     'MsgBox (arvot)
     
     'Dim preventDuplicates As String
@@ -1398,7 +1398,7 @@ Public Sub SaveStuff()
     
     success = Common.InsertOrUpdate("Lataukset", arvot, "")
 
-    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & Korttityyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
+    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
 
     Dim retval
     retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
@@ -1427,7 +1427,7 @@ If (IsNull([Form_RekisteroiLataus].Valinta)) Then
     [Form_RekisteroiLataus].Hinta.Visible = False
     [Form_RekisteroiLataus].Voimassa.Visible = False
     [Form_RekisteroiLataus].Save.Visible = False
-    [Form_RekisteroiLataus].Korttityyppi.Visible = False
+    [Form_RekisteroiLataus].KorttiTyyppi.Visible = False
 
 Else
     [Form_RekisteroiLataus].Puumerkki.Visible = True

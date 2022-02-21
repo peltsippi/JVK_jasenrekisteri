@@ -18,7 +18,7 @@ Begin Form
     Width =9826
     DatasheetFontHeight =11
     ItemSuffix =269
-    Left =2580
+    Left =2556
     Top =3468
     Right =17484
     Bottom =11712
@@ -1491,7 +1491,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =7176
+                    Left =7188
                     Top =6660
                     Height =804
                     TabIndex =25
@@ -1500,9 +1500,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =7176
+                    LayoutCachedLeft =7188
                     LayoutCachedTop =6660
-                    LayoutCachedWidth =8616
+                    LayoutCachedWidth =8628
                     LayoutCachedHeight =7464
                     RowStart =2
                     RowEnd =2
@@ -1523,15 +1523,15 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =7176
+                    Left =7188
                     Top =4908
                     Height =804
                     Name ="TyhjäSolu266"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =7176
+                    LayoutCachedLeft =7188
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =8616
+                    LayoutCachedWidth =8628
                     LayoutCachedHeight =5712
                     ColumnStart =4
                     ColumnEnd =4
@@ -1539,15 +1539,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =7176
+                    Left =7188
                     Top =5784
                     Height =804
                     Name ="TyhjäSolu267"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =7176
+                    LayoutCachedLeft =7188
                     LayoutCachedTop =5784
-                    LayoutCachedWidth =8616
+                    LayoutCachedWidth =8628
                     LayoutCachedHeight =6588
                     RowStart =1
                     RowEnd =1

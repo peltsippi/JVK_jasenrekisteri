@@ -378,10 +378,10 @@ Private Sub Form_Open(Cancel As Integer)
     
     
     If ([Form_RekisteroiLataus].Valinta = 4) Then
-        [Form_LatausOhje].Korttityyppi.Value = "Määräkortti"
+        [Form_LatausOhje].KorttiTyyppi.Value = "Määräkortti"
         [Form_LatausOhje].Maara.Value = [Form_RekisteroiLataus].KERMaara.Value
     Else
-        [Form_LatausOhje].Korttityyppi.Value = "Kausikortti"
+        [Form_LatausOhje].KorttiTyyppi.Value = "Kausikortti"
     End If
     
     If ([Form_RekisteroiLataus].Valinta = 2) Then

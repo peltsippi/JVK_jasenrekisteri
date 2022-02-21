@@ -18,33 +18,34 @@ Option Compare Database
 Public Function WriteStats()
     Dim succs
     Dim arvoParit As String
-    Dim kkKortti As Integer
+    Dim targetString As String
+    Dim KKKortti As Integer
     Dim opiskKortti As Integer
     Dim kertaKortti As Integer
-    Dim apKortti As Integer
-    Dim muuKortti As Integer
+    Dim APKortti As Integer
+    Dim MUUKortti As Integer
     Dim korttejaYht As Integer
     
-    kkKortti = [Form_Tervetuloa].kortitKK.Value
+    KKKortti = [Form_Tervetuloa].kortitKK.Value
     opiskKortti = [Form_Tervetuloa].kortitOpisk.Value
     kertaKortti = [Form_Tervetuloa].kortitKrt.Value
-    apKortti = [Form_Tervetuloa].kortitAP.Value
-    muuKortti = [Form_Tervetuloa].kortitMuu.Value
+    APKortti = [Form_Tervetuloa].kortitAP.Value
+    MUUKortti = [Form_Tervetuloa].kortitMuu.Value
     korttejaYht = [Form_Tervetuloa].kortitKaikki.Value
     
     arvoParit = "Kaikki = " & korttejaYht & " , " _
-    & "KkKortit = " & kkKortti & " , " _
-    & "ApKortit = " & apKortti & " , " _
+    & "KkKortit = " & KKKortti & " , " _
+    & "ApKortit = " & APKortti & " , " _
     & "KrtKortit = " & kertaKortti & " , " _
     & "OpiskKortit = " & opiskKortti & " , " _
-    & "MuuKortit = " & muuKortti & " , " _
-    & "PVM = '" & Now() & "'"
+    & "MuuKortit = " & MUUKortti & " , " _
+    & "PVM = '" & Date & "'"
     
-    'MsgBox (arvoParit)
+    targetString = "PVM LIKE '" & Date & "'"
     
-'    Readme: use always [[ key = value, key = value, key = value ]] syntax!
-'   This shit takes care of the rest!
-    Common.InsertOrUpdate "Korttitilasto", arvoParit, ""
+    'MsgBox (targetString)
+
+    Common.InsertOrUpdate "Korttitilasto", arvoParit, targetString
     
         
 End Function
@@ -227,6 +228,7 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
     Else
         Dim checkforrows As Integer
         checkforrows = Common.CheckIfRecordFound(table, Target)
+        'MsgBox (checkforrows)
         
         If (checkforrows > 1) Or (checkforrows < 1) Then
             toInsert = True
@@ -391,28 +393,28 @@ Dim dateRound As Integer
 
 Select Case cardType
 
-    Case 1: [Form_RekisteroiLataus].Korttityyppi.Value = months & "kk"
+    Case 1: [Form_RekisteroiLataus].KorttiTyyppi.Value = months & "kk"
     
     Case 2:
     If (months <= 1) Then
         months = 1
-        [Form_RekisteroiLataus].Korttityyppi.Value = "1kk ap"
+        [Form_RekisteroiLataus].KorttiTyyppi.Value = "1kk ap"
     ElseIf (months <= 6) Then
         months = 6
-        [Form_RekisteroiLataus].Korttityyppi.Value = "6kk ap"
+        [Form_RekisteroiLataus].KorttiTyyppi.Value = "6kk ap"
     Else
         months = 12
-        [Form_RekisteroiLataus].Korttityyppi.Value = "12kk ap"
+        [Form_RekisteroiLataus].KorttiTyyppi.Value = "12kk ap"
     End If
     
-    Case 3: [Form_RekisteroiLataus].Korttityyppi.Value = months & "kk opisk"
+    Case 3: [Form_RekisteroiLataus].KorttiTyyppi.Value = months & "kk opisk"
     
     Case 4:
-    [Form_RekisteroiLataus].Korttityyppi.Value = [Form_RekisteroiLataus].KERMaara & "krt"
+    [Form_RekisteroiLataus].KorttiTyyppi.Value = [Form_RekisteroiLataus].KERMaara & "krt"
     months = 24 'always 24 months to these cards as default
     
     Case 5:
-    [Form_RekisteroiLataus].Korttityyppi.Value = "muu"
+    [Form_RekisteroiLataus].KorttiTyyppi.Value = "muu"
 
 End Select
 
@@ -454,7 +456,7 @@ End If
 Dim listahinta As Currency
 Dim queryString As String
 
-queryString = "SELECT Hinta FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].Korttityyppi.Value & "'"
+queryString = "SELECT Hinta FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].KorttiTyyppi.Value & "'"
 Dim sqlRecords As DAO.Recordset
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     listahinta = sqlRecords!Hinta

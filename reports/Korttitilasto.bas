@@ -13,13 +13,13 @@ Begin Report
     GridY =10
     Width =15120
     DatasheetFontHeight =11
-    ItemSuffix =22
-    Left =2580
+    ItemSuffix =24
+    Left =2556
     Top =3468
     RecSrcDt = Begin
-        0x6b14e1b89fc8e540
+        0xa18e7918bbc8e540
     End
-    RecordSource ="Korttitilasto"
+    RecordSource ="KorttitilastoKysely"
     Caption ="Korttitilasto"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0
@@ -108,18 +108,18 @@ Begin Report
                 Begin Label
                     Left =1644
                     Top =170
-                    Width =1980
+                    Width =7368
                     Height =528
                     FontSize =20
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Selite14"
-                    Caption ="Korttitilasto"
+                    Caption ="Korttitilasto - aktiiviset kortit päivämäärittäin"
                     FontName ="Calibri"
                     GridlineColor =10921638
                     LayoutCachedLeft =1644
                     LayoutCachedTop =170
-                    LayoutCachedWidth =3624
+                    LayoutCachedWidth =9012
                     LayoutCachedHeight =698
                 End
                 Begin Image
@@ -2806,38 +2806,38 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =3
-                    Left =2775
+                    Left =2595
                     Top =3344
-                    Width =1392
+                    Width =1572
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="KkKortit_Selite"
-                    Caption ="KkKortit"
+                    Caption ="Kuukausikortit"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =2775
+                    LayoutCachedLeft =2595
                     LayoutCachedTop =3344
                     LayoutCachedWidth =4167
                     LayoutCachedHeight =3644
                 End
                 Begin Label
                     TextAlign =3
-                    Left =4224
+                    Left =4068
                     Top =3344
-                    Width =1392
+                    Width =1548
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="ApKortit_Selite"
-                    Caption ="ApKortit"
+                    Caption ="Aamupäiväkortit"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =4224
+                    LayoutCachedLeft =4068
                     LayoutCachedTop =3344
                     LayoutCachedWidth =5616
                     LayoutCachedHeight =3644
@@ -2851,7 +2851,7 @@ Begin Report
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="KrtKortit_Selite"
-                    Caption ="KrtKortit"
+                    Caption ="Kertakortit"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
@@ -2870,7 +2870,7 @@ Begin Report
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="OpiskKortit_Selite"
-                    Caption ="OpiskKortit"
+                    Caption ="Opiskeiljakortit"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
@@ -2889,7 +2889,7 @@ Begin Report
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="MuuKortit_Selite"
-                    Caption ="MuuKortit"
+                    Caption ="Muut"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
@@ -2901,55 +2901,56 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =3
-                    Left =10020
+                    Left =9972
                     Top =3344
-                    Width =1392
+                    Width =1440
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Kaikki_Selite"
-                    Caption ="Kaikki"
+                    Caption ="Kaikki yhteensä"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =10020
+                    LayoutCachedLeft =9972
                     LayoutCachedTop =3344
                     LayoutCachedWidth =11412
                     LayoutCachedHeight =3644
                 End
                 Begin ModernChart
                     Top =56
-                    Left =2324
-                    Width =12472
+                    Left =170
+                    Width =14230
                     Height =3175
-                    Name ="Kaavio21"
+                    Name ="Kaavio23"
                     GridlineColor =10921638
-                    RowSource ="Korttitilasto"
+                    RowSource ="KorttitilastoKysely"
                     ChartAxis ="[PVM]"
                     ChartValues ="[KkKortit];[ApKortit];[KrtKortit];[OpiskKortit];[MuuKortit]"
-                    ChartType =7
+                    ChartType =6
+                    ChartTitle ="Aktiivisia kortteja"
                     ChartAxisData = Begin
-                        0x0100000012000000050000005b00500056004d005d0000000000
+                        0x0100000012000000050000005b00500056004d005d0003000000
                     End
                     ChartLegendData = Begin
-                        0x050000007100000010000000530075006d004f0066004f007000690073006b00 ,
-                        0x4b006f0072007400690074000000000000ffc00000ffc0000000000000000000 ,
-                        0x0006000000000000009f6f000010000000530075006d004f0066004f00700069 ,
-                        0x0073006b004b006f0072007400690074000100000000000000650000000d0000 ,
-                        0x00530075006d004f006600410070004b006f0072007400690074000000000000 ,
-                        0xed7d3100ed7d3100000000000000000000000000000000009f6f00000d000000 ,
-                        0x530075006d004f006600410070004b006f007200740069007400010000000000 ,
-                        0x0000690000000e000000530075006d004f0066004b00720074004b006f007200 ,
-                        0x7400690074000000000000a5a5a500a5a5a50000000000000000000000000000 ,
-                        0x0000009f6f00000e000000530075006d004f0066004b00720074004b006f0072 ,
-                        0x007400690074000100000000000000690000000e000000530075006d004f0066 ,
-                        0x004d00750075004b006f0072007400690074000000000000ffc00000ffc00000 ,
-                        0x000000000000000000000000000000009f6f00000e000000530075006d004f00 ,
-                        0x66004d00750075004b006f007200740069007400010000000000000065000000 ,
-                        0x0d000000530075006d004f0066004b006b004b006f0072007400690074000000 ,
-                        0x0000015b9bd5005b9bd500000000000000000000000000000000009f6f00000d ,
-                        0x000000530075006d004f0066004b006b004b006f007200740069007400010000 ,
+                        0x05000000650000000d000000530075006d004f0066004b006b004b006f007200 ,
+                        0x74006900740000000000005b9bd5005b9bd50000000000000000000000000000 ,
+                        0x0000009f6f00000d000000530075006d004f0066004b006b004b006f00720074 ,
+                        0x00690074000100000000000000650000000d000000530075006d004f00660041 ,
+                        0x0070004b006f0072007400690074000000000000ed7d3100ed7d310000000000 ,
+                        0x0000000006000000000000009f6f00000d000000530075006d004f0066004100 ,
+                        0x70004b006f0072007400690074000100000000000000690000000e0000005300 ,
+                        0x75006d004f0066004b00720074004b006f0072007400690074000000000000a5 ,
+                        0xa5a500a5a5a500000000000000000006000000000000009f6f00000e00000053 ,
+                        0x0075006d004f0066004b00720074004b006f0072007400690074000100000000 ,
+                        0x0000007100000010000000530075006d004f0066004f007000690073006b004b ,
+                        0x006f0072007400690074000000000000ffc00000ffc000000000000000000000 ,
+                        0x06000000000000009f6f000010000000530075006d004f0066004f0070006900 ,
+                        0x73006b004b006f0072007400690074000100000000000000690000000e000000 ,
+                        0x530075006d004f0066004d00750075004b006f00720074006900740000000000 ,
+                        0x004470c3004470c300000000000000000006000000000000009f6f00000e0000 ,
+                        0x00530075006d004f0066004d00750075004b006f007200740069007400010000 ,
                         0x0000000000
                     End
                     ChartValueData = Begin
