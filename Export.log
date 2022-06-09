@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-21.2.2022 20.31.23
+9.6.2022 21.59.23
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -42,58 +42,42 @@ Exporting themes...
 -------------------------------------
 No modified imex specs found in this database.
 -------------------------------------
-Exporting tables...           
-  Historia
-    Sanitized in 0,031 seconds.
-  Historia (SQL)
-  Korttitilasto
-    Sanitized in 0,004 seconds.
-  Korttitilasto (SQL)
-[2]
+No modified tables found in this database.
 -------------------------------------
 Exporting queries...          
-  KortinTapahtumat
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,003 seconds.
-  KortinTapahtumat (SQL)
-  KorttitilastoKysely
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  KorttitilastoKysely (SQL)
   ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
+    Sanitized in 0,005 seconds.
   ListaaKortitJaLataukset (SQL)
+  ListaaMaksut
+    Sanitized in 0,006 seconds.
+  ListaaMaksut (SQL)
+  MaksutPerJasen
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,002 seconds.
+  MaksutPerJasen (SQL)
 [3]
 -------------------------------------
 Exporting forms...            
-  RekisteroiLataus
-    Sanitized in 0,045 seconds.
-  LatausOhje
-    Sanitized in 0,012 seconds.
   Tervetuloa
-    Sanitized in 0,054 seconds.
-[3]
+    Sanitized in 0,041 seconds.
+[1]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
 Exporting reports...          
-  HistoriaListaus
-    Sanitized in 0,029 seconds.
-  KortinTapahtumat
-    Sanitized in 0,029 seconds.
-  Korttitilasto
-    Sanitized in 0,033 seconds.
-[3]
+  ListaaMaksut
+    Sanitized in 0,013 seconds.
+  MaksutPerJasen
+    Sanitized in 0,011 seconds.
+[2]
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,004 seconds.
+    Sanitized in 0,033 seconds.
 [1]
 -------------------------------------
-Exporting modules...          
-  Common
-[1]
+No modified modules found in this database.
 -------------------------------------
 No modified table data macros found in this database.
 -------------------------------------
@@ -113,66 +97,61 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (4,36 seconds)
+Done. (12,82 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,03
-VB Project                    1         0,04
-VBE References                2         0,05
-DB Properties                 53        0,44
-Shared Images                 4         0,10
-Themes                        1         1,37
-Tables                        2         0,14
-Queries                       3         0,15
-Forms                         3         0,74
-Reports                       3         0,46
-Table Data                    1         0,16
-Modules                       1         0,04
-Relations                     3         0,08
-Doc Properties                2         0,03
-Nav Pane Groups               1         0,03
+Project                       1         0,69
+VB Project                    1         0,30
+VBE References                2         0,27
+DB Properties                 53        0,65
+Shared Images                 4         1,11
+Themes                        1         1,92
+Queries                       3         0,27
+Forms                         1         1,41
+Reports                       2         1,54
+Table Data                    1         0,35
+Relations                     3         2,46
+Doc Properties                2         0,60
+Nav Pane Groups               1         0,67
 --------------------------------------------------
-TOTALS:                       81        3,85
+TOTALS:                       75        12,23
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     35        0,26
-Parse JSON                    17        0,04
-Convert to JSON               903       0,64
-Compute SHA256                40        0,00
-Console Updates               4         0,12
-Compare Dictionary            15        0,00
-Get Modified Date             15        0,01
-Get File Property Hash        15        0,01
-Write File                    19        0,03
-Verify Path                   37        0,01
-Clear Orphaned                8         0,22
-Write to Disk                 4         0,01
+Read File                     25        7,36
+Parse JSON                    15        0,04
+Convert to JSON               670       0,51
+Compute SHA256                30        0,00
+Console Updates               9         0,30
+Compare Dictionary            13        0,00
+Get Modified Date             9         0,00
+Get File Property Hash        9         0,01
+Clear Orphaned                8         0,23
+Verify Path                   24        0,01
+Write to Disk                 4         0,04
+Increment Progress            5         0,08
 Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         1,33
-App.ExportXML()               3         0,18
-Sanitize XML                  3         0,01
-Format XML                    3         0,03
-Save Table SQL                2         0,00
-App.SaveAsText()              9         0,21
-Delete File                   11        0,01
-Read File Bytes               15        0,17
-Sanitize File                 9         0,20
+Extract Theme                 1         1,81
+App.SaveAsText()              6         0,18
+Delete File                   6         0,17
+Read File Bytes               9         0,09
+Sanitize File                 6         0,07
+Write File                    12        0,01
 Save Query SQL                3         0,01
 Get VBA Hash                  25        0,02
-Read File DevMode             6         0,02
-Increment Progress            1         0,07
-Export VBE Module             1         0,01
-Enc. Windows-1252 as utf-8    1         0,02
+Read File DevMode             3         0,01
+App.ExportXML()               1         0,21
+Sanitize XML                  1         0,01
+Format XML                    1         0,03
 --------------------------------------------------
-Other Operations                        0,78
+Other Operations                        1,68
 --------------------------------------------------
 
 

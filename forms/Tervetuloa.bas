@@ -15,9 +15,9 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =9826
+    Width =9870
     DatasheetFontHeight =11
-    ItemSuffix =269
+    ItemSuffix =285
     Left =2556
     Top =3468
     Right =17484
@@ -541,7 +541,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =8418
+            Height =8173
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
@@ -956,7 +956,7 @@ Begin Form
                     LayoutCachedHeight =4724
                 End
                 Begin ToggleButton
-                    OverlapFlags =223
+                    OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =472
@@ -1134,7 +1134,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =26
+                    TabIndex =27
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1268,7 +1268,7 @@ Begin Form
                     Top =6660
                     Width =1560
                     Height =804
-                    TabIndex =21
+                    TabIndex =22
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
@@ -1356,24 +1356,6 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =5676
-                    Top =5784
-                    Height =804
-                    Name ="TyhjäSolu241"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5676
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =7116
-                    LayoutCachedHeight =6588
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =3
-                    ColumnEnd =3
-                    LayoutGroup =1
-                    GroupTable =1
-                End
-                Begin EmptyCell
-                    Left =5676
                     Top =4908
                     Height =804
                     Name ="TyhjäSolu244"
@@ -1394,7 +1376,7 @@ Begin Form
                     Top =6660
                     Width =1584
                     Height =804
-                    TabIndex =22
+                    TabIndex =23
                     Name ="kortitIlmanOmistajaa"
                     Caption ="Aktiiviset kortit ilman omistajaa"
                     OnClick ="[Event Procedure]"
@@ -1428,7 +1410,7 @@ Begin Form
                     Top =6660
                     Width =1728
                     Height =804
-                    TabIndex =23
+                    TabIndex =24
                     Name ="maksettuEiLadattu"
                     Caption ="Tarkasta lataamattomat kortit"
                     OnClick ="[Event Procedure]"
@@ -1461,7 +1443,7 @@ Begin Form
                     Left =5676
                     Top =6660
                     Height =804
-                    TabIndex =24
+                    TabIndex =25
                     Name ="otaVarmuuskopio"
                     Caption ="Ota varmuuskopio"
                     OnClick ="[Event Procedure]"
@@ -1494,7 +1476,7 @@ Begin Form
                     Left =7188
                     Top =6660
                     Height =804
-                    TabIndex =25
+                    TabIndex =26
                     Name ="korttiTilastot"
                     Caption ="Näytä korttitilastot"
                     OnClick ="[Event Procedure]"
@@ -1556,20 +1538,53 @@ Begin Form
                     LayoutGroup =1
                     GroupTable =1
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5676
+                    Top =5784
+                    Height =804
+                    TabIndex =21
+                    Name ="MaksutPerJasen"
+                    Caption ="Listaa maksut per jäsen"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =5676
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =7116
+                    LayoutCachedHeight =6588
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
                 Begin Image
                     PictureType =2
-                    Left =566
-                    Top =3921
+                    Left =519
+                    Top =4015
                     Width =8878
                     Height =3912
                     Name ="Bulldog"
                     Picture ="bulldog_pienempi"
 
-                    LayoutCachedLeft =566
-                    LayoutCachedTop =3921
-                    LayoutCachedWidth =9444
-                    LayoutCachedHeight =7833
-                    TabIndex =27
+                    LayoutCachedLeft =519
+                    LayoutCachedTop =4015
+                    LayoutCachedWidth =9397
+                    LayoutCachedHeight =7927
+                    TabIndex =28
                 End
             End
         End
@@ -1653,6 +1668,7 @@ Private Sub IlmaiseksiLadattavat_Click()
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen ilmaiseksi ladattavista korteista")
     DoCmd.OpenReport "HaeIlmaiseksiLadattavat", acViewPreview, "HaeIlmaiseksiLadattavat"
 End Sub
+
 
 Private Sub KorjaaTietoja_Click()
     'MsgBox ([Form_Tervetuloa].KorjaaTietoja.Value)
@@ -1750,6 +1766,12 @@ Private Sub maksettuEiLadattu_Click()
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen maksetuista mutta ei vielä ladatuista korteista.")
     DoCmd.OpenReport "MaksettuEiLadattu", acViewPreview
     
+End Sub
+
+Private Sub MaksutPerJasen_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen kaikista maksuista jäsenittäin.")
+    DoCmd.OpenReport "MaksutPerJasen", acViewPreview
 End Sub
 
 Private Sub MuokkaaLatauksia_Click()
