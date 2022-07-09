@@ -278,12 +278,14 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         part2 = part2 & " ) "
         insertValues = part1 & part2
         
-        queryString = "INSERT INTO " & table & insertValues
+        queryString = "INSERT INTO " & table & " " & insertValues
         
     Else
         queryString = "UPDATE " & table & " SET " & values & " WHERE " & Target
 
     End If
+    
+    'MsgBox ("Querystring: " & queryString)
     
     'DoCmd.RunSQL (querystring)
     Dim success2 As Integer
@@ -389,6 +391,16 @@ Public Function FillCardChargeData(months As Double, cardType As Integer)
 'type 5 = other
 
 Dim expirationDate As Date
+
+Dim setDate As Date
+
+setDate = [Form_RekisteroiLataus].aloituspvm.Value
+
+If IsNull(setDate) Then
+setDate = Now()
+End If
+
+
 Dim dateRound As Integer
 
 Select Case cardType
@@ -418,7 +430,7 @@ Select Case cardType
 
 End Select
 
-expirationDate = DateAdd("m", months, Now())
+expirationDate = DateAdd("m", months, setDate)
 
 'and round up
 If (Day(expirationDate) < 15) Then

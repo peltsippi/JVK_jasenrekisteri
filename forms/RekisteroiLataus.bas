@@ -16,9 +16,9 @@ Begin Form
     GridY =10
     Width =6973
     DatasheetFontHeight =11
-    ItemSuffix =381
-    Left =4044
-    Top =3468
+    ItemSuffix =391
+    Left =2556
+    Top =3456
     Right =17484
     Bottom =11712
     Picture ="bulldog_pienempi"
@@ -300,7 +300,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =7842
+            Height =8277
             Name ="Tiedot"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -388,10 +388,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2844
+                    Top =3360
                     Width =3780
                     Height =336
-                    TabIndex =2
+                    TabIndex =3
                     ForeColor =4210752
                     Name ="Hinta"
                     Format ="#,##0.00 €;-#,##0.00 €"
@@ -402,11 +402,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2844
+                    LayoutCachedTop =3360
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =3180
-                    RowStart =6
-                    RowEnd =6
+                    LayoutCachedHeight =3696
+                    RowStart =7
+                    RowEnd =7
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -422,7 +422,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2844
+                            Top =3360
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -434,11 +434,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2844
+                            LayoutCachedTop =3360
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3180
-                            RowStart =6
-                            RowEnd =6
+                            LayoutCachedHeight =3696
+                            RowStart =7
+                            RowEnd =7
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -452,10 +452,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3396
+                    Top =3912
                     Width =3780
                     Height =336
-                    TabIndex =3
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Voimassa"
                     Format ="Short Date"
@@ -467,11 +467,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3396
+                    LayoutCachedTop =3912
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =3732
-                    RowStart =7
-                    RowEnd =7
+                    LayoutCachedHeight =4248
+                    RowStart =8
+                    RowEnd =8
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -486,7 +486,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3396
+                            Top =3912
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -498,11 +498,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3396
+                            LayoutCachedTop =3912
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3732
-                            RowStart =7
-                            RowEnd =7
+                            LayoutCachedHeight =4248
+                            RowStart =8
+                            RowEnd =8
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -515,8 +515,8 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =396
-                    Top =4536
-                    Width =5844
+                    Top =4932
+                    Width =5952
                     Height =612
                     BackColor =62207
                     BorderColor =8355711
@@ -529,9 +529,9 @@ Begin Form
                     BottomPadding =150
                     GridlineColor =10921638
                     LayoutCachedLeft =396
-                    LayoutCachedTop =4536
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =5148
+                    LayoutCachedTop =4932
+                    LayoutCachedWidth =6348
+                    LayoutCachedHeight =5544
                     LayoutGroup =3
                     BackThemeColorIndex =-1
                     GroupTable =13
@@ -544,10 +544,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2340
+                    Top =2856
                     Width =3780
                     Height =288
-                    TabIndex =1
+                    TabIndex =2
                     ForeColor =4210752
                     Name ="Puumerkki"
                     FontName ="Calibri"
@@ -557,11 +557,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2340
+                    LayoutCachedTop =2856
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =2628
-                    RowStart =5
-                    RowEnd =5
+                    LayoutCachedHeight =3144
+                    RowStart =6
+                    RowEnd =6
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -576,7 +576,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2340
+                            Top =2856
                             Width =1980
                             Height =288
                             Name ="Selite176"
@@ -586,11 +586,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2340
+                            LayoutCachedTop =2856
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =2628
-                            RowStart =5
-                            RowEnd =5
+                            LayoutCachedHeight =3144
+                            RowStart =6
+                            RowEnd =6
                             LayoutGroup =2
                             BorderThemeColorIndex =-1
                             ForeThemeColorIndex =-1
@@ -599,14 +599,14 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =215
+                    OverlapFlags =85
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =396
-                    Top =6084
-                    Width =5844
+                    Top =6480
+                    Width =5952
                     Height =696
-                    TabIndex =8
+                    TabIndex =9
                     ForeColor =4210752
                     Name ="Save"
                     Caption ="Tallenna"
@@ -617,9 +617,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =396
-                    LayoutCachedTop =6084
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =6780
+                    LayoutCachedTop =6480
+                    LayoutCachedWidth =6348
+                    LayoutCachedHeight =7176
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =3
@@ -641,10 +641,10 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =396
-                    Top =6972
-                    Width =5844
-                    Height =720
-                    TabIndex =9
+                    Top =7368
+                    Width =5952
+                    Height =672
+                    TabIndex =10
                     ForeColor =4210752
                     Name ="ragequit"
                     Caption ="Sulje"
@@ -675,9 +675,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =396
-                    LayoutCachedTop =6972
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =7692
+                    LayoutCachedTop =7368
+                    LayoutCachedWidth =6348
+                    LayoutCachedHeight =8040
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =3
@@ -811,7 +811,7 @@ Begin Form
                     Top =630
                     Width =3384
                     Height =1351
-                    TabIndex =5
+                    TabIndex =6
                     BackColor =15921906
                     Name ="Valinta"
                     OnClick ="[Event Procedure]"
@@ -1076,7 +1076,7 @@ Begin Form
                     Top =1071
                     Width =1190
                     Height =300
-                    TabIndex =6
+                    TabIndex =7
                     Name ="KKmaara"
                     RowSourceType ="Value List"
                     RowSource ="\"18\";\"17\";\"16\";\"15\";\"14\";\"13\";\"12\";\"11\";\"10\";\"9\";\"8\";\"7\""
@@ -1133,7 +1133,7 @@ Begin Form
                     Top =1756
                     Width =1190
                     Height =300
-                    TabIndex =7
+                    TabIndex =8
                     Name ="KERMaara"
                     RowSourceType ="Value List"
                     RowSource ="\"50\";\"40\";\"30\";\"20\";\"10\""
@@ -1186,10 +1186,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3948
+                    Top =4464
                     Width =3780
                     Height =336
-                    TabIndex =4
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="Korttityyppi"
                     FontName ="Calibri"
@@ -1198,11 +1198,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3948
+                    LayoutCachedTop =4464
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =4284
-                    RowStart =8
-                    RowEnd =8
+                    LayoutCachedHeight =4800
+                    RowStart =9
+                    RowEnd =9
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -1217,7 +1217,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3948
+                            Top =4464
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -1229,11 +1229,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3948
+                            LayoutCachedTop =4464
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4284
-                            RowStart =8
-                            RowEnd =8
+                            LayoutCachedHeight =4800
+                            RowStart =9
+                            RowEnd =9
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -1246,8 +1246,8 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     Left =396
-                    Top =5328
-                    Width =5844
+                    Top =5724
+                    Width =5952
                     Height =564
                     BackColor =62207
                     BorderColor =8355711
@@ -1260,14 +1260,75 @@ Begin Form
                     BottomPadding =150
                     GridlineColor =10921638
                     LayoutCachedLeft =396
-                    LayoutCachedTop =5328
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =5892
+                    LayoutCachedTop =5724
+                    LayoutCachedWidth =6348
+                    LayoutCachedHeight =6288
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =3
                     BackThemeColorIndex =-1
                     GroupTable =13
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =177
+                    TextAlign =1
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =2412
+                    Top =2304
+                    Width =3780
+                    Height =336
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="aloituspvm"
+                    Format ="Short Date"
+                    DefaultValue ="=Date()"
+                    FontName ="Calibri"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2412
+                    LayoutCachedTop =2304
+                    LayoutCachedWidth =6192
+                    LayoutCachedHeight =2640
+                    RowStart =5
+                    RowEnd =5
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            TextFontCharSet =177
+                            TextAlign =1
+                            TextFontFamily =0
+                            Left =336
+                            Top =2304
+                            Width =1980
+                            Height =336
+                            BorderColor =8355711
+                            ForeColor =6710886
+                            Name ="Selite382"
+                            Caption ="Aloituspvm"
+                            FontName ="Calibri"
+                            GroupTable =2
+                            BottomPadding =150
+                            GridlineColor =10921638
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =2304
+                            LayoutCachedWidth =2316
+                            LayoutCachedHeight =2640
+                            RowStart =5
+                            RowEnd =5
+                            LayoutGroup =2
+                            GroupTable =2
+                        End
+                    End
                 End
             End
         End

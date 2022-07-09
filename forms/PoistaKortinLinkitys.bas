@@ -14,10 +14,10 @@ Begin Form
     GridY =10
     Width =7880
     DatasheetFontHeight =11
-    ItemSuffix =43
-    Left =4044
+    ItemSuffix =53
+    Left =2556
     Top =3468
-    Right =17484
+    Right =22788
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -106,6 +106,24 @@ Begin Form
             PressedForeThemeColorIndex =0
             PressedForeTint =75.0
         End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
         Begin TextBox
             AddColon = NotDefault
             FELineBreak = NotDefault
@@ -173,7 +191,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =5889
                     Top =60
@@ -200,7 +220,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =87
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =5889
                     Top =360
@@ -226,7 +248,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =3066
+            Height =3462
             Name ="Tiedot"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -435,10 +457,10 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =360
-                    Top =2460
+                    Top =2856
                     Width =3780
                     Height =576
-                    TabIndex =3
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Poista"
                     Caption ="Poista linkitys"
@@ -448,11 +470,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =360
-                    LayoutCachedTop =2460
+                    LayoutCachedTop =2856
                     LayoutCachedWidth =4140
-                    LayoutCachedHeight =3036
-                    RowStart =3
-                    RowEnd =3
+                    LayoutCachedHeight =3432
+                    RowStart =4
+                    RowEnd =4
                     LayoutGroup =2
                     BackColor =15123357
                     BorderColor =15123357
@@ -472,10 +494,10 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =4224
-                    Top =2460
+                    Top =2856
                     Width =3276
                     Height =576
-                    TabIndex =4
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="Komento35"
                     Caption ="Sulje"
@@ -501,11 +523,11 @@ Begin Form
                     End
 
                     LayoutCachedLeft =4224
-                    LayoutCachedTop =2460
+                    LayoutCachedTop =2856
                     LayoutCachedWidth =7500
-                    LayoutCachedHeight =3036
-                    RowStart =3
-                    RowEnd =3
+                    LayoutCachedHeight =3432
+                    RowStart =4
+                    RowEnd =4
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -525,6 +547,8 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =340
                     Top =56
                     Width =7030
@@ -541,6 +565,57 @@ Begin Form
                     LayoutCachedWidth =7370
                     LayoutCachedHeight =340
                     BackThemeColorIndex =-1
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =4224
+                    Top =2448
+                    Width =3276
+                    Height =336
+                    TabIndex =3
+                    BorderColor =10921638
+                    Name ="discard"
+                    DefaultValue ="=False"
+                    GroupTable =2
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =4224
+                    LayoutCachedTop =2448
+                    LayoutCachedWidth =7500
+                    LayoutCachedHeight =2784
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =177
+                            TextAlign =1
+                            TextFontFamily =0
+                            Left =360
+                            Top =2448
+                            Width =3780
+                            Height =336
+                            BorderColor =8355711
+                            ForeColor =6710886
+                            Name ="Selite46"
+                            Caption ="Kortti rikki/kadonnut?"
+                            FontName ="Calibri"
+                            GroupTable =2
+                            GridlineColor =10921638
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2448
+                            LayoutCachedWidth =4140
+                            LayoutCachedHeight =2784
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =2
+                            GroupTable =2
+                        End
+                    End
                 End
             End
         End
@@ -610,28 +685,63 @@ Private Sub Poista_Click()
     Dim korttiID As Integer
     korttiID = Common.FetchGeneralID("Kortit", "CID", "Kortti = '" & cardnumber & "'")
     
+    Dim deletebool As Boolean
+    deletebool = [Form_PoistaKortinLinkitys].discard.Value
+    
+    If deletebool Then
+        Dim feedback As Integer
+        Dim table2 As String
+        table2 = "Lataukset"
+        Dim values2 As String
+        
+        values2 = " Kortti = '" & korttiID & "'" _
+        & ", Voimassa = '" & DateAdd("d", 1900, Date) & "'" _
+        & ", Lataaja = '" & Puumerkki & "'" _
+        & ", Korttityyppi = 'RIKKI/KADONNUT'" _
+        & ", KortinArvo = '0 €'" _
+        & ", Ajankohta = '" & Date & "' "
+        
+        feedback = Common.InsertOrUpdate(table2, values2, "")
+        
+        If (Not (feedback)) Then
+            MsgBox ("Kortin poistossa tapahtui virhe, käy muokkaamassa manuaalisesti kortin tietoihin että se on rikki!")
+        Else
+            MsgBox ("Kortti merkattu poistetuksi!")
+        End If
+        
+        
+        
+    End If
+    
+    
     Dim success As Boolean
     Dim table As String
     Dim values As String
     Dim Target As String
     
     table = "Kortit"
-    values = "Omistaja = " & newOwner & ", " _
-    & "PVM = '" & Now() & "', " _
-    & "Puumerkki = '" & Puumerkki & "', " _
+    values = "Omistaja = '" & newOwner & "' , " _
+    & "PVM = '" & Date & "' ," _
+    & "Puumerkki = '" & Puumerkki & "' ," _
     & "Muistiinpanot = '" & Muistiinpano & "' "
     
     Target = "Kortti = '" & cardnumber & "'"
     
-    success = Common.InsertOrUpdate(table, values, Target)
+    'Jätetäänpä nämä sittenkin talteen käyttäjän alle heh heh...
     
-    If Not (success) Then
-        MsgBox ("Jotain meni pieleen sori siitä!")
+    If (Not (deletebool)) Then
+        success = Common.InsertOrUpdate(table, values, Target)
+    
+        If Not (success) Then
+            MsgBox ("Jotain meni pieleen sori siitä!")
+        
+    
+        End If
+    
     End If
     
-    
     Dim logOutput As String
-    logOutput = "Puumerkki " & Puumerkki & " poisti kortin " & cardnumber & " linkityksen, muistiinpanot: " & Muistiinpano
+    logOutput = "Puumerkki " & Puumerkki & " poisti kortin " & cardnumber & " linkityksen, muistiinpanot: " & Muistiinpano & " ja kortti merkattu poistetuksi: " & deletebool
     success = Common.SaveToLog(logOutput)
     
     success = Common.SendMessageToMainScreen("Kortin " & cardnumber & " linkitys poistettu!")
