@@ -17,7 +17,7 @@ Begin Form
     GridY =24
     Width =9870
     DatasheetFontHeight =11
-    ItemSuffix =285
+    ItemSuffix =287
     Left =2556
     Top =3468
     Right =17484
@@ -1134,7 +1134,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =27
+                    TabIndex =28
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1268,7 +1268,7 @@ Begin Form
                     Top =6660
                     Width =1560
                     Height =804
-                    TabIndex =22
+                    TabIndex =23
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
@@ -1376,7 +1376,7 @@ Begin Form
                     Top =6660
                     Width =1584
                     Height =804
-                    TabIndex =23
+                    TabIndex =24
                     Name ="kortitIlmanOmistajaa"
                     Caption ="Aktiiviset kortit ilman omistajaa"
                     OnClick ="[Event Procedure]"
@@ -1410,7 +1410,7 @@ Begin Form
                     Top =6660
                     Width =1728
                     Height =804
-                    TabIndex =24
+                    TabIndex =25
                     Name ="maksettuEiLadattu"
                     Caption ="Tarkasta lataamattomat kortit"
                     OnClick ="[Event Procedure]"
@@ -1443,7 +1443,7 @@ Begin Form
                     Left =5676
                     Top =6660
                     Height =804
-                    TabIndex =25
+                    TabIndex =26
                     Name ="otaVarmuuskopio"
                     Caption ="Ota varmuuskopio"
                     OnClick ="[Event Procedure]"
@@ -1476,7 +1476,7 @@ Begin Form
                     Left =7188
                     Top =6660
                     Height =804
-                    TabIndex =26
+                    TabIndex =27
                     Name ="korttiTilastot"
                     Caption ="Näytä korttitilastot"
                     OnClick ="[Event Procedure]"
@@ -1520,24 +1520,6 @@ Begin Form
                     LayoutGroup =1
                     GroupTable =1
                 End
-                Begin EmptyCell
-                    Left =7188
-                    Top =5784
-                    Height =804
-                    Name ="TyhjäSolu267"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7188
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =8628
-                    LayoutCachedHeight =6588
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =4
-                    ColumnEnd =4
-                    LayoutGroup =1
-                    GroupTable =1
-                End
                 Begin CommandButton
                     OverlapFlags =93
                     Left =5676
@@ -1571,6 +1553,39 @@ Begin Form
                     WebImagePaddingBottom =2
                     Overlaps =1
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =7188
+                    Top =5784
+                    Height =804
+                    TabIndex =22
+                    Name ="voimassaOlleetKorit"
+                    Caption ="Aikavälillä voimassa olleet kortit"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =1
+
+                    LayoutCachedLeft =7188
+                    LayoutCachedTop =5784
+                    LayoutCachedWidth =8628
+                    LayoutCachedHeight =6588
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
                 Begin Image
                     PictureType =2
                     Left =519
@@ -1584,7 +1599,7 @@ Begin Form
                     LayoutCachedTop =4015
                     LayoutCachedWidth =9397
                     LayoutCachedHeight =7927
-                    TabIndex =28
+                    TabIndex =29
                 End
             End
         End
@@ -1833,6 +1848,13 @@ Private Sub Tyhjennä_Click()
     [Form_Tervetuloa].Refresh
     
 
+End Sub
+
+Private Sub voimassaOlleetKorit_Click()
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi listauksen tietyllä ajanjaksolla voimassa olleista korteista")
+    DoCmd.OpenReport "Kortit joissa latausta ajanjaksolla", acViewPreview
+    
 End Sub
 
 Private Sub Yhteystietovalinta_AfterUpdate()

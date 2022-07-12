@@ -106,6 +106,8 @@ Begin Report
             BackTint =20.0
             Begin
                 Begin Label
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =1644
                     Top =170
                     Width =7368
@@ -2778,7 +2780,7 @@ Begin Report
             End
         End
         Begin PageHeader
-            Height =3685
+            Height =3701
             Name ="SivunYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -2786,7 +2788,9 @@ Begin Report
             BackThemeColorIndex =1
             Begin
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     Left =340
                     Top =3344
                     Width =2136
@@ -2805,10 +2809,12 @@ Begin Report
                     LayoutCachedHeight =3644
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =2595
+                    TextFontFamily =0
+                    Left =2834
                     Top =3344
-                    Width =1572
+                    Width =1308
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
@@ -2818,14 +2824,16 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =2595
+                    LayoutCachedLeft =2834
                     LayoutCachedTop =3344
-                    LayoutCachedWidth =4167
+                    LayoutCachedWidth =4142
                     LayoutCachedHeight =3644
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =4068
+                    TextFontFamily =0
+                    Left =4365
                     Top =3344
                     Width =1548
                     Height =300
@@ -2837,14 +2845,16 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =4068
+                    LayoutCachedLeft =4365
                     LayoutCachedTop =3344
-                    LayoutCachedWidth =5616
+                    LayoutCachedWidth =5913
                     LayoutCachedHeight =3644
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =5673
+                    TextFontFamily =0
+                    Left =6066
                     Top =3344
                     Width =1392
                     Height =300
@@ -2856,14 +2866,16 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =5673
+                    LayoutCachedLeft =6066
                     LayoutCachedTop =3344
-                    LayoutCachedWidth =7065
+                    LayoutCachedWidth =7458
                     LayoutCachedHeight =3644
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =7122
+                    TextFontFamily =0
+                    Left =8050
                     Top =3344
                     Width =1392
                     Height =300
@@ -2875,15 +2887,17 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =7122
+                    LayoutCachedLeft =8050
                     LayoutCachedTop =3344
-                    LayoutCachedWidth =8514
+                    LayoutCachedWidth =9442
                     LayoutCachedHeight =3644
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =8571
-                    Top =3344
+                    TextFontFamily =0
+                    Left =10601
+                    Top =3288
                     Width =1392
                     Height =300
                     BorderColor =8355711
@@ -2894,14 +2908,16 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =8571
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =9963
-                    LayoutCachedHeight =3644
+                    LayoutCachedLeft =10601
+                    LayoutCachedTop =3288
+                    LayoutCachedWidth =11993
+                    LayoutCachedHeight =3588
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =9972
+                    TextFontFamily =0
+                    Left =12699
                     Top =3344
                     Width =1440
                     Height =300
@@ -2913,9 +2929,9 @@ Begin Report
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =9972
+                    LayoutCachedLeft =12699
                     LayoutCachedTop =3344
-                    LayoutCachedWidth =11412
+                    LayoutCachedWidth =14139
                     LayoutCachedHeight =3644
                 End
                 Begin ModernChart
@@ -2983,6 +2999,8 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =342
                     Top =57
@@ -3004,10 +3022,12 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =2777
-                    Top =57
-                    Width =1392
+                    Left =2891
+                    Top =56
+                    Width =960
                     Height =312
                     TabIndex =1
                     BorderColor =10921638
@@ -3017,17 +3037,19 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2777
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =4169
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =2891
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3851
+                    LayoutCachedHeight =368
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =4226
-                    Top =57
-                    Width =1392
+                    Left =4535
+                    Top =56
+                    Width =984
                     Height =312
                     TabIndex =2
                     BorderColor =10921638
@@ -3037,17 +3059,19 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4226
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =5618
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =4535
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =5519
+                    LayoutCachedHeight =368
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =5675
-                    Top =57
-                    Width =1392
+                    Left =6406
+                    Top =56
+                    Width =912
                     Height =312
                     TabIndex =3
                     BorderColor =10921638
@@ -3057,16 +3081,17 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =5675
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =7067
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =6406
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =7318
+                    LayoutCachedHeight =368
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =7124
-                    Top =57
+                    Left =7993
                     Width =1392
                     Height =312
                     TabIndex =4
@@ -3077,16 +3102,17 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =7124
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =8516
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =7993
+                    LayoutCachedWidth =9385
+                    LayoutCachedHeight =312
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =8573
-                    Top =57
+                    Left =10601
+                    Top =56
                     Width =1392
                     Height =312
                     TabIndex =5
@@ -3097,16 +3123,18 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =8573
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =9965
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =10601
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =11993
+                    LayoutCachedHeight =368
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =10022
-                    Top =57
+                    Left =12755
+                    Top =56
                     Width =1392
                     Height =312
                     ColumnWidth =1428
@@ -3118,10 +3146,10 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =10022
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =11414
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =12755
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =14147
+                    LayoutCachedHeight =368
                 End
             End
         End
@@ -3135,7 +3163,9 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =57
                     Top =228
@@ -3156,7 +3186,9 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =10023
                     Top =228

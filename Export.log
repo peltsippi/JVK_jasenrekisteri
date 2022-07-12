@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-9.7.2022 21.45.39
+12.7.2022 22.23.45
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -44,43 +44,62 @@ Error 13: Type mismatch Source: Unknown
 -------------------------------------
 No modified imex specs found in this database.
 -------------------------------------
-No modified tables found in this database.
+Exporting tables...           
+  Hinnasto
+    Sanitized in 0,025 seconds.
+  Hinnasto (SQL)
+[1]
 -------------------------------------
 Exporting queries...          
-  Hae nimi
-    Sanitized in 0,003 seconds.
-  Hae nimi (SQL)
-  LatausListaus
+  KortinKaikkiLataukset
+Source: modSanitize.SanitizeFile
     Sanitized in 0,002 seconds.
-  LatausListaus (SQL)
+  KortinKaikkiLataukset (SQL)
+  KorttitilastoKysely
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,001 seconds.
+  KorttitilastoKysely (SQL)
+  LatauksetKaikki
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,001 seconds.
+  LatauksetKaikki (SQL)
+  LataustaAjanjaksolla
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,002 seconds.
+  LataustaAjanjaksolla (SQL)
   ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
     Sanitized in 0,001 seconds.
   ListaaKortitJaLataukset (SQL)
-[3]
+  VoimassaolevatIlmanOmistajaa
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,001 seconds.
+  VoimassaolevatIlmanOmistajaa (SQL)
+[6]
 -------------------------------------
 Exporting forms...            
-  KorjaaKortinLatauksia
-    Sanitized in 0,009 seconds.
-  YhteystietojenMuokkaus
-    Sanitized in 0,026 seconds.
   PoistaKortinLinkitys
-    Sanitized in 0,012 seconds.
-  LisaaKortinLinkitys
-    Sanitized in 0,010 seconds.
-  LatausListaus
-    Sanitized in 0,007 seconds.
-  RekisteroiLataus
-    Sanitized in 0,026 seconds.
-[6]
+    Sanitized in 0,014 seconds.
+  Tervetuloa
+    Sanitized in 0,040 seconds.
+[2]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
-No modified reports found in this database.
+Exporting reports...          
+  LatauksetKaikki
+    Sanitized in 0,027 seconds.
+  VoimassaolevatIlmanOmistajaa
+    Sanitized in 0,015 seconds.
+  Korttitilasto
+    Sanitized in 0,021 seconds.
+  Kortit joissa latausta ajanjaksolla
+    Sanitized in 0,007 seconds.
+[4]
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,028 seconds.
+    Sanitized in 0,006 seconds.
 [1]
 -------------------------------------
 Exporting modules...          
@@ -105,7 +124,7 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (2,22 seconds)
+Done. (3,87 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
@@ -114,48 +133,51 @@ Object Type                   Count     Seconds
 --------------------------------------------------
 Project                       1         0,03
 VB Project                    1         0,02
-VBE References                2         0,03
-DB Properties                 53        0,22
-Queries                       3         0,12
-Forms                         6         1,00
-Table Data                    1         0,24
+VBE References                2         0,04
+DB Properties                 53        0,27
+Tables                        1         0,08
+Queries                       6         0,23
+Forms                         2         0,49
+Reports                       4         2,02
+Table Data                    1         0,13
 Modules                       1         0,04
 Relations                     3         0,06
 Doc Properties                2         0,02
 Nav Pane Groups               1         0,02
 --------------------------------------------------
-TOTALS:                       74        1,80
+TOTALS:                       78        3,46
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     27        0,30
-Parse JSON                    11        0,02
-Convert to JSON               618       0,31
-Compute SHA256                38        0,00
-Console Updates               3         0,09
-Compare Dictionary            9         0,00
-Get Modified Date             13        0,01
-Get File Property Hash        13        0,01
-Clear Orphaned                7         0,70
-App.SaveAsText()              9         0,16
-Verify Path                   25        0,00
+Read File                     33        1,70
+Parse JSON                    13        0,03
+Convert to JSON               788       0,45
+Compute SHA256                42        0,00
+Console Updates               4         0,11
+Compare Dictionary            11        0,00
+Get Modified Date             17        0,01
+Get File Property Hash        17        0,01
+Clear Orphaned                7         0,62
+Verify Path                   39        0,01
+App.ExportXML()               2         0,13
+Sanitize XML                  2         0,01
+Format XML                    2         0,02
+Write File                    24        0,03
+Save Table SQL                1         0,00
+App.SaveAsText()              12        0,20
+Read File Bytes               18        0,19
+Sanitize File                 12        0,12
+Save Query SQL                6         0,01
 Delete File                   11        0,02
-Read File Bytes               15        0,12
-Sanitize File                 9         0,09
-Write File                    14        0,01
-Save Query SQL                3         0,01
-Get VBA Hash                  26        0,01
-Read File DevMode             6         0,01
-Increment Progress            1         0,05
-App.ExportXML()               1         0,19
-Sanitize XML                  1         0,01
-Format XML                    1         0,02
+Get VBA Hash                  27        0,02
+Read File DevMode             6         0,02
+Increment Progress            2         0,07
 Export VBE Module             1         0,01
 Enc. Windows-1252 as utf-8    1         0,02
 --------------------------------------------------
-Other Operations                        0,09
+Other Operations                        0,10
 --------------------------------------------------
 
 

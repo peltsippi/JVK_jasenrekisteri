@@ -394,10 +394,10 @@ Dim expirationDate As Date
 
 Dim setDate As Date
 
-setDate = [Form_RekisteroiLataus].aloituspvm.Value
-
-If IsNull(setDate) Then
-setDate = Now()
+If IsNull([Form_RekisteroiLataus].aloituspvm) Then
+    setDate = Now()
+Else
+    setDate = [Form_RekisteroiLataus].aloituspvm.Value
 End If
 
 
@@ -431,6 +431,7 @@ Select Case cardType
 End Select
 
 expirationDate = DateAdd("m", months, setDate)
+'MsgBox ("Expiration date before rounding: " & expirationDate)
 
 'and round up
 If (Day(expirationDate) < 15) Then
@@ -455,10 +456,11 @@ Else
     ' round to month end, how?
     Dim lastDayOfMonth As Date
     
-    lastDayOfMonth = DateAdd("d", -1, (DateAdd("m", 1, expirationDate)))
-    'MsgBox ("Last day of month: " & lastDayOfMonth)
+    lastDayOfMonth = DateSerial(Year(expirationDate), Month(expirationDate) + 1, 1) ' add 1 extra month, 1st day.
+    'then just substract 1 day to get it right
+    expirationDate = DateAdd("d", -1, lastDayOfMonth)
     
-    expirationDate = lastDayOfMonth
+
 End If
 
 

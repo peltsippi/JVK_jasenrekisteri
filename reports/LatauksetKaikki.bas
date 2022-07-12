@@ -107,6 +107,8 @@ Begin Report
             BackTint =20.0
             Begin
                 Begin Label
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =2154
                     Top =56
                     Width =4572
@@ -124,6 +126,8 @@ Begin Report
                     LayoutCachedHeight =584
                 End
                 Begin TextBox
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2154
@@ -2812,7 +2816,9 @@ Begin Report
             BackThemeColorIndex =1
             Begin
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     Left =342
                     Top =57
                     Width =6528
@@ -2831,7 +2837,9 @@ Begin Report
                     LayoutCachedHeight =357
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     Left =6927
                     Top =57
                     Width =1392
@@ -2850,7 +2858,9 @@ Begin Report
                     LayoutCachedHeight =357
                 End
                 Begin Label
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     Left =8390
                     Top =56
                     Width =1392
@@ -2880,6 +2890,8 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =342
                     Top =57
@@ -2900,6 +2912,8 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =6927
                     Top =57
@@ -2920,6 +2934,8 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =8390
                     Top =56
@@ -2949,7 +2965,9 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =4762
                     Width =5040
@@ -2977,7 +2995,9 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =283
                     Top =11508
@@ -3023,6 +3043,8 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =6927
                     Top =5
@@ -3046,6 +3068,8 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =8390
                     Top =5
@@ -3103,6 +3127,8 @@ Begin Report
                     ChartSubtitleFontColor =8355711
                 End
                 Begin Label
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =283
                     Width =5216
                     Height =397

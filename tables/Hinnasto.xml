@@ -194,4 +194,34 @@
 <Tyyppi>muu</Tyyppi>
 <Hinta>0</Hinta>
 </Hinnasto>
+<Hinnasto>
+<Tunniste>40</Tunniste>
+<Tyyppi>13kk opisk</Tyyppi>
+<Hinta>325</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>41</Tunniste>
+<Tyyppi>14kk opisk</Tyyppi>
+<Hinta>350</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>42</Tunniste>
+<Tyyppi>15kk opisk</Tyyppi>
+<Hinta>375</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>43</Tunniste>
+<Tyyppi>16kk opisk</Tyyppi>
+<Hinta>400</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>44</Tunniste>
+<Tyyppi>17kk opisk</Tyyppi>
+<Hinta>425</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>45</Tunniste>
+<Tyyppi>18kk opisk</Tyyppi>
+<Hinta>450</Hinta>
+</Hinnasto>
 </dataroot>

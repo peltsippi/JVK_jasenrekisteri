@@ -1,7 +1,7 @@
 ﻿{
   "Info": {
     "Class": "clsDbReport",
-    "Description": "LatauksetKaikki Print Settings"
+    "Description": "Kortit joissa latausta ajanjaksolla Print Settings"
   },
   "Items": {
     "Printer": {
@@ -14,8 +14,8 @@
       "RightMargin": 0.25,
       "BotMargin": 0.25,
       "DataOnly": false,
-      "Width": 6.9285,
-      "Height": 0.2562,
+      "Width": 8,
+      "Height": 0.2958,
       "DefaultSize": true,
       "Columns": 1,
       "ColumnSpacing": 0.25,
