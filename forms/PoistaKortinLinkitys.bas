@@ -17,8 +17,8 @@ Begin Form
     ItemSuffix =53
     Left =2556
     Top =3468
-    Right =22788
-    Bottom =11712
+    Right =10692
+    Bottom =9216
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0xa22cdf047cc5e540
@@ -260,7 +260,7 @@ Begin Form
                     Left =283
                     Top =56
                     Width =7317
-                    Height =3857
+                    Height =4433
                     BackColor =14277081
                     BorderColor =10921638
                     Name ="Ruutu42"
@@ -268,7 +268,7 @@ Begin Form
                     LayoutCachedLeft =283
                     LayoutCachedTop =56
                     LayoutCachedWidth =7600
-                    LayoutCachedHeight =3913
+                    LayoutCachedHeight =4489
                     BackShade =85.0
                 End
                 Begin TextBox
@@ -278,7 +278,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3648
+                    Left =3612
                     Top =360
                     Width =3276
                     Height =300
@@ -290,9 +290,9 @@ Begin Form
                     GroupTable =2
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3648
+                    LayoutCachedLeft =3612
                     LayoutCachedTop =360
-                    LayoutCachedWidth =6924
+                    LayoutCachedWidth =6888
                     LayoutCachedHeight =660
                     ColumnStart =1
                     ColumnEnd =1
@@ -307,7 +307,7 @@ Begin Form
                             TextFontFamily =0
                             Left =360
                             Top =360
-                            Width =3204
+                            Width =3168
                             Height =300
                             BackColor =15921906
                             BorderColor =8355711
@@ -319,7 +319,7 @@ Begin Form
                             GridlineColor =10921638
                             LayoutCachedLeft =360
                             LayoutCachedTop =360
-                            LayoutCachedWidth =3564
+                            LayoutCachedWidth =3528
                             LayoutCachedHeight =660
                             LayoutGroup =2
                             BackShade =95.0
@@ -334,7 +334,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3648
+                    Left =3612
                     Top =744
                     Width =3276
                     Height =336
@@ -346,9 +346,9 @@ Begin Form
                     GroupTable =2
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3648
+                    LayoutCachedLeft =3612
                     LayoutCachedTop =744
-                    LayoutCachedWidth =6924
+                    LayoutCachedWidth =6888
                     LayoutCachedHeight =1080
                     RowStart =1
                     RowEnd =1
@@ -367,7 +367,7 @@ Begin Form
                             TextFontFamily =0
                             Left =360
                             Top =744
-                            Width =3204
+                            Width =3168
                             Height =336
                             BackColor =15921906
                             BorderColor =8355711
@@ -379,7 +379,7 @@ Begin Form
                             GridlineColor =10921638
                             LayoutCachedLeft =360
                             LayoutCachedTop =744
-                            LayoutCachedWidth =3564
+                            LayoutCachedWidth =3528
                             LayoutCachedHeight =1080
                             RowStart =1
                             RowEnd =1
@@ -396,7 +396,7 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3648
+                    Left =3612
                     Top =1164
                     Width =3276
                     Height =1380
@@ -408,9 +408,9 @@ Begin Form
                     GroupTable =2
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3648
+                    LayoutCachedLeft =3612
                     LayoutCachedTop =1164
-                    LayoutCachedWidth =6924
+                    LayoutCachedWidth =6888
                     LayoutCachedHeight =2544
                     RowStart =2
                     RowEnd =2
@@ -429,20 +429,19 @@ Begin Form
                             TextFontFamily =0
                             Left =360
                             Top =1164
-                            Width =3204
+                            Width =3168
                             Height =1380
                             BackColor =15921906
                             BorderColor =8355711
                             ForeColor =6710886
                             Name ="Muistiinpano_selite"
-                            Caption ="Muistiinpanot\015\012(ei jää talteen jos kortti merkataan\015\012rikkinäiseksi/k"
-                                "adonneeksi!\015\012Kirjoita tähän silti jotain että nappi ilmestyy)"
+                            Caption ="Muistiinpanot\015\012"
                             FontName ="Calibri"
                             GroupTable =2
                             GridlineColor =10921638
                             LayoutCachedLeft =360
                             LayoutCachedTop =1164
-                            LayoutCachedWidth =3564
+                            LayoutCachedWidth =3528
                             LayoutCachedHeight =2544
                             RowStart =2
                             RowEnd =2
@@ -453,12 +452,12 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    OverlapFlags =85
+                    OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =360
-                    Top =4056
-                    Width =3204
+                    Top =4332
+                    Width =3168
                     Height =576
                     TabIndex =4
                     ForeColor =4210752
@@ -470,9 +469,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =360
-                    LayoutCachedTop =4056
-                    LayoutCachedWidth =3564
-                    LayoutCachedHeight =4632
+                    LayoutCachedTop =4332
+                    LayoutCachedWidth =3528
+                    LayoutCachedHeight =4908
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =2
@@ -490,11 +489,11 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =85
+                    OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =3648
-                    Top =4056
+                    Left =3612
+                    Top =4332
                     Width =3276
                     Height =576
                     TabIndex =5
@@ -522,10 +521,10 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =3648
-                    LayoutCachedTop =4056
-                    LayoutCachedWidth =6924
-                    LayoutCachedHeight =4632
+                    LayoutCachedLeft =3612
+                    LayoutCachedTop =4332
+                    LayoutCachedWidth =6888
+                    LayoutCachedHeight =4908
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -568,21 +567,22 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =215
-                    Left =3648
+                    Left =3612
                     Top =2604
                     Width =3276
-                    Height =1380
+                    Height =1656
                     TabIndex =3
                     BorderColor =10921638
                     Name ="discard"
                     DefaultValue ="=False"
+                    OnClick ="[Event Procedure]"
                     GroupTable =2
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3648
+                    LayoutCachedLeft =3612
                     LayoutCachedTop =2604
-                    LayoutCachedWidth =6924
-                    LayoutCachedHeight =3984
+                    LayoutCachedWidth =6888
+                    LayoutCachedHeight =4260
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -597,21 +597,21 @@ Begin Form
                             TextFontFamily =0
                             Left =360
                             Top =2604
-                            Width =3204
-                            Height =1380
+                            Width =3168
+                            Height =1656
                             BorderColor =8355711
                             ForeColor =6710886
                             Name ="Selite46"
-                            Caption ="Kortti rikki/kadonnut?\015\012Täppä: kortti on rikki/kadonnut ja sitä ei voi enä"
-                                "ä käyttää. Jää jäsenen tietoihin talteen esim siltä varalta, että kadonnut kortt"
-                                "i löytyy myöhemmin!"
+                            Caption ="Kortti rikki/kadonnut?\015\012Kortti on rikki/kadonnut ja sitä ei enää käytetä t"
+                                "oisille. Jää jäsenen tietoihin talteen esim siltä varalta, että kadonnut kortti "
+                                "löytyy myöhemmin!"
                             FontName ="Calibri"
                             GroupTable =2
                             GridlineColor =10921638
                             LayoutCachedLeft =360
                             LayoutCachedTop =2604
-                            LayoutCachedWidth =3564
-                            LayoutCachedHeight =3984
+                            LayoutCachedWidth =3528
+                            LayoutCachedHeight =4260
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =2
@@ -639,7 +639,28 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 
+Private Function HideNotes()
+    If ([Form_PoistaKortinLinkitys].discard.Value) Then
+        [Form_PoistaKortinLinkitys].Muistiinpano.Visible = False
+    Else
+        [Form_PoistaKortinLinkitys].Muistiinpano.Visible = True
+    End If
+
+End Function
     
+Private Sub discard_Click()
+    If IsNull([Form_PoistaKortinLinkitys].Puumerkki) Then
+        [Form_PoistaKortinLinkitys].Poista.Visible = False
+    Else
+        [Form_PoistaKortinLinkitys].Poista.Visible = True
+    End If
+    
+    Dim succs As Integer
+    succs = HideNotes()
+
+    
+End Sub
+
 Private Sub Form_Open(Cancel As Integer)
     [Form_PoistaKortinLinkitys].Poista.Visible = False
     [Form_PoistaKortinLinkitys].Muistiinpano.Visible = False
@@ -650,6 +671,18 @@ End Sub
 Private Sub Muistiinpano_Change()
     [Form_PoistaKortinLinkitys].Poista.Visible = True
 End Sub
+
+Private Sub Puumerkki_Change()
+    [Form_PoistaKortinLinkitys].Muistiinpano.Visible = True
+    If ([Form_PoistaKortinLinkitys].discard.Value) Then
+        [Form_PoistaKortinLinkitys].Poista.Visible = True
+    End If
+    
+    Dim succs As Integer
+    succs = HideNotes()
+    
+End Sub
+
 
 Private Sub Poista_Click()
     Dim cardnumber As String
@@ -757,12 +790,4 @@ Private Sub Poista_Click()
     
     DoCmd.Close
     
-End Sub
-
-
-
-
-
-Private Sub Puumerkki_Change()
-    [Form_PoistaKortinLinkitys].Muistiinpano.Visible = True
 End Sub
