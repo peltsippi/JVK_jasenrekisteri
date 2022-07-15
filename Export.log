@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-12.7.2022 22.23.45
+15.7.2022 20.47.47
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -44,62 +44,24 @@ Error 13: Type mismatch Source: Unknown
 -------------------------------------
 No modified imex specs found in this database.
 -------------------------------------
-Exporting tables...           
-  Hinnasto
-    Sanitized in 0,025 seconds.
-  Hinnasto (SQL)
-[1]
+No modified tables found in this database.
 -------------------------------------
-Exporting queries...          
-  KortinKaikkiLataukset
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  KortinKaikkiLataukset (SQL)
-  KorttitilastoKysely
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  KorttitilastoKysely (SQL)
-  LatauksetKaikki
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  LatauksetKaikki (SQL)
-  LataustaAjanjaksolla
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,002 seconds.
-  LataustaAjanjaksolla (SQL)
-  ListaaKortitJaLataukset
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  ListaaKortitJaLataukset (SQL)
-  VoimassaolevatIlmanOmistajaa
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  VoimassaolevatIlmanOmistajaa (SQL)
-[6]
+No modified queries found in this database.
 -------------------------------------
 Exporting forms...            
   PoistaKortinLinkitys
-    Sanitized in 0,014 seconds.
-  Tervetuloa
-    Sanitized in 0,040 seconds.
+    Sanitized in 0,015 seconds.
+  RekisteroiLataus
+    Sanitized in 0,024 seconds.
 [2]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
-Exporting reports...          
-  LatauksetKaikki
-    Sanitized in 0,027 seconds.
-  VoimassaolevatIlmanOmistajaa
-    Sanitized in 0,015 seconds.
-  Korttitilasto
-    Sanitized in 0,021 seconds.
-  Kortit joissa latausta ajanjaksolla
-    Sanitized in 0,007 seconds.
-[4]
+No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,006 seconds.
+    Sanitized in 0,023 seconds.
 [1]
 -------------------------------------
 Exporting modules...          
@@ -124,7 +86,7 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (3,87 seconds)
+Done. (1,86 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
@@ -133,51 +95,46 @@ Object Type                   Count     Seconds
 --------------------------------------------------
 Project                       1         0,03
 VB Project                    1         0,02
-VBE References                2         0,04
-DB Properties                 53        0,27
-Tables                        1         0,08
-Queries                       6         0,23
-Forms                         2         0,49
-Reports                       4         2,02
-Table Data                    1         0,13
-Modules                       1         0,04
-Relations                     3         0,06
-Doc Properties                2         0,02
-Nav Pane Groups               1         0,02
+VBE References                2         0,03
+DB Properties                 53        0,24
+Forms                         2         0,70
+Table Data                    1         0,22
+Modules                       1         0,03
+Relations                     3         0,10
+Doc Properties                2         0,04
+Nav Pane Groups               1         0,04
 --------------------------------------------------
-TOTALS:                       78        3,46
+TOTALS:                       67        1,45
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     33        1,70
-Parse JSON                    13        0,03
-Convert to JSON               788       0,45
-Compute SHA256                42        0,00
-Console Updates               4         0,11
-Compare Dictionary            11        0,00
-Get Modified Date             17        0,01
-Get File Property Hash        17        0,01
-Clear Orphaned                7         0,62
-Verify Path                   39        0,01
-App.ExportXML()               2         0,13
-Sanitize XML                  2         0,01
-Format XML                    2         0,02
-Write File                    24        0,03
-Save Table SQL                1         0,00
-App.SaveAsText()              12        0,20
-Read File Bytes               18        0,19
-Sanitize File                 12        0,12
-Save Query SQL                6         0,01
-Delete File                   11        0,02
-Get VBA Hash                  27        0,02
-Read File DevMode             6         0,02
-Increment Progress            2         0,07
+Read File                     15        0,12
+Parse JSON                    10        0,02
+Convert to JSON               560       0,35
+Compute SHA256                27        0,00
+Console Updates               3         0,08
+Compare Dictionary            8         0,00
+Get Modified Date             6         0,00
+Get File Property Hash        6         0,00
+Clear Orphaned                7         0,81
+Get VBA Hash                  27        0,01
+App.SaveAsText()              2         0,05
+Verify Path                   8         0,00
+Read File Bytes               4         0,03
+Read File DevMode             2         0,00
+Delete File                   4         0,01
+Sanitize File                 2         0,04
+Write File                    4         0,00
+Increment Progress            1         0,05
+App.ExportXML()               1         0,18
+Sanitize XML                  1         0,00
+Format XML                    1         0,02
 Export VBE Module             1         0,01
 Enc. Windows-1252 as utf-8    1         0,02
 --------------------------------------------------
-Other Operations                        0,10
+Other Operations                        0,09
 --------------------------------------------------
 
 

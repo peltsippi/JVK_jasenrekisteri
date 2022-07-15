@@ -685,21 +685,16 @@ Private Sub Poista_Click()
     newOwner = 0 ' kortille vaan määritellään omistajaksi 0 eli nobody...
     
     Dim korttiID As Integer
-    korttiID = Common.FetchGeneralID("Kortit", "CID", "Kortti = '" & cardnumber & "'")
+    'korttiID = Common.FetchGeneralID("Kortit", "CID", "Kortti = '" & cardnumber & "'")
+    korttiID = Common.FetchCardID(cardnumber)
     
     Dim deletebool As Boolean
     deletebool = [Form_PoistaKortinLinkitys].discard.Value
     
     If deletebool Then
-        Dim query As String
+        'Dim query As String
         Dim largestDate As Date
-        
-        query = "SELECT Max(Voimassa) As MaxDate FROM Lataukset WHERE Kortti = " & korttiID
-        'MsgBox ("Query: " & query)
-        Dim result As DAO.Recordset
-        Set result = CurrentDb.OpenRecordset(query)
-        largestDate = result!MaxDate
-        result.Close
+        largestDate = Common.FetchExiprationDate(cardnumber)
         'MsgBox ("Suurin päivämäärä on " & largestDate)
         
         largestDate = DateAdd("d", 1, largestDate) 'add 1 more than previous charge!

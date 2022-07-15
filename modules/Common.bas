@@ -145,6 +145,32 @@ Public Function FetchCardID(cardnumber As String) As Integer
 End Function
 
 
+Public Function FetchExiprationDate(card As String) As Date
+    'Fetches expiration date for a card (largest date from valid until -column where card id matches
+    'if it is older than current date, current date will be used
+    
+    Dim cardID As Integer
+    cardID = Common.FetchCardID(card)
+    Dim query As String
+    Dim endDate As Date
+    query = "SELECT Max(Voimassa) As MaxDate FROM Lataukset WHERE Kortti = " & cardID
+    Dim result As DAO.Recordset
+    Set result = CurrentDb.OpenRecordset(query)
+    endDate = result!MaxDate
+    'MsgBox ("end date before closing: " & endDate)
+    result.Close
+    'MsgBox ("end date after closing: " & endDate)
+ 
+    If (endDate < Date) Then
+        endDate = Date
+    End If
+    
+    FetchExiprationDate = endDate
+    
+     
+    
+End Function
+
 Public Function FetchGeneralID(table As String, desiredID As String, criteria As String) As Integer
     Dim queryString As String
     Dim sqlRecords As DAO.Recordset
@@ -395,7 +421,7 @@ Dim expirationDate As Date
 Dim setDate As Date
 
 If IsNull([Form_RekisteroiLataus].aloituspvm) Then
-    setDate = Now()
+    setDate = Date
 Else
     setDate = [Form_RekisteroiLataus].aloituspvm.Value
 End If

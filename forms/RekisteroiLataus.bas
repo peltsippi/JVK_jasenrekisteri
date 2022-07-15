@@ -18,9 +18,9 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =391
     Left =2556
-    Top =3456
-    Right =17484
-    Bottom =11712
+    Top =3468
+    Right =10068
+    Bottom =12396
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0x84756ccb9ec6e540
@@ -388,7 +388,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3360
+                    Top =3372
                     Width =3780
                     Height =336
                     TabIndex =3
@@ -402,9 +402,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3360
+                    LayoutCachedTop =3372
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =3696
+                    LayoutCachedHeight =3708
                     RowStart =7
                     RowEnd =7
                     ColumnStart =1
@@ -422,7 +422,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3360
+                            Top =3372
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -434,9 +434,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3360
+                            LayoutCachedTop =3372
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3696
+                            LayoutCachedHeight =3708
                             RowStart =7
                             RowEnd =7
                             LayoutGroup =2
@@ -452,7 +452,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3912
+                    Top =3924
                     Width =3780
                     Height =336
                     TabIndex =4
@@ -467,9 +467,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3912
+                    LayoutCachedTop =3924
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =4248
+                    LayoutCachedHeight =4260
                     RowStart =8
                     RowEnd =8
                     ColumnStart =1
@@ -486,7 +486,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3912
+                            Top =3924
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -498,9 +498,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3912
+                            LayoutCachedTop =3924
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4248
+                            LayoutCachedHeight =4260
                             RowStart =8
                             RowEnd =8
                             LayoutGroup =2
@@ -544,7 +544,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2856
+                    Top =2868
                     Width =3780
                     Height =288
                     TabIndex =2
@@ -557,9 +557,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2856
+                    LayoutCachedTop =2868
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =3144
+                    LayoutCachedHeight =3156
                     RowStart =6
                     RowEnd =6
                     ColumnStart =1
@@ -576,7 +576,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2856
+                            Top =2868
                             Width =1980
                             Height =288
                             Name ="Selite176"
@@ -586,9 +586,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2856
+                            LayoutCachedTop =2868
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3144
+                            LayoutCachedHeight =3156
                             RowStart =6
                             RowEnd =6
                             LayoutGroup =2
@@ -1186,7 +1186,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =4464
+                    Top =4476
                     Width =3780
                     Height =336
                     TabIndex =5
@@ -1198,9 +1198,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =4464
+                    LayoutCachedTop =4476
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =4800
+                    LayoutCachedHeight =4812
                     RowStart =9
                     RowEnd =9
                     ColumnStart =1
@@ -1217,7 +1217,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =4464
+                            Top =4476
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -1229,9 +1229,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =4464
+                            LayoutCachedTop =4476
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4800
+                            LayoutCachedHeight =4812
                             RowStart =9
                             RowEnd =9
                             LayoutGroup =2
@@ -1276,7 +1276,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2304
+                    Top =2316
                     Width =3780
                     Height =336
                     TabIndex =1
@@ -1284,16 +1284,16 @@ Begin Form
                     ForeColor =4210752
                     Name ="aloituspvm"
                     Format ="Short Date"
-                    DefaultValue ="=Date()"
                     FontName ="Calibri"
+                    OnChange ="[Event Procedure]"
                     GroupTable =2
                     BottomPadding =150
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2304
+                    LayoutCachedTop =2316
                     LayoutCachedWidth =6192
-                    LayoutCachedHeight =2640
+                    LayoutCachedHeight =2652
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -1308,7 +1308,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2304
+                            Top =2316
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -1320,9 +1320,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2304
+                            LayoutCachedTop =2316
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =2640
+                            LayoutCachedHeight =2652
                             RowStart =5
                             RowEnd =5
                             LayoutGroup =2
@@ -1351,6 +1351,11 @@ Option Compare Database
 
 
 
+Private Sub aloituspvm_Change()
+    Dim checksum As Integer
+    checksum = Paivita_UI()
+End Sub
+
 Private Sub Form_Load()
     Dim checksum As Integer
     
@@ -1358,9 +1363,9 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Dim checksum As Integer
-    
+    Dim checksum As Integer
     checksum = Paivita_UI()
+    checksum = GetDefaultDate()
     
 End Sub
 
@@ -1559,3 +1564,15 @@ Private Sub Voimassa_Change()
     Dim succs
     succs = Paivita_UI()
 End Sub
+
+Private Function GetDefaultDate()
+    Dim initialDate As Date
+    Dim Kortti As String
+    Kortti = [Form_RekisteroiLataus].Kortti.Value
+    'MsgBox ("Kortti: " & kortti)
+    initialDate = Common.FetchExiprationDate(Kortti)
+    'MsgBox ("Initial date : " & initialDate)
+    
+    [Form_RekisteroiLataus].aloituspvm.Value = initialDate
+    
+End Function
