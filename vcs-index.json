@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": "20.2.2022 21.03.11",
-    "ExportDate": "15.7.2022 20.58.25",
+    "ExportDate": "15.8.2022 22.02.46",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -114,7 +114,7 @@
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "15.7.2022 20.58.25",
+          "ExportDate": "15.8.2022 22.02.44",
           "SourceModified": "9.2.2022 12.50.03",
           "FilePropertiesHash": "ac140d5",
           "ImportDate": "20.2.2022 21.03.04"
@@ -222,9 +222,9 @@
           "ImportDate": "20.2.2022 21.03.06"
         },
         "LataustaAjanjaksolla.bas": {
-          "ExportDate": "12.7.2022 22.23.46",
-          "SourceModified": "12.7.2022 22.23.46",
-          "FilePropertiesHash": "c3a6392"
+          "ExportDate": "15.8.2022 22.02.45",
+          "SourceModified": "15.8.2022 22.02.45",
+          "FilePropertiesHash": "decd12d"
         },
         "ListaaEdustusjasenet.bas": {
           "ExportDate": "20.2.2022 23.44.10",
@@ -306,9 +306,9 @@
           "ImportDate": "20.2.2022 21.03.08"
         },
         "Kortit joissa latausta ajanjaksolla.bas": {
-          "ExportDate": "12.7.2022 22.23.48",
-          "SourceModified": "12.7.2022 22.23.48",
-          "FilePropertiesHash": "f1bbc50"
+          "ExportDate": "15.8.2022 22.02.46",
+          "SourceModified": "15.8.2022 22.02.46",
+          "FilePropertiesHash": "3bb9a59"
         },
         "KortitMaksamatta.bas": {
           "ExportDate": "20.2.2022 23.44.12",
@@ -410,7 +410,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "15.7.2022 20.58.25",
+          "ExportDate": "15.8.2022 22.02.44",
           "SourceModified": "9.2.2022 12.50.03",
           "FilePropertiesHash": "5e56cf3",
           "ImportDate": "20.2.2022 21.03.04"
@@ -419,7 +419,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "15.7.2022 20.58.25",
+          "ExportDate": "15.8.2022 22.02.44",
           "SourceModified": "9.2.2022 12.50.03",
           "FilePropertiesHash": "a4f388b",
           "ImportDate": "20.2.2022 21.03.04"

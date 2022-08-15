@@ -13,8 +13,8 @@ Begin Report
     GridY =10
     Width =11520
     DatasheetFontHeight =11
-    ItemSuffix =9
-    Left =2556
+    ItemSuffix =13
+    Left =4740
     Top =3468
     RecSrcDt = Begin
         0x7c17dc9c5cdae540
@@ -171,9 +171,8 @@ Begin Report
             End
         End
         Begin PageHeader
-            Height =414
+            Height =357
             Name ="SivunYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -182,7 +181,7 @@ Begin Report
                     TextAlign =1
                     Left =342
                     Top =57
-                    Width =6528
+                    Width =1356
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
@@ -194,16 +193,55 @@ Begin Report
                     GridlineColor =10921638
                     LayoutCachedLeft =342
                     LayoutCachedTop =57
-                    LayoutCachedWidth =6870
+                    LayoutCachedWidth =1698
                     LayoutCachedHeight =357
+                End
+                Begin Label
+                    OverlapFlags =4
+                    TextAlign =1
+                    Left =1814
+                    Top =56
+                    Width =3180
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =6710886
+                    Name ="Selite9"
+                    Caption ="Sukunimi"
+                    FontName ="Calibri"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =1814
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =4994
+                    LayoutCachedHeight =356
+                End
+                Begin Label
+                    OverlapFlags =4
+                    TextAlign =1
+                    Left =5102
+                    Top =56
+                    Width =3180
+                    Height =300
+                    BorderColor =8355711
+                    ForeColor =6710886
+                    Name ="Selite10"
+                    Caption ="Etunimi"
+                    FontName ="Calibri"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =8282
+                    LayoutCachedHeight =356
                 End
             End
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =426
+            Height =453
             Name ="Tiedot"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -213,7 +251,7 @@ Begin Report
                     IMESentenceMode =3
                     Left =342
                     Top =57
-                    Width =6528
+                    Width =1368
                     Height =312
                     BorderColor =10921638
                     ForeColor =4210752
@@ -225,8 +263,52 @@ Begin Report
 
                     LayoutCachedLeft =342
                     LayoutCachedTop =57
-                    LayoutCachedWidth =6870
+                    LayoutCachedWidth =1710
                     LayoutCachedHeight =369
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =4
+                    IMESentenceMode =3
+                    Left =1814
+                    Top =56
+                    Width =3240
+                    Height =312
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus11"
+                    ControlSource ="Sukunimi"
+                    StatusBarText ="Kortin numero niin kuin se on kirjoitettu, esim 0285"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =1814
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =5054
+                    LayoutCachedHeight =368
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =4
+                    IMESentenceMode =3
+                    Left =5102
+                    Top =56
+                    Width =3240
+                    Height =312
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus12"
+                    ControlSource ="Etunimi"
+                    StatusBarText ="Kortin numero niin kuin se on kirjoitettu, esim 0285"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =8342
+                    LayoutCachedHeight =368
                 End
             End
         End
