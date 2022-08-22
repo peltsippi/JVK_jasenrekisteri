@@ -132,10 +132,10 @@ Public Function SendMessageToMainScreen(message As String)
     [Form_Tervetuloa].Refresh
 End Function
 
-Public Function FetchCardID(cardnumber As String) As Integer
+Public Function FetchCardID(cardNumber As String) As Integer
     Dim queryString As String
     Dim sqlRecords As DAO.Recordset
-    queryString = "SELECT CID FROM Kortit WHERE Kortti = '" & cardnumber & "'"
+    queryString = "SELECT CID FROM Kortit WHERE Kortti = '" & cardNumber & "'"
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     If (sqlRecords.RecordCount = 1) Then
         FetchCardID = sqlRecords.Fields.Item(0).Value
@@ -156,7 +156,12 @@ Public Function FetchExiprationDate(card As String) As Date
     query = "SELECT Max(Voimassa) As MaxDate FROM Lataukset WHERE Kortti = " & cardID
     Dim result As DAO.Recordset
     Set result = CurrentDb.OpenRecordset(query)
+    If (IsNull(result!MaxDate)) Then
+        endDate = Date
+    Else
     endDate = result!MaxDate
+    End If
+    
     'MsgBox ("end date before closing: " & endDate)
     result.Close
     'MsgBox ("end date after closing: " & endDate)
@@ -171,11 +176,11 @@ Public Function FetchExiprationDate(card As String) As Date
     
 End Function
 
-Public Function FetchGeneralID(table As String, desiredID As String, criteria As String) As Integer
+Public Function FetchGeneralID(Table As String, desiredID As String, criteria As String) As Integer
     Dim queryString As String
     Dim sqlRecords As DAO.Recordset
     
-    queryString = "SELECT " & desiredID & " FROM " & table & " WHERE " & criteria
+    queryString = "SELECT " & desiredID & " FROM " & Table & " WHERE " & criteria
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     
     If (sqlRecords.RecordCount = 1) Then
@@ -192,9 +197,9 @@ Public Function FetchGeneralID(table As String, desiredID As String, criteria As
     
 End Function
 
-Public Function CheckIfRecordFound(table As String, criteria As String) As Integer
+Public Function CheckIfRecordFound(Table As String, criteria As String) As Integer
     Dim queryString As String
-    queryString = "SELECT * FROM " & table & " WHERE " & criteria
+    queryString = "SELECT * FROM " & Table & " WHERE " & criteria
     
     Dim sqlRecords As DAO.Recordset
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
@@ -233,7 +238,7 @@ Public Function SaveToLog(message As String)
 
 End Function
 
-Public Function InsertOrUpdate(table As String, values As String, Target As String) As Boolean
+Public Function InsertOrUpdate(Table As String, Values As String, Target As String) As Boolean
 
 '   Readme: use always [[ key = value, key = value, key = value ]] syntax!
 '   note: spaces are extremely important!
@@ -253,7 +258,7 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         toInsert = True
     Else
         Dim checkforrows As Integer
-        checkforrows = Common.CheckIfRecordFound(table, Target)
+        checkforrows = Common.CheckIfRecordFound(Table, Target)
         'MsgBox (checkforrows)
         
         If (checkforrows > 1) Or (checkforrows < 1) Then
@@ -278,7 +283,7 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         
         Dim insertValues As String
         
-        array1 = Split(values, ", ") ' separate each value pair as its own unit
+        array1 = Split(Values, ", ") ' separate each value pair as its own unit
         
         Dim first As Boolean
         first = True
@@ -304,10 +309,10 @@ Public Function InsertOrUpdate(table As String, values As String, Target As Stri
         part2 = part2 & " ) "
         insertValues = part1 & part2
         
-        queryString = "INSERT INTO " & table & " " & insertValues
+        queryString = "INSERT INTO " & Table & " " & insertValues
         
     Else
-        queryString = "UPDATE " & table & " SET " & values & " WHERE " & Target
+        queryString = "UPDATE " & Table & " SET " & Values & " WHERE " & Target
 
     End If
     
@@ -369,10 +374,12 @@ Public Function EnableDisableButtons()
          Form_Tervetuloa.poistalinkitys.Enabled = True
         Form_Tervetuloa.RegisterPayment.Enabled = True
         Form_Tervetuloa.Korttilataus.Enabled = True
+        Form_Tervetuloa.KorvaaRikkinainenKortti.Enabled = True
     Else
         Form_Tervetuloa.poistalinkitys.Enabled = False
         Form_Tervetuloa.RegisterPayment.Enabled = False
         Form_Tervetuloa.Korttilataus.Enabled = False
+        Form_Tervetuloa.KorvaaRikkinainenKortti.Enabled = False
     
     End If
     
@@ -508,5 +515,30 @@ Dim sqlRecords As DAO.Recordset
 
 End Function
 
+Public Function IsCardLinkedAlready(cardNumber As String) As Boolean
+    If (Common.GetCardOwner(cardNumber) < 1) Then
+        IsCardLinkedAlready = False
+    Else
+        IsCardLinkedAlready = True
+    End If
 
+End Function
+
+Public Function GetCardOwner(cardNumber As String) As Integer
+    Dim cardOwner As Integer
+    Dim Table As String
+    Dim wantedColumn As String
+    Dim criteria As String
+    
+    Table = "Kortit"
+    wantedColumn = "Omistaja"
+    criteria = "Kortti = '" & cardNumber & "'"
+    
+    If (Common.CheckIfRecordFound(Table, criteria) < 1) Then
+        GetCardOwner = -1
+    Else
+        GetCardOwner = Common.FetchGeneralID(Table, wantedColumn, criteria)
+    End If
+
+End Function
 

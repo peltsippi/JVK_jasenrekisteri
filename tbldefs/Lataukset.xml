@@ -37,7 +37,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="1"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="TextAlign" type="2" value="0"/>
 							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
@@ -51,7 +51,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="2"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Description" type="10" value="Kortti, haetaan Kortit -taulusta id"/>
 							<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
@@ -69,7 +69,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="3"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="IMEMode" type="2" value="0"/>
@@ -83,11 +83,11 @@
 						</xsd:appinfo>
 					</xsd:annotation>
 				</xsd:element>
-				<xsd:element name="Lataaja" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+				<xsd:element name="Puumerkki" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="4"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -112,7 +112,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="5"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>
 							<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -137,7 +137,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="6"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Description" type="10" value="Minkä arvoinen korttilataus on tehty"/>
 							<od:fieldProperty name="Format" type="10" value="#,##0.00 €;-#,##0.00 €"/>
@@ -155,7 +155,7 @@
 					<xsd:annotation>
 						<xsd:appinfo>
 							<od:fieldProperty name="ColumnWidth" type="3" value="2412"/>
-							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="7"/>
 							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 							<od:fieldProperty name="Description" type="10" value="Miloin tehty"/>
 							<od:fieldProperty name="Required" type="1" value="0"/>

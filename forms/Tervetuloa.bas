@@ -17,8 +17,8 @@ Begin Form
     GridY =24
     Width =9870
     DatasheetFontHeight =11
-    ItemSuffix =287
-    Left =2556
+    ItemSuffix =288
+    Left =4740
     Top =3468
     Right =17484
     Bottom =11712
@@ -748,11 +748,11 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =85
-                    Left =6236
+                    OverlapFlags =93
+                    Left =7688
                     Top =2078
-                    Width =2833
-                    Height =506
+                    Width =1381
+                    Height =662
                     TabIndex =6
                     Name ="RegisterPayment"
                     Caption ="Kirjaa maksu kortille"
@@ -780,21 +780,22 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =6236
+                    LayoutCachedLeft =7688
                     LayoutCachedTop =2078
                     LayoutCachedWidth =9069
-                    LayoutCachedHeight =2584
+                    LayoutCachedHeight =2740
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
                     WebImagePaddingBottom =2
+                    Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =85
-                    Left =6236
-                    Top =1559
-                    Width =2833
-                    Height =482
+                    OverlapFlags =93
+                    Left =6259
+                    Top =2102
+                    Width =1393
+                    Height =638
                     TabIndex =5
                     Name ="Korttilataus"
                     Caption ="Kirjaa lataus kortille"
@@ -822,20 +823,21 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =6236
-                    LayoutCachedTop =1559
-                    LayoutCachedWidth =9069
-                    LayoutCachedHeight =2041
+                    LayoutCachedLeft =6259
+                    LayoutCachedTop =2102
+                    LayoutCachedWidth =7652
+                    LayoutCachedHeight =2740
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
                     WebImagePaddingBottom =2
+                    Overlaps =1
                 End
                 Begin Label
-                    OverlapFlags =93
+                    OverlapFlags =223
                     Left =566
                     Top =2716
-                    Width =8511
+                    Width =8487
                     Height =735
                     FontSize =14
                     ForeColor =5026082
@@ -843,7 +845,7 @@ Begin Form
                     Caption ="6.2.2022 13.46.59 - Maksujen korjaus valmis"
                     LayoutCachedLeft =566
                     LayoutCachedTop =2716
-                    LayoutCachedWidth =9077
+                    LayoutCachedWidth =9053
                     LayoutCachedHeight =3451
                 End
                 Begin TextBox
@@ -1599,7 +1601,27 @@ Begin Form
                     LayoutCachedTop =4015
                     LayoutCachedWidth =9397
                     LayoutCachedHeight =7927
+                    TabIndex =30
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6236
+                    Top =1608
+                    Width =2758
+                    Height =385
                     TabIndex =29
+                    Name ="KorvaaRikkinainenKortti"
+                    Caption ="Korvaa rikkinäinen kortti"
+                    OnClick ="[Event Procedure]"
+
+                    LayoutCachedLeft =6236
+                    LayoutCachedTop =1608
+                    LayoutCachedWidth =8994
+                    LayoutCachedHeight =1993
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
                 End
             End
         End
@@ -1638,7 +1660,7 @@ End Sub
 
 Private Sub Form_Close()
     Dim succs
-    succs = Common.DoBackup(7)  'do not back up unless latest is over 7 days old!
+    succs = Common.DoBackup(1)  'do not back up unless latest is over 1 days old!
     succs = Common.WriteStats 'write stats to own table
     succs = Common.SaveToLog("Sovellus suljettu")
 End Sub
@@ -1683,6 +1705,7 @@ Private Sub IlmaiseksiLadattavat_Click()
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen ilmaiseksi ladattavista korteista")
     DoCmd.OpenReport "HaeIlmaiseksiLadattavat", acViewPreview, "HaeIlmaiseksiLadattavat"
 End Sub
+
 
 
 Private Sub KorjaaTietoja_Click()
@@ -1736,6 +1759,74 @@ End Sub
 
 Private Sub Korttivalinta_GotFocus()
     Common.EnableDisableButtons
+    
+End Sub
+
+Private Sub KorvaaRikkinainenKortti_Click()
+    DoCmd.OpenForm "KorvaaKortti"
+    
+    'MsgBox ("Humpan juoni: " & vbNewLine _
+    '& "1. tehdään uusi kortti " & vbNewLine _
+    '& "2. tehdään uudelle kortille lataus " & vbNewLine _
+    '& "3. korjataan kortin maksuihin liittyvät jutut " & vbNewLine _
+    '& "4. merkataan vanha kortti rikkinäiseksi/kadonneeksi." & vbNewLine _
+    '& "Täytä vaan ruutuja sitä mukaa, kun niitä hyppii ja kaikki menee hyvin!")
+    'vai: varmista, että ruuduissa olevat tiedot on ok ja paina ok?!?
+    
+    
+    
+    'Dim oldCard As String
+    'oldCard = Form_Tervetuloa.Korttivalinta.Value
+    
+    'Dim initials As String
+    'initials = InputBox("Nimikirjaimet tai jotain vastaavaa", "Anna puumerkkisi", "NN")
+    
+    'Dim newCard As String
+    'newCard = InputBox("Kortti muodossa 4 numeroa", "Anna uuden kortin numero", 1234)
+    
+    'Dim succs
+    'succs = Common.SaveToLog(initials & " aloitti kortin " & oldCard & " korvaamisen kortilla " & newCard)
+    'logitus jo tästä pisteestä asti ihan vaan siksi..
+    
+    'If MsgBox("Tehdään uusi kortti " & newCard & vbNewLine & "Meneehän varmasti oikein?", vbYesNo) = vbNo Then Exit Sub
+
+    
+    'DoCmd.OpenForm "LisaaKortinLinkitys"
+    'Form_LisaaKortinLinkitys.Korttinro.Value = newCard
+    'Form_LisaaKortinLinkitys.Puumerkki.Value = initials
+    'Form_LisaaKortinLinkitys.Refresh
+    'Form_LisaaKortinLinkitys.Puumerkki.Visible = True
+    'Form_LisaaKortinLinkitys.Linkita.Visible = True
+    'Form_LisaaKortinLinkitys.Linkita_Click
+    
+    
+    'If MsgBox("Siirretään kaikki lataukset ja maksut kortilta " & oldCard & " kortille " & newCard & vbNewLine & "Tätä on hankala korjata jälkikäteen, oletko aivan varma?", vbYesNo) = vbNo Then Exit Sub
+    
+    'Dim oldCardID As Integer
+    'Dim newCardID As Integer
+    
+    'oldCardID = Common.FetchCardID(oldCard)
+    'newCardID = Common.FetchCardID(newCard)
+    
+    'Dim Table As String
+    'Table = "Lataukset"
+    'Dim Values As String
+    'Values = "Kortti=" & newCardID
+    'Dim Target As String
+    'Target = "Kortti=" & oldCardID
+    'succs = Common.InsertOrUpdate(Table, Values, Target)
+    'Table = "Maksut"
+    'succs = Common.InsertOrUpdate(Table, Values, Target)
+    
+    'MsgBox ("Vanhan kortin lataukset ja suoritetut maksut siirretty uudelle kortille")
+    
+    'DoCmd.OpenForm "PoistaKortinLinkitys"
+    'Form_PoistaKortinLinkitys.Puumerkki.Value = initials
+    'Form_PoistaKortinLinkitys.discard.Value = True
+    'Form_PoistaKortinLinkitys.Muistiinpano.Value = "Kortin korvaus"
+    'Form_PoistaKortinLinkitys.Poista_Click
+    
+    'MsgBox ("Valmista tuli!")
     
 End Sub
 

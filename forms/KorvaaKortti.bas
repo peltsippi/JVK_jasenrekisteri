@@ -13,17 +13,19 @@ Begin Form
     DatasheetGridlinesBehavior =3
     PictureType =2
     GridY =10
-    Width =7880
+    Width =5592
     DatasheetFontHeight =11
-    ItemSuffix =53
+    ItemSuffix =49
     Left =4740
-    Top =3468
-    Right =12876
-    Bottom =9216
+    Top =3456
+    Right =22788
+    Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
-        0xa22cdf047cc5e540
+        0xe76ced057dc5e540
     End
+    RecordSource ="Hae nimi"
+    Caption ="Linkitä kortti yhteystiedolle"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     AllowDatasheetView =0
@@ -107,24 +109,6 @@ Begin Form
             PressedForeThemeColorIndex =0
             PressedForeTint =75.0
         End
-        Begin OptionButton
-            BorderLineStyle =0
-            LabelX =230
-            LabelY =-30
-            BorderThemeColorIndex =1
-            BorderShade =65.0
-            GridlineThemeColorIndex =1
-            GridlineShade =65.0
-        End
-        Begin CheckBox
-            BorderLineStyle =0
-            LabelX =230
-            LabelY =-30
-            BorderThemeColorIndex =1
-            BorderShade =65.0
-            GridlineThemeColorIndex =1
-            GridlineShade =65.0
-        End
         Begin TextBox
             AddColon = NotDefault
             FELineBreak = NotDefault
@@ -163,24 +147,24 @@ Begin Form
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
-                    Left =300
+                    Left =36
                     Top =60
-                    Width =3156
-                    Height =460
+                    Width =2892
+                    Height =480
                     FontSize =18
-                    BackColor =15921906
+                    BackColor =14277081
                     Name ="Automaattinen_ylätunniste0"
-                    Caption ="Poista kortin linkitys"
+                    Caption ="Korvaa kortti"
                     FontName ="Calibri Light"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =300
+                    LayoutCachedLeft =36
                     LayoutCachedTop =60
-                    LayoutCachedWidth =3456
-                    LayoutCachedHeight =520
+                    LayoutCachedWidth =2928
+                    LayoutCachedHeight =540
                     LayoutGroup =1
                     ThemeFontIndex =0
-                    BackShade =95.0
+                    BackShade =85.0
                     BorderThemeColorIndex =2
                     BorderTint =100.0
                     ForeThemeColorIndex =2
@@ -196,11 +180,11 @@ Begin Form
                     TextAlign =3
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =5889
+                    Left =4305
                     Top =60
-                    Width =1635
+                    Width =1287
                     Height =300
-                    BackColor =15921906
+                    BackColor =14277081
                     BorderColor =10921638
                     Name ="Automaattinen_päivämäärä"
                     ControlSource ="=Date()"
@@ -208,11 +192,11 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =5889
+                    LayoutCachedLeft =4305
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7524
+                    LayoutCachedWidth =5592
                     LayoutCachedHeight =360
-                    BackShade =95.0
+                    BackShade =85.0
                     ForeThemeColorIndex =2
                     ForeTint =100.0
                 End
@@ -225,12 +209,12 @@ Begin Form
                     TextAlign =3
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =5889
+                    Left =4305
                     Top =360
-                    Width =1635
+                    Width =1287
                     Height =300
                     TabIndex =1
-                    BackColor =15921906
+                    BackColor =14277081
                     BorderColor =10921638
                     Name ="Automaattinen_aika"
                     ControlSource ="=Time()"
@@ -238,119 +222,68 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =5889
+                    LayoutCachedLeft =4305
                     LayoutCachedTop =360
-                    LayoutCachedWidth =7524
+                    LayoutCachedWidth =5592
                     LayoutCachedHeight =660
-                    BackShade =95.0
+                    BackShade =85.0
                     ForeThemeColorIndex =2
                     ForeTint =100.0
                 End
             End
         End
         Begin Section
-            Height =5102
+            Height =5442
             Name ="Tiedot"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
                 Begin Rectangle
+                    SpecialEffect =0
                     BackStyle =1
                     OverlapFlags =93
-                    Left =283
+                    Left =226
                     Top =56
-                    Width =7317
-                    Height =4433
-                    BackColor =14277081
-                    BorderColor =10921638
-                    Name ="Ruutu42"
+                    Width =4599
+                    Height =5208
+                    BackColor =12566463
+                    Name ="Ruutu32"
                     GridlineColor =10921638
-                    LayoutCachedLeft =283
+                    LayoutCachedLeft =226
                     LayoutCachedTop =56
-                    LayoutCachedWidth =7600
-                    LayoutCachedHeight =4489
-                    BackShade =85.0
+                    LayoutCachedWidth =4825
+                    LayoutCachedHeight =5264
+                    BackShade =75.0
+                    BorderThemeColorIndex =0
+                    BorderShade =100.0
                 End
                 Begin TextBox
-                    Locked = NotDefault
+                    BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3612
-                    Top =360
-                    Width =3276
-                    Height =300
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="korttinro"
-                    ControlSource ="=[Forms]![Tervetuloa]![Korttivalinta]"
-                    FontName ="Calibri"
-                    GroupTable =2
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =3612
-                    LayoutCachedTop =360
-                    LayoutCachedWidth =6888
-                    LayoutCachedHeight =660
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
-                    GroupTable =2
-                    Begin
-                        Begin Label
-                            BackStyle =1
-                            OverlapFlags =215
-                            TextFontCharSet =177
-                            TextAlign =1
-                            TextFontFamily =0
-                            Left =360
-                            Top =360
-                            Width =3168
-                            Height =300
-                            BackColor =15921906
-                            BorderColor =8355711
-                            ForeColor =6710886
-                            Name ="Selite5"
-                            Caption ="Olet poistamassa tämän kortin linkitystä: "
-                            FontName ="Calibri"
-                            GroupTable =2
-                            GridlineColor =10921638
-                            LayoutCachedLeft =360
-                            LayoutCachedTop =360
-                            LayoutCachedWidth =3528
-                            LayoutCachedHeight =660
-                            LayoutGroup =2
-                            BackShade =95.0
-                            GroupTable =2
-                        End
-                    End
-                End
-                Begin TextBox
-                    BorderWidth =2
-                    OverlapFlags =215
-                    TextFontCharSet =177
-                    TextAlign =1
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =3612
-                    Top =744
-                    Width =3276
-                    Height =336
+                    Left =2136
+                    Top =2172
+                    Width =1704
+                    Height =1380
                     TabIndex =1
                     ForeColor =4210752
-                    Name ="Puumerkki"
+                    Name ="Korttinro"
+                    ValidationRule ="Like \"????\""
+                    ValidationText ="Katso ohje vasemmalta!"
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
                     GroupTable =2
+                    BottomPadding =150
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3612
-                    LayoutCachedTop =744
-                    LayoutCachedWidth =6888
-                    LayoutCachedHeight =1080
+                    LayoutCachedLeft =2136
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =3840
+                    LayoutCachedHeight =3552
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -366,53 +299,55 @@ Begin Form
                             TextFontCharSet =177
                             TextAlign =1
                             TextFontFamily =0
-                            Left =360
-                            Top =744
-                            Width =3168
-                            Height =336
-                            BackColor =15921906
+                            Left =336
+                            Top =2172
+                            Width =1704
+                            Height =1380
+                            BackColor =14277081
                             BorderColor =8355711
                             ForeColor =6710886
-                            Name ="Selite15"
-                            Caption ="Puumerkki"
+                            Name ="Selite3"
+                            Caption ="Korvaavan kortin numero\015\012HUOM! \015\012Aina 4 numeroa!!!\015\012Esim: 0056"
                             FontName ="Calibri"
                             GroupTable =2
+                            BottomPadding =150
                             GridlineColor =10921638
-                            LayoutCachedLeft =360
-                            LayoutCachedTop =744
-                            LayoutCachedWidth =3528
-                            LayoutCachedHeight =1080
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =2172
+                            LayoutCachedWidth =2040
+                            LayoutCachedHeight =3552
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =2
-                            BackShade =95.0
+                            BackShade =85.0
                             GroupTable =2
                         End
                     End
                 End
                 Begin TextBox
-                    BorderWidth =2
+                    BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3612
-                    Top =1164
-                    Width =3276
-                    Height =1380
+                    Left =2136
+                    Top =3768
+                    Width =1704
+                    Height =336
                     TabIndex =2
                     ForeColor =4210752
-                    Name ="Muistiinpano"
+                    Name ="Puumerkki"
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
                     GroupTable =2
+                    BottomPadding =150
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3612
-                    LayoutCachedTop =1164
-                    LayoutCachedWidth =6888
-                    LayoutCachedHeight =2544
+                    LayoutCachedLeft =2136
+                    LayoutCachedTop =3768
+                    LayoutCachedWidth =3840
+                    LayoutCachedHeight =4104
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -428,26 +363,27 @@ Begin Form
                             TextFontCharSet =177
                             TextAlign =1
                             TextFontFamily =0
-                            Left =360
-                            Top =1164
-                            Width =3168
-                            Height =1380
-                            BackColor =15921906
+                            Left =336
+                            Top =3768
+                            Width =1704
+                            Height =336
+                            BackColor =14277081
                             BorderColor =8355711
                             ForeColor =6710886
-                            Name ="Muistiinpano_selite"
-                            Caption ="Muistiinpanot\015\012"
+                            Name ="Selite7"
+                            Caption ="Puumerkki"
                             FontName ="Calibri"
                             GroupTable =2
+                            BottomPadding =150
                             GridlineColor =10921638
-                            LayoutCachedLeft =360
-                            LayoutCachedTop =1164
-                            LayoutCachedWidth =3528
-                            LayoutCachedHeight =2544
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =3768
+                            LayoutCachedWidth =2040
+                            LayoutCachedHeight =4104
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =2
-                            BackShade =95.0
+                            BackShade =85.0
                             GroupTable =2
                         End
                     End
@@ -456,33 +392,28 @@ Begin Form
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =360
-                    Top =4332
-                    Width =3168
-                    Height =576
-                    TabIndex =4
+                    Left =340
+                    Top =4195
+                    Width =1764
+                    Height =852
+                    TabIndex =3
                     ForeColor =4210752
-                    Name ="Poista"
-                    Caption ="Poista linkitys"
+                    Name ="Korvaa"
+                    Caption ="Korvaa"
                     OnClick ="[Event Procedure]"
                     FontName ="Calibri"
-                    GroupTable =2
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =360
-                    LayoutCachedTop =4332
-                    LayoutCachedWidth =3528
-                    LayoutCachedHeight =4908
-                    RowStart =4
-                    RowEnd =4
-                    LayoutGroup =2
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =4195
+                    LayoutCachedWidth =2104
+                    LayoutCachedHeight =5047
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
                     PressedColor =11957550
                     HoverForeColor =4210752
                     PressedForeColor =4210752
-                    GroupTable =2
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -493,17 +424,15 @@ Begin Form
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =3612
-                    Top =4332
-                    Width =3276
-                    Height =576
-                    TabIndex =5
+                    Left =2267
+                    Top =4195
+                    Width =1764
+                    Height =912
+                    TabIndex =4
                     ForeColor =4210752
-                    Name ="Komento35"
-                    Caption ="Sulje"
+                    Name ="sulje"
+                    Caption ="Peruuta"
                     FontName ="Calibri"
-                    ControlTipText ="Sulje lomake"
-                    GroupTable =2
                     GridlineColor =10921638
                     OnClickEmMacro = Begin
                         Version =196611
@@ -516,28 +445,22 @@ Begin Form
                         End
                         Begin
                             Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"Komento35\" xmlns=\"http://schemas.microsoft.com/office/acce"
-                                "ssservices/2009/11/application\"><Statements><Action Name=\"CloseWindow\"/></Sta"
-                                "tements></UserInterfaceMacro>"
+                                "nterfaceMacro For=\"sulje\" xmlns=\"http://schemas.microsoft.com/office/accessse"
+                                "rvices/2009/11/application\"><Statements><Action Name=\"CloseWindow\"/></Stateme"
+                                "nts></UserInterfaceMacro>"
                         End
                     End
 
-                    LayoutCachedLeft =3612
-                    LayoutCachedTop =4332
-                    LayoutCachedWidth =6888
-                    LayoutCachedHeight =4908
-                    RowStart =4
-                    RowEnd =4
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
+                    LayoutCachedLeft =2267
+                    LayoutCachedTop =4195
+                    LayoutCachedWidth =4031
+                    LayoutCachedHeight =5107
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
                     PressedColor =11957550
                     HoverForeColor =4210752
                     PressedForeColor =4210752
-                    GroupTable =2
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -549,43 +472,47 @@ Begin Form
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =340
-                    Top =56
-                    Width =7030
-                    Height =284
+                    Left =396
+                    Top =170
+                    Width =4082
+                    Height =680
                     BackColor =62207
                     BorderColor =8355711
                     ForeColor =6710886
-                    Name ="Selite40"
-                    Caption ="Paina enter, tab tai klikkaa toista kenttää päästäksesi eteenpäin!"
+                    Name ="Selite30"
+                    Caption ="Paina enter, tab tai klikkaa toiseen kenttään jos ei meinaa edetä!"
                     FontName ="Calibri"
                     GridlineColor =10921638
-                    LayoutCachedLeft =340
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =7370
-                    LayoutCachedHeight =340
+                    LayoutCachedLeft =396
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =4478
+                    LayoutCachedHeight =850
                     BackThemeColorIndex =-1
                 End
-                Begin CheckBox
+                Begin TextBox
+                    Locked = NotDefault
                     OverlapFlags =215
-                    Left =3612
-                    Top =2604
-                    Width =3276
-                    Height =1656
-                    TabIndex =3
+                    TextFontCharSet =177
+                    TextAlign =1
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =2136
+                    Top =1128
+                    Width =1704
+                    Height =828
                     BorderColor =10921638
-                    Name ="discard"
-                    DefaultValue ="=False"
-                    OnClick ="[Event Procedure]"
+                    ForeColor =4210752
+                    Name ="Muokkaus33"
+                    DefaultValue ="=[Forms]![Tervetuloa]![Korttivalinta]"
+                    FontName ="Calibri"
                     GroupTable =2
+                    BottomPadding =150
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3612
-                    LayoutCachedTop =2604
-                    LayoutCachedWidth =6888
-                    LayoutCachedHeight =4260
-                    RowStart =3
-                    RowEnd =3
+                    LayoutCachedLeft =2136
+                    LayoutCachedTop =1128
+                    LayoutCachedWidth =3840
+                    LayoutCachedHeight =1956
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -596,25 +523,22 @@ Begin Form
                             TextFontCharSet =177
                             TextAlign =1
                             TextFontFamily =0
-                            Left =360
-                            Top =2604
-                            Width =3168
-                            Height =1656
+                            Left =336
+                            Top =1128
+                            Width =1704
+                            Height =828
                             BorderColor =8355711
                             ForeColor =6710886
-                            Name ="Selite46"
-                            Caption ="Kortti rikki/kadonnut?\015\012Kortti on rikki/kadonnut ja sitä ei enää käytetä t"
-                                "oisille. Jää jäsenen tietoihin talteen esim siltä varalta, että kadonnut kortti "
-                                "löytyy myöhemmin!"
+                            Name ="Selite34"
+                            Caption ="Vanhan kortin numero"
                             FontName ="Calibri"
                             GroupTable =2
+                            BottomPadding =150
                             GridlineColor =10921638
-                            LayoutCachedLeft =360
-                            LayoutCachedTop =2604
-                            LayoutCachedWidth =3528
-                            LayoutCachedHeight =4260
-                            RowStart =3
-                            RowEnd =3
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =1128
+                            LayoutCachedWidth =2040
+                            LayoutCachedHeight =1956
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -639,156 +563,125 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
 
-
-Private Function HideNotes()
-    If ([Form_PoistaKortinLinkitys].discard.Value) Then
-        [Form_PoistaKortinLinkitys].Muistiinpano.Visible = False
-    Else
-        [Form_PoistaKortinLinkitys].Muistiinpano.Visible = True
-    End If
-
-End Function
     
-Private Sub discard_Click()
-    If IsNull([Form_PoistaKortinLinkitys].Puumerkki) Then
-        [Form_PoistaKortinLinkitys].Poista.Visible = False
-    Else
-        [Form_PoistaKortinLinkitys].Poista.Visible = True
-    End If
-    
-    Dim succs As Integer
-    succs = HideNotes()
-
-    
-End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-    [Form_PoistaKortinLinkitys].Poista.Visible = False
-    [Form_PoistaKortinLinkitys].Muistiinpano.Visible = False
+    [Form_KorvaaKortti].Korvaa.Visible = False
+    [Form_KorvaaKortti].Puumerkki.Visible = False
     
 End Sub
 
-
-Private Sub Muistiinpano_Change()
-    [Form_PoistaKortinLinkitys].Poista.Visible = True
-End Sub
 
 Private Sub Puumerkki_Change()
-    [Form_PoistaKortinLinkitys].Muistiinpano.Visible = True
-    If ([Form_PoistaKortinLinkitys].discard.Value) Then
-        [Form_PoistaKortinLinkitys].Poista.Visible = True
-    End If
-    
-    Dim succs As Integer
-    succs = HideNotes()
-    
+    [Form_KorvaaKortti].Korvaa.Visible = True
 End Sub
 
 
-Public Sub Poista_Click()
-    Dim cardNumber As String
-    Dim cardID As Integer
-    Dim SQLQuery As String
+Private Sub Korttinro_Change()
+    [Form_KorvaaKortti].Puumerkki.Visible = True
+End Sub
+
+Public Sub Korvaa_Click()
+
+    Dim userNumber As Integer
+    Dim oldCard As String
+    Dim newCard As String
     Dim Puumerkki As String
-    Dim Muistiinpano As String
+    
+    
+    '1. Make sure all information is available
+    
+    If IsNull(Form_Tervetuloa.Yhteystietovalinta) Then
+        MsgBox ("Yhteystietoa ei valittu. Valitse yhteystieto pääikkunassa!")
+        Exit Sub
+    Else
+        userNumber = Form_Tervetuloa.Yhteystietovalinta.Value
+    End If
     
     If IsNull(Form_Tervetuloa.Korttivalinta) Then
-        MsgBox ("Korttia ei valittu. Valitse kortti pääikkunassa!")
+        MsgBox ("Vanhaa korttia ei valittu. Valitse korvattava kortti pääikkunassa!")
         Exit Sub
     Else
-        cardNumber = Form_Tervetuloa.Korttivalinta.Value
+        oldCard = Form_Tervetuloa.Korttivalinta.Value
     End If
     
-    If IsNull([Form_PoistaKortinLinkitys].Puumerkki) Then
-        MsgBox ("Puumerkki ei voi linkitystä poistaessa olla tyhjä!")
+    If IsNull([Form_KorvaaKortti].Korttinro) Then
+        MsgBox ("Korttinumeroa ei annettu, yritä uudestaan!")
         Exit Sub
     Else
-        Puumerkki = [Form_PoistaKortinLinkitys].Puumerkki.Value
-    End If
-    
-    
-    If IsNull([Form_PoistaKortinLinkitys].Muistiinpano) Then
-        MsgBox ("Muistiinpanokenttä ei voi linkitystä poistaessa olla tyhjä!")
-        Exit Sub
-    Else
-        Muistiinpano = [Form_PoistaKortinLinkitys].Muistiinpano.Value
-    End If
+        newCard = [Form_KorvaaKortti].Korttinro.Value
         
-    
-    Dim newOwner As Integer
-    newOwner = 0 ' kortille vaan määritellään omistajaksi 0 eli nobody...
-    
-    Dim korttiID As Integer
-    'korttiID = Common.FetchGeneralID("Kortit", "CID", "Kortti = '" & cardnumber & "'")
-    korttiID = Common.FetchCardID(cardNumber)
-    
-    Dim deletebool As Boolean
-    deletebool = [Form_PoistaKortinLinkitys].discard.Value
-    
-    If deletebool Then
-        'Dim query As String
-        Dim largestDate As Date
-        largestDate = Common.FetchExiprationDate(cardNumber)
-        'MsgBox ("Suurin päivämäärä on " & largestDate)
-        
-        largestDate = DateAdd("d", 1, largestDate) 'add 1 more than previous charge!
-        Dim feedback As Integer
-        Dim table2 As String
-        table2 = "Lataukset"
-        Dim values2 As String
-        
-        values2 = " Kortti = '" & korttiID & "'" _
-        & ", Voimassa = '" & DateAdd("d", 1, largestDate) & "'" _
-        & ", Puumerkki = '" & Puumerkki & "'" _
-        & ", Korttityyppi = 'RIKKI/KADONNUT'" _
-        & ", KortinArvo = '0 €'" _
-        & ", Ajankohta = '" & largestDate & "' "
-        
-        feedback = Common.InsertOrUpdate(table2, values2, "")
-        
-        If (Not (feedback)) Then
-            MsgBox ("Kortin poistossa tapahtui virhe, käy muokkaamassa manuaalisesti kortin tietoihin että se on rikki!")
-        Else
-            MsgBox ("Kortti merkattu poistetuksi!")
+        If (Common.IsCardLinkedAlready(newCard)) Then
+            MsgBox ("Kortti on jo linkitetty jollekulle!" & vbNewLine & "Käy tarvittaessa poistamassa kortin linkitys ensin." & vbNewLine & "Valitse kortti pääikkunassa -> Poista kortti")
+            Exit Sub
         End If
-        
-        
-        
+        'check if already linked newCard!!
     End If
     
+    If IsNull([Form_KorvaaKortti].Puumerkki) Then
+        MsgBox ("Puumerkki ei voi olla tyhjä, yritä uudestaan!")
+        Exit Sub
+    Else
+        Puumerkki = [Form_KorvaaKortti].Puumerkki.Value
+    End If
     
-    Dim success As Boolean
+    Dim succs
+    succs = Common.SaveToLog(Puumerkki & " aloitti kortin " & oldCard & " korvaamisen kortilla " & newCard)
+    
+    
+    '2. Ask final confirmation
+    
+    If MsgBox("Siirretään kaikki mahdollinen, mm. lataukset ja maksut " _
+    & vbNewLine & "kortilta: " & oldCard & " kortille: " & newCard & vbNewLine & "Meneehän täysin oikein?" _
+    & vbNewLine & vbNewLline & "Tämä toiminto tekee kaiken mahdollisen automaattisesti kerralla." _
+    & vbNewLine & "Kirjoitathan kaikki mahdollisesti vastaan tulevat virheilmoitukset ylös " _
+    & vbNewLine & "että saadaan niiden avulla korjattua jäljet jos jotain menee pieleen!", vbYesNo) = vbNo Then Exit Sub
+    
+    '3. Link new card
+    DoCmd.OpenForm "LisaaKortinLinkitys"
+    Form_LisaaKortinLinkitys.Korttinro.Value = newCard
+    Form_LisaaKortinLinkitys.Puumerkki.Value = Puumerkki
+    'Form_LisaaKortinLinkitys.Puumerkki.Visible = True
+    'Form_LisaaKortinLinkitys.Linkita.Visible = True
+    Form_LisaaKortinLinkitys.Linkita_Click
+    
+    MsgBox ("Uuden kortin linkitys ok")
+        
+    '4. prepare move of charges and payments
+    
+    Dim oldCardID As Integer
+    Dim newCardID As Integer
+    
+    oldCardID = Common.FetchCardID(oldCard)
+    newCardID = Common.FetchCardID(newCard)
+    
     Dim Table As String
     Dim Values As String
+    Values = "Kortti = " & newCardID & ", Puumerkki = '" & Puumerkki & "'"
     Dim Target As String
+    Target = "Kortti = " & oldCardID
+    '5. move charges
+    'MsgBox ("Move charges")
+    Table = "Lataukset"
+    succs = Common.InsertOrUpdate(Table, Values, Target)
     
-    Table = "Kortit"
-    Values = "Omistaja = '" & newOwner & "' , " _
-    & "PVM = '" & Date & "' ," _
-    & "Puumerkki = '" & Puumerkki & "' ," _
-    & "Muistiinpanot = '" & Muistiinpano & "' "
+    '6. move payments
+    'MsgBox ("Move payments")
+    Table = "Maksut"
+    'MsgBox ("Table: " & Table & " values : " & Values & " target: " & Target)
+    succs = Common.InsertOrUpdate(Table, Values, Target)
     
-    Target = "Kortti = '" & cardNumber & "'"
+    MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
+    '7. mark old card as missing/broken
     
-    'Jätetäänpä nämä sittenkin talteen käyttäjän alle heh heh...
-    
-    If (Not (deletebool)) Then
-        success = Common.InsertOrUpdate(Table, Values, Target)
-    
-        If Not (success) Then
-            MsgBox ("Jotain meni pieleen sori siitä!")
-        
-    
-        End If
-    
-    End If
-    
-    Dim logOutput As String
-    logOutput = "Puumerkki " & Puumerkki & " poisti kortin " & cardNumber & " linkityksen, muistiinpanot: " & Muistiinpano & " ja kortti merkattu poistetuksi: " & deletebool
-    success = Common.SaveToLog(logOutput)
-    
-    success = Common.SendMessageToMainScreen("Kortin " & cardNumber & " linkitys poistettu!")
+    DoCmd.OpenForm "PoistaKortinLinkitys"
+    Form_PoistaKortinLinkitys.Puumerkki.Value = Puumerkki
+    Form_PoistaKortinLinkitys.discard.Value = True
+    Form_PoistaKortinLinkitys.Muistiinpano.Value = "Automaattinen kortin korvaustoiminto teki"
+    Form_Tervetuloa.Korttivalinta.Value = oldCard 'Just in case card number updates for some reason..
+    Form_PoistaKortinLinkitys.Poista_Click
     
     DoCmd.Close
+    
     
 End Sub

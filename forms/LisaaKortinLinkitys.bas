@@ -16,7 +16,7 @@ Begin Form
     Width =5592
     DatasheetFontHeight =11
     ItemSuffix =33
-    Left =4044
+    Left =4740
     Top =3468
     Right =17484
     Bottom =11712
@@ -521,7 +521,7 @@ Private Sub Korttinro_Change()
     [Form_LisaaKortinLinkitys].Puumerkki.Visible = True
 End Sub
 
-Private Sub Linkita_Click()
+Public Sub Linkita_Click()
 
     Dim userNumber As Integer
     Dim kortinNro As String
@@ -564,37 +564,48 @@ Private Sub Linkita_Click()
     
     valuelist = "Kortti = '" & kortinNro & "' , " _
     & "Omistaja = " & userNumber & " , " _
-    & "PVM = '" & Now() & "' , " _
+    & "PVM = '" & Date & "' , " _
     & "Puumerkki = '" & Puumerkki & "'"
     
+    Dim previousOwner As Integer
+    previousOwner = Common.GetCardOwner(kortinNro)
     
-    If (recordQty = 0) Then
+    If (previousOwner = -1) Then
+    'If (recordQty = 0) Then
         valuelist = valuelist & " , Muistiinpanot = 'Kortti lisätty ensimmäistä kertaa'"
         update = False
         
-    Else
-        Dim cardID As Integer
-        cardID = Common.FetchCardID(kortinNro)
+    ElseIf (previousOwner > 0) Then
+        MsgBox ("Kortilla on jo omistaja, poista kortin linkitys ensin vanhalta omistajalta jos numero meni oikein!")
+        Exit Sub
+    ElseIf (previousOwner = 0) Then
+        valuelist = valuelist & ", Muistiinpanot = 'Lisätty vanha omistajaton kortti uudelle omistajalle'"
+        update = True
+    End If
+    
+        'Dim cardID As Integer
+        'cardID = Common.FetchCardID(kortinNro)
         
-        Dim previousOwner As Integer
-        previousOwner = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
+        'Dim previousOwner As Integer
+        'previousOwner = Common.FetchGeneralID("Kortit", "Omistaja", criteria)
+        'previousOwner = Common.GetCardOwner
         'MsgBox (previousOwner)
         
-        If Not (previousOwner = 0) Then
-            MsgBox ("Kortilla on jo omistaja, poista kortin linkitys ensin vanhalta omistajalta jos numero meni oikein!")
-            Exit Sub
-        Else
-        
-            valuelist = valuelist & ", Muistiinpanot = 'Lisätty vanha omistajaton kortti uudelle omistajalle'"
-            update = True
+        'If Not (previousOwner = 0) Then
+        '    MsgBox ("Kortilla on jo omistaja, poista kortin linkitys ensin vanhalta omistajalta jos numero meni oikein!")
+        '    Exit Sub
+        'Else
+        '
+        '    valuelist = valuelist & ", Muistiinpanot = 'Lisätty vanha omistajaton kortti uudelle omistajalle'"
+        '    update = True
             
-        End If
+        'End If
         
  
 
             
         
-    End If
+    'End If
     'MsgBox (valuelist)
     Dim succs
     If (update) Then
