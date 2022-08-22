@@ -17,7 +17,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =49
     Left =4740
-    Top =3456
+    Top =3468
     Right =22788
     Bottom =11712
     Picture ="bulldog_pienempi"
@@ -663,14 +663,16 @@ Public Sub Korvaa_Click()
     '5. move charges
     'MsgBox ("Move charges")
     Table = "Lataukset"
-    succs = Common.InsertOrUpdate(Table, Values, Target)
-    
+    If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only when there is something to be moved..
+        succs = Common.InsertOrUpdate(Table, Values, Target)
+    End If
     '6. move payments
     'MsgBox ("Move payments")
     Table = "Maksut"
     'MsgBox ("Table: " & Table & " values : " & Values & " target: " & Target)
-    succs = Common.InsertOrUpdate(Table, Values, Target)
-    
+    If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only if there are something to be moved..
+        succs = Common.InsertOrUpdate(Table, Values, Target)
+    End If
     MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
     '7. mark old card as missing/broken
     

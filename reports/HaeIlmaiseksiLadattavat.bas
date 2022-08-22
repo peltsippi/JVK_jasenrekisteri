@@ -5,6 +5,7 @@ Begin Report
     PopUp = NotDefault
     Modal = NotDefault
     DividingLines = NotDefault
+    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DateGrouping =1
     GrpKeepTogether =1

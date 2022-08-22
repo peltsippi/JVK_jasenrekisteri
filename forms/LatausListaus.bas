@@ -12,8 +12,10 @@ Begin Form
     Width =9225
     DatasheetFontHeight =11
     ItemSuffix =10
-    Right =13752
-    Bottom =8256
+    Left =-432
+    Top =876
+    Right =14256
+    Bottom =5076
     RecSrcDt = Begin
         0xef95c8375dc7e540
     End
@@ -141,7 +143,7 @@ Begin Form
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Lataaja"
-                    ControlSource ="Lataaja"
+                    ControlSource ="Puumerkki"
                     StatusBarText ="Lataajan puumerkit"
                     FontName ="Calibri"
                     GridlineColor =10921638
@@ -228,7 +230,7 @@ Begin Form
                     Top =2109
                     Width =1452
                     Height =312
-                    ColumnWidth =1452
+                    ColumnWidth =2508
                     TabIndex =3
                     BorderColor =10921638
                     ForeColor =4210752
