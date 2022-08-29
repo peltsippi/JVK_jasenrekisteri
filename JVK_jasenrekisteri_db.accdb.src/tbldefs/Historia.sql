@@ -1,0 +1,5 @@
+﻿CREATE TABLE [Historia] (
+  [Tunniste] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Aika] DATETIME ,
+  [Kirjaus] LONGTEXT 
+)

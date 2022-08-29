@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Korttitilasto",
+    "Connect": ";DATABASE=rel:JVK_jasenrekisteri_db.accdb",
+    "SourceTableName": "Korttitilasto",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[Tunniste]"
+  }
+}

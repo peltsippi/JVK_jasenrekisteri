@@ -1,0 +1,82 @@
+﻿{
+  "Info": {
+    "Class": "clsVCSIndex",
+    "Description": "Version Control System Index"
+  },
+  "Items": {
+    "MergeBuildDate": null,
+    "FullBuildDate": null,
+    "ExportDate": "29.8.2022 19.47.24",
+    "FullExportDate": "29.8.2022 19.47.24",
+    "OptionsHash": "294517a",
+    "LastMergedCommit": "",
+    "Components": {
+      "Project": {
+        "project.json": {
+          "Hash": "19c3478",
+          "ExportDate": "29.8.2022 19.47.23",
+          "SourceModified": "29.8.2022 19.47.23",
+          "FilePropertiesHash": "4b59119"
+        }
+      },
+      "Tables": {
+        "Hinnasto.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "777ea6e"
+        },
+        "Historia.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "cb29e5f"
+        },
+        "Kortit.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "6360df9"
+        },
+        "Korttitilasto.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "7bff00c"
+        },
+        "Lataukset.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "16dc144"
+        },
+        "Maksut.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "4209d67"
+        },
+        "Maksutavat.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "595aab4"
+        },
+        "Yhteystiedot.xml": {
+          "ExportDate": "29.8.2022 19.47.24",
+          "SourceModified": "29.8.2022 19.47.24",
+          "FilePropertiesHash": "6545179"
+        }
+      },
+      "VB Project": {
+        "vbe-project.json": {
+          "Hash": "337c4f2",
+          "ExportDate": "29.8.2022 19.47.23",
+          "SourceModified": "29.8.2022 19.47.23",
+          "FilePropertiesHash": "26bcb31"
+        }
+      },
+      "VBE References": {
+        "vbe-references.json": {
+          "Hash": "9c1a988",
+          "ExportDate": "29.8.2022 19.47.23",
+          "SourceModified": "29.8.2022 19.47.23",
+          "FilePropertiesHash": "a5eb592"
+        }
+      }
+    }
+  }
+}

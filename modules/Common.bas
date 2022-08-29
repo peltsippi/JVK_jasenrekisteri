@@ -103,8 +103,16 @@ Public Function DoBackup(treshold As Integer)
     Dim Target As String
     Dim retval As Integer
     
-    Source = CurrentDb.Name
-
+    'Source = CurrentDb.Name
+    Source = CurrentDb.TableDefs("Kortit").Connect
+    
+    Dim splitString
+    
+    splitString = Split(Source, "=")
+    Source = splitString(1)
+    
+    MsgBox (Source)
+    
     'This is the only thing to change - add the path of where you want the file to save here
     Target = Application.CurrentProject.Path & "\Jasenrekisteri-backup-"
     Target = Target & Format(Date, "yyyy-mm-dd") & ".accdb"
@@ -116,6 +124,8 @@ Public Function DoBackup(treshold As Integer)
     retval = objFSO.CopyFile(Source, Target, True)
     'MsgBox (retval)
     Set objFSO = Nothing
+    
+    
     
     'Opens the folder of the file you just created
     'Application.FollowHyperlink Application.CurrentProject.Path

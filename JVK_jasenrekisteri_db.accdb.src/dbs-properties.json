@@ -1,0 +1,92 @@
+﻿{
+  "Info": {
+    "Class": "clsDbProperty",
+    "Description": "Database Properties (DAO)"
+  },
+  "Items": {
+    "AccessVersion": {
+      "Value": "09.50",
+      "Type": 10
+    },
+    "CollatingOrder": {
+      "Value": 1033,
+      "Type": 3
+    },
+    "Connect": {
+      "Value": "",
+      "Type": 12
+    },
+    "DesignMasterID": {
+      "Value": "",
+      "Type": 15
+    },
+    "HasOfflineLists": {
+      "Value": 70,
+      "Type": 3
+    },
+    "Name": {
+      "Value": "rel:JVK_jasenrekisteri_db.accdb",
+      "Type": 12
+    },
+    "NavPane Category": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Closed": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Sort By": {
+      "Value": 1,
+      "Type": 4
+    },
+    "NavPane View By": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Width": {
+      "Value": 215,
+      "Type": 4
+    },
+    "ProjVer": {
+      "Value": 142,
+      "Type": 3
+    },
+    "QueryTimeout": {
+      "Value": 60,
+      "Type": 3
+    },
+    "RecordsAffected": {
+      "Value": 0,
+      "Type": 4
+    },
+    "ReplicaID": {
+      "Value": "",
+      "Type": 15
+    },
+    "Show Navigation Pane Search Bar": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Theme Resource Name": {
+      "Value": "Office-teema",
+      "Type": 10
+    },
+    "Transactions": {
+      "Value": true,
+      "Type": 1
+    },
+    "Updatable": {
+      "Value": true,
+      "Type": 1
+    },
+    "Version": {
+      "Value": "14.0",
+      "Type": 12
+    },
+    "WebDesignMode": {
+      "Value": 0,
+      "Type": 2
+    }
+  }
+}

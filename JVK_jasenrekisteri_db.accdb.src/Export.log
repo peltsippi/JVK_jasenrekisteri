@@ -1,0 +1,139 @@
+﻿-------------------------------------
+Beginning Export of all Source
+JVK_jasenrekisteri_db.accdb
+VCS Version 3.4.20
+Performing Full Export
+29.8.2022 19.47.23
+-------------------------------------
+-------------------------------------
+Exporting project...          
+  JVK_jasenrekisteri_db.accdb
+[1]
+-------------------------------------
+Exporting vb project...       
+  JVK_jasenrekisteri_db
+[1]
+-------------------------------------
+Exporting vbe references...   
+  stdole
+[1]
+-------------------------------------
+No vbe forms found in this database.
+-------------------------------------
+No proj properties found in this database.
+-------------------------------------
+No saved specs found in this database.
+-------------------------------------
+Exporting db properties...    
+  Database Properties (DAO)
+[22]
+-------------------------------------
+No shared images found in this database.
+-------------------------------------
+No themes found in this database.
+
+-------------------------------------
+ERROR: Unhandled error found before `On Error` directive
+-------------------------------------
+Error 13: Type mismatch Source: Unknown
+-------------------------------------
+No imex specs found in this database.
+-------------------------------------
+Exporting tables...           
+  Hinnasto
+    Sanitized in 0,027 seconds.
+  Hinnasto (SQL)
+  Historia
+    Sanitized in 0,003 seconds.
+  Historia (SQL)
+  Kortit
+    Sanitized in 0,003 seconds.
+  Kortit (SQL)
+  Korttitilasto
+    Sanitized in 0,005 seconds.
+  Korttitilasto (SQL)
+  Lataukset
+    Sanitized in 0,005 seconds.
+  Lataukset (SQL)
+  Maksut
+    Sanitized in 0,005 seconds.
+  Maksut (SQL)
+  Maksutavat
+    Sanitized in 0,002 seconds.
+  Maksutavat (SQL)
+  Yhteystiedot
+    Sanitized in 0,006 seconds.
+  Yhteystiedot (SQL)
+[8]
+-------------------------------------
+No queries found in this database.
+-------------------------------------
+No forms found in this database.
+-------------------------------------
+No macros found in this database.
+-------------------------------------
+No reports found in this database.
+-------------------------------------
+Exporting table data...       
+  Hinnasto
+    Sanitized in 0,005 seconds.
+[1]
+-------------------------------------
+No modules found in this database.
+-------------------------------------
+No table data macros found in this database.
+-------------------------------------
+Exporting relations...        
+  KortitLataukset
+  KortitMaksut
+  YhteystiedotKortit
+[3]
+-------------------------------------
+No doc properties found in this database.
+-------------------------------------
+Exporting nav pane groups...  
+  Groups
+[1]
+-------------------------------------
+No hidden attributes found in this database.
+-------------------------------------
+Done. (0,96 seconds)
+
+--------------------------------------------------
+                PERFORMANCE REPORTS
+--------------------------------------------------
+Object Type                   Count     Seconds
+--------------------------------------------------
+Project                       1         0,03
+VB Project                    1         0,02
+VBE References                1         0,02
+DB Properties                 22        0,09
+Tables                        8         0,34
+Table Data                    1         0,14
+Relations                     3         0,06
+Nav Pane Groups               1         0,02
+--------------------------------------------------
+TOTALS:                       38        0,73
+--------------------------------------------------
+
+--------------------------------------------------
+Operations                    Count     Seconds
+--------------------------------------------------
+Convert to JSON               224       0,23
+Compute SHA256                15        0,00
+Console Updates               2         0,06
+Write File                    25        0,03
+Verify Path                   34        0,01
+Create Folder                 4         0,00
+Get Modified Date             11        0,01
+Get File Property Hash        11        0,01
+App.ExportXML()               9         0,22
+Read File                     9         0,10
+Sanitize XML                  9         0,02
+Format XML                    9         0,03
+Save Table SQL                8         0,01
+--------------------------------------------------
+Other Operations                        0,27
+--------------------------------------------------
+
+

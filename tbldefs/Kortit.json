@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Kortit",
+    "Connect": ";DATABASE=rel:JVK_jasenrekisteri_db.accdb",
+    "SourceTableName": "Kortit",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[CID]"
+  }
+}

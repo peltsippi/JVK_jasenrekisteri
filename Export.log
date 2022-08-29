@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-22.8.2022 10.31.52
+29.8.2022 19.46.23
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -44,51 +44,53 @@ Error 13: Type mismatch Source: Unknown
 -------------------------------------
 No modified imex specs found in this database.
 -------------------------------------
-No modified tables found in this database.
+Exporting tables...           
+  Hinnasto
+  Hinnasto (SQL)
+  Historia
+  Historia (SQL)
+  Kortit
+  Kortit (SQL)
+  Korttitilasto
+  Korttitilasto (SQL)
+  Lataukset
+  Lataukset (SQL)
+  Maksut
+  Maksut (SQL)
+  Maksutavat
+  Maksutavat (SQL)
+  Yhteystiedot
+  Yhteystiedot (SQL)
+[8]
 -------------------------------------
 Exporting queries...          
-  HaeIlmaiseksiLadattavat
+  ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,003 seconds.
-  HaeIlmaiseksiLadattavat (SQL)
-  KortinKaikkiLataukset
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  KortinKaikkiLataukset (SQL)
-  LatausListaus
-Source: modSanitize.SanitizeFile
-    Sanitized in 0,001 seconds.
-  LatausListaus (SQL)
-[3]
+    Sanitized in 0,004 seconds.
+  ListaaKortitJaLataukset (SQL)
+[1]
 -------------------------------------
-Exporting forms...            
-  LatausListaus
-    Sanitized in 0,010 seconds.
-  KorvaaKortti
-    Sanitized in 0,020 seconds.
-[2]
+No modified forms found in this database.
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
-Exporting reports...          
-  HaeIlmaiseksiLadattavat
-    Sanitized in 0,047 seconds.
-[1]
+No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,027 seconds.
+    Sanitized in 0,033 seconds.
 [1]
 -------------------------------------
-No modified modules found in this database.
+Exporting modules...          
+  Common
+[1]
 -------------------------------------
 No modified table data macros found in this database.
+  Removing orphaned file: KortitLataukset.json
+  Removing orphaned file: KortitMaksut.json
+  Removing orphaned file: YhteystiedotKortit.json
 -------------------------------------
-Exporting relations...        
-  KortitLataukset
-  KortitMaksut
-  YhteystiedotKortit
-[3]
+No modified relations found in this database.
 -------------------------------------
 Exporting doc properties...   
   Database Documents
@@ -100,54 +102,55 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (1,84 seconds)
+Done. (1,98 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,02
-VB Project                    1         0,01
-VBE References                2         0,02
-DB Properties                 53        0,20
-Queries                       3         0,11
-Forms                         2         0,36
-Reports                       1         0,45
-Table Data                    1         0,18
-Relations                     3         0,06
-Doc Properties                2         0,02
-Nav Pane Groups               1         0,02
+Project                       1         0,03
+VB Project                    1         0,03
+VBE References                2         0,04
+DB Properties                 53        0,35
+Tables                        8         0,29
+Queries                       1         0,13
+Table Data                    1         0,28
+Modules                       1         0,04
+Doc Properties                2         0,05
+Nav Pane Groups               1         0,05
 --------------------------------------------------
-TOTALS:                       70        1,44
+TOTALS:                       71        1,29
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     21        0,27
-Parse JSON                    11        0,03
-Convert to JSON               599       0,34
-Compute SHA256                31        0,00
-Console Updates               3         0,12
-Compare Dictionary            9         0,00
-Get Modified Date             9         0,00
-Get File Property Hash        9         0,01
-Clear Orphaned                7         0,59
-App.SaveAsText()              6         0,08
-Verify Path                   18        0,00
-Delete File                   7         0,01
-Read File Bytes               9         0,09
-Sanitize File                 6         0,08
-Write File                    11        0,01
-Save Query SQL                3         0,01
-Get VBA Hash                  27        0,02
-Read File DevMode             3         0,00
-App.ExportXML()               1         0,12
+Read File                     9         0,09
+Parse JSON                    7         0,03
+Convert to JSON               535       0,52
+Compute SHA256                32        0,00
+Console Updates               3         0,15
+Compare Dictionary            5         0,00
+Get Modified Date             13        0,01
+Get File Property Hash        13        0,01
+Clear Orphaned                7         0,57
+Write File                    20        0,02
+Verify Path                   23        0,00
+Delete File                   14        0,02
+Save Table SQL                8         0,07
+App.SaveAsText()              1         0,07
+Read File Bytes               1         0,04
+Sanitize File                 1         0,00
+Save Query SQL                1         0,00
+Get VBA Hash                  28        0,03
+App.ExportXML()               1         0,21
 Sanitize XML                  1         0,00
-Format XML                    1         0,02
+Format XML                    1         0,03
+Export VBE Module             1         0,01
+Enc. Windows-1252 as utf-8    1         0,02
 --------------------------------------------------
-Other Operations                        0,09
+Other Operations                        0,13
 --------------------------------------------------
 
 
