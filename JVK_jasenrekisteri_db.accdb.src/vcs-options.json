@@ -4,7 +4,7 @@
     "AccessVersion": "16.0 32-bit"
   },
   "Options": {
-    "ExportFolder": "",
+    "ExportFolder": "C:\\Users\\timop\\OneDrive\\Tiedostot\\JVK_jasenrekisteri.accdb.src\\JVK_jasenrekisteri_db.accdb.src",
     "ShowDebug": false,
     "UseFastSave": true,
     "UseGitIntegration": false,

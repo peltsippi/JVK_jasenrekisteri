@@ -1,0 +1,10 @@
+﻿{
+  "Info": {
+    "Class": "clsDbProjProperty",
+    "Description": "Project Properties (Access)"
+  },
+  "Items": {
+    "VCS Build Path": "C:\\Users\\timop\\OneDrive\\Tiedostot",
+    "VCS Source Path": "C:\\Users\\timop\\OneDrive\\Tiedostot\\JVK_jasenrekisteri.accdb.src\\JVK_jasenrekisteri_db.accdb.src"
+  }
+}
