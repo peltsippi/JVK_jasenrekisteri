@@ -1,0 +1,334 @@
+Basic stuff:
+
+1. 	Create folder based on release date or similar for files for your own records
+2. 	Save this as version inside the folder and you can use this with notes
+	It also keeps track about which tests were done with what automatically.
+
+
+Actual testing process:
+
+x=Done	Step	Task	Subtask
+
+	1.	Clear tables
+			Yhteystiedot
+			Kortit
+			Lataukset
+			Maksut
+			Historia
+
+	2.	Import data	
+			Import DB-Yhteystiedot-initial.csv to table Yhteystiedot
+			Import DB-Kortit-initial.csv to table Kortit
+			Import DB-Lataukset-initial.csv
+			Import DB-Maksut-initial.csv
+			Import DB-Hinnasto.csv (only so creating new cards is easier)
+			Import DB-Maksutavat.csv (only so adding payments will be easier)
+
+	3.	Add contacts manually (10 pcs), use copypaste!
+
+Etunimi		Sukunimi	Puhelin			Email					Kotipaikka		Jäsenyys	Edustusjäsen
+
+Alden		Mccall		(034578) 814263		vestibulum.massa@aol.org		Samsun			Jäsen		EPÄTOSI	
+Vincent		Vance		(036656) 471644		elit.nulla.facilisi@protonmail.org	Piemonte		Jäsen		EPÄTOSI	
+Armando		Farley		(02834) 3713551		sed.pede.cum@icloud.ca			Franche-Comté		Jäsen		EPÄTOSI	
+Zena		Buckner		(025) 11150164		magna.duis@protonmail.com		Vestfold og Telemark	Jäsen		EPÄTOSI	
+Quemby		Cervantes	(037745) 980571		a.magna@yahoo.edu			Samsun			Jäsen		EPÄTOSI	
+Delilah		Trevino		(035335) 979555		tellus.justo@hotmail.org		West Bengal		Jäsen		EPÄTOSI	
+Yuli		Tyler		(038321) 196169		nec.malesuada@aol.edu			Zhōngnán		Jäsen		EPÄTOSI	
+Cameron		Francis		(01643) 5310603		facilisis.suspendisse@google.com	Kogi			Jäsen		EPÄTOSI	
+Keane		Mendez		(032156) 585611		blandit.nam@outlook.ca			Paraíba			Jäsen		EPÄTOSI	
+Chantale	Alexander	(0573) 21316848		per@protonmail.couk			Vestland		Jäsen		EPÄTOSI	
+
+
+
+	4.	Link cards manually 
+		Initials with all operations: ABC
+
+		Card	Date		Comment
+
+	User: Alden Mccall (91)
+		4085	16.11.2019	Ei mitään muistikuvaa
+		9756	11.4.2013					!!This is wrong card, should not get through!!!
+		8816	11.4.2013	Jostai löysin vanhan kortin
+
+	User: Vincent Vance (92)
+		6055	25.1.2017	Kunhan sekoilin
+		3045	11.6.2014	Jostain löysin vanhan kortin
+
+	User: Armando Farley (93)
+		1410	11.12.2010	Kunhan sekoilin
+		0763	11.12.2010					!!This is wrong card, should not get through!!!
+		1074	1.3.2015	Jostain löysin vanhan kortin
+
+	User: Zena Buckner (94)
+		6867	6.11.2013	Kunhan sekoilin
+		1010	12.9.2021	Jostain löysin vanhan kortin
+
+	User: Quemby Cervantes (95)
+		8767	27.5.2012	Kunhan sekoilin
+
+	User: Delilah Trevino (96)
+		2640	19.10.2013	Kunhan sekoilin
+
+	User: Yuli Tyler (97)
+		4672	15.3.2014	Kunhan sekoilin
+
+	User: Cameron Francis (98)
+		6963	17.4.2019	Ei mitään muistikuvaa
+
+	User: Keane Mendez (99)
+		9133	18.11.2022	Ei mitään muistikuvaa
+
+	User: Chantale Alexander (100)
+		1142	14.6.2021	Ei mitään muistikuvaa
+
+
+	5.	Add charges and payments to cards
+
+TODO: come up with card types prices etc and update DB-lataukset-reference.csv with same data
+
+Initials always ABC
+
+Beginning	Type	End (automatically)	Price
+	Date		Payment method	Sum
+
+card 4085 (91) ============================================
+16.11.2019 	12 kk	(30.11.2020)		320€
+
+	18.11.2019 	Edenred		280 €
+	20.12.2019	Käteinen	40 €
+
+Card 8816 (92) ============================================
+11.4.2013	6 kk	(15.10.2013)		180€
+
+	16.4.2013	Tilisiirto	180 €
+
+Card 6055 (93) ============================================
+25.1.2017	3 kk	(30.4.2017)		100€
+
+	24.1.2017	Käteinen	50 €
+	15.2.2017	Tilisiirto	45 €
+
+Card 3045 (94) ============================================
+11.6.2014	12 kk	(15.6.2015)		320€
+
+	14.6.2014	tilisiirto	320 €
+
+Card 1410 (95) ============================================
+11.12.2010	12 kk	(15.12.2011)		320€
+
+	12.12.2010	käteinen	160 €
+	15.2.2011	käteinen	160 €
+
+Card 1074 (96) ============================================
+1.3.2015	6 kk	(15.9.2015)		180€
+
+	5.3.2015	tilisiirto	180 €
+
+Card 6867 (97) ============================================
+6.11.2013	12 kk	(15.11.2014)		320€
+
+	3.11.2013	tilisiirto	320 €
+
+Card 1010 (98) ============================================
+12.9.2021	6 kk	(15.3.2022)		180€
+
+	15.9.2021	tilisiirto	180 €
+
+Card 8767 (99) ============================================
+27.5.2012	12 kk	(31.5.2013)		320€
+
+	30.5.2012	käteinen	200 €
+	1.8.2012	tilisiirto	120 €
+
+Card 2640 (100) ============================================
+19.10.2013	9 kk	(31.7.2014)		270€
+
+	21.10.2013	tilisiirto	270 €
+
+Card 4672 (101) ============================================
+15.3.2014	12 kk	(15.3.2015)		320€
+
+	20.3.2014	tilisiirto	150 €
+	20.5.2014	tilisiirto	150 €
+	1.6.2014	smartum		20 €
+
+Card 6963 (102) ============================================
+17.4.2019	10 krt	(31.4.2020)		50€
+
+	17.4.2019	käteinen	5 €
+
+Card 9133 (103) ============================================
+18.11.2022	6 kk	(31.5.2023)		180€
+
+	1.12.2022	tilisiirto	180 €
+
+Card 1142 (104) ============================================
+14.6.2021	12 kk	(15.6.2022)		320€
+
+	15.6.2021	käteinen	100 €
+	15.7.2021	käteinen	20 €
+	1.9.2021	smartum		100 €
+
+
+
+	6.	Edit charges from cards
+
+		card 1809 (25)
+		24.12.2018 -> 31.12.2018
+
+		card 0360 (37)
+		14.1.2023 -> 15.1.2023
+
+		card 8894 (81)
+		16.2.2018 -> 15.2.2018
+
+
+	7.	Edit payments from cards (3 pcs)
+
+		Card 6963 (102)
+		17.4.2019	käteinen	5€ -> 50 €
+
+		card 0578 (75)
+		24.1.2015	tilisiirto	123,12 € -> 150 €
+
+		card 0763 (12)
+		19.5.2018	epassi		139,32 € -> 50 €
+
+
+	8.	Replace cards (4 + 2 pcs)
+
+
+		card 1987 (12) 
+			-> 0238  !! This should fail and not complete at all!!
+			-> 1445  (105)
+
+		card 0160 (38)
+			-> 4073 !! This should fail and not complete at all!!
+			-> 1745 (106)
+
+		card 5743 (26)
+			-> 2512 (107)
+
+
+	xx.	Delete cards
+	
+		Card 5424 (68)
+			Initials: ABC
+			Comment: Väärä kortti
+		Card 8269 (80)
+			Initials: ABC
+			Comment: Väärä kortti
+
+
+	xx.	Get all reports, save as pdf to folder you specified in the beginning..
+
+			* Valitun kortin tapahtumat - select card 4085 (91)
+				Maksut: 
+					edenred; 180,00 € ;ABC;18.11.2019
+					käteinen; 40,00 € ;ABC;20.12.2019
+				Lataukset:
+					30.11.2020;ABC;12kk; 320,00 € ;16.11.2019
+				
+				
+			* Tarkasta maksamattomat kortit
+				9935 (5) 1,00 € 
+				5497 (7) 2,00 €
+				1899 (11) 1,00 €
+				1445 (105) 12,00 €
+				2512 (107) 42,12 €
+				1745 (106) 42,12 €
+				6652 (70) 8,72 €
+
+			* Korttilatausten kokonaisraportti
+				Timespan: 1.1.2022 - 31.12.2022
+					1 kk x 2 (2 x 27 € =) 54 €
+					6 kk x 1 (1 x 180 € = ) 180 €
+					12 kk x 2 (2 z 324 € = ) 648 €
+					RIKKI/KADONNUT x 3
+
+			* Listaa kaikki maksut
+				Timespan: 1.1.2022 - 31.12.2022	
+					(59) tilisiirto; 324,00 € ;ABC;26.4.2022
+					(68) epassi; 324,00 € ;ABC;15.7.2022
+					(80) epassi; 27,00 € ;ABC;25.12.2022
+					(84) epassi; 27,00 € ;ABC;25.1.2022
+					(103) tilisiirto; 180,00 €;ABC;1.12.2022
+
+			* Listaa edustusjäsenet
+				Miranda Bush
+				Randall Shields
+				Ivan Cameron
+				Xyla Francis
+				Keane Pacheco
+				Ceraldine Kirk
+
+			* Listaa maksut per jäsen
+				Armando Farley (93) -> cards 1410 (95) & 1074 (96)
+					1410:	käteinen; 160,00 € ;ABC;12.12.2010
+					1410: käteinen; 160,00 € ;ABC;15.2.2011
+					1074 tilisiirto; 180,00 €;ABC;5.3.2015
+
+			* Aikavälillä voimassa olleet kortit
+				Timespan: 15.5.2019 - 15.8.2019
+				Cards:
+					5606 (52)
+					8768 (74)
+					8914 (90)
+					6963 (102)
+
+			* Aikavälillä umpeen menevät kortit
+				Timespan: 1.1.2022-31.12.2022
+				Cards:
+					2558 (71)
+					8285 (84)
+					1010 (98)
+					1142 (104)
+
+			* Listaa ilmaiseksi ladattavat
+				Miranda Bush
+				Natalie Wright
+				Whoopi Love
+				Yoshio Nichols
+				Helen Hoover
+				Clarke Allen
+				Calista Evans
+
+			* Aktiiviset kortit ilman omistajaa (note: this is dated 31.8.2022 and report data will change when time passes..)
+				5424 (68)
+				8269 (80) (?!? don't remember the logic anymore if this should be visible or not..)
+
+			* Tarkasta lataamattomat kortit
+				5448 (1) 0,50 €
+				8123 (13) 0,01 €
+				2891 (19) 1,50 €
+				4669 (76) 73,00 €
+				
+			* Näytä korttitilastot
+					NOTE: report dated for 31.8.2022, contents will change later on and tesing data needs to be updated!
+						There is probably also need to update testing data for getting more coverage for the report later on!
+				
+						(59) 12 kk
+						(68) 12 kk
+
+					Kuukausikortit: 	2 pcs
+					Aamupäiväkortit: 	0 pcs
+					Kertakortit:		0 pcs
+					Opiskelijakortit:	0 pcs
+					Muut:			0 pcs
+					Kaikki yht:		2 pcs
+
+			* Ota varmuuskopio
+				We'll get back to this bit later, just do this and ignore for now.
+
+			* Sovelluksen täysi historia
+				See full_history_reference.csv
+
+	xx.	Compare files
+			A) export all data from database as csv
+				-compare with DB-xxxx-reference.csv
+				-should be 1:1 (except reference dates: 31.8.2022 or similar)
+			B) reports: compare with reference reports and make sure everything matches
+
+	xx.	Make sure backup file can be opened and file size is similar	
+			-compare with csv:s by exporting all data as csv from backup	

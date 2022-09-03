@@ -4,7 +4,7 @@
 Built for www.jyvaskylanvoimaklubi.fi for specific needs encountered
 during normal operations.
 
-Beta testing is starting soon.
+Beta testing done.
 
 Released as open source, feel free to contact me if you need help or request copy of the actual access -file.
 
@@ -17,6 +17,6 @@ https://support.microsoft.com/en-us/office/download-and-install-microsoft-365-ac
 
 
 Sample data to databases in folder "Testing data for tables"
-Enables testing all features available.
+As for 3.9.2022 there is full test procedure described as a way to audit the application with test data set and procedures done within the app.
 
 Code is full finglish, sorry about that!

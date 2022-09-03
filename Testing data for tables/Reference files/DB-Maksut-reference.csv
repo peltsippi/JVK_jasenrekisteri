@@ -1,0 +1,115 @@
+Kortti;Maksutapa;Summa;Puumerkki;PVM
+1;edenred; 162,50 € ;ABC;20.3.2013
+2;käteinen; 81,00 € ;ABC;6.1.2017
+3;tilisiirto; 200,00 € ;ABC;6.2.2021
+3;käteinen; 43,00 € ;ABC;6.2.2021
+4;epassi; 324,00 € ;ABC;28.2.2020
+5;edenred; 80,00 € ;ABC;27.7.2020
+6;käteinen; 324,00 € ;ABC;26.8.2014
+7;tilisiirto; 110,00 € ;ABC;5.2.2016
+8;epassi; 81,00 € ;ABC;14.4.2019
+9;edenred; 81,00 € ;ABC;5.12.2010
+10;käteinen; 162,00 € ;ABC;6.5.2013
+11;tilisiirto; 215,00 € ;ABC;9.9.2010
+105;epassi; 150,00 € ;ABC;19.5.2018
+13;edenred; 162,01 € ;ABC;16.12.2019
+14;käteinen; 162,00 € ;ABC;16.4.2012
+15;tilisiirto; 27,00 € ;ABC;1.4.2016
+16;epassi; 81,00 € ;ABC;25.1.2016
+17;edenred; 81,00 € ;ABC;13.12.2010
+18;käteinen; 54,00 € ;ABC;15.4.2013
+19;tilisiirto; 190,50 € ;ABC;26.5.2017
+20;epassi; 324,00 € ;ABC;19.7.2020
+21;edenred; 324,00 € ;ABC;1.1.2012
+22;käteinen; 324,00 € ;ABC;1.9.2013
+23;tilisiirto; 324,00 € ;ABC;21.3.2021
+24;epassi; 162,00 € ;ABC;19.8.2014
+24;epassi; 162,00 € ;ABC;19.12.2014
+25;edenred; 324,00 € ;ABC;24.12.2017
+107;käteinen; 281,88 € ;ABC;1.5.2013
+27;tilisiirto; 324,00 € ;ABC;24.9.2017
+28;epassi; 162,00 € ;ABC;12.10.2017
+29;edenred; 162,00 € ;ABC;24.3.2013
+30;käteinen; 162,00 € ;ABC;14.7.2015
+31;tilisiirto; 162,00 € ;ABC;10.3.2014
+32;epassi; 162,00 € ;ABC;16.6.2018
+33;edenred; 162,00 € ;ABC;22.12.2011
+34;käteinen; 162,00 € ;ABC;21.10.2018
+35;tilisiirto; 162,00 € ;ABC;2.12.2014
+36;epassi; 162,00 € ;ABC;4.5.2010
+37;edenred; 27,00 € ;ABC;14.1.2023
+106;käteinen; 119,88 € ;ABC;15.11.2018
+39;tilisiirto; 162,00 € ;ABC;5.8.2019
+40;epassi; 162,00 € ;ABC;20.2.2019
+41;edenred; 162,00 € ;ABC;19.4.2014
+42;käteinen; 162,00 € ;ABC;6.11.2015
+43;tilisiirto; 162,00 € ;ABC;20.8.2013
+44;epassi; 162,00 € ;ABC;28.8.2010
+45;edenred; 162,00 € ;ABC;21.6.2013
+46;käteinen; 162,00 € ;ABC;27.6.2017
+47;tilisiirto; 162,00 € ;ABC;23.2.2013
+48;epassi; 162,00 € ;ABC;28.2.2011
+49;edenred; 162,00 € ;ABC;5.6.2019
+50;käteinen; 162,00 € ;ABC;28.8.2014
+51;tilisiirto; 324,00 € ;ABC;17.11.2016
+52;epassi; 324,00 € ;ABC;14.1.2019
+53;edenred; 324,00 € ;ABC;16.7.2020
+54;käteinen; 324,00 € ;ABC;18.10.2010
+55;tilisiirto; 324,00 € ;ABC;20.4.2015
+56;epassi; 324,00 € ;ABC;14.2.2011
+57;edenred; 324,00 € ;ABC;13.1.2014
+58;käteinen; 324,00 € ;ABC;26.5.2010
+59;tilisiirto; 324,00 € ;ABC;26.4.2022
+60;epassi; 324,00 € ;ABC;28.7.2013
+61;edenred; 324,00 € ;ABC;4.11.2020
+62;käteinen; 324,00 € ;ABC;27.11.2017
+63;tilisiirto; 324,00 € ;ABC;12.7.2015
+64;epassi; 324,00 € ;ABC;18.5.2015
+65;edenred; 324,00 € ;ABC;3.5.2018
+66;käteinen; 324,00 € ;ABC;20.8.2012
+67;tilisiirto; 324,00 € ;ABC;20.11.2012
+68;epassi; 324,00 € ;ABC;15.7.2022
+69;edenred; 324,00 € ;ABC;7.1.2014
+70;käteinen; 315,28 € ;ABC;17.4.2011
+71;tilisiirto; 324,00 € ;ABC;21.12.2021
+72;epassi; 324,00 € ;ABC;23.6.2020
+73;edenred; 324,00 € ;ABC;17.2.2015
+74;käteinen; 324,00 € ;ABC;3.8.2019
+75;tilisiirto; 324,00 € ;ABC;24.1.2015
+76;epassi; 100,00 € ;ABC;12.7.2021
+77;edenred; 324,00 € ;ABC;12.9.2011
+78;käteinen; 324,00 € ;ABC;14.11.2013
+79;tilisiirto; 324,00 € ;ABC;2.11.2017
+80;epassi; 27,00 € ;ABC;25.12.2022
+81;edenred; 324,00 € ;ABC;16.3.2017
+82;käteinen; 324,00 € ;ABC;22.1.2013
+83;tilisiirto; 324,00 € ;ABC;15.5.2017
+84;epassi; 27,00 € ;ABC;25.1.2022
+85;edenred; 324,00 € ;ABC;12.8.2013
+86;käteinen; 324,00 € ;ABC;4.10.2013
+87;tilisiirto; 324,00 € ;ABC;6.2.2010
+88;epassi; 324,00 € ;ABC;15.8.2020
+89;edenred; 324,00 € ;ABC;10.7.2013
+90;käteinen; 324,00 € ;ABC;14.6.2019
+91;edenred; 180,00 € ;ABC;18.11.2019
+91;käteinen; 40,00 € ;ABC;20.12.2019
+92;tilisiirto; 180,00 € ;ABC;16.4.2013
+93;käteinen; 50,00 € ;ABC;24.1.2017
+93;tilisiirto; 45,00 € ;ABC;15.2.2017
+94;tilisiirto; 320,00 € ;ABC;14.6.2014
+95;käteinen; 160,00 € ;ABC;12.12.2010
+95;käteinen; 160,00 € ;ABC;15.2.2011
+96;tilisiirto; 180,00 €;ABC;5.3.2015
+97;tilisiirto; 320,00 €;ABC;3.11.2013
+98;tilisiirto; 180,00 €;ABC;15.9.2021
+99;käteinen; 200,00 €;ABC;30.5.2012
+99;tilisiirto; 120,00 €;ABC;1.8.2012
+100;tilisiirto; 270,00 €;ABC;21.10.2013
+101;tilisiirto; 150,00 €;ABC;20.3.2014
+101;tilisiirto; 150,00 €;ABC;20.5.2014
+101;smartum; 20,00 €;ABC;1.6.2014
+102;käteinen; 50,00 €;ABC;17.4.2014
+103;tilisiirto; 180,00 €;ABC;1.12.2022
+104;käteinen; 100,00 €;ABC;15.6.2021
+104;käteinen; 20,00 €;ABC;15.7.2021
+104;smartum; 100,00 €;ABC;1.9.2021
