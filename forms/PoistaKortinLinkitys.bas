@@ -728,7 +728,7 @@ Public Sub Poista_Click()
     If deletebool Then
         'Dim query As String
         Dim largestDate As Date
-        largestDate = Common.FetchExiprationDate(cardNumber)
+        largestDate = Common.FetchExiprationDate(cardNumber, False)
         'MsgBox ("Suurin päivämäärä on " & largestDate)
         
         largestDate = DateAdd("d", 1, largestDate) 'add 1 more than previous charge!
@@ -788,7 +788,7 @@ Public Sub Poista_Click()
     success = Common.SaveToLog(logOutput)
     
     success = Common.SendMessageToMainScreen("Kortin " & cardNumber & " linkitys poistettu!")
-    
+    Form_Tervetuloa.Tyhjennä_Click
     DoCmd.Close
     
 End Sub

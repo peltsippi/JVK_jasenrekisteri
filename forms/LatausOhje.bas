@@ -13,10 +13,10 @@ Begin Form
     Width =9524
     DatasheetFontHeight =11
     ItemSuffix =60
-    Left =4044
+    Left =4740
     Top =3468
-    Right =17484
-    Bottom =11712
+    Right =14808
+    Bottom =12924
     RecSrcDt = Begin
         0xf995cdd7bcc7e540
     End
@@ -146,7 +146,9 @@ Begin Form
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =2100
                     Top =1867
@@ -167,6 +169,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =170
                     Top =8617
                     Width =4308
@@ -196,6 +200,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =4592
                     Top =8617
                     Width =4643
@@ -227,6 +233,8 @@ Begin Form
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
                     Top =5839
@@ -250,6 +258,8 @@ Begin Form
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
                     Top =6746
@@ -273,6 +283,8 @@ Begin Form
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
                     Top =6292
@@ -296,6 +308,8 @@ Begin Form
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =3911
                     Top =6292
@@ -317,6 +331,8 @@ Begin Form
                 End
                 Begin TextBox
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =4422
                     Top =1927
@@ -337,6 +353,8 @@ Begin Form
                 Begin TextBox
                     BorderWidth =3
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
                     Top =7196
@@ -374,24 +392,38 @@ End Sub
 
 Private Sub Form_Open(Cancel As Integer)
 
-    [Form_LatausOhje].KorttiNumero.Value = "A" & [Form_RekisteroiLataus].Kortti
+    Dim KorttiNumero As String
+    Dim tyyppiValinta As Integer
+    Dim krtMaara As Integer
+    Dim AikaRyhma As String
+    Dim voimassaOlo As String
     
+    If CurrentProject.AllForms("RekisteroiLataus").IsLoaded Then
+        KorttiNumero = [Form_RekisteroiLataus].Kortti.Value
+        tyyppiValinta = [Form_RekisteroiLataus].Valinta.Value
+        krtMaara = [Form_RekisteroiLataus].KERMaara.Value
+        voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
+        
+        
     
-    If ([Form_RekisteroiLataus].Valinta = 4) Then
+    End If
+    
+    [Form_LatausOhje].KorttiNumero.Value = "A" & KorttiNumero
+    
+    If (tyyppiValinta = 4) Then
         [Form_LatausOhje].KorttiTyyppi.Value = "Määräkortti"
-        [Form_LatausOhje].Maara.Value = [Form_RekisteroiLataus].KERMaara.Value
+        [Form_LatausOhje].Maara.Value = krtMaara
     Else
         [Form_LatausOhje].KorttiTyyppi.Value = "Kausikortti"
     End If
-    
-    If ([Form_RekisteroiLataus].Valinta = 2) Then
-        [Form_LatausOhje].AikaRyhma.Value = "aamupäivä ma-su"
+        
+    If (tyyppiValinta = 2) Then
+         [Form_LatausOhje].AikaRyhma.Value = "aamupäivä ma-su"
     Else
         [Form_LatausOhje].AikaRyhma.Value = "Normaali"
     End If
     
-    [Form_LatausOhje].Voimassa.Value = [Form_RekisteroiLataus].Voimassa.Value
-    
+    [Form_LatausOhje].Voimassa.Value = voimassaOlo
     [Form_LatausOhje].Tanaan.Value = Date
     
 End Sub

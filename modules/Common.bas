@@ -111,7 +111,7 @@ Public Function DoBackup(treshold As Integer)
     splitString = Split(Source, "=")
     Source = splitString(1)
     
-    MsgBox (Source)
+    'MsgBox (Source)
     
     'This is the only thing to change - add the path of where you want the file to save here
     Target = Application.CurrentProject.Path & "\Jasenrekisteri-backup-"
@@ -155,7 +155,7 @@ Public Function FetchCardID(cardNumber As String) As Integer
 End Function
 
 
-Public Function FetchExiprationDate(card As String) As Date
+Public Function FetchExiprationDate(card As String, returnPastValues As Boolean) As Date
     'Fetches expiration date for a card (largest date from valid until -column where card id matches
     'if it is older than current date, current date will be used
     
@@ -175,9 +175,10 @@ Public Function FetchExiprationDate(card As String) As Date
     'MsgBox ("end date before closing: " & endDate)
     result.Close
     'MsgBox ("end date after closing: " & endDate)
- 
-    If (endDate < Date) Then
-        endDate = Date
+    If Not (returnPastValues) Then
+        If (endDate < Date) Then
+            endDate = Date
+        End If
     End If
     
     FetchExiprationDate = endDate
@@ -191,6 +192,7 @@ Public Function FetchGeneralID(Table As String, desiredID As String, criteria As
     Dim sqlRecords As DAO.Recordset
     
     queryString = "SELECT " & desiredID & " FROM " & Table & " WHERE " & criteria
+    'MsgBox (queryString)
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     
     If (sqlRecords.RecordCount = 1) Then
@@ -552,3 +554,50 @@ Public Function GetCardOwner(cardNumber As String) As Integer
 
 End Function
 
+Public Function GetCardType(cardNumber As String) As String
+    Dim queryString As String
+    Dim dateStamp As Date
+    
+    dateStamp = Common.FetchExiprationDate(cardNumber, True)
+    
+    cardID = Common.FetchCardID(cardNumber)
+    
+    
+    'queryString = "SELECT Korttityyppi FROM Lataukset WHERE Kortti = " & cardID & " AND Voimassa = '" & dateStamp & "'"
+    
+   ' GetCardType = Common.FetchGeneralID("Lataukset", "Korttityyppi", "Kortti = " & cardID & " AND Voimassa = CDATE('" & dateStamp & "')")
+    
+    
+    Dim queryString2 As String
+    Dim sqlRecords2 As DAO.Recordset
+   '
+    queryString2 = "SELECT Korttityyppi FROM Lataukset WHERE Kortti = " & cardID & " AND Voimassa = CDATE('" & dateStamp & "')"
+    
+    'MsgBox (queryString2)
+    Set sqlRecords2 = CurrentDb.OpenRecordset(queryString2)
+   '
+   'For (int i = 0; i ++; i < sqlRecords2.RecordCount
+   Dim i As Integer
+   
+   'For i = 0 To sqlRecords2.RecordCount
+   '     MsgBox (sqlRecords2.Fields.Item(i).Value)
+   ' Next i
+        
+   
+    'If (sqlRecords2.RecordCount = 1) Then
+        'MsgBox (sqlRecords.Fields.Item(0).Value)
+    '    MsgBox (sqlRecords2.Fields.Item(0).Value)
+   
+   
+    'E lse
+    '    MsgBox (sqlRecords2.RecordCount)
+    'End If
+    GetCardType = sqlRecords2.Fields.Item(0).Value
+   
+    sqlRecords2.Close
+        
+
+End Function
+
+
+ 

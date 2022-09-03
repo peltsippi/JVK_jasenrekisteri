@@ -17,9 +17,9 @@ Begin Form
     Width =6973
     DatasheetFontHeight =11
     ItemSuffix =391
-    Left =2556
+    Left =4740
     Top =3468
-    Right =10068
+    Right =12252
     Bottom =12396
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -1405,7 +1405,7 @@ Public Sub SaveStuff()
     Dim KorttiTyyppi As String
     Dim Puumerkki As String
     Dim Hinta As Currency
-    Dim Voimassaolo As Date
+    Dim voimassaOlo As Date
     Dim arvot As String
     
     
@@ -1446,14 +1446,14 @@ Public Sub SaveStuff()
         MsgBox ("Voimassaoloa ei määritelty!")
         Exit Sub
     Else
-        Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
+        voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
     End If
     
     
     Dim kortti_id As Integer
     kortti_id = Common.FetchCardID(Kortti)
     'MsgBox (kortti_id)
-    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Lataaja = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
+    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & voimassaOlo & "' , Puumerkki = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
     'MsgBox (arvot)
     
     'Dim preventDuplicates As String
@@ -1464,7 +1464,7 @@ Public Sub SaveStuff()
     
     success = Common.InsertOrUpdate("Lataukset", arvot, "")
 
-    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
+    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & voimassaOlo & " ja hinta: " & Hinta)
 
     Dim retval
     retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
@@ -1570,7 +1570,7 @@ Private Function GetDefaultDate()
     Dim Kortti As String
     Kortti = [Form_RekisteroiLataus].Kortti.Value
     'MsgBox ("Kortti: " & kortti)
-    initialDate = Common.FetchExiprationDate(Kortti)
+    initialDate = Common.FetchExiprationDate(Kortti, False)
     'MsgBox ("Initial date : " & initialDate)
     
     [Form_RekisteroiLataus].aloituspvm.Value = initialDate

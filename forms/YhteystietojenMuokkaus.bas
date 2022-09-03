@@ -17,7 +17,7 @@ Begin Form
     Width =9071
     DatasheetFontHeight =11
     ItemSuffix =146
-    Left =4044
+    Left =4740
     Top =3468
     Right =17484
     Bottom =11712
@@ -1280,6 +1280,7 @@ Private Sub deletejäsen_Click()
         Dim succs
         succs = Common.SaveToLog("Poistetaan käyttäjä ID: " & [Form_YhteystietojenMuokkaus].UID.Value)
         DoCmd.RunCommand acCmdDeleteRecord
+        Form_Tervetuloa.Tyhjennä_Click
     End If
     
 End Sub

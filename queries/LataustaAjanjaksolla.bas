@@ -33,18 +33,6 @@ dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 Begin
     Begin
-        dbText "Name" ="Kortti"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Lataukset_Kortti"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Kortit_Kortti"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="Kortit.Kortti"
         dbLong "AggregateType" ="-1"
     End
@@ -56,17 +44,29 @@ Begin
         dbText "Name" ="Yhteystiedot.Etunimi"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="Kortti"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="Lataukset_Kortti"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="Kortit_Kortti"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =1075
+    Right =1525
     Bottom =708
     Left =-1
     Top =-1
-    Right =1055
-    Bottom =318
+    Right =1063
+    Bottom =297
     Left =0
     Top =0
     ColumnsShown =539

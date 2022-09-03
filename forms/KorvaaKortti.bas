@@ -666,6 +666,53 @@ Public Sub Korvaa_Click()
     If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only when there is something to be moved..
         succs = Common.InsertOrUpdate(Table, Values, Target)
     End If
+    
+    '5.5: instructions for charging the new card
+    DoCmd.OpenForm "LatausOhje"
+    Form_LatausOhje.Save.Visible = False
+    Form_LatausOhje.Cancel.Visible = False
+    Form_LatausOhje.KorttiNumero.Value = "A" & newCard
+    
+    Dim expiration As Date
+    expiration = Common.FetchExiprationDate(newCard, True)
+    
+    Dim chargeType As String
+     
+    Dim visitsLeft As Integer
+    
+    chargeType = Common.GetCardType(newCard)
+    'MsgBox (chargeType)
+    
+    Form_LatausOhje.Voimassa.Value = expiration
+    
+    If (InStr(1, chargeType, "krt")) Then
+        cardType = "Määräkortti"
+        visitsLeft = InputBox("Kuinka monta käyntikertaa kortilla " & oldCard & " jäljellä?")
+        'add query for how many left!!!
+        Form_LatausOhje.Maara.Value = visitsLeft
+    Else
+        cardType = "Kausikortti"
+    End If
+    
+    If (InStr(1, chargeType, "ap")) Then
+        timeGroup = "Aamupäivä ma-su"
+    Else
+        timeGroup = "Normaali"
+       
+    End If
+    
+    'Dim cardType As String ' how to get this ?!?
+    'Dim timeGroup As String 'how to get this ?!?!
+    
+    Form_LatausOhje.KorttiTyyppi.Value = cardType
+    Form_LatausOhje.AikaRyhma.Value = timeGroup
+    
+    
+    'jos kertakortti, kysy vanhalla kortilla oleva jäljellä olevien käyntien määrä!!
+    'Form_LatausOhje.Maara.Value = "" 'how to get this ?!?!
+    MsgBox ("Ohje uuden kortin lataamiseksi on auki kunnes painat OK tästä!" & vbNewLine & "Se uusi kortti kannattaa ladata oikeasti nyt")
+    DoCmd.Close 'let's hope this closes the correct form
+    
     '6. move payments
     'MsgBox ("Move payments")
     Table = "Maksut"
@@ -674,6 +721,9 @@ Public Sub Korvaa_Click()
         succs = Common.InsertOrUpdate(Table, Values, Target)
     End If
     MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
+    
+    
+    
     '7. mark old card as missing/broken
     
     DoCmd.OpenForm "PoistaKortinLinkitys"
