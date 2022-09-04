@@ -19,6 +19,9 @@ x=Done	Step	Task	Subtask
 	2.	Import data	
 			Import DB-Yhteystiedot-initial.csv to table Yhteystiedot
 			Import DB-Kortit-initial.csv to table Kortit
+				Settings: Text separator: " , first row contains column names
+				Make sure that card 12 and other starting with 0 are there!
+				And CID should start from 1 (repair database after clearing it!)
 			Import DB-Lataukset-initial.csv
 			Import DB-Maksut-initial.csv
 			Import DB-Hinnasto.csv (only so creating new cards is easier)
@@ -60,31 +63,30 @@ Chantale	Alexander	(0573) 21316848		per@protonmail.couk			Vestland		Jäsen		EPÄ
 		1074	
 
 	User: Zena Buckner (94)
-		6867	6.11.2013	Kunhan sekoilin
-		1010	12.9.2021	Jostain löysin vanhan kortin
+		6867
+		1010
 
 	User: Quemby Cervantes (95)
-		8767	27.5.2012	Kunhan sekoilin
+		8767
 
 	User: Delilah Trevino (96)
-		2640	19.10.2013	Kunhan sekoilin
+		2640
 
 	User: Yuli Tyler (97)
-		4672	15.3.2014	Kunhan sekoilin
+		4672
 
 	User: Cameron Francis (98)
-		6963	17.4.2019	Ei mitään muistikuvaa
+		6963
 
 	User: Keane Mendez (99)
-		9133	18.11.2022	Ei mitään muistikuvaa
+		9133
 
 	User: Chantale Alexander (100)
-		1142	14.6.2021	Ei mitään muistikuvaa
+		1142
 
 
 	5.	Add charges and payments to cards
 
-TODO: come up with card types prices etc and update DB-lataukset-reference.csv with same data
 
 Initials always ABC
 

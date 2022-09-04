@@ -18,10 +18,10 @@ Begin Form
     Width =9708
     DatasheetFontHeight =11
     ItemSuffix =294
-    Left =4740
-    Top =3468
-    Right =22788
-    Bottom =11712
+    Left =6804
+    Top =492
+    Right =16512
+    Bottom =11496
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -646,7 +646,7 @@ Begin Form
                     TabIndex =4
                     BorderColor =10921638
                     ForeColor =3484194
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"8\""
                     Name ="Korttivalinta"
                     RowSourceType ="Table/Query"
                     RowSource ="ListaaKortitJaLataukset"

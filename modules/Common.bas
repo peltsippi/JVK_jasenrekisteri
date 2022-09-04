@@ -26,12 +26,14 @@ Public Function WriteStats()
     Dim MUUKortti As Integer
     Dim korttejaYht As Integer
     
-    KKKortti = [Form_Tervetuloa].kortitKK.Value
-    opiskKortti = [Form_Tervetuloa].kortitOpisk.Value
-    kertaKortti = [Form_Tervetuloa].kortitKrt.Value
-    APKortti = [Form_Tervetuloa].kortitAP.Value
-    MUUKortti = [Form_Tervetuloa].kortitMuu.Value
-    korttejaYht = [Form_Tervetuloa].kortitKaikki.Value
+    If (Not (IsNull([Form_Tervetuloa].kortitKK))) Then
+    
+        KKKortti = [Form_Tervetuloa].kortitKK.Value
+        opiskKortti = [Form_Tervetuloa].kortitOpisk.Value
+        kertaKortti = [Form_Tervetuloa].kortitKrt.Value
+        APKortti = [Form_Tervetuloa].kortitAP.Value
+        MUUKortti = [Form_Tervetuloa].kortitMuu.Value
+        korttejaYht = [Form_Tervetuloa].kortitKaikki.Value
     
     arvoParit = "Kaikki = " & korttejaYht & " , " _
     & "KkKortit = " & KKKortti & " , " _
@@ -47,6 +49,7 @@ Public Function WriteStats()
 
     Common.InsertOrUpdate "Korttitilasto", arvoParit, targetString
     
+    End If
         
 End Function
 

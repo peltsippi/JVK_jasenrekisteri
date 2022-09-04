@@ -3,6 +3,7 @@ VersionRequired =20
 Begin Form
     PopUp = NotDefault
     Modal = NotDefault
+    AutoCenter = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
@@ -15,7 +16,7 @@ Begin Form
     ItemSuffix =70
     Left =4740
     Top =3468
-    Right =17484
+    Right =18432
     Bottom =11712
     RecSrcDt = Begin
         0xf995cdd7bcc7e540
@@ -154,7 +155,6 @@ Begin Form
                     Width =2205
                     Height =408
                     FontSize =14
-                    TabIndex =2
                     ForeColor =4210752
                     Name ="KorttiNumero"
                     FontName ="Calibri"
@@ -175,6 +175,7 @@ Begin Form
                     Top =36
                     Width =9360
                     Height =680
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Save"
                     Caption ="Tehty, painoin molempia talleta -nappeja!"
@@ -208,7 +209,7 @@ Begin Form
                     Top =792
                     Width =9360
                     Height =684
-                    TabIndex =1
+                    TabIndex =6
                     ForeColor =4210752
                     Name ="Cancel"
                     Caption ="Peruuta!"
@@ -224,10 +225,17 @@ Begin Form
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
-                    BackColor =15123357
+                    Gradient =0
+                    BackColor =2366701
+                    BackThemeColorIndex =-1
+                    BackTint =100.0
                     BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
+                    HoverColor =2366701
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedColor =2366701
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =1
@@ -248,7 +256,7 @@ Begin Form
                     Width =3515
                     Height =336
                     FontSize =14
-                    TabIndex =4
+                    TabIndex =2
                     ForeColor =4210752
                     Name ="KorttiTyyppi"
                     FontName ="Calibri"
@@ -298,7 +306,7 @@ Begin Form
                     Width =1810
                     Height =348
                     FontSize =14
-                    TabIndex =5
+                    TabIndex =3
                     ForeColor =4210752
                     Name ="Tanaan"
                     FontName ="Calibri"
@@ -323,7 +331,7 @@ Begin Form
                     Width =1814
                     Height =348
                     FontSize =14
-                    TabIndex =6
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="Voimassa"
                     FontName ="Calibri"
@@ -345,7 +353,7 @@ Begin Form
                     Top =3458
                     Width =2267
                     Height =300
-                    TabIndex =3
+                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Muokkaus56"
