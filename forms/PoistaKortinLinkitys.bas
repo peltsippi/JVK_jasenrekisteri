@@ -18,8 +18,8 @@ Begin Form
     ItemSuffix =53
     Left =4740
     Top =3468
-    Right =12876
-    Bottom =9216
+    Right =22788
+    Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0xa22cdf047cc5e540
@@ -747,9 +747,10 @@ Public Sub Poista_Click()
         feedback = Common.InsertOrUpdate(table2, values2, "")
         
         If (Not (feedback)) Then
-            MsgBox ("Kortin poistossa tapahtui virhe, käy muokkaamassa manuaalisesti kortin tietoihin että se on rikki!")
+            MsgBox ("Kortin poistossa tapahtui odottamaton virhe, käy muokkaamassa manuaalisesti kortin tietoihin että se on rikki!")
         Else
-            MsgBox ("Kortti merkattu poistetuksi!")
+            'MsgBox ("Kortti merkattu poistetuksi!")
+            'This is too annoying, removing this
         End If
         
         

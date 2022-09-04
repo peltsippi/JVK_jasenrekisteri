@@ -10,13 +10,13 @@ Begin Form
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =9524
+    Width =9456
     DatasheetFontHeight =11
-    ItemSuffix =60
+    ItemSuffix =70
     Left =4740
     Top =3468
-    Right =14808
-    Bottom =12924
+    Right =17484
+    Bottom =11712
     RecSrcDt = Begin
         0xf995cdd7bcc7e540
     End
@@ -115,7 +115,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin Section
-            Height =9467
+            Height =10020
             Name ="Tiedot"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -125,22 +125,21 @@ Begin Form
                     PictureAlignment =0
                     PictureType =2
                     Left =60
-                    Top =36
+                    Top =1536
                     Width =9360
                     Height =8460
                     BorderColor =10921638
                     Name ="Kuva0"
                     Picture ="JVK_jasenrekisteri_img"
-                    GroupTable =1
                     GridlineColor =10921638
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =36
+                    LayoutCachedTop =1536
                     LayoutCachedWidth =9420
-                    LayoutCachedHeight =8496
+                    LayoutCachedHeight =9996
                     TabIndex =9
-                    LayoutGroup =1
-                    GroupTable =1
+                    RowStart =2
+                    RowEnd =2
                 End
                 Begin TextBox
                     Locked = NotDefault
@@ -150,20 +149,21 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =2100
-                    Top =1867
+                    Left =2097
+                    Top =3344
                     Width =2205
                     Height =408
                     FontSize =14
+                    TabIndex =2
                     ForeColor =4210752
                     Name ="KorttiNumero"
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2100
-                    LayoutCachedTop =1867
-                    LayoutCachedWidth =4305
-                    LayoutCachedHeight =2275
+                    LayoutCachedLeft =2097
+                    LayoutCachedTop =3344
+                    LayoutCachedWidth =4302
+                    LayoutCachedHeight =3752
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End
@@ -171,28 +171,30 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =170
-                    Top =8617
-                    Width =4308
+                    Left =60
+                    Top =36
+                    Width =9360
                     Height =680
-                    TabIndex =3
                     ForeColor =4210752
                     Name ="Save"
                     Caption ="Tehty, painoin molempia talleta -nappeja!"
                     OnClick ="[Event Procedure]"
                     FontName ="Calibri"
+                    GroupTable =1
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =170
-                    LayoutCachedTop =8617
-                    LayoutCachedWidth =4478
-                    LayoutCachedHeight =9297
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9420
+                    LayoutCachedHeight =716
+                    LayoutGroup =1
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
                     PressedColor =11957550
                     HoverForeColor =4210752
                     PressedForeColor =4210752
+                    GroupTable =1
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -202,28 +204,33 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =177
                     TextFontFamily =0
-                    Left =4592
-                    Top =8617
-                    Width =4643
-                    Height =683
-                    TabIndex =4
+                    Left =60
+                    Top =792
+                    Width =9360
+                    Height =684
+                    TabIndex =1
                     ForeColor =4210752
                     Name ="Cancel"
                     Caption ="Peruuta!"
                     OnClick ="[Event Procedure]"
                     FontName ="Calibri"
+                    GroupTable =1
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4592
-                    LayoutCachedTop =8617
-                    LayoutCachedWidth =9235
-                    LayoutCachedHeight =9300
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =792
+                    LayoutCachedWidth =9420
+                    LayoutCachedHeight =1476
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
                     PressedColor =11957550
                     HoverForeColor =4210752
                     PressedForeColor =4210752
+                    GroupTable =1
                     WebImagePaddingLeft =3
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
@@ -236,21 +243,21 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =1644
-                    Top =5839
+                    Left =1700
+                    Top =7370
                     Width =3515
                     Height =336
                     FontSize =14
-                    TabIndex =1
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="KorttiTyyppi"
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =1644
-                    LayoutCachedTop =5839
-                    LayoutCachedWidth =5159
-                    LayoutCachedHeight =6175
+                    LayoutCachedLeft =1700
+                    LayoutCachedTop =7370
+                    LayoutCachedWidth =5215
+                    LayoutCachedHeight =7706
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End
@@ -262,20 +269,20 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
-                    Top =6746
+                    Top =8220
                     Width =3458
                     Height =396
                     FontSize =14
-                    TabIndex =2
+                    TabIndex =7
                     ForeColor =4210752
                     Name ="AikaRyhma"
                     FontName ="Calibri"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1644
-                    LayoutCachedTop =6746
+                    LayoutCachedTop =8220
                     LayoutCachedWidth =5102
-                    LayoutCachedHeight =7142
+                    LayoutCachedHeight =8616
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End
@@ -287,7 +294,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
-                    Top =6292
+                    Top =7766
                     Width =1810
                     Height =348
                     FontSize =14
@@ -298,9 +305,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1644
-                    LayoutCachedTop =6292
+                    LayoutCachedTop =7766
                     LayoutCachedWidth =3454
-                    LayoutCachedHeight =6640
+                    LayoutCachedHeight =8114
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End
@@ -312,7 +319,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =3911
-                    Top =6292
+                    Top =7766
                     Width =1814
                     Height =348
                     FontSize =14
@@ -323,9 +330,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =3911
-                    LayoutCachedTop =6292
+                    LayoutCachedTop =7766
                     LayoutCachedWidth =5725
-                    LayoutCachedHeight =6640
+                    LayoutCachedHeight =8114
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End
@@ -335,10 +342,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =4422
-                    Top =1927
+                    Top =3458
                     Width =2267
                     Height =300
-                    TabIndex =7
+                    TabIndex =3
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Muokkaus56"
@@ -346,9 +353,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =4422
-                    LayoutCachedTop =1927
+                    LayoutCachedTop =3458
                     LayoutCachedWidth =6689
-                    LayoutCachedHeight =2227
+                    LayoutCachedHeight =3758
                 End
                 Begin TextBox
                     BorderWidth =3
@@ -357,7 +364,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =1644
-                    Top =7196
+                    Top =8674
                     Width =850
                     Height =396
                     FontSize =14
@@ -368,9 +375,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1644
-                    LayoutCachedTop =7196
+                    LayoutCachedTop =8674
                     LayoutCachedWidth =2494
-                    LayoutCachedHeight =7592
+                    LayoutCachedHeight =9070
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                 End

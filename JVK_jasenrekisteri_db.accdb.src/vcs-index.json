@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": null,
-    "ExportDate": "29.8.2022 19.50.15",
+    "ExportDate": "4.9.2022 9.23.58",
     "FullExportDate": "29.8.2022 19.50.15",
     "OptionsHash": "ca785c3",
     "LastMergedCommit": "",
@@ -14,7 +14,7 @@
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "29.8.2022 19.50.14",
+          "ExportDate": "4.9.2022 9.23.57",
           "SourceModified": "29.8.2022 19.47.23",
           "FilePropertiesHash": "4b59119"
         }
@@ -31,9 +31,9 @@
           "FilePropertiesHash": "1043c98"
         },
         "Kortit.xml": {
-          "ExportDate": "29.8.2022 19.50.15",
-          "SourceModified": "29.8.2022 19.50.15",
-          "FilePropertiesHash": "0a66a56"
+          "ExportDate": "4.9.2022 9.23.57",
+          "SourceModified": "4.9.2022 9.23.57",
+          "FilePropertiesHash": "9662a28"
         },
         "Korttitilasto.xml": {
           "ExportDate": "29.8.2022 19.50.15",
@@ -41,9 +41,9 @@
           "FilePropertiesHash": "f051d0c"
         },
         "Lataukset.xml": {
-          "ExportDate": "29.8.2022 19.50.15",
-          "SourceModified": "29.8.2022 19.50.15",
-          "FilePropertiesHash": "e987723"
+          "ExportDate": "4.9.2022 9.23.57",
+          "SourceModified": "4.9.2022 9.23.57",
+          "FilePropertiesHash": "ca6336b"
         },
         "Maksut.xml": {
           "ExportDate": "29.8.2022 19.50.15",
@@ -64,7 +64,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "337c4f2",
-          "ExportDate": "29.8.2022 19.50.14",
+          "ExportDate": "4.9.2022 9.23.57",
           "SourceModified": "29.8.2022 19.47.23",
           "FilePropertiesHash": "26bcb31"
         }
@@ -72,7 +72,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9c1a988",
-          "ExportDate": "29.8.2022 19.50.14",
+          "ExportDate": "4.9.2022 9.23.57",
           "SourceModified": "29.8.2022 19.47.23",
           "FilePropertiesHash": "a5eb592"
         }

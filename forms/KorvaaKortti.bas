@@ -632,10 +632,8 @@ Public Sub Korvaa_Click()
     '2. Ask final confirmation
     
     If MsgBox("Siirretään kaikki mahdollinen, mm. lataukset ja maksut " _
-    & vbNewLine & "kortilta: " & oldCard & " kortille: " & newCard & vbNewLine & "Meneehän täysin oikein?" _
-    & vbNewLine & vbNewLline & "Tämä toiminto tekee kaiken mahdollisen automaattisesti kerralla." _
-    & vbNewLine & "Kirjoitathan kaikki mahdollisesti vastaan tulevat virheilmoitukset ylös " _
-    & vbNewLine & "että saadaan niiden avulla korjattua jäljet jos jotain menee pieleen!", vbYesNo) = vbNo Then Exit Sub
+    & vbNewLine & "kortilta: " & oldCard & " kortille: " & newCard & vbNewLine & "Meneehän varmasti oikein?" _
+    & vbNewLine & vbNewLline & "Tämä toiminto tekee kaiken mahdollisen automaattisesti kerralla.", vbYesNo) = vbNo Then Exit Sub
     
     '3. Link new card
     DoCmd.OpenForm "LisaaKortinLinkitys"
@@ -644,8 +642,8 @@ Public Sub Korvaa_Click()
     'Form_LisaaKortinLinkitys.Puumerkki.Visible = True
     'Form_LisaaKortinLinkitys.Linkita.Visible = True
     Form_LisaaKortinLinkitys.Linkita_Click
-    
-    MsgBox ("Uuden kortin linkitys ok")
+    succs = Common.SaveToLog("Kortin korvaus - uusi kortti linkitetty")
+    'MsgBox ("Uuden kortin linkitys ok")
         
     '4. prepare move of charges and payments
     
@@ -666,6 +664,8 @@ Public Sub Korvaa_Click()
     If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only when there is something to be moved..
         succs = Common.InsertOrUpdate(Table, Values, Target)
     End If
+    
+    succs = Common.SaveToLog("Kortin korvaus - lataukset siirretty kortilta " & oldCard & " kortille " & newCard & ".")
     
     '5.5: instructions for charging the new card
     DoCmd.OpenForm "LatausOhje"
@@ -689,6 +689,7 @@ Public Sub Korvaa_Click()
         cardType = "Määräkortti"
         visitsLeft = InputBox("Kuinka monta käyntikertaa kortilla " & oldCard & " jäljellä?")
         'add query for how many left!!!
+        succs = Common.SaveToLog("Kortilla " & oldCard & " oli " & visitsLeft & " latausta jäljellä.")
         Form_LatausOhje.Maara.Value = visitsLeft
     Else
         cardType = "Kausikortti"
@@ -711,7 +712,9 @@ Public Sub Korvaa_Click()
     'jos kertakortti, kysy vanhalla kortilla oleva jäljellä olevien käyntien määrä!!
     'Form_LatausOhje.Maara.Value = "" 'how to get this ?!?!
     MsgBox ("Ohje uuden kortin lataamiseksi on auki kunnes painat OK tästä!" & vbNewLine & "Se uusi kortti kannattaa ladata oikeasti nyt")
-    DoCmd.Close 'let's hope this closes the correct form
+    DoCmd.Close
+    
+    succs = Common.SaveToLog("Kortin korvaus - latausohje kuitattu luetuksi")
     
     '6. move payments
     'MsgBox ("Move payments")
@@ -720,8 +723,8 @@ Public Sub Korvaa_Click()
     If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only if there are something to be moved..
         succs = Common.InsertOrUpdate(Table, Values, Target)
     End If
-    MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
-    
+    'MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
+    succs = Common.SaveToLog("Kortin korvaus - maksut siirretty kortilta " & oldCard & " kortille " & newCard & ".")
     
     
     '7. mark old card as missing/broken
@@ -733,7 +736,10 @@ Public Sub Korvaa_Click()
     Form_Tervetuloa.Korttivalinta.Value = oldCard 'Just in case card number updates for some reason..
     Form_PoistaKortinLinkitys.Poista_Click
     
+    succs = Common.SaveToLog("Kortin korvaus - kortin " & oldCard & " linkitys poistettu. Valmista tuli!")
+    
     DoCmd.Close
+    Common.SendMessageToMainScreen ("Kortti " & oldCard & " korvattu kortilla " & newCard & ".")
     
     
 End Sub

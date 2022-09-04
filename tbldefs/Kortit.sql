@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Kortit] (
   [CID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
-  [Kortti] VARCHAR (255),
+  [Kortti] VARCHAR (4) CONSTRAINT [Kortti] UNIQUE,
   [Omistaja] LONG ,
   [PVM] DATETIME ,
   [Puumerkki] VARCHAR (255),

@@ -2,8 +2,8 @@
 Beginning Export of all Source
 JVK_jasenrekisteri_db.accdb
 VCS Version 3.4.20
-Performing Full Export
-29.8.2022 19.50.14
+Using Fast Save
+4.9.2022 9.23.56
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -18,72 +18,54 @@ Exporting vbe references...
   stdole
 [1]
 -------------------------------------
-No vbe forms found in this database.
+No modified vbe forms found in this database.
 -------------------------------------
 Exporting proj properties...  
   Current Project Properties (Access)
 [2]
 -------------------------------------
-No saved specs found in this database.
+No modified saved specs found in this database.
 -------------------------------------
 Exporting db properties...    
   Database Properties (DAO)
 [22]
 -------------------------------------
-No shared images found in this database.
+No modified shared images found in this database.
 -------------------------------------
-No themes found in this database.
+No modified themes found in this database.
 
 -------------------------------------
 ERROR: Unhandled error found before `On Error` directive
 -------------------------------------
 Error 13: Type mismatch Source: Unknown
 -------------------------------------
-No imex specs found in this database.
+No modified imex specs found in this database.
 -------------------------------------
 Exporting tables...           
-  Hinnasto
-    Sanitized in 0,008 seconds.
-  Hinnasto (SQL)
-  Historia
-    Sanitized in 0,003 seconds.
-  Historia (SQL)
   Kortit
-    Sanitized in 0,003 seconds.
+    Sanitized in 0,029 seconds.
   Kortit (SQL)
-  Korttitilasto
-    Sanitized in 0,005 seconds.
-  Korttitilasto (SQL)
   Lataukset
-    Sanitized in 0,003 seconds.
+    Sanitized in 0,006 seconds.
   Lataukset (SQL)
-  Maksut
-    Sanitized in 0,004 seconds.
-  Maksut (SQL)
-  Maksutavat
-    Sanitized in 0,002 seconds.
-  Maksutavat (SQL)
-  Yhteystiedot
-    Sanitized in 0,005 seconds.
-  Yhteystiedot (SQL)
-[8]
+[2]
 -------------------------------------
-No queries found in this database.
+No modified queries found in this database.
 -------------------------------------
-No forms found in this database.
+No modified forms found in this database.
 -------------------------------------
-No macros found in this database.
+No modified macros found in this database.
 -------------------------------------
-No reports found in this database.
+No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,003 seconds.
+    Sanitized in 0,004 seconds.
 [1]
 -------------------------------------
-No modules found in this database.
+No modified modules found in this database.
 -------------------------------------
-No table data macros found in this database.
+No modified table data macros found in this database.
 -------------------------------------
 Exporting relations...        
   KortitLataukset
@@ -91,55 +73,56 @@ Exporting relations...
   YhteystiedotKortit
 [3]
 -------------------------------------
-No doc properties found in this database.
+No modified doc properties found in this database.
 -------------------------------------
 Exporting nav pane groups...  
   Groups
 [1]
 -------------------------------------
-No hidden attributes found in this database.
+No modified hidden attributes found in this database.
 -------------------------------------
-Done. (0,67 seconds)
+Done. (1,2 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,02
-VB Project                    1         0,01
-VBE References                1         0,02
-Proj Properties               2         0,01
-DB Properties                 22        0,11
-Tables                        8         0,23
-Table Data                    1         0,06
-Relations                     3         0,05
-Nav Pane Groups               1         0,02
+Project                       1         0,05
+VB Project                    1         0,04
+VBE References                1         0,05
+Proj Properties               2         0,04
+DB Properties                 22        0,17
+Tables                        2         0,13
+Table Data                    1         0,14
+Relations                     3         0,10
+Nav Pane Groups               1         0,13
 --------------------------------------------------
-TOTALS:                       40        0,52
+TOTALS:                       34        0,83
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     18        0,07
-Parse JSON                    9         0,01
-Convert to JSON               311       0,20
-Compute SHA256                15        0,00
-Console Updates               2         0,05
-Compare Dictionary            7         0,00
-Get Modified Date             11        0,00
-Get File Property Hash        11        0,01
-Write File                    19        0,02
-Verify Path                   28        0,00
-Clear Orphaned                3         0,03
-App.ExportXML()               9         0,12
-Sanitize XML                  9         0,01
-Format XML                    9         0,01
-Save Table SQL                8         0,01
+Read File                     13        0,16
+Parse JSON                    10        0,01
+Convert to JSON               310       0,27
+Compute SHA256                9         0,00
+Console Updates               3         0,13
+Compare Dictionary            8         0,00
+Get Modified Date             5         0,00
+Get File Property Hash        5         0,00
+Clear Orphaned                3         0,07
+Verify Path                   9         0,00
+App.ExportXML()               3         0,15
+Sanitize XML                  3         0,01
+Format XML                    3         0,03
+Write File                    6         0,01
+Save Table SQL                2         0,00
 Delete File                   1         0,00
+Increment Progress            1         0,05
 --------------------------------------------------
-Other Operations                        0,14
+Other Operations                        0,33
 --------------------------------------------------
 
 
