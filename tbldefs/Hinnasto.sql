@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [Hinnasto] (
   [Tunniste] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Aika] LONG ,
   [Tyyppi] VARCHAR (255),
   [Hinta] CURRENCY 
 )

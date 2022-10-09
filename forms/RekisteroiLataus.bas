@@ -14,13 +14,13 @@ Begin Form
     DatasheetGridlinesBehavior =3
     PictureType =2
     GridY =10
-    Width =6973
+    Width =6827
     DatasheetFontHeight =11
-    ItemSuffix =391
+    ItemSuffix =419
     Left =4740
     Top =3468
-    Right =12252
-    Bottom =12396
+    Right =18432
+    Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0x84756ccb9ec6e540
@@ -28,6 +28,7 @@ Begin Form
     Caption ="Rekisteröi lataus"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
     AllowDatasheetView =0
     FilterOnLoad =0
     ShowPageMargins =0
@@ -205,7 +206,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =660
+            Height =640
             Name ="LomakkeenYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -331,7 +332,7 @@ Begin Form
                     IMESentenceMode =3
                     Left =2412
                     Top =108
-                    Width =3780
+                    Width =3768
                     Height =336
                     BorderColor =10921638
                     ForeColor =4210752
@@ -344,7 +345,7 @@ Begin Form
 
                     LayoutCachedLeft =2412
                     LayoutCachedTop =108
-                    LayoutCachedWidth =6192
+                    LayoutCachedWidth =6180
                     LayoutCachedHeight =444
                     ColumnStart =1
                     ColumnEnd =1
@@ -381,6 +382,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
@@ -388,10 +390,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3372
-                    Width =3780
+                    Top =3852
+                    Width =3768
                     Height =336
-                    TabIndex =3
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Hinta"
                     Format ="#,##0.00 €;-#,##0.00 €"
@@ -402,11 +404,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3372
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =3708
-                    RowStart =7
-                    RowEnd =7
+                    LayoutCachedTop =3852
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =4188
+                    RowStart =6
+                    RowEnd =6
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -422,7 +424,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3372
+                            Top =3852
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -434,17 +436,18 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3372
+                            LayoutCachedTop =3852
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3708
-                            RowStart =7
-                            RowEnd =7
+                            LayoutCachedHeight =4188
+                            RowStart =6
+                            RowEnd =6
                             LayoutGroup =2
                             GroupTable =2
                         End
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
@@ -452,10 +455,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3924
-                    Width =3780
+                    Top =4404
+                    Width =3768
                     Height =336
-                    TabIndex =4
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="Voimassa"
                     Format ="Short Date"
@@ -467,11 +470,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3924
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =4260
-                    RowStart =8
-                    RowEnd =8
+                    LayoutCachedTop =4404
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =4740
+                    RowStart =7
+                    RowEnd =7
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -486,7 +489,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3924
+                            Top =4404
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -498,11 +501,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3924
+                            LayoutCachedTop =4404
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4260
-                            RowStart =8
-                            RowEnd =8
+                            LayoutCachedHeight =4740
+                            RowStart =7
+                            RowEnd =7
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -510,7 +513,7 @@ Begin Form
                 End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =215
+                    OverlapFlags =223
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
@@ -537,6 +540,7 @@ Begin Form
                     GroupTable =13
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
@@ -544,12 +548,13 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2868
-                    Width =3780
+                    Top =3348
+                    Width =3768
                     Height =288
-                    TabIndex =2
+                    TabIndex =3
                     ForeColor =4210752
                     Name ="Puumerkki"
+                    AfterUpdate ="[Event Procedure]"
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
                     GroupTable =2
@@ -557,11 +562,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2868
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =3156
-                    RowStart =6
-                    RowEnd =6
+                    LayoutCachedTop =3348
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =3636
+                    RowStart =5
+                    RowEnd =5
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -576,7 +581,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2868
+                            Top =3348
                             Width =1980
                             Height =288
                             Name ="Selite176"
@@ -586,11 +591,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2868
+                            LayoutCachedTop =3348
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3156
-                            RowStart =6
-                            RowEnd =6
+                            LayoutCachedHeight =3636
+                            RowStart =5
+                            RowEnd =5
                             LayoutGroup =2
                             BorderThemeColorIndex =-1
                             ForeThemeColorIndex =-1
@@ -599,6 +604,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
+                    Visible = NotDefault
                     OverlapFlags =85
                     TextFontCharSet =177
                     TextFontFamily =0
@@ -606,7 +612,7 @@ Begin Form
                     Top =6480
                     Width =5952
                     Height =696
-                    TabIndex =9
+                    TabIndex =7
                     ForeColor =4210752
                     Name ="Save"
                     Caption ="Tallenna"
@@ -644,7 +650,7 @@ Begin Form
                     Top =7368
                     Width =5952
                     Height =672
-                    TabIndex =10
+                    TabIndex =8
                     ForeColor =4210752
                     Name ="ragequit"
                     Caption ="Sulje"
@@ -696,488 +702,112 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =336
-                    Top =1884
+                    Top =2364
                     Width =1980
                     Name ="TyhjäSolu301"
                     GroupTable =2
                     BottomPadding =150
                     GridlineColor =10921638
                     LayoutCachedLeft =336
-                    LayoutCachedTop =1884
+                    LayoutCachedTop =2364
                     LayoutCachedWidth =2316
-                    LayoutCachedHeight =2124
-                    RowStart =4
-                    RowEnd =4
+                    LayoutCachedHeight =2604
+                    RowStart =3
+                    RowEnd =3
                     LayoutGroup =2
                     GroupTable =2
                 End
                 Begin EmptyCell
                     Left =2412
-                    Top =1884
-                    Width =3780
+                    Top =2364
+                    Width =3768
                     Name ="TyhjäSolu302"
                     GroupTable =2
                     BottomPadding =150
                     GridlineColor =10921638
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =1884
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =2124
-                    RowStart =4
-                    RowEnd =4
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin EmptyCell
-                    Left =336
-                    Top =1464
-                    Width =1980
-                    Name ="TyhjäSolu303"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =336
-                    LayoutCachedTop =1464
-                    LayoutCachedWidth =2316
-                    LayoutCachedHeight =1704
+                    LayoutCachedTop =2364
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =2604
                     RowStart =3
                     RowEnd =3
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin EmptyCell
-                    Left =2412
-                    Top =1464
-                    Width =3780
-                    Name ="TyhjäSolu304"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2412
-                    LayoutCachedTop =1464
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =1704
-                    RowStart =3
-                    RowEnd =3
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin EmptyCell
-                    Left =336
-                    Top =1044
-                    Width =1980
-                    Name ="TyhjäSolu305"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =336
-                    LayoutCachedTop =1044
-                    LayoutCachedWidth =2316
-                    LayoutCachedHeight =1284
-                    RowStart =2
-                    RowEnd =2
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin EmptyCell
-                    Left =2412
-                    Top =1044
-                    Width =3780
-                    Name ="TyhjäSolu306"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2412
-                    LayoutCachedTop =1044
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =1284
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin OptionGroup
-                    SpecialEffect =0
-                    BackStyle =1
-                    BorderWidth =2
-                    OverlapFlags =223
-                    Left =453
-                    Top =630
-                    Width =3384
-                    Height =1351
-                    TabIndex =6
-                    BackColor =15921906
-                    Name ="Valinta"
-                    OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =453
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =3837
-                    LayoutCachedHeight =1981
-                    BackShade =95.0
-                    BorderThemeColorIndex =5
-                    BorderShade =100.0
-                    Begin
-                        Begin Label
-                            BackStyle =1
-                            OverlapFlags =223
-                            TextFontCharSet =177
-                            TextFontFamily =0
-                            Left =573
-                            Top =510
-                            Width =1116
-                            Height =300
-                            BorderColor =8355711
-                            ForeColor =6710886
-                            Name ="Selite282"
-                            Caption ="Korttityyppi"
-                            FontName ="Calibri"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =573
-                            LayoutCachedTop =510
-                            LayoutCachedWidth =1689
-                            LayoutCachedHeight =810
-                        End
-                        Begin OptionButton
-                            OverlapFlags =87
-                            Left =510
-                            Top =937
-                            OptionValue =1
-                            BorderColor =10921638
-                            Name ="KKKortti"
-                            GridlineColor =10921638
-
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =937
-                            LayoutCachedWidth =770
-                            LayoutCachedHeight =1177
-                            Begin
-                                Begin Label
-                                    OverlapFlags =255
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
-                                    Left =740
-                                    Top =907
-                                    Width =1056
-                                    Height =336
-                                    BorderColor =8355711
-                                    ForeColor =6710886
-                                    Name ="Selite284"
-                                    Caption ="Normaali"
-                                    FontName ="Calibri"
-                                    GridlineColor =10921638
-                                    LayoutCachedLeft =740
-                                    LayoutCachedTop =907
-                                    LayoutCachedWidth =1796
-                                    LayoutCachedHeight =1243
-                                End
-                            End
-                        End
-                        Begin OptionButton
-                            OverlapFlags =87
-                            Left =2040
-                            Top =937
-                            TabIndex =1
-                            OptionValue =4
-                            BorderColor =10921638
-                            Name ="KERKortti"
-                            GridlineColor =10921638
-
-                            LayoutCachedLeft =2040
-                            LayoutCachedTop =937
-                            LayoutCachedWidth =2300
-                            LayoutCachedHeight =1177
-                            Begin
-                                Begin Label
-                                    OverlapFlags =247
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
-                                    Left =2270
-                                    Top =907
-                                    Width =1056
-                                    Height =336
-                                    BorderColor =8355711
-                                    ForeColor =6710886
-                                    Name ="Selite290"
-                                    Caption ="Kertakortti"
-                                    FontName ="Calibri"
-                                    GridlineColor =10921638
-                                    LayoutCachedLeft =2270
-                                    LayoutCachedTop =907
-                                    LayoutCachedWidth =3326
-                                    LayoutCachedHeight =1243
-                                End
-                            End
-                        End
-                        Begin OptionButton
-                            OverlapFlags =87
-                            Left =510
-                            Top =1299
-                            Width =284
-                            Height =252
-                            TabIndex =2
-                            OptionValue =2
-                            BorderColor =10921638
-                            Name ="APKortti"
-                            GridlineColor =10921638
-
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =1299
-                            LayoutCachedWidth =794
-                            LayoutCachedHeight =1551
-                            Begin
-                                Begin Label
-                                    OverlapFlags =255
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
-                                    Left =736
-                                    Top =1247
-                                    Width =1056
-                                    Height =336
-                                    BorderColor =8355711
-                                    ForeColor =6710886
-                                    Name ="Selite286"
-                                    Caption ="Aamupäivä"
-                                    FontName ="Calibri"
-                                    GridlineColor =10921638
-                                    LayoutCachedLeft =736
-                                    LayoutCachedTop =1247
-                                    LayoutCachedWidth =1792
-                                    LayoutCachedHeight =1583
-                                End
-                            End
-                        End
-                        Begin OptionButton
-                            OverlapFlags =87
-                            Left =2040
-                            Top =1334
-                            TabIndex =3
-                            OptionValue =5
-                            BorderColor =10921638
-                            Name ="MUUKortti"
-                            GridlineColor =10921638
-
-                            LayoutCachedLeft =2040
-                            LayoutCachedTop =1334
-                            LayoutCachedWidth =2300
-                            LayoutCachedHeight =1574
-                            Begin
-                                Begin Label
-                                    OverlapFlags =247
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
-                                    Left =2270
-                                    Top =1304
-                                    Width =1056
-                                    Height =336
-                                    BorderColor =8355711
-                                    ForeColor =6710886
-                                    Name ="Selite292"
-                                    Caption ="Muu"
-                                    FontName ="Calibri"
-                                    GridlineColor =10921638
-                                    LayoutCachedLeft =2270
-                                    LayoutCachedTop =1304
-                                    LayoutCachedWidth =3326
-                                    LayoutCachedHeight =1640
-                                End
-                            End
-                        End
-                        Begin OptionButton
-                            OverlapFlags =87
-                            Left =510
-                            Top =1618
-                            TabIndex =4
-                            OptionValue =3
-                            BorderColor =10921638
-                            Name ="OPISKortti"
-                            GridlineColor =10921638
-
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =1618
-                            LayoutCachedWidth =770
-                            LayoutCachedHeight =1858
-                            Begin
-                                Begin Label
-                                    OverlapFlags =247
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
-                                    Left =740
-                                    Top =1588
-                                    Width =1056
-                                    Height =336
-                                    BorderColor =8355711
-                                    ForeColor =6710886
-                                    Name ="Selite288"
-                                    Caption ="Opiskelija"
-                                    FontName ="Calibri"
-                                    GridlineColor =10921638
-                                    LayoutCachedLeft =740
-                                    LayoutCachedTop =1588
-                                    LayoutCachedWidth =1796
-                                    LayoutCachedHeight =1924
-                                End
-                            End
-                        End
-                    End
-                End
-                Begin EmptyCell
-                    Left =336
-                    Top =624
-                    Width =1980
-                    Name ="TyhjäSolu323"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =336
-                    LayoutCachedTop =624
-                    LayoutCachedWidth =2316
-                    LayoutCachedHeight =864
-                    RowStart =1
-                    RowEnd =1
-                    LayoutGroup =2
-                    GroupTable =2
-                End
-                Begin EmptyCell
-                    Left =2412
-                    Top =624
-                    Width =3780
-                    Name ="TyhjäSolu324"
-                    GroupTable =2
-                    BottomPadding =150
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2412
-                    LayoutCachedTop =624
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =864
-                    RowStart =1
-                    RowEnd =1
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
                     GroupTable =2
                 End
                 Begin ComboBox
-                    Enabled = NotDefault
                     RowSourceTypeInt =1
                     BorderWidth =3
                     OverlapFlags =215
-                    TextFontCharSet =177
-                    TextFontFamily =0
+                    TextAlign =1
                     IMESentenceMode =3
-                    Left =3932
-                    Top =1071
-                    Width =1190
-                    Height =300
-                    TabIndex =7
+                    Left =2412
+                    Top =1632
+                    Width =3768
+                    Height =552
+                    FontSize =16
+                    TabIndex =2
                     Name ="KKmaara"
                     RowSourceType ="Value List"
-                    RowSource ="\"18\";\"17\";\"16\";\"15\";\"14\";\"13\";\"12\";\"11\";\"10\";\"9\";\"8\";\"7\""
-                        ";\"6\";\"5\";\"4\";\"3\";\"2\";\"1\""
-                    DefaultValue ="\"6\""
+                    RowSource ="\"0\""
+                    DefaultValue ="\"0\""
                     FontName ="Calibri"
                     OnChange ="[Event Procedure]"
+                    GroupTable =2
+                    BottomPadding =150
                     GridlineColor =10921638
                     AllowValueListEdits =0
 
-                    LayoutCachedLeft =3932
-                    LayoutCachedTop =1071
-                    LayoutCachedWidth =5122
-                    LayoutCachedHeight =1371
+                    LayoutCachedLeft =2412
+                    LayoutCachedTop =1632
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =2184
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
                     BorderThemeColorIndex =5
                     BorderShade =100.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
+                    GroupTable =2
                     Begin
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
                             TextFontCharSet =177
+                            TextAlign =1
                             TextFontFamily =0
-                            Left =3932
-                            Top =732
-                            Width =1056
-                            Height =276
+                            Left =336
+                            Top =1632
+                            Width =1980
+                            Height =552
                             BackColor =15921906
                             BorderColor =8355711
                             ForeColor =6710886
-                            Name ="Selite340"
+                            Name ="pituusSelite"
                             Caption ="Kuukautta"
                             FontName ="Calibri"
+                            GroupTable =2
+                            BottomPadding =150
                             GridlineColor =10921638
-                            LayoutCachedLeft =3932
-                            LayoutCachedTop =732
-                            LayoutCachedWidth =4988
-                            LayoutCachedHeight =1008
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =1632
+                            LayoutCachedWidth =2316
+                            LayoutCachedHeight =2184
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =2
                             BackShade =95.0
-                        End
-                    End
-                End
-                Begin ComboBox
-                    Enabled = NotDefault
-                    RowSourceTypeInt =1
-                    BorderWidth =3
-                    OverlapFlags =215
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =3968
-                    Top =1756
-                    Width =1190
-                    Height =300
-                    TabIndex =8
-                    Name ="KERMaara"
-                    RowSourceType ="Value List"
-                    RowSource ="\"50\";\"40\";\"30\";\"20\";\"10\""
-                    DefaultValue ="\"10\""
-                    FontName ="Calibri"
-                    OnChange ="[Event Procedure]"
-                    GridlineColor =10921638
-                    AllowValueListEdits =0
-
-                    LayoutCachedLeft =3968
-                    LayoutCachedTop =1756
-                    LayoutCachedWidth =5158
-                    LayoutCachedHeight =2056
-                    BorderThemeColorIndex =5
-                    BorderShade =100.0
-                    ForeThemeColorIndex =0
-                    ForeTint =75.0
-                    ForeShade =100.0
-                    Begin
-                        Begin Label
-                            BackStyle =1
-                            OverlapFlags =215
-                            TextFontCharSet =177
-                            TextFontFamily =0
-                            Left =3968
-                            Top =1417
-                            Width =1056
-                            Height =276
-                            BackColor =15921906
-                            BorderColor =8355711
-                            ForeColor =6710886
-                            Name ="Selite342"
-                            Caption ="Kertaa"
-                            FontName ="Calibri"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =3968
-                            LayoutCachedTop =1417
-                            LayoutCachedWidth =5024
-                            LayoutCachedHeight =1693
-                            BackShade =95.0
+                            GroupTable =2
                         End
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     Locked = NotDefault
                     BorderWidth =3
                     OverlapFlags =215
@@ -1186,10 +816,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =4476
-                    Width =3780
+                    Top =4956
+                    Width =3768
                     Height =336
-                    TabIndex =5
+                    TabIndex =6
                     ForeColor =4210752
                     Name ="Korttityyppi"
                     FontName ="Calibri"
@@ -1198,11 +828,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =4476
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =4812
-                    RowStart =9
-                    RowEnd =9
+                    LayoutCachedTop =4956
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =5292
+                    RowStart =8
+                    RowEnd =8
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -1217,7 +847,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =4476
+                            Top =4956
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -1229,11 +859,11 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =4476
+                            LayoutCachedTop =4956
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4812
-                            RowStart =9
-                            RowEnd =9
+                            LayoutCachedHeight =5292
+                            RowStart =8
+                            RowEnd =8
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -1276,10 +906,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2316
-                    Width =3780
+                    Top =2796
+                    Width =3768
                     Height =336
-                    TabIndex =1
+                    TabIndex =9
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="aloituspvm"
@@ -1291,11 +921,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2316
-                    LayoutCachedWidth =6192
-                    LayoutCachedHeight =2652
-                    RowStart =5
-                    RowEnd =5
+                    LayoutCachedTop =2796
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =3132
+                    RowStart =4
+                    RowEnd =4
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -1308,7 +938,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2316
+                            Top =2796
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -1320,11 +950,73 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2316
+                            LayoutCachedTop =2796
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =2652
-                            RowStart =5
-                            RowEnd =5
+                            LayoutCachedHeight =3132
+                            RowStart =4
+                            RowEnd =4
+                            LayoutGroup =2
+                            GroupTable =2
+                        End
+                    End
+                End
+                Begin ComboBox
+                    BorderWidth =3
+                    OverlapFlags =215
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2412
+                    Top =636
+                    Width =3768
+                    Height =780
+                    FontSize =16
+                    TabIndex =1
+                    BorderColor =967423
+                    ForeColor =3484194
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    Name ="korttiTyyppiValinta"
+                    RowSourceType ="Table/Query"
+                    RowSource ="haeKorttiTyypit"
+                    FontName ="Calibri"
+                    OnChange ="[Event Procedure]"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2412
+                    LayoutCachedTop =636
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =1416
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
+                    GroupTable =2
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =1
+                            Left =336
+                            Top =636
+                            Width =1980
+                            Height =780
+                            BorderColor =8355711
+                            ForeColor =6710886
+                            Name ="Selite392"
+                            Caption ="Korttityyppi"
+                            FontName ="Calibri"
+                            GroupTable =2
+                            BottomPadding =150
+                            GridlineColor =10921638
+                            LayoutCachedLeft =336
+                            LayoutCachedTop =636
+                            LayoutCachedWidth =2316
+                            LayoutCachedHeight =1416
+                            RowStart =1
+                            RowEnd =1
                             LayoutGroup =2
                             GroupTable =2
                         End
@@ -1358,11 +1050,14 @@ End Sub
 
 Private Sub Form_Load()
     Dim checksum As Integer
-    
     checksum = Paivita_UI()
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+    If IsNull([Form_Tervetuloa].Korttivalinta) Then
+        MsgBox ("Korttia ei valittu pääikkunasta, ei voida jatkaa!")
+    End If
+    
     Dim checksum As Integer
     checksum = Paivita_UI()
     checksum = GetDefaultDate()
@@ -1374,12 +1069,33 @@ Private Sub Hinta_Change()
     checksum = Paivita_UI()
 End Sub
 
-Private Sub KERMaara_Change()
+
+Private Sub KKmaara_Change()
     Dim checksum As Integer
     checksum = Paivita_UI()
 End Sub
 
-Private Sub KKmaara_Change()
+Private Sub korttiTyyppiValinta_Change()
+    'add code to switch stuff here...
+    [Form_RekisteroiLataus].KKmaara.RowSourceType = "Table/Query"
+    Dim queryString As String
+    
+    queryString = "SELECT Aika FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].korttiTyyppivalinta.Value & "' ORDER BY Aika DESC"
+    
+    'MsgBox (queryString)
+    [Form_RekisteroiLataus].KKmaara.RowSource = queryString
+    [Form_RekisteroiLataus].KKmaara.Value = [Form_RekisteroiLataus].KKmaara.ItemData(6)
+    If ([Form_RekisteroiLataus].korttiTyyppivalinta.Value = "krt") Then
+        [Form_RekisteroiLataus].KKmaara.Value = [Form_RekisteroiLataus].KKmaara.ItemData([Form_RekisteroiLataus].KKmaara.ListCount - 1)
+        [Form_RekisteroiLataus].pituusSelite.Caption = "Kertaa"
+    Else
+        [Form_RekisteroiLataus].KKmaara.Value = [Form_RekisteroiLataus].KKmaara.ItemData([Form_RekisteroiLataus].KKmaara.ListCount / 2)
+        [Form_RekisteroiLataus].pituusSelite.Caption = "Kuukautta"
+    End If
+    [Form_RekisteroiLataus].Puumerkki.Visible = True
+End Sub
+
+Private Sub Puumerkki_AfterUpdate()
     Dim checksum As Integer
     checksum = Paivita_UI()
 End Sub
@@ -1387,11 +1103,6 @@ End Sub
 Private Sub Puumerkki_Change()
     Dim checksum As Integer
     checksum = Paivita_UI()
-    'this needs to be moved to under Paivita_UI()!
-    [Form_RekisteroiLataus].Hinta.Visible = True
-    [Form_RekisteroiLataus].Voimassa.Visible = True
-    [Form_RekisteroiLataus].KorttiTyyppi.Visible = True
-    [Form_RekisteroiLataus].Save.Visible = True
     
 End Sub
 
@@ -1484,81 +1195,43 @@ End Sub
 
 Private Function Paivita_UI()
 
+Dim checksum2 As Integer
+
 'No inputs yet
-If (IsNull([Form_RekisteroiLataus].Valinta)) Then
-    [Form_RekisteroiLataus].KKmaara.Enabled = False
-    [Form_RekisteroiLataus].KKmaara.Visible = False
-    [Form_RekisteroiLataus].KERMaara.Visible = False
+If (IsNull([Form_RekisteroiLataus].korttiTyyppivalinta)) Then
     [Form_RekisteroiLataus].Puumerkki.Visible = False
     [Form_RekisteroiLataus].Hinta.Visible = False
     [Form_RekisteroiLataus].Voimassa.Visible = False
     [Form_RekisteroiLataus].Save.Visible = False
     [Form_RekisteroiLataus].KorttiTyyppi.Visible = False
 
-Else
+Else 'card type selected
     [Form_RekisteroiLataus].Puumerkki.Visible = True
-    
-    Dim student As Boolean
-    Dim morning As Boolean
-    Dim kertak As Boolean
-    
-    student = False
-    morning = False
-    kertak = False
-    
-    Dim output As Integer
-    
-    Select Case [Form_RekisteroiLataus].Valinta.Value
-        
-        Case 1:
-            output = HideOrShowQty(True)
-
-        Case 2:
-            output = HideOrShowQty(True)
-            morning = True
-        Case 3:
-            output = HideOrShowQty(True)
-            student = True
-        Case 4:
-            output = HideOrShowQty(False)
-            kertak = True
-        
-        Case 5:
-            output = HideOrShowQty(True)
-            
-    
-End Select
-
-
-
-
-Dim feedback As Integer
-
-
-feedback = Common.FillCardChargeData([Form_RekisteroiLataus].KKmaara.Value, [Form_RekisteroiLataus].Valinta.Value)
-
-
 End If
 
+If (IsNull([Form_RekisteroiLataus].Puumerkki)) Then
+    [Form_RekisteroiLataus].Hinta.Visible = False
+    [Form_RekisteroiLataus].Voimassa.Visible = False
+    [Form_RekisteroiLataus].Save.Visible = False
+    [Form_RekisteroiLataus].KorttiTyyppi.Visible = False
 
-
-End Function
-
-Function HideOrShowQty(months As Boolean)
-If (months) Then
-    [Form_RekisteroiLataus].KKmaara.Enabled = True
-    [Form_RekisteroiLataus].KKmaara.Visible = True
-    [Form_RekisteroiLataus].KERMaara.Enabled = False
-    [Form_RekisteroiLataus].KERMaara.Visible = False
 Else
-    [Form_RekisteroiLataus].KKmaara.Enabled = False
-    [Form_RekisteroiLataus].KKmaara.Visible = False
-    [Form_RekisteroiLataus].KERMaara.Enabled = True
-    [Form_RekisteroiLataus].KERMaara.Visible = True
+    checksum2 = UpdateCardPrice()
+    [Form_RekisteroiLataus].Hinta.Visible = True
+    
+    checksum2 = UpdateDueDate()
+    [Form_RekisteroiLataus].Voimassa.Visible = True
+    [Form_RekisteroiLataus].Save.Visible = True
+    
+    checksum2 = FormCardType()
+    [Form_RekisteroiLataus].KorttiTyyppi.Visible = True
+
 End If
 
 
 End Function
+
+
 
 Private Sub Voimassa_Change()
     Dim succs
@@ -1570,9 +1243,46 @@ Private Function GetDefaultDate()
     Dim Kortti As String
     Kortti = [Form_RekisteroiLataus].Kortti.Value
     'MsgBox ("Kortti: " & kortti)
-    initialDate = Common.FetchExiprationDate(Kortti, False)
+    initialDate = Common.FetchExiprationDate(Kortti)
+    If (initialDate < Date) Then
+        initialDate = Date
+    End If
     'MsgBox ("Initial date : " & initialDate)
     
     [Form_RekisteroiLataus].aloituspvm.Value = initialDate
     
+End Function
+
+Public Function UpdateCardPrice()
+    Dim cardType As String
+    Dim cardTime As Integer
+    Dim price As String
+    cardType = [Form_RekisteroiLataus].korttiTyyppivalinta
+    cardTime = [Form_RekisteroiLataus].KKmaara
+    price = Common.GetPriceForCard(cardType, cardTime)
+    'MsgBox (price)
+    [Form_RekisteroiLataus].Hinta.Value = price
+
+End Function
+
+Public Function UpdateDueDate()
+    Dim dueDate As Date
+    Dim months As Integer
+    
+    If ([Form_RekisteroiLataus].korttiTyyppivalinta.Value = "krt") Then
+        months = 24
+    Else
+        months = [Form_RekisteroiLataus].KKmaara.Value
+    End If
+    'MsgBox ("Lisättäviä kuukausia: " & months)
+    dueDate = Common.CalculateEndingDate(months, [Form_RekisteroiLataus].aloituspvm.Value)
+    
+    [Form_RekisteroiLataus].Voimassa = dueDate
+    
+End Function
+
+Public Function FormCardType()
+    Dim cardType As String
+    cardType = [Form_RekisteroiLataus].KKmaara.Value & [Form_RekisteroiLataus].korttiTyyppivalinta.Value
+    [Form_RekisteroiLataus].KorttiTyyppi.Value = cardType
 End Function

@@ -158,10 +158,9 @@ Public Function FetchCardID(cardNumber As String) As Integer
 End Function
 
 
-Public Function FetchExiprationDate(card As String, returnPastValues As Boolean) As Date
+Public Function FetchExiprationDate(card As String) As Date
     'Fetches expiration date for a card (largest date from valid until -column where card id matches
-    'if it is older than current date, current date will be used
-    
+
     Dim cardID As Integer
     cardID = Common.FetchCardID(card)
     Dim query As String
@@ -175,19 +174,10 @@ Public Function FetchExiprationDate(card As String, returnPastValues As Boolean)
     endDate = result!MaxDate
     End If
     
-    'MsgBox ("end date before closing: " & endDate)
     result.Close
-    'MsgBox ("end date after closing: " & endDate)
-    If Not (returnPastValues) Then
-        If (endDate < Date) Then
-            endDate = Date
-        End If
-    End If
     
     FetchExiprationDate = endDate
-    
-     
-    
+        
 End Function
 
 Public Function FetchGeneralID(Table As String, desiredID As String, criteria As String) As Integer
@@ -430,6 +420,31 @@ Public Function EnableDisableButtons()
     
 End Function
 
+Public Function CalculateEndingDate(months As Integer, startDate As Date)
+    Dim expirationDate As Date
+    expirationDate = DateAdd("m", months, startDate)
+    
+    'and round up
+    If (Day(expirationDate) < 15) Then
+        Dim difference As Integer
+        Dim yy As Integer
+        Dim mm As Integer
+        Dim dd As Integer
+    
+        dd = 15
+        mm = Month(expirationDate)
+        yy = Year(expirationDate)
+        expirationDate = DateSerial(yy, mm, dd)
+    Else
+        Dim lastDayOfMonth As Date
+        lastDayOfMonth = DateSerial(Year(expirationDate), Month(expirationDate) + 1, 1) ' add 1 extra month, 1st day.
+        expirationDate = DateAdd("d", -1, lastDayOfMonth) 'and remove 1 day to get to last day of actual month
+    End If
+
+    CalculateEndingDate = expirationDate
+
+End Function
+
 Public Function FillCardChargeData(months As Double, cardType As Integer)
 
 'type 1 = regular
@@ -470,7 +485,7 @@ Select Case cardType
     Case 3: [Form_RekisteroiLataus].KorttiTyyppi.Value = months & "kk opisk"
     
     Case 4:
-    [Form_RekisteroiLataus].KorttiTyyppi.Value = [Form_RekisteroiLataus].KERMaara & "krt"
+    '[Form_RekisteroiLataus].KorttiTyyppi.Value = [Form_RekisteroiLataus].KERMaara & "krt"
     months = 24 'always 24 months to these cards as default
     
     Case 5:
@@ -521,8 +536,12 @@ Dim queryString As String
 queryString = "SELECT Hinta FROM Hinnasto WHERE Tyyppi = '" & [Form_RekisteroiLataus].KorttiTyyppi.Value & "'"
 Dim sqlRecords As DAO.Recordset
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
-    listahinta = sqlRecords!Hinta
-    
+    'listahinta = sqlRecords!Hinta
+    If (IsNull(sqlRecords!Hinta)) Then
+        listahinta = 999
+    Else
+        'listahinta = sqlRecords!Hinta
+    End If
     sqlRecords.Close
 
 [Form_RekisteroiLataus].Hinta.Value = listahinta
@@ -561,14 +580,9 @@ Public Function GetCardType(cardNumber As String) As String
     Dim queryString As String
     Dim dateStamp As Date
     
-    dateStamp = Common.FetchExiprationDate(cardNumber, True)
+    dateStamp = Common.FetchExiprationDate(cardNumber)
     
     cardID = Common.FetchCardID(cardNumber)
-    
-    
-    'queryString = "SELECT Korttityyppi FROM Lataukset WHERE Kortti = " & cardID & " AND Voimassa = '" & dateStamp & "'"
-    
-   ' GetCardType = Common.FetchGeneralID("Lataukset", "Korttityyppi", "Kortti = " & cardID & " AND Voimassa = CDATE('" & dateStamp & "')")
     
     
     Dim queryString2 As String
@@ -576,31 +590,44 @@ Public Function GetCardType(cardNumber As String) As String
    '
     queryString2 = "SELECT Korttityyppi FROM Lataukset WHERE Kortti = " & cardID & " AND Voimassa = CDATE('" & dateStamp & "')"
     
-    'MsgBox (queryString2)
+
     Set sqlRecords2 = CurrentDb.OpenRecordset(queryString2)
-   '
-   'For (int i = 0; i ++; i < sqlRecords2.RecordCount
-   Dim i As Integer
    
-   'For i = 0 To sqlRecords2.RecordCount
-   '     MsgBox (sqlRecords2.Fields.Item(i).Value)
-   ' Next i
-        
+    'Dim i As Integer
    
-    'If (sqlRecords2.RecordCount = 1) Then
-        'MsgBox (sqlRecords.Fields.Item(0).Value)
-    '    MsgBox (sqlRecords2.Fields.Item(0).Value)
-   
-   
-    'E lse
-    '    MsgBox (sqlRecords2.RecordCount)
-    'End If
-    GetCardType = sqlRecords2.Fields.Item(0).Value
-   
+    If (IsNull(sqlRecords2.Fields.Item(0).Value)) Then 'catch potential null stuff here
+        GetCardType = ""
+    Else
+        GetCardType = sqlRecords2.Fields.Item(0).Value
+    End If
     sqlRecords2.Close
         
 
 End Function
 
+Public Function GetPriceForCard(cardType As String, cardTime As Integer)
+    
+    Dim price As String
+    
+    Dim queryString3 As String
+    Dim sqlRecords3 As DAO.Recordset
+    
+    'queryString3 = "SELECT Hinta FROM Hinnasto WHERE Aika='" & cardTime & "' AND Tyyppi='" & cardType & ""
+    queryString3 = "SELECT Hinta FROM Hinnasto WHERE Aika=" & cardTime & " AND Tyyppi='" & cardType & "'"
+    
+    
+    Set sqlRecords3 = CurrentDb.OpenRecordset(queryString3)
+    
+    'MsgBox (sqlRecords3.Fields.Count)
+    'MsgBox (sqlRecords3.Fields.Item(0).Value)
+    
+    If (IsNull(sqlRecords3.Fields.Item(0).Value)) Then
+        price = "999,99 €"
+    Else
+        price = sqlRecords3.Fields.Item(0).Value & " €"
+    End If
+    
+    GetPriceForCard = price
+        
 
- 
+End Function

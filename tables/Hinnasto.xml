@@ -1,227 +1,332 @@
 ﻿<dataroot xmlns:od="urn:schemas-microsoft-com:officedata">
 <Hinnasto>
 <Tunniste>1</Tunniste>
-<Tyyppi>18kk</Tyyppi>
+<Aika>18</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>480</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>2</Tunniste>
-<Tyyppi>17kk</Tyyppi>
+<Aika>17</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>453.33</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>3</Tunniste>
-<Tyyppi>16kk</Tyyppi>
+<Aika>16</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>426.66</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>4</Tunniste>
-<Tyyppi>15kk</Tyyppi>
+<Aika>15</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>400</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>5</Tunniste>
-<Tyyppi>14kk</Tyyppi>
+<Aika>14</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>373.33</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>6</Tunniste>
-<Tyyppi>13kk</Tyyppi>
+<Aika>13</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>346.66</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>7</Tunniste>
-<Tyyppi>12kk</Tyyppi>
+<Aika>12</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>320</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>8</Tunniste>
-<Tyyppi>11kk</Tyyppi>
+<Aika>11</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>300</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>9</Tunniste>
-<Tyyppi>10kk</Tyyppi>
+<Aika>10</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>280</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>10</Tunniste>
-<Tyyppi>9kk</Tyyppi>
+<Aika>9</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>260</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>11</Tunniste>
-<Tyyppi>8kk</Tyyppi>
+<Aika>8</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>240</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>12</Tunniste>
-<Tyyppi>7kk</Tyyppi>
+<Aika>7</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>220</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>13</Tunniste>
-<Tyyppi>6kk</Tyyppi>
+<Aika>6</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>190</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>14</Tunniste>
-<Tyyppi>5kk</Tyyppi>
+<Aika>5</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>160</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>15</Tunniste>
-<Tyyppi>4kk</Tyyppi>
+<Aika>4</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>140</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>16</Tunniste>
-<Tyyppi>3kk</Tyyppi>
+<Aika>3</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>110</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>17</Tunniste>
-<Tyyppi>2kk</Tyyppi>
+<Aika>2</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>80</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>18</Tunniste>
-<Tyyppi>1kk</Tyyppi>
+<Aika>1</Aika>
+<Tyyppi>kk</Tyyppi>
 <Hinta>60</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>19</Tunniste>
-<Tyyppi>50krt</Tyyppi>
+<Aika>50</Aika>
+<Tyyppi>krt</Tyyppi>
 <Hinta>250</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>20</Tunniste>
-<Tyyppi>40krt</Tyyppi>
+<Aika>40</Aika>
+<Tyyppi>krt</Tyyppi>
 <Hinta>200</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>21</Tunniste>
-<Tyyppi>30krt</Tyyppi>
+<Aika>30</Aika>
+<Tyyppi>krt</Tyyppi>
 <Hinta>150</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>22</Tunniste>
-<Tyyppi>20krt</Tyyppi>
+<Aika>20</Aika>
+<Tyyppi>krt</Tyyppi>
 <Hinta>100</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>23</Tunniste>
-<Tyyppi>10krt</Tyyppi>
+<Aika>10</Aika>
+<Tyyppi>krt</Tyyppi>
 <Hinta>50</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>24</Tunniste>
-<Tyyppi>12kk ap</Tyyppi>
+<Aika>12</Aika>
+<Tyyppi>kk ap</Tyyppi>
 <Hinta>200</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>25</Tunniste>
-<Tyyppi>6kk ap</Tyyppi>
+<Aika>6</Aika>
+<Tyyppi>kk ap</Tyyppi>
 <Hinta>110</Hinta>
 </Hinnasto>
 <Hinnasto>
-<Tunniste>26</Tunniste>
-<Tyyppi>1kk ap</Tyyppi>
-<Hinta>20</Hinta>
-</Hinnasto>
-<Hinnasto>
 <Tunniste>27</Tunniste>
-<Tyyppi>12kk opisk</Tyyppi>
+<Aika>12</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>300</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>28</Tunniste>
-<Tyyppi>11kk opisk</Tyyppi>
+<Aika>11</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>275</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>29</Tunniste>
-<Tyyppi>10kk opisk</Tyyppi>
+<Aika>10</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>250</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>30</Tunniste>
-<Tyyppi>9kk opisk</Tyyppi>
+<Aika>9</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>225</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>31</Tunniste>
-<Tyyppi>8kk opisk</Tyyppi>
+<Aika>8</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>200</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>32</Tunniste>
-<Tyyppi>7kk opisk</Tyyppi>
+<Aika>7</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>175</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>33</Tunniste>
-<Tyyppi>6kk opisk</Tyyppi>
+<Aika>6</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>150</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>34</Tunniste>
-<Tyyppi>5kk opisk</Tyyppi>
+<Aika>5</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>125</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>35</Tunniste>
-<Tyyppi>4kk opisk</Tyyppi>
+<Aika>4</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>100</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>36</Tunniste>
-<Tyyppi>3kk opisk</Tyyppi>
+<Aika>3</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>75</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>37</Tunniste>
-<Tyyppi>2kk opisk</Tyyppi>
+<Aika>2</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>50</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>38</Tunniste>
-<Tyyppi>1kk opisk</Tyyppi>
+<Aika>1</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>25</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>39</Tunniste>
+<Aika>12</Aika>
 <Tyyppi>muu</Tyyppi>
 <Hinta>0</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>40</Tunniste>
-<Tyyppi>13kk opisk</Tyyppi>
+<Aika>13</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>325</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>41</Tunniste>
-<Tyyppi>14kk opisk</Tyyppi>
+<Aika>14</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>350</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>42</Tunniste>
-<Tyyppi>15kk opisk</Tyyppi>
+<Aika>15</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>375</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>43</Tunniste>
-<Tyyppi>16kk opisk</Tyyppi>
+<Aika>16</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>400</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>44</Tunniste>
-<Tyyppi>17kk opisk</Tyyppi>
+<Aika>17</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>425</Hinta>
 </Hinnasto>
 <Hinnasto>
 <Tunniste>45</Tunniste>
-<Tyyppi>18kk opisk</Tyyppi>
+<Aika>18</Aika>
+<Tyyppi>kk opisk</Tyyppi>
 <Hinta>450</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>46</Tunniste>
+<Aika>11</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>47</Tunniste>
+<Aika>10</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>48</Tunniste>
+<Aika>9</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>49</Tunniste>
+<Aika>8</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>50</Tunniste>
+<Aika>7</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>51</Tunniste>
+<Aika>6</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>52</Tunniste>
+<Aika>5</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>53</Tunniste>
+<Aika>4</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>54</Tunniste>
+<Aika>3</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>55</Tunniste>
+<Aika>2</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>56</Tunniste>
+<Aika>1</Aika>
+<Tyyppi>muu</Tyyppi>
+<Hinta>0</Hinta>
 </Hinnasto>
 </dataroot>

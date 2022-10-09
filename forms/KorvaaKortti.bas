@@ -17,7 +17,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =49
     Left =4740
-    Top =3468
+    Top =3456
     Right =22788
     Bottom =11712
     Picture ="bulldog_pienempi"
@@ -674,7 +674,7 @@ Public Sub Korvaa_Click()
     Form_LatausOhje.KorttiNumero.Value = "A" & newCard
     
     Dim expiration As Date
-    expiration = Common.FetchExiprationDate(newCard, True)
+    expiration = Common.FetchExiprationDate(newCard)
     
     Dim chargeType As String
      

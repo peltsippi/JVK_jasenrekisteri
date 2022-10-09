@@ -17,7 +17,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =53
     Left =4740
-    Top =3468
+    Top =3456
     Right =22788
     Bottom =11712
     Picture ="bulldog_pienempi"
@@ -726,12 +726,16 @@ Public Sub Poista_Click()
     deletebool = [Form_PoistaKortinLinkitys].discard.Value
     
     If deletebool Then
-        'Dim query As String
         Dim largestDate As Date
-        largestDate = Common.FetchExiprationDate(cardNumber, False)
+        largestDate = Common.FetchExiprationDate(cardNumber)
+        
+        If (largestDate < Date) Then
+            largestDate = Date
+        End If
+        
         'MsgBox ("Suurin päivämäärä on " & largestDate)
         
-        largestDate = DateAdd("d", 1, largestDate) 'add 1 more than previous charge!
+        largestDate = DateAdd("d", 1, largestDate) 'add 1 more than previous charge! This means broken -note is the last charge for the card and all is valid!
         Dim feedback As Integer
         Dim table2 As String
         table2 = "Lataukset"

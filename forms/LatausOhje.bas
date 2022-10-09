@@ -15,7 +15,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =70
     Left =4740
-    Top =3468
+    Top =3456
     Right =18432
     Bottom =11712
     RecSrcDt = Begin
@@ -169,12 +169,12 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =60
                     Top =36
                     Width =9360
                     Height =680
+                    FontSize =14
+                    FontWeight =700
                     TabIndex =4
                     ForeColor =4210752
                     Name ="Save"
@@ -189,10 +189,17 @@ Begin Form
                     LayoutCachedWidth =9420
                     LayoutCachedHeight =716
                     LayoutGroup =1
-                    BackColor =15123357
+                    Gradient =0
+                    BackColor =5167783
+                    BackThemeColorIndex =-1
+                    BackTint =100.0
                     BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
+                    HoverColor =5167783
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedColor =5167783
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =1
@@ -203,12 +210,12 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =60
                     Top =792
                     Width =9360
                     Height =684
+                    FontSize =14
+                    FontWeight =700
                     TabIndex =6
                     ForeColor =4210752
                     Name ="Cancel"
@@ -408,31 +415,45 @@ End Sub
 Private Sub Form_Open(Cancel As Integer)
 
     Dim KorttiNumero As String
-    Dim tyyppiValinta As Integer
+    'Dim tyyppiValinta As Integer
+    Dim KorttiTyyppi As String
     Dim krtMaara As Integer
     Dim AikaRyhma As String
     Dim voimassaOlo As String
     
+    Dim kertaKortti As Boolean
+    kertaKortti = False
+
+    Dim aamuPvKortti As Boolean
+    aamuPvKortti = False
+    
     If CurrentProject.AllForms("RekisteroiLataus").IsLoaded Then
         KorttiNumero = [Form_RekisteroiLataus].Kortti.Value
-        tyyppiValinta = [Form_RekisteroiLataus].Valinta.Value
-        krtMaara = [Form_RekisteroiLataus].KERMaara.Value
+        KorttiTyyppi = [Form_RekisteroiLataus].korttiTyyppivalinta.Value
         voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
         
+        If (KorttiTyyppi = "krt") Then
+            krtMaara = [Form_RekisteroiLataus].KKmaara.Value
+            kertaKortti = True
+        End If
         
+        If (Right$(KorttiTyyppi, 2) = "ap") Then
+            aamuPvKortti = True
+        End If
+
     
     End If
     
     [Form_LatausOhje].KorttiNumero.Value = "A" & KorttiNumero
     
-    If (tyyppiValinta = 4) Then
+    If (kertaKortti) Then
         [Form_LatausOhje].KorttiTyyppi.Value = "Määräkortti"
         [Form_LatausOhje].Maara.Value = krtMaara
     Else
         [Form_LatausOhje].KorttiTyyppi.Value = "Kausikortti"
     End If
         
-    If (tyyppiValinta = 2) Then
+    If (aamuPvKortti) Then
          [Form_LatausOhje].AikaRyhma.Value = "aamupäivä ma-su"
     Else
         [Form_LatausOhje].AikaRyhma.Value = "Normaali"
