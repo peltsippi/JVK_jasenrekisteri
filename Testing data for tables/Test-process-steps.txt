@@ -15,6 +15,11 @@ x=Done	Step	Task	Subtask
 			Lataukset
 			Maksut
 			Historia
+			Hinnasto
+			Korttitilasto
+			Maksutavat
+
+	1.1		Repair all tables (so id:s start from 0 etc...)
 
 	2.	Import data	
 			Import DB-Yhteystiedot-initial.csv to table Yhteystiedot
@@ -26,150 +31,189 @@ x=Done	Step	Task	Subtask
 			Import DB-Maksut-initial.csv
 			Import DB-Hinnasto.csv (only so creating new cards is easier)
 			Import DB-Maksutavat.csv (only so adding payments will be easier)
+			
+			
+	-> OPEN THE APP
 
-	3.	Add contacts manually (10 pcs), use copypaste!
+	3.	Add contacts manually (10 pcs), use copypaste!, 
+	4. Link cards manually. 
+	5. Add charges and payments
+	Initials: ABC
 
-Etunimi		Sukunimi	Puhelin			Email					Kotipaikka		Jäsenyys	Edustusjäsen
+Etunimi		Sukunimi	Email								Puhelin				Kotipaikka				Jäsenyys	Edustusjäsen
+-------------------------------------------------------------------------------------------------------------------------------------
+Alden		Mccall		vestibulum.massa@aol.org			(034578) 814263		Samsun					Jäsen		EPÄTOSI	
 
-Alden		Mccall		(034578) 814263		vestibulum.massa@aol.org		Samsun			Jäsen		EPÄTOSI	
-Vincent		Vance		(036656) 471644		elit.nulla.facilisi@protonmail.org	Piemonte		Jäsen		EPÄTOSI	
-Armando		Farley		(02834) 3713551		sed.pede.cum@icloud.ca			Franche-Comté		Jäsen		EPÄTOSI	
-Zena		Buckner		(025) 11150164		magna.duis@protonmail.com		Vestfold og Telemark	Jäsen		EPÄTOSI	
-Quemby		Cervantes	(037745) 980571		a.magna@yahoo.edu			Samsun			Jäsen		EPÄTOSI	
-Delilah		Trevino		(035335) 979555		tellus.justo@hotmail.org		West Bengal		Jäsen		EPÄTOSI	
-Yuli		Tyler		(038321) 196169		nec.malesuada@aol.edu			Zhōngnán		Jäsen		EPÄTOSI	
-Cameron		Francis		(01643) 5310603		facilisis.suspendisse@google.com	Kogi			Jäsen		EPÄTOSI	
-Keane		Mendez		(032156) 585611		blandit.nam@outlook.ca			Paraíba			Jäsen		EPÄTOSI	
-Chantale	Alexander	(0573) 21316848		per@protonmail.couk			Vestland		Jäsen		EPÄTOSI	
-
-
-
-	4.	Link cards manually 
-		Initials with all operations: ABC
-
-
-	User: Alden Mccall (91)
+Link cards:	User: Alden Mccall (91)
 		4085	
 		9756	!!This is wrong card, should not get through!!!
 		8816
+		
+Card 4085 (91)	
+Add charge: 
+		16.11.2019 	12 kk	(30.11.2020)		320€
+Add payments: 
+		18.11.2019 	Edenred		280 €
+		20.12.2019	Käteinen	40 €
 
-	User: Vincent Vance (92)
+Card 8816 (92)		
+Add charge: 
+		11.4.2013	6 kk	(15.10.2013)		180€
+Add payments:
+		16.4.2013	Tilisiirto	180 €
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Vincent		Vance		elit.nulla.facilisi@protonmail.org	(036656) 471644		Piemonte				Jäsen		EPÄTOSI	
+
+Link cards:	User: Vincent Vance (92)
 		6055	
-		3045	
+		3045
 
-	User: Armando Farley (93)
+Card 6055 (93):
+Add charge: 
+		25.1.2017	3 kk	(30.4.2017)		110€
+Add payments:
+		24.1.2017	Käteinen	50 €
+		15.2.2017	Tilisiirto	45 €
+		
+Card 3045 (94):		
+Add charge:	
+		11.6.2014	12 kk	(15.6.2015)		320€
+Add payments:
+		14.6.2014	tilisiirto	320 €
+-------------------------------------------------------------------------------------------------------------------------------------
+	
+Armando		Farley		sed.pede.cum@icloud.ca				(02834) 3713551		Franche-Comté			Jäsen		EPÄTOSI	
+
+Link cards:	User: Armando Farley (93)
 		1410	
 		0763	!!This is wrong card, should not get through!!! If this goes through, your Kortit -import has failed!
 		1074	
 
-	User: Zena Buckner (94)
+Card 1410 (95):
+Add charge:
+		11.12.2010	12 kk	(15.12.2011)		320€
+Add payments:
+		12.12.2010	käteinen	160 €
+		15.2.2011	käteinen	160 €
+		
+Card 1074 (96):
+Add charge:
+		1.3.2015	6 kk	(15.9.2015)		190€
+Add payments:
+		5.3.2015	tilisiirto	190 €
+		
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Zena		Buckner		magna.duis@protonmail.com			(025) 11150164		Vestfold og Telemark	Jäsen		EPÄTOSI	
+
+Link cards:	User: Zena Buckner (94)
 		6867
 		1010
 
-	User: Quemby Cervantes (95)
+Card 6867 (97):
+Add charge:
+		6.11.2013	12 kk	(15.11.2014)		320€
+Add payments:
+		3.11.2013	tilisiirto	320 €
+
+
+Card 1010 (98):
+Add charge:
+		12.9.2021	6 kk	(15.3.2022)		190€
+Add payments:
+		15.9.2021	tilisiirto	190 €
+		
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Quemby		Cervantes	a.magna@yahoo.edu					(037745) 980571		Samsun					Jäsen		EPÄTOSI	
+
+Link cards:	User: Quemby Cervantes (95)
 		8767
 
-	User: Delilah Trevino (96)
+Card 8767 (99):
+Add charge:
+		27.5.2012	12 kk	(31.5.2013)		320€
+Add payments:
+		30.5.2012	käteinen	200 €
+		1.8.2012	tilisiirto	120 €
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Delilah		Trevino		tellus.justo@hotmail.org			(035335) 979555		West Bengal				Jäsen		EPÄTOSI	
+
+Link cards:	User: Delilah Trevino (96)
 		2640
 
-	User: Yuli Tyler (97)
+Card 2640 (100):
+Add charge:
+		19.10.2013	9 kk	(31.7.2014)		260€
+Add payments:
+		21.10.2013	tilisiirto	260 €
+	
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Yuli		Tyler		nec.malesuada@aol.edu				(038321) 196169		Zhōngnán				Jäsen		EPÄTOSI	
+
+Link cards:	User: Yuli Tyler (97)
 		4672
 
-	User: Cameron Francis (98)
+Card 4672 (101):
+Add charge:
+		15.3.2014	12 kk	(15.3.2015)		320€
+Add payments:
+		20.3.2014	tilisiirto	150 €
+		20.5.2014	tilisiirto	150 €
+		1.6.2014	smartum		20 €
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Cameron		Francis		facilisis.suspendisse@google.com	(01643) 5310603		Kogi					Jäsen		EPÄTOSI	
+
+Link cards:	User: Cameron Francis (98)
 		6963
 
-	User: Keane Mendez (99)
+Card 6963 (102):
+Add charge:
+		17.4.2019	10 krt	(30.4.2021)		50€
+Add payments:
+		17.4.2019	käteinen	5 €
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Keane		Mendez		blandit.nam@outlook.ca				(032156) 585611		Paraíba					Jäsen		EPÄTOSI	
+	
+
+Link cards:	User: Keane Mendez (99)
 		9133
 
-	User: Chantale Alexander (100)
+Card 9133 (103):
+Add charge:
+		18.11.2022	6 kk	(31.5.2023)		190€
+Add payments:
+		1.12.2022	tilisiirto	190 €
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Chantale	Alexander	per@protonmail.couk					(0573) 21316848		Vestland				Jäsen		EPÄTOSI	
+
+Link cards:	User: Chantale Alexander (100)
 		1142
 
 
-	5.	Add charges and payments to cards
 
-
-Initials always ABC
-
-Beginning	Type	End (automatically)	Price
-	Date		Payment method	Sum
-
-card 4085 (91) ============================================
-16.11.2019 	12 kk	(30.11.2020)		320€
-
-	18.11.2019 	Edenred		280 €
-	20.12.2019	Käteinen	40 €
-
-Card 8816 (92) ============================================
-11.4.2013	6 kk	(15.10.2013)		180€
-
-	16.4.2013	Tilisiirto	180 €
-
-Card 6055 (93) ============================================
-25.1.2017	3 kk	(30.4.2017)		100€
-
-	24.1.2017	Käteinen	50 €
-	15.2.2017	Tilisiirto	45 €
-
-Card 3045 (94) ============================================
-11.6.2014	12 kk	(15.6.2015)		320€
-
-	14.6.2014	tilisiirto	320 €
-
-Card 1410 (95) ============================================
-11.12.2010	12 kk	(15.12.2011)		320€
-
-	12.12.2010	käteinen	160 €
-	15.2.2011	käteinen	160 €
-
-Card 1074 (96) ============================================
-1.3.2015	6 kk	(15.9.2015)		180€
-
-	5.3.2015	tilisiirto	180 €
-
-Card 6867 (97) ============================================
-6.11.2013	12 kk	(15.11.2014)		320€
-
-	3.11.2013	tilisiirto	320 €
-
-Card 1010 (98) ============================================
-12.9.2021	6 kk	(15.3.2022)		180€
-
-	15.9.2021	tilisiirto	180 €
-
-Card 8767 (99) ============================================
-27.5.2012	12 kk	(31.5.2013)		320€
-
-	30.5.2012	käteinen	200 €
-	1.8.2012	tilisiirto	120 €
-
-Card 2640 (100) ============================================
-19.10.2013	9 kk	(31.7.2014)		270€
-
-	21.10.2013	tilisiirto	270 €
-
-Card 4672 (101) ============================================
-15.3.2014	12 kk	(15.3.2015)		320€
-
-	20.3.2014	tilisiirto	150 €
-	20.5.2014	tilisiirto	150 €
-	1.6.2014	smartum		20 €
-
-Card 6963 (102) ============================================
-17.4.2019	10 krt	(30.4.2021)		50€
-
-	17.4.2019	käteinen	5 €
-
-Card 9133 (103) ============================================
-18.11.2022	6 kk	(31.5.2023)		180€
-
-	1.12.2022	tilisiirto	180 €
-
-Card 1142 (104) ============================================
-14.6.2021	12 kk	(15.6.2022)		320€
-
+Card 1142 (104):
+Add charge:
+		14.6.2021	12 kk	(15.6.2022)		320€
+Add payments:	
 	15.6.2021	käteinen	100 €
 	15.7.2021	käteinen	20 €
 	1.9.2021	smartum		100 €
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
@@ -191,10 +235,10 @@ Card 1142 (104) ============================================
 		17.4.2019	käteinen	5€ -> 50 €
 
 		card 0578 (75)
-		24.1.2015	tilisiirto	123,12 € -> 150 €
+		24.1.2015	tilisiirto	324 € -> 150 €
 
 		card 0763 (12)
-		19.5.2018	epassi		139,32 € -> 50 €
+		19.5.2018	epassi		150 € -> 50 €
 
 
 	8.	Replace cards (4 + 2 pcs)
@@ -226,7 +270,7 @@ Card 1142 (104) ============================================
 
 			* Valitun kortin tapahtumat - select card 4085 (91)
 				Maksut: 
-					edenred; 180,00 € ;ABC;18.11.2019
+					edenred; 280,00 € ;ABC;18.11.2019
 					käteinen; 40,00 € ;ABC;20.12.2019
 				Lataukset:
 					30.11.2020;ABC;12kk; 320,00 € ;16.11.2019

@@ -102,29 +102,29 @@ Public Function DoBackup(treshold As Integer)
     
 
 'thank you http://justin-hampton.com/microsoft-office-tips/access-tips/automate-backing-database-vba/
-    Dim Source As String
+    Dim source As String
     Dim Target As String
     Dim retval As Integer
     
     'Source = CurrentDb.Name
-    Source = CurrentDb.TableDefs("Kortit").Connect
+    source = CurrentDb.TableDefs("Kortit").Connect
     
     Dim splitString
     
-    splitString = Split(Source, "=")
-    Source = splitString(1)
+    splitString = Split(source, "=")
+    source = splitString(1)
     
     'MsgBox (Source)
     
     'This is the only thing to change - add the path of where you want the file to save here
-    Target = Application.CurrentProject.Path & "\Jasenrekisteri-backup-"
+    Target = Application.CurrentProject.path & "\Jasenrekisteri-backup-"
     Target = Target & Format(Date, "yyyy-mm-dd") & ".accdb"
     'MsgBox (Target)
     ' create the backup
     retval = 0
     Dim objFSO As Object
     Set objFSO = CreateObject("Scripting.FileSystemObject")
-    retval = objFSO.CopyFile(Source, Target, True)
+    retval = objFSO.CopyFile(source, Target, True)
     'MsgBox (retval)
     Set objFSO = Nothing
     
@@ -630,4 +630,52 @@ Public Function GetPriceForCard(cardType As String, cardTime As Integer)
     GetPriceForCard = price
         
 
+End Function
+
+Public Function Reconnect()
+'**************************************************************
+'*     START YOUR APPLICATION (MACRO: AUTOEXEC) WITH THIS FUNCTION
+'*     AND THIS PROGRAM WILL CHANGE THE CONNECTIONS AUTOMATICALLY
+'*     WHEN THE 'DATA.MDB'  AND THE 'PRG.MDB'
+'*     ARE IN THE SAME DIRECTORY!!!
+'*                  PROGRAMMING BY PETER VUKOVIC, Germany
+'*                  100700.1262@compuserve.com
+'* ************************************************************
+Dim db As Database, source As String, path As String
+Dim dbsource As String, i As Integer, j As Integer
+
+Set db = DBEngine.Workspaces(0).Databases(0)
+'*************************************************************
+'*                     RECOGNIZE THE PATH                    *
+'*************************************************************
+
+For i = Len(db.Name) To 1 Step -1
+    If Mid(db.Name, i, 1) = Chr(92) Then
+        path = Mid(db.Name, 1, i)
+        'MsgBox (path)
+        Exit For
+    End If
+Next
+'*************************************************************
+'*              CHANGE THE PATH   AND   CONNECT  AGAIN       *
+'*************************************************************
+
+For i = 0 To db.TableDefs.Count - 1
+    If db.TableDefs(i).Connect <> " " Then
+        source = Mid(db.TableDefs(i).Connect, 11)
+        'Debug.Print source
+        For j = Len(source) To 1 Step -1
+            If Mid(source, j, 1) = Chr(92) Then
+               dbsource = Mid(source, j + 1, Len(source))
+               source = Mid(source, 1, j)
+                   If source <> path Then
+                        db.TableDefs(i).Connect = ";Database=" + path + dbsource
+                        db.TableDefs(i).RefreshLink
+                        'Debug.Print ";Database=" + path + dbsource
+                    End If
+                Exit For
+            End If
+         Next
+    End If
+Next
 End Function

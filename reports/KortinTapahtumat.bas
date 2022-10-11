@@ -111,6 +111,7 @@ Begin Report
             BackTint =20.0
             Begin
                 Begin Label
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =1474
@@ -130,6 +131,7 @@ Begin Report
                     LayoutCachedHeight =584
                 End
                 Begin Label
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     Left =1417
@@ -2811,6 +2813,7 @@ Begin Report
             BackThemeColorIndex =1
             Begin
                 Begin Label
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
@@ -2832,6 +2835,7 @@ Begin Report
                     LayoutCachedHeight =357
                 End
                 Begin Label
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
@@ -2853,6 +2857,7 @@ Begin Report
                     LayoutCachedHeight =357
                 End
                 Begin Label
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
@@ -2887,6 +2892,7 @@ Begin Report
                 Begin TextBox
                     DecimalPlaces =0
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -2918,6 +2924,7 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -2937,6 +2944,7 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -2969,6 +2977,7 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
@@ -3004,6 +3013,7 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
@@ -3027,6 +3037,7 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    OverlapFlags =81
                     TextFontCharSet =177
                     TextAlign =3
                     TextFontFamily =0
@@ -3066,6 +3077,7 @@ Begin Report
                     Name ="Kaavio10"
                     GridlineColor =10921638
                     RowSource ="KortinTapahtumat"
+                    OverlapFlags =81
                     ChartAxis ="PVM"
                     ChartValues ="Balance"
                     ChartType =6
@@ -3075,9 +3087,12 @@ Begin Report
                         0x01000000080000000000000003000000
                     End
                     ChartLegendData = Begin
-                        0x010000004d00000007000000420061006c0061006e006300650000000000015b ,
+                        0x020000004d00000007000000420061006c0061006e006300650000000000015b ,
                         0x9bd5005b9bd500000000000000000000000000000000009f6f00000700000042 ,
-                        0x0061006c0061006e00630065000200000000000000
+                        0x0061006c0061006e00630065000200000000000000610000000c000000530075 ,
+                        0x006d004f006600420061006c0061006e00630065000000000000ed7d3100ed7d ,
+                        0x3100000000000000000000000000000000009f6f00000c000000530075006d00 ,
+                        0x4f006600420061006c0061006e00630065000100000000000000
                     End
                     ChartValueData = Begin
                         0x01000000080000000000000000000000

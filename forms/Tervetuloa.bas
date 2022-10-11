@@ -18,10 +18,10 @@ Begin Form
     Width =9708
     DatasheetFontHeight =11
     ItemSuffix =294
-    Left =6804
-    Top =492
-    Right =16512
-    Bottom =11496
+    Left =4740
+    Top =3456
+    Right =18432
+    Bottom =11712
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -888,7 +888,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =564
+                    Left =576
                     Top =4116
                     Width =1332
                     Height =588
@@ -898,9 +898,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =564
+                    LayoutCachedLeft =576
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =1896
+                    LayoutCachedWidth =1908
                     LayoutCachedHeight =4704
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
@@ -914,7 +914,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =1968
+                    Left =1980
                     Top =4116
                     Width =1212
                     Height =588
@@ -924,9 +924,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =1968
+                    LayoutCachedLeft =1980
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =3180
+                    LayoutCachedWidth =3192
                     LayoutCachedHeight =4704
                     ColumnStart =1
                     ColumnEnd =1
@@ -992,7 +992,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3252
+                    Left =3264
                     Top =4116
                     Width =1236
                     Height =588
@@ -1002,9 +1002,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =3252
+                    LayoutCachedLeft =3264
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =4488
+                    LayoutCachedWidth =4500
                     LayoutCachedHeight =4704
                     ColumnStart =2
                     ColumnEnd =2
@@ -1022,8 +1022,8 @@ Begin Form
                     OverlapFlags =93
                     Left =1872
                     Top =4908
-                    Width =1224
-                    Height =804
+                    Width =1236
+                    Height =816
                     TabIndex =17
                     Name ="RaporttiMaksamatta"
                     Caption ="Tarkasta maksamattomat kortit"
@@ -1032,8 +1032,8 @@ Begin Form
 
                     LayoutCachedLeft =1872
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =3096
-                    LayoutCachedHeight =5712
+                    LayoutCachedWidth =3108
+                    LayoutCachedHeight =5724
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -1053,9 +1053,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =1872
-                    Top =5784
-                    Width =1224
-                    Height =804
+                    Top =5796
+                    Width =1236
+                    Height =816
                     TabIndex =20
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
@@ -1063,9 +1063,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =1872
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =3096
-                    LayoutCachedHeight =6588
+                    LayoutCachedTop =5796
+                    LayoutCachedWidth =3108
+                    LayoutCachedHeight =6612
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1170,20 +1170,20 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3168
+                    Left =3180
                     Top =4908
                     Width =1392
-                    Height =804
+                    Height =816
                     TabIndex =18
                     Name ="LatauksetKaikki"
                     Caption ="Korttilatausten kokonais-raportti"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3168
+                    LayoutCachedLeft =3180
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =4560
-                    LayoutCachedHeight =5712
+                    LayoutCachedWidth =4572
+                    LayoutCachedHeight =5724
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -1205,7 +1205,7 @@ Begin Form
                     Left =588
                     Top =4908
                     Width =1212
-                    Height =804
+                    Height =816
                     TabIndex =16
                     Name ="KortinTapahtumat"
                     Caption ="Kortin tapahtumat"
@@ -1215,7 +1215,7 @@ Begin Form
                     LayoutCachedLeft =588
                     LayoutCachedTop =4908
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =5712
+                    LayoutCachedHeight =5724
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -1232,20 +1232,20 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3168
-                    Top =5784
+                    Left =3180
+                    Top =5796
                     Width =1392
-                    Height =804
+                    Height =816
                     TabIndex =21
                     Name ="ListaaEdustusj"
                     Caption ="Listaa edustusjäsenet"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3168
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =4560
-                    LayoutCachedHeight =6588
+                    LayoutCachedLeft =3180
+                    LayoutCachedTop =5796
+                    LayoutCachedWidth =4572
+                    LayoutCachedHeight =6612
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -1267,9 +1267,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =588
-                    Top =6660
+                    Top =6684
                     Width =1212
-                    Height =804
+                    Height =816
                     TabIndex =24
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
@@ -1277,9 +1277,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =588
-                    LayoutCachedTop =6660
+                    LayoutCachedTop =6684
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =7464
+                    LayoutCachedHeight =7500
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =1
@@ -1298,7 +1298,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4560
+                    Left =4572
                     Top =4116
                     Width =1248
                     Height =588
@@ -1308,9 +1308,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =4560
+                    LayoutCachedLeft =4572
                     LayoutCachedTop =4116
-                    LayoutCachedWidth =5808
+                    LayoutCachedWidth =5820
                     LayoutCachedHeight =4704
                     ColumnStart =3
                     ColumnEnd =3
@@ -1327,9 +1327,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =588
-                    Top =5784
+                    Top =5796
                     Width =1212
-                    Height =804
+                    Height =816
                     TabIndex =19
                     Name ="ListaaKaikkiMaksut"
                     Caption ="Listaa kaikki maksut"
@@ -1337,9 +1337,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =588
-                    LayoutCachedTop =5784
+                    LayoutCachedTop =5796
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =6588
+                    LayoutCachedHeight =6612
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1357,16 +1357,16 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =4632
+                    Left =4644
                     Top =4908
-                    Height =804
+                    Height =816
                     Name ="TyhjäSolu244"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =4632
+                    LayoutCachedLeft =4644
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =6072
-                    LayoutCachedHeight =5712
+                    LayoutCachedWidth =6084
+                    LayoutCachedHeight =5724
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -1375,9 +1375,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =1872
-                    Top =6660
-                    Width =1224
-                    Height =804
+                    Top =6684
+                    Width =1236
+                    Height =816
                     TabIndex =25
                     Name ="kortitIlmanOmistajaa"
                     Caption ="Aktiiviset kortit ilman omistajaa"
@@ -1385,9 +1385,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =1872
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =3096
-                    LayoutCachedHeight =7464
+                    LayoutCachedTop =6684
+                    LayoutCachedWidth =3108
+                    LayoutCachedHeight =7500
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1408,20 +1408,20 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3168
-                    Top =6660
+                    Left =3180
+                    Top =6684
                     Width =1392
-                    Height =804
+                    Height =816
                     TabIndex =26
                     Name ="maksettuEiLadattu"
                     Caption ="Tarkasta lataamattomat kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3168
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =4560
-                    LayoutCachedHeight =7464
+                    LayoutCachedLeft =3180
+                    LayoutCachedTop =6684
+                    LayoutCachedWidth =4572
+                    LayoutCachedHeight =7500
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -1442,19 +1442,19 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4632
-                    Top =6660
-                    Height =804
+                    Left =4644
+                    Top =6684
+                    Height =816
                     TabIndex =27
                     Name ="otaVarmuuskopio"
                     Caption ="Ota varmuuskopio"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =4632
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =6072
-                    LayoutCachedHeight =7464
+                    LayoutCachedLeft =4644
+                    LayoutCachedTop =6684
+                    LayoutCachedWidth =6084
+                    LayoutCachedHeight =7500
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -1475,19 +1475,19 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =6144
-                    Top =6660
-                    Height =804
+                    Left =6156
+                    Top =6684
+                    Height =816
                     TabIndex =28
                     Name ="korttiTilastot"
                     Caption ="Näytä korttitilastot"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =6144
-                    LayoutCachedTop =6660
-                    LayoutCachedWidth =7584
-                    LayoutCachedHeight =7464
+                    LayoutCachedLeft =6156
+                    LayoutCachedTop =6684
+                    LayoutCachedWidth =7596
+                    LayoutCachedHeight =7500
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -1507,16 +1507,16 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =6144
+                    Left =6156
                     Top =4908
-                    Height =804
+                    Height =816
                     Name ="TyhjäSolu266"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =6144
+                    LayoutCachedLeft =6156
                     LayoutCachedTop =4908
-                    LayoutCachedWidth =7584
-                    LayoutCachedHeight =5712
+                    LayoutCachedWidth =7596
+                    LayoutCachedHeight =5724
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -1524,19 +1524,19 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4632
-                    Top =5784
-                    Height =804
+                    Left =4644
+                    Top =5796
+                    Height =816
                     TabIndex =22
                     Name ="MaksutPerJasen"
                     Caption ="Listaa maksut per jäsen"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =4632
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =6072
-                    LayoutCachedHeight =6588
+                    LayoutCachedLeft =4644
+                    LayoutCachedTop =5796
+                    LayoutCachedWidth =6084
+                    LayoutCachedHeight =6612
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1557,19 +1557,19 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =6144
-                    Top =5784
-                    Height =804
+                    Left =6156
+                    Top =5796
+                    Height =816
                     TabIndex =23
                     Name ="voimassaOlleetKorit"
                     Caption ="Aikavälillä voimassa olleet kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =6144
-                    LayoutCachedTop =5784
-                    LayoutCachedWidth =7584
-                    LayoutCachedHeight =6588
+                    LayoutCachedLeft =6156
+                    LayoutCachedTop =5796
+                    LayoutCachedWidth =7596
+                    LayoutCachedHeight =6612
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1704,6 +1704,7 @@ End Sub
 
 Private Sub Form_Open(Cancel As Integer)
     Dim succs
+    succs = Common.Reconnect()
     succs = Common.EnableDisableButtons()
     succs = Common.SendMessageToMainScreen("Tervetuloa!")
     succs = Common.SaveToLog("Jäsenrekisteri avattiin")
