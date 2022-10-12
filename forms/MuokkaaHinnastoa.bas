@@ -16,10 +16,10 @@ Begin Form
     GridY =10
     Width =10602
     DatasheetFontHeight =11
-    ItemSuffix =10
-    Left =4044
+    ItemSuffix =13
+    Left =4740
     Top =3468
-    Right =17484
+    Right =18432
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -52,6 +52,18 @@ Begin Form
             BorderTint =50.0
             ForeThemeColorIndex =0
             ForeTint =60.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
@@ -107,7 +119,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =1984
+            Height =2307
             Name ="LomakkeenYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
@@ -142,7 +154,7 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =85
                     TextAlign =3
-                    Left =2834
+                    Left =6009
                     Top =1587
                     Width =3288
                     Height =300
@@ -154,9 +166,9 @@ Begin Form
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =2834
+                    LayoutCachedLeft =6009
                     LayoutCachedTop =1587
-                    LayoutCachedWidth =6122
+                    LayoutCachedWidth =9297
                     LayoutCachedHeight =1887
                 End
                 Begin Label
@@ -285,25 +297,63 @@ Begin Form
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3231
+                    Top =1644
+                    Width =2316
+                    Height =300
+                    BackColor =15921906
+                    BorderColor =8355711
+                    ForeColor =6710886
+                    Name ="Selite10"
+                    Caption ="Kesto"
+                    FontName ="Calibri"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =3231
+                    LayoutCachedTop =1644
+                    LayoutCachedWidth =5547
+                    LayoutCachedHeight =1944
+                    BackShade =95.0
+                End
             End
         End
         Begin Section
-            Height =690
+            Height =333
             Name ="Tiedot"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
+                Begin Rectangle
+                    SpecialEffect =0
+                    BackStyle =1
+                    BorderWidth =2
+                    OverlapFlags =93
+                    Left =113
+                    Width =10196
+                    Height =332
+                    Name ="Ruutu12"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =113
+                    LayoutCachedWidth =10309
+                    LayoutCachedHeight =332
+                    BorderThemeColorIndex =0
+                    BorderShade =100.0
+                End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
-                    OverlapFlags =85
+                    OverlapFlags =215
                     IMESentenceMode =3
                     Left =342
                     Top =57
-                    Width =2316
-                    Height =576
+                    Width =1584
+                    Height =276
                     ColumnWidth =3000
                     BorderColor =10921638
                     ForeColor =4210752
@@ -314,16 +364,16 @@ Begin Form
 
                     LayoutCachedLeft =342
                     LayoutCachedTop =57
-                    LayoutCachedWidth =2658
-                    LayoutCachedHeight =633
+                    LayoutCachedWidth =1926
+                    LayoutCachedHeight =333
                 End
                 Begin TextBox
-                    OverlapFlags =85
+                    OverlapFlags =215
                     IMESentenceMode =3
-                    Left =2721
+                    Left =3685
                     Top =56
                     Width =3288
-                    Height =564
+                    Height =228
                     ColumnWidth =3000
                     TabIndex =1
                     BorderColor =10921638
@@ -334,12 +384,34 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2721
+                    LayoutCachedLeft =3685
                     LayoutCachedTop =56
-                    LayoutCachedWidth =6009
-                    LayoutCachedHeight =620
+                    LayoutCachedWidth =6973
+                    LayoutCachedHeight =284
                     CurrencySymbol ="€"
                     ColLCID =1035
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =2494
+                    Top =56
+                    Width =960
+                    Height =276
+                    TabIndex =2
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus11"
+                    ControlSource ="Aika"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2494
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3454
+                    LayoutCachedHeight =332
                 End
             End
         End

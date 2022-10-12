@@ -2,10 +2,10 @@
 FROM Lataukset
 INNER JOIN Kortit AS k ON k.[CID] = Lataukset.Kortti
 
-WHERE k.Kortti = Lomakkeet!Tervetuloa!Korttivalinta
+WHERE k.Kortti = Forms!Tervetuloa!Korttivalinta
 
 UNION SELECT kk.Kortti AS Card, Maksut.PVM, Summa As Balance
 FROM Maksut
 INNER JOIN Kortit As kk ON kk.[CID] = Maksut.Kortti 
-WHERE kk.Kortti = Lomakkeet!Tervetuloa!Korttivalinta
+WHERE kk.Kortti = Forms!Tervetuloa!Korttivalinta
 ORDER BY PVM;

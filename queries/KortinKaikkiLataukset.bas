@@ -1,7 +1,7 @@
 ﻿dbMemo "SQL" ="SELECT Lataukset.Voimassa, Kortit.Kortti, Lataukset.[Puumerkki], Lataukset.Kortt"
     "ityyppi, Lataukset.KortinArvo, Lataukset.Ajankohta\015\012FROM Kortit INNER JOIN"
     " Lataukset ON Kortit.[CID] = Lataukset.[Kortti]\015\012WHERE (((Kortit.Kortti)=["
-    "Lomakkeet]![Tervetuloa]![Korttivalinta]));\015\012"
+    "Forms]![Tervetuloa]![Korttivalinta]));\015\012"
 dbMemo "Connect" =""
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"

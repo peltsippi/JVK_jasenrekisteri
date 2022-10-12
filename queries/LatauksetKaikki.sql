@@ -1,5 +1,5 @@
-﻿SELECT Korttityyppi, Count(Lataukset.Korttityyppi) AS Kpl, Sum(KortinArvo) AS Myynti
+﻿SELECT Lataukset.Korttityyppi, Count(Lataukset.Korttityyppi) AS Kpl, Sum(Lataukset.KortinArvo) AS Myynti
 FROM Lataukset
-WHERE (Lataukset.[Ajankohta]) Between Lomakkeet!Tervetuloa!RaportitAlku And DateAdd("d",1,Lomakkeet!Tervetuloa!RaportitLoppu)
-GROUP BY Korttityyppi
-ORDER BY Sum(KortinArvo) DESC;
+WHERE (((Lataukset.Ajankohta) Between [Forms]![Tervetuloa]![RaportitAlku] And DateAdd("d",1,[Forms]![Tervetuloa]![RaportitLoppu])))
+GROUP BY Lataukset.Korttityyppi
+ORDER BY Sum(Lataukset.KortinArvo) DESC;

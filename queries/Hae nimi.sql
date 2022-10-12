@@ -1,3 +1,3 @@
 ﻿SELECT Yhteystiedot.Sukunimi, Yhteystiedot.Etunimi
 FROM Yhteystiedot
-WHERE (((Yhteystiedot.UID)=[Lomakkeet]![Tervetuloa]![Yhteystietovalinta])) OR ((([Lomakkeet]![Tervetuloa]![Yhteystietovalinta]) Is Null));
+WHERE (((Yhteystiedot.UID)=Forms!Tervetuloa!Yhteystietovalinta)) Or (((Forms!Tervetuloa!Yhteystietovalinta) Is Null));
