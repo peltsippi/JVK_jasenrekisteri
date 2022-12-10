@@ -19,7 +19,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =294
     Left =4740
-    Top =3456
+    Top =3468
     Right =18432
     Bottom =11712
     RecSrcDt = Begin
@@ -565,24 +565,24 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    ColumnCount =3
                     ListWidth =4320
                     Left =566
                     Top =473
                     Width =5092
                     Height =516
                     TabIndex =1
-                    BoundColumn =2
+                    BoundColumn =1
                     BorderColor =10921638
                     ForeColor =3484194
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"10\";\"0\""
                     Name ="Yhteystietovalinta"
                     RowSourceType ="Table/Query"
-                    RowSource ="SELECT [ListaaKaikkiYhteystiedot].Sukunimi, [ListaaKaikkiYhteystiedot].Etunimi, "
-                        "[ListaaKaikkiYhteystiedot].UID FROM ListaaKaikkiYhteystiedot ORDER BY [Sukunimi]"
-                        ", [Etunimi]; "
-                    ColumnWidths ="1440;1440;1440"
+                    RowSource ="SELECT [ListaaKaikkiYhteystiedot].Sukunimi & \", \" &  [ListaaKaikkiYhteystiedot"
+                        "].Etunimi, [ListaaKaikkiYhteystiedot].UID FROM ListaaKaikkiYhteystiedot ORDER BY"
+                        " [Sukunimi], [Etunimi]; "
+                    ColumnWidths ="2835;567"
                     AfterUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
                     FontName ="Calibri"
                     OnGotFocus ="[Event Procedure]"
                     OnChange ="[Event Procedure]"
@@ -637,22 +637,23 @@ Begin Form
                     TextFontCharSet =177
                     TextFontFamily =0
                     IMESentenceMode =3
-                    ColumnCount =3
                     ListWidth =4320
                     Left =566
                     Top =1534
                     Width =5092
                     Height =504
                     TabIndex =4
+                    BoundColumn =1
                     BorderColor =10921638
                     ForeColor =3484194
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"8\""
+                    ColumnInfo ="\"\";\"\";\"10\";\"0\""
                     Name ="Korttivalinta"
                     RowSourceType ="Table/Query"
                     RowSource ="ListaaKortitJaLataukset"
-                    ColumnWidths ="1440;1440;1440"
+                    ColumnWidths ="567;3402"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Calibri"
+                    OnMouseDown ="[Event Procedure]"
                     OnGotFocus ="[Event Procedure]"
                     GridlineColor =10921638
                     ListItemsEditForm ="RekisteroiLataus"
@@ -678,6 +679,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =6236
                     Top =803
@@ -699,6 +701,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =87
                     Left =7653
                     Top =803
@@ -748,6 +751,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =7688
                     Top =2078
@@ -791,6 +795,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =6259
                     Top =2102
@@ -842,7 +847,7 @@ Begin Form
                     FontSize =14
                     ForeColor =5026082
                     Name ="Status"
-                    Caption ="6.2.2022 13.46.59 - Maksujen korjaus valmis"
+                    Caption ="10.12.2022 17.48.37 - Tervetuloa!"
                     LayoutCachedLeft =566
                     LayoutCachedTop =2716
                     LayoutCachedWidth =9053
@@ -887,6 +892,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =576
                     Top =4116
@@ -913,6 +919,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =1980
                     Top =4116
@@ -1201,6 +1208,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =93
                     Left =588
                     Top =4908
@@ -1589,6 +1597,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =85
                     Left =6236
                     Top =1608
@@ -1607,6 +1616,7 @@ Begin Form
                     WebImagePaddingTop =3
                     WebImagePaddingRight =2
                     WebImagePaddingBottom =2
+                    Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
@@ -1790,6 +1800,10 @@ End Sub
 Private Sub Korttivalinta_GotFocus()
     Common.EnableDisableButtons
     
+End Sub
+
+Private Sub Korttivalinta_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+    [Form_Tervetuloa].Korttivalinta.Dropdown
 End Sub
 
 Private Sub KorvaaRikkinainenKortti_Click()
@@ -1997,6 +2011,12 @@ End Sub
 Private Sub Yhteystietovalinta_Change()
     Common.EnableDisableButtons
     
+End Sub
+
+
+Private Sub Yhteystietovalinta_Enter()
+    Form_Tervetuloa.Yhteystietovalinta.Dropdown
+
 End Sub
 
 Private Sub Yhteystietovalinta_GotFocus()
