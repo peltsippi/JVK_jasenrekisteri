@@ -1,11 +1,5 @@
 ﻿<dataroot xmlns:od="urn:schemas-microsoft-com:officedata">
 <Hinnasto>
-<Tunniste>1</Tunniste>
-<Aika>18</Aika>
-<Tyyppi>kk</Tyyppi>
-<Hinta>480</Hinta>
-</Hinnasto>
-<Hinnasto>
 <Tunniste>2</Tunniste>
 <Aika>17</Aika>
 <Tyyppi>kk</Tyyppi>
@@ -286,5 +280,23 @@
 <Aika>18</Aika>
 <Tyyppi>muu</Tyyppi>
 <Hinta>0</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>49</Tunniste>
+<Aika>25</Aika>
+<Tyyppi>kk opisk</Tyyppi>
+<Hinta>400</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>50</Tunniste>
+<Aika>18</Aika>
+<Tyyppi>kk</Tyyppi>
+<Hinta>500</Hinta>
+</Hinnasto>
+<Hinnasto>
+<Tunniste>53</Tunniste>
+<Aika>25</Aika>
+<Tyyppi>kk</Tyyppi>
+<Hinta>352</Hinta>
 </Hinnasto>
 </dataroot>

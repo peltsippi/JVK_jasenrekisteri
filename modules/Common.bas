@@ -56,6 +56,8 @@ End Function
 
 Public Function DoBackup(treshold As Integer)
 
+    'todo skip that treshold part completely...
+
     Dim succs
     
     Dim okString As String
@@ -89,7 +91,7 @@ Public Function DoBackup(treshold As Integer)
     End If
     
     
-    If (difference < treshold) Then
+    If (difference <= treshold) Then
     
         'MsgBox ("Too early, not backing up")
         succs = Common.SendMessageToMainScreen("Varmuuskopio on jo otettu hiljattain!")

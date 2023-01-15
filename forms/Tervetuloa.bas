@@ -17,11 +17,11 @@ Begin Form
     GridY =24
     Width =9708
     DatasheetFontHeight =11
-    ItemSuffix =294
-    Left =4740
-    Top =3468
-    Right =18432
-    Bottom =11712
+    ItemSuffix =295
+    Left =6552
+    Top =144
+    Right =16260
+    Bottom =11400
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -541,7 +541,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =8187
+            Height =8436
             Name ="Detail"
             BackThemeColorIndex =1
             Begin
@@ -642,7 +642,7 @@ Begin Form
                     Top =1534
                     Width =5092
                     Height =504
-                    TabIndex =4
+                    TabIndex =2
                     BoundColumn =1
                     BorderColor =10921638
                     ForeColor =3484194
@@ -652,6 +652,7 @@ Begin Form
                     RowSource ="ListaaKortitJaLataukset"
                     ColumnWidths ="567;3402"
                     AfterUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
                     FontName ="Calibri"
                     OnMouseDown ="[Event Procedure]"
                     OnGotFocus ="[Event Procedure]"
@@ -685,7 +686,7 @@ Begin Form
                     Top =803
                     Width =1414
                     Height =685
-                    TabIndex =2
+                    TabIndex =3
                     Name ="Lisääkortti"
                     Caption ="Lisää kortti"
                     OnClick ="[Event Procedure]"
@@ -707,7 +708,7 @@ Begin Form
                     Top =803
                     Width =1428
                     Height =684
-                    TabIndex =3
+                    TabIndex =4
                     Name ="poistalinkitys"
                     Caption ="Poista kortti"
                     OnClick ="[Event Procedure]"
@@ -1647,6 +1648,35 @@ Begin Form
                     WebImagePaddingBottom =2
                     Overlaps =1
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =7680
+                    Top =6684
+                    Height =816
+                    TabIndex =31
+                    Name ="korjaaTietokannanLinkitys"
+                    Caption ="Korjaa tietokannan linkitys"
+                    OnClick ="[Event Procedure]"
+                    GroupTable =8
+
+                    LayoutCachedLeft =7680
+                    LayoutCachedTop =6684
+                    LayoutCachedWidth =9120
+                    LayoutCachedHeight =7500
+                    LayoutGroup =4
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    UseTheme =1
+                    BackColor =8435191
+                    HoverColor =8435191
+                    PressedColor =8435191
+                    GroupTable =8
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
                 Begin Image
                     PictureType =2
                     Left =519
@@ -1660,7 +1690,7 @@ Begin Form
                     LayoutCachedTop =4039
                     LayoutCachedWidth =9313
                     LayoutCachedHeight =7831
-                    TabIndex =31
+                    TabIndex =32
                 End
             End
         End
@@ -1755,6 +1785,81 @@ Private Sub KorjaaTietoja_Click()
     
 End Sub
 
+Private Sub korjaaTietokannanLinkitys_Click()
+    'NOTE TO SELF: lisää toiminnallisuus tähän!
+    '1. pop-up kysymään tietokannan nimi ja polku?
+    '2. oletko varma ok ja cancel
+    Dim succs
+    succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " aloitti tietokannan uudelleenlinkitystoiminnon")
+    'Dim fDialog As Office.FileDialog
+    Const msoFileDialogFilePicker As Long = 3
+    Dim FD As Object
+    Dim file As Variant
+    
+    'Dim varFile As Variant
+    'Me.FileList.RowSource = ""
+    'Set fDialog = Application.FileDialog(msoFileDialogFilePicker)
+    Set FD = Application.FileDialog(msoFileDialogFilePicker)
+    With FD
+ 
+      ' Allow user to make multiple selections in dialog box
+      .AllowMultiSelect = False
+             
+      ' Set the title of the dialog box.
+      .Title = "Valitse tietokantatiedosto"
+ 
+      ' Clear out the current filters, and add our own.
+      .Filters.Clear
+      .Filters.Add "Access Databases", "*.accdb"
+ 
+      ' Show the dialog box. If the .Show method returns True, the
+      ' user picked at least one file. If the .Show method returns
+      ' False, the user clicked Cancel.
+      If .Show = True Then
+      
+        Dim response
+        For Each entry In .selectedItems  ' Grab the path/name of the selected file
+            file = entry 'only last file is picked... not sure how to hande this more sensibly..
+        Next
+
+        response = MsgBox("Valittu tiedosto: " & file & ", oletko varma?", vbOKCancel, "Vahvista tietokannan valinta")
+        
+        'MsgBox (response)
+        If response = 1 Then
+        
+            'then just refresh db link to actual database...
+            
+            Dim connectionString As String
+            Dim tbl As TableDef
+            Dim db As Database
+            
+            connectionString = ("MS Access;DATABASE=" & file)
+            Set db = CurrentDb
+            For Each tbl In db.TableDefs
+                If Len(tbl.Connect) > 0 Then
+                    'MsgBox tbl.Connect 'If you're getting errors, uncomment this to see connection string syntax
+                    tbl.Connect = connectionString
+                    tbl.RefreshLink
+                End If
+            Next
+            succs = Common.SaveToLog("Tietokantatiedostoksi päivitetty " & file)
+            succs = Common.SendMessageToMainScreen("Tietokantatiedosto päivitetty")
+            
+        Else
+            'peruutettu
+            succs = Common.SaveToLog("Toiminto peruutettu vahvistusikkunasta (2/2)")
+            succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
+            
+        End If
+ 
+      Else
+         succs = Common.SaveToLog("Toiminto peruutettu tiedostonvalintaikkunasta (1/2)")
+         succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
+      End If
+   End With
+End Sub
+    
+
 Private Sub KortinTapahtumat_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi kortin " & [Form_Tervetuloa].Korttivalinta.Value & " tapahtumaraportin")
@@ -1796,6 +1901,10 @@ Private Sub Korttivalinta_AfterUpdate()
     'MsgBox ([Form_Tervetuloa].Yhteystietovalinta.Value)
 End Sub
 
+
+Private Sub Korttivalinta_Enter()
+    [Form_Tervetuloa].Korttivalinta.Dropdown
+End Sub
 
 Private Sub Korttivalinta_GotFocus()
     Common.EnableDisableButtons
@@ -2003,6 +2112,9 @@ Private Sub Yhteystietovalinta_AfterUpdate()
     'Form_Tervetuoa.Paivita_korttiluettelo()
     Form_Tervetuloa.Paivita_korttiluettelo
     Common.EnableDisableButtons
+    
+    [Form_Tervetuloa].Korttivalinta.SetFocus
+    '[Form_Tervetuloa].Korttivalinta.Dropdown
     'MsgBox ([Form_Tervetuloa].Yhteystietovalinta.Value)
     
 End Sub

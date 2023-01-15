@@ -8,6 +8,7 @@ Begin Form
     NavigationButtons = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     ViewsAllowed =1
     PictureAlignment =2
@@ -16,11 +17,12 @@ Begin Form
     GridY =10
     Width =10602
     DatasheetFontHeight =11
-    ItemSuffix =13
+    ItemSuffix =15
     Left =4740
     Top =3468
     Right =18432
     Bottom =11712
+    OrderBy ="[Hinnasto].[Tyyppi], [Hinnasto].[Aika] DESC"
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0xa085a184d2c6e540
@@ -119,9 +121,8 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =2307
+            Height =2325
             Name ="LomakkeenYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =2
@@ -130,34 +131,40 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
+                    TextFontCharSet =177
                     TextAlign =1
-                    Left =340
-                    Top =1587
-                    Width =2316
-                    Height =300
+                    TextFontFamily =0
+                    Left =1927
+                    Top =1927
+                    Width =1416
+                    Height =396
+                    FontSize =16
                     BackColor =15921906
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Tyyppi_Selite"
-                    Caption ="Tyyppi"
+                    Caption ="Korttityypi"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =340
-                    LayoutCachedTop =1587
-                    LayoutCachedWidth =2656
-                    LayoutCachedHeight =1887
+                    LayoutCachedLeft =1927
+                    LayoutCachedTop =1927
+                    LayoutCachedWidth =3343
+                    LayoutCachedHeight =2323
                     BackShade =95.0
                 End
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
+                    TextFontCharSet =177
                     TextAlign =3
-                    Left =6009
-                    Top =1587
-                    Width =3288
-                    Height =300
+                    TextFontFamily =0
+                    Left =4422
+                    Top =1927
+                    Width =1536
+                    Height =396
+                    FontSize =16
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Hinta_Selite"
@@ -166,14 +173,16 @@ Begin Form
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =6009
-                    LayoutCachedTop =1587
-                    LayoutCachedWidth =9297
-                    LayoutCachedHeight =1887
+                    LayoutCachedLeft =4422
+                    LayoutCachedTop =1927
+                    LayoutCachedWidth =5958
+                    LayoutCachedHeight =2323
                 End
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =170
                     Top =56
                     Width =3283
@@ -197,7 +206,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
                     Left =6861
@@ -221,7 +232,9 @@ Begin Form
                     Locked = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =95
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5169
@@ -245,6 +258,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =247
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =7143
                     Top =398
                     Width =3231
@@ -276,23 +291,26 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =226
                     Top =680
-                    Width =6355
-                    Height =779
+                    Width =6360
+                    Height =1224
                     FontSize =16
                     FontWeight =700
                     BackColor =62207
                     BorderColor =8355711
                     ForeColor =255
                     Name ="Selite9"
-                    Caption ="HUOM! Muutokset tallentuu aina välittömästi!\015\012Olethan varovainen!"
+                    Caption ="HUOM! Muutokset tallentuu aina välittömästi!\015\012Olethan varovainen! Korttity"
+                        "ypin avulla voit lisätä tai poistaa korttityyppejä hinnastosta!"
                     FontName ="Calibri"
                     GridlineColor =10921638
                     LayoutCachedLeft =226
                     LayoutCachedTop =680
-                    LayoutCachedWidth =6581
-                    LayoutCachedHeight =1459
+                    LayoutCachedWidth =6586
+                    LayoutCachedHeight =1904
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
@@ -300,30 +318,64 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
+                    TextFontCharSet =177
                     TextAlign =1
-                    Left =3231
-                    Top =1644
-                    Width =2316
-                    Height =300
+                    TextFontFamily =0
+                    Left =170
+                    Top =1927
+                    Width =1596
+                    Height =396
+                    FontSize =16
                     BackColor =15921906
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Selite10"
-                    Caption ="Kesto"
+                    Caption ="Kuukautta"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =3231
-                    LayoutCachedTop =1644
-                    LayoutCachedWidth =5547
-                    LayoutCachedHeight =1944
+                    LayoutCachedLeft =170
+                    LayoutCachedTop =1927
+                    LayoutCachedWidth =1766
+                    LayoutCachedHeight =2323
                     BackShade =95.0
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
+                    Left =7143
+                    Top =1757
+                    Width =3231
+                    Height =568
+                    TabIndex =3
+                    ForeColor =4210752
+                    Name ="JarjestaLista"
+                    Caption ="Järjestä lista"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =7143
+                    LayoutCachedTop =1757
+                    LayoutCachedWidth =10374
+                    LayoutCachedHeight =2325
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    PressedColor =11957550
+                    HoverForeColor =4210752
+                    PressedForeColor =4210752
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
                 End
             End
         End
         Begin Section
-            Height =333
+            Height =440
             Name ="Tiedot"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -336,12 +388,12 @@ Begin Form
                     OverlapFlags =93
                     Left =113
                     Width =10196
-                    Height =332
+                    Height =440
                     Name ="Ruutu12"
                     GridlineColor =10921638
                     LayoutCachedLeft =113
                     LayoutCachedWidth =10309
-                    LayoutCachedHeight =332
+                    LayoutCachedHeight =440
                     BorderThemeColorIndex =0
                     BorderShade =100.0
                 End
@@ -349,12 +401,15 @@ Begin Form
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =342
-                    Top =57
+                    Left =1984
                     Width =1584
-                    Height =276
+                    Height =396
                     ColumnWidth =3000
+                    FontSize =16
+                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Tyyppi"
@@ -362,20 +417,21 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =342
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =1926
-                    LayoutCachedHeight =333
+                    LayoutCachedLeft =1984
+                    LayoutCachedWidth =3568
+                    LayoutCachedHeight =396
                 End
                 Begin TextBox
                     OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =3685
-                    Top =56
-                    Width =3288
-                    Height =228
+                    Left =4478
+                    Width =2664
+                    Height =396
                     ColumnWidth =3000
-                    TabIndex =1
+                    FontSize =16
+                    TabIndex =2
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Hinta"
@@ -384,10 +440,9 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3685
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =6973
-                    LayoutCachedHeight =284
+                    LayoutCachedLeft =4478
+                    LayoutCachedWidth =7142
+                    LayoutCachedHeight =396
                     CurrencySymbol ="€"
                     ColLCID =1035
                 End
@@ -395,12 +450,13 @@ Begin Form
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     IMESentenceMode =3
-                    Left =2494
-                    Top =56
+                    Left =113
                     Width =960
-                    Height =276
-                    TabIndex =2
+                    Height =396
+                    FontSize =16
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Muokkaus11"
@@ -408,10 +464,41 @@ Begin Form
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2494
+                    LayoutCachedLeft =113
+                    LayoutCachedWidth =1073
+                    LayoutCachedHeight =396
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    TextFontCharSet =177
+                    TextFontFamily =0
+                    Left =7426
+                    Top =56
+                    Width =2891
+                    Height =340
+                    TabIndex =3
+                    ForeColor =4210752
+                    Name ="PoistaRivi"
+                    Caption ="Poista"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =7426
                     LayoutCachedTop =56
-                    LayoutCachedWidth =3454
-                    LayoutCachedHeight =332
+                    LayoutCachedWidth =10317
+                    LayoutCachedHeight =396
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    PressedColor =11957550
+                    HoverForeColor =4210752
+                    PressedForeColor =4210752
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
                 End
             End
         End
@@ -431,6 +518,23 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
+
+Private Sub JarjestaLista_Click()
+    Me.Requery
+End Sub
+
+Private Sub PoistaRivi_Click()
+    DoCmd.RunCommand acCmdSelectRecord
+    DoCmd.RunCommand acCmdDeleteRecord
+End Sub
+
+Private Sub SortList_Click()
+    'DoCmd.SetOrderBy ("{Hinnasto].[Tyyppi], [Hinnasto].[Aika] DESC")
+    Me.Requery
+    Me.Refresh
+    Me.Repaint
+    MsgBox ("en helvetti tiiä")
+End Sub
 
 Private Sub Sulje_Click()
     Dim succs

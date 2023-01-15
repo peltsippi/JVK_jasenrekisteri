@@ -16,10 +16,10 @@ Begin Form
     Width =12018
     DatasheetFontHeight =11
     ItemSuffix =61
-    Left =4044
+    Left =4740
     Top =3468
-    Right =17484
-    Bottom =11712
+    Right =17016
+    Bottom =11088
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0xdfeefa493cc6e540
@@ -902,7 +902,7 @@ Private Sub Tallenna_Click()
     
     queryString = " Puumerkki = '" & Puumerkki & "' , " _
     & " Kortti = " & cardID & " , " _
-    & " Summa = " & payment & " , " _
+    & " Summa = '" & payment & "' , " _
     & " Maksutapa = '" & method & "' , " _
     & " PVM = '" & dateStamp & "' "
     

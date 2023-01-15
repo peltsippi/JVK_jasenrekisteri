@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-10.12.2022 18.17.00
+15.1.2023 22.06.34
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -42,18 +42,44 @@ Exporting themes...
 -------------------------------------
 No modified imex specs found in this database.
 -------------------------------------
-No modified tables found in this database.
+Exporting tables...           
+  Hinnasto
+  Hinnasto (SQL)
+  Historia
+  Historia (SQL)
+  Kortit
+  Kortit (SQL)
+  Korttitilasto
+  Korttitilasto (SQL)
+  Lataukset
+  Lataukset (SQL)
+  Maksut
+  Maksut (SQL)
+  Maksutavat
+  Maksutavat (SQL)
+  Yhteystiedot
+  Yhteystiedot (SQL)
+[8]
 -------------------------------------
 Exporting queries...          
-  haeKorttiTyypit
-    Sanitized in 0,009 seconds.
-  haeKorttiTyypit (SQL)
-[1]
+  ListaaKaikkiYhteystiedot
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,004 seconds.
+  ListaaKaikkiYhteystiedot (SQL)
+  ListaaKortitJaLataukset
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,002 seconds.
+  ListaaKortitJaLataukset (SQL)
+[2]
 -------------------------------------
 Exporting forms...            
-  RekisteroiLataus
-    Sanitized in 0,039 seconds.
-[1]
+  RekisteroiMaksu
+    Sanitized in 0,017 seconds.
+  MuokkaaHinnastoa
+    Sanitized in 0,013 seconds.
+  Tervetuloa
+    Sanitized in 0,040 seconds.
+[3]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
@@ -61,10 +87,12 @@ No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,030 seconds.
+    Sanitized in 0,032 seconds.
 [1]
 -------------------------------------
-No modified modules found in this database.
+Exporting modules...          
+  Common
+[1]
 -------------------------------------
 No modified table data macros found in this database.
 -------------------------------------
@@ -80,58 +108,64 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (5 seconds)
+Done. (6,44 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,02
-VB Project                    1         0,02
+Project                       1         0,03
+VB Project                    1         0,03
 VBE References                2         0,04
-DB Properties                 53        0,32
-Shared Images                 4         0,06
-Themes                        1         2,03
-Queries                       1         0,19
-Forms                         1         1,46
-Table Data                    1         0,20
+DB Properties                 53        0,38
+Shared Images                 4         0,10
+Themes                        1         2,02
+Tables                        8         0,56
+Queries                       2         0,20
+Forms                         3         1,66
+Table Data                    1         0,40
+Modules                       1         0,04
 Doc Properties                2         0,03
-Nav Pane Groups               1         0,03
+Nav Pane Groups               1         0,04
 --------------------------------------------------
-TOTALS:                       68        4,40
+TOTALS:                       80        5,53
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     16        0,04
-Parse JSON                    12        0,04
-Convert to JSON               559       0,49
-Compute SHA256                25        0,00
-Console Updates               4         0,16
-Compare Dictionary            10        0,00
-Get Modified Date             5         0,00
-Get File Property Hash        5         0,00
-Clear Orphaned                7         0,25
-Verify Path                   13        0,01
+Read File                     29        0,40
+Parse JSON                    20        0,05
+Convert to JSON               689       0,57
+Compute SHA256                40        0,00
+Console Updates               5         0,44
+Compare Dictionary            18        0,00
+Get Modified Date             17        0,01
+Get File Property Hash        17        0,01
+Clear Orphaned                7         0,26
+Verify Path                   29        0,01
 Write to Disk                 4         0,01
 Create Folder                 1         0,00
 Export Theme                  1         0,00
 Extract Theme                 1         1,98
-App.SaveAsText()              2         0,23
-Delete File                   4         0,01
-Read File Bytes               3         0,08
-Sanitize File                 2         0,04
-Write File                    5         0,01
-Save Query SQL                1         0,00
-Get VBA Hash                  28        0,02
-Read File DevMode             1         0,00
-App.ExportXML()               1         0,14
+Save Table SQL                8         0,07
+Write File                    17        0,02
+App.SaveAsText()              5         0,31
+Delete File                   8         0,01
+Read File Bytes               8         0,10
+Sanitize File                 5         0,07
+Save Query SQL                2         0,00
+Get VBA Hash                  29        0,02
+Read File DevMode             3         0,00
+Increment Progress            1         0,03
+App.ExportXML()               1         0,34
 Sanitize XML                  1         0,00
-Format XML                    1         0,02
+Format XML                    1         0,03
+Export VBE Module             1         0,01
+Enc. Windows-1252 as utf-8    1         0,02
 --------------------------------------------------
-Other Operations                        1,51
+Other Operations                        1,72
 --------------------------------------------------
 
 
