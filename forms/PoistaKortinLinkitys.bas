@@ -763,12 +763,12 @@ Public Sub Poista_Click()
     
     
     Dim success As Boolean
-    Dim Table As String
-    Dim Values As String
+    Dim table As String
+    Dim values As String
     Dim Target As String
     
-    Table = "Kortit"
-    Values = "Omistaja = '" & newOwner & "' , " _
+    table = "Kortit"
+    values = "Omistaja = '" & newOwner & "' , " _
     & "PVM = '" & Date & "' ," _
     & "Puumerkki = '" & Puumerkki & "' ," _
     & "Muistiinpanot = '" & Muistiinpano & "' "
@@ -778,7 +778,7 @@ Public Sub Poista_Click()
     'Jätetäänpä nämä sittenkin talteen käyttäjän alle heh heh...
     
     If (Not (deletebool)) Then
-        success = Common.InsertOrUpdate(Table, Values, Target)
+        success = Common.InsertOrUpdate(table, values, Target)
     
         If Not (success) Then
             MsgBox ("Jotain meni pieleen sori siitä!")

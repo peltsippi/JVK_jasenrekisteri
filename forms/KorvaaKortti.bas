@@ -653,16 +653,16 @@ Public Sub Korvaa_Click()
     oldCardID = Common.FetchCardID(oldCard)
     newCardID = Common.FetchCardID(newCard)
     
-    Dim Table As String
-    Dim Values As String
-    Values = "Kortti = " & newCardID & ", Puumerkki = '" & Puumerkki & "'"
+    Dim table As String
+    Dim values As String
+    values = "Kortti = " & newCardID & ", Puumerkki = '" & Puumerkki & "'"
     Dim Target As String
     Target = "Kortti = " & oldCardID
     '5. move charges
     'MsgBox ("Move charges")
-    Table = "Lataukset"
-    If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only when there is something to be moved..
-        succs = Common.InsertOrUpdate(Table, Values, Target)
+    table = "Lataukset"
+    If (Common.CheckIfRecordFound(table, Target) > 0) Then 'do only when there is something to be moved..
+        succs = Common.InsertOrUpdate(table, values, Target)
     End If
     
     succs = Common.SaveToLog("Kortin korvaus - lataukset siirretty kortilta " & oldCard & " kortille " & newCard & ".")
@@ -718,10 +718,10 @@ Public Sub Korvaa_Click()
     
     '6. move payments
     'MsgBox ("Move payments")
-    Table = "Maksut"
+    table = "Maksut"
     'MsgBox ("Table: " & Table & " values : " & Values & " target: " & Target)
-    If (Common.CheckIfRecordFound(Table, Target) > 0) Then 'do only if there are something to be moved..
-        succs = Common.InsertOrUpdate(Table, Values, Target)
+    If (Common.CheckIfRecordFound(table, Target) > 0) Then 'do only if there are something to be moved..
+        succs = Common.InsertOrUpdate(table, values, Target)
     End If
     'MsgBox ("Lataukset ja maksut siirretty vanhalta kortilta uudelle")
     succs = Common.SaveToLog("Kortin korvaus - maksut siirretty kortilta " & oldCard & " kortille " & newCard & ".")

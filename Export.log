@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-5.2.2023 13.45.10
+5.2.2023 19.28.02
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -43,50 +43,40 @@ Exporting themes...
 No modified imex specs found in this database.
 -------------------------------------
 Exporting tables...           
-  Hinnasto
-  Hinnasto (SQL)
-  Historia
-  Historia (SQL)
-  Kortit
-  Kortit (SQL)
-  Korttitilasto
-  Korttitilasto (SQL)
   Lataukset
   Lataukset (SQL)
-  Maksut
-  Maksut (SQL)
-  Maksutavat
-  Maksutavat (SQL)
-  Yhteystiedot
-  Yhteystiedot (SQL)
-[8]
+[1]
 -------------------------------------
 Exporting queries...          
-  ListaaKaikkiYhteystiedot
+  haeKorttiTyypit
+    Sanitized in 0,006 seconds.
+  haeKorttiTyypit (SQL)
+  LatausListaus
 Source: modSanitize.SanitizeFile
-    Sanitized in 0,004 seconds.
-  ListaaKaikkiYhteystiedot (SQL)
+    Sanitized in 0,003 seconds.
+  LatausListaus (SQL)
   ListaaKortitJaLataukset
 Source: modSanitize.SanitizeFile
     Sanitized in 0,002 seconds.
   ListaaKortitJaLataukset (SQL)
-[2]
+[3]
 -------------------------------------
 Exporting forms...            
-  Tervetuloa
-    Sanitized in 0,044 seconds.
-[1]
+  PoistaKortinLinkitys
+    Sanitized in 0,014 seconds.
+  RekisteroiLataus
+    Sanitized in 0,041 seconds.
+  KorvaaKortti
+    Sanitized in 0,012 seconds.
+[3]
 -------------------------------------
-Exporting macros...           
-  AutoExec
-    Sanitized in 0,002 seconds.
-[1]
+No modified macros found in this database.
 -------------------------------------
 No modified reports found in this database.
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,033 seconds.
+    Sanitized in 0,043 seconds.
 [1]
 -------------------------------------
 Exporting modules...          
@@ -107,7 +97,7 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (7,43 seconds)
+Done. (6,22 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
@@ -115,57 +105,56 @@ Done. (7,43 seconds)
 Object Type                   Count     Seconds
 --------------------------------------------------
 Project                       1         0,04
-VB Project                    1         0,04
-VBE References                2         0,05
-DB Properties                 53        0,29
+VB Project                    1         0,03
+VBE References                2         0,04
+DB Properties                 53        0,37
 Shared Images                 4         0,12
-Themes                        1         2,09
-Tables                        8         0,59
-Queries                       2         0,65
-Forms                         1         2,43
-Macros                        1         0,03
-Table Data                    1         0,28
+Themes                        1         1,94
+Tables                        1         0,09
+Queries                       3         0,45
+Forms                         3         1,96
+Table Data                    1         0,32
 Modules                       1         0,05
 Doc Properties                2         0,04
-Nav Pane Groups               1         0,03
+Nav Pane Groups               1         0,04
 --------------------------------------------------
-TOTALS:                       79        6,72
+TOTALS:                       74        5,49
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     26        0,39
-Parse JSON                    20        0,06
-Convert to JSON               655       0,46
-Compute SHA256                37        0,01
-Console Updates               5         0,23
-Compare Dictionary            18        0,00
-Get Modified Date             16        0,01
-Get File Property Hash        16        0,02
-Clear Orphaned                7         0,33
-Verify Path                   27        0,01
+Read File                     22        0,18
+Parse JSON                    12        0,04
+Convert to JSON               567       0,48
+Compute SHA256                36        0,01
+Console Updates               4         0,13
+Compare Dictionary            10        0,00
+Get Modified Date             11        0,01
+Get File Property Hash        11        0,01
+Clear Orphaned                8         0,35
+Verify Path                   25        0,01
 Write to Disk                 4         0,01
-Create Folder                 2         0,00
+Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         2,04
-Save Table SQL                8         0,11
-Write File                    16        0,02
-App.SaveAsText()              4         0,34
-Delete File                   6         0,01
-Read File Bytes               5         0,18
-Sanitize File                 4         0,05
-Save Query SQL                2         0,00
-Increment Progress            1         0,25
-Get VBA Hash                  29        0,03
-Read File DevMode             1         0,00
-App.ExportXML()               1         0,22
-Sanitize XML                  1         0,00
+Extract Theme                 1         1,90
+Save Table SQL                1         0,02
+Write File                    12        0,02
+App.SaveAsText()              6         0,44
+Delete File                   12        0,01
+Read File Bytes               9         0,18
+Sanitize File                 6         0,07
+Save Query SQL                3         0,01
+Get VBA Hash                  31        0,03
+Read File DevMode             3         0,00
+Increment Progress            1         0,06
+App.ExportXML()               1         0,24
+Sanitize XML                  1         0,01
 Format XML                    1         0,03
 Export VBE Module             1         0,01
 Enc. Windows-1252 as utf-8    1         0,03
 --------------------------------------------------
-Other Operations                        2,66
+Other Operations                        1,99
 --------------------------------------------------
 
 

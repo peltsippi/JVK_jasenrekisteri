@@ -182,11 +182,11 @@ Public Function FetchExiprationDate(card As String) As Date
         
 End Function
 
-Public Function FetchGeneralID(Table As String, desiredID As String, criteria As String) As Integer
+Public Function FetchGeneralID(table As String, desiredID As String, criteria As String) As Integer
     Dim queryString As String
     Dim sqlRecords As DAO.Recordset
     
-    queryString = "SELECT " & desiredID & " FROM " & Table & " WHERE " & criteria
+    queryString = "SELECT " & desiredID & " FROM " & table & " WHERE " & criteria
     'MsgBox (queryString)
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
     
@@ -204,9 +204,9 @@ Public Function FetchGeneralID(Table As String, desiredID As String, criteria As
     
 End Function
 
-Public Function CheckIfRecordFound(Table As String, criteria As String) As Integer
+Public Function CheckIfRecordFound(table As String, criteria As String) As Integer
     Dim queryString As String
-    queryString = "SELECT * FROM " & Table & " WHERE " & criteria
+    queryString = "SELECT * FROM " & table & " WHERE " & criteria
     
     Dim sqlRecords As DAO.Recordset
     Set sqlRecords = CurrentDb.OpenRecordset(queryString)
@@ -245,7 +245,7 @@ Public Function SaveToLog(message As String)
 
 End Function
 
-Public Function InsertOrUpdate(Table As String, Values As String, Target As String) As Boolean
+Public Function InsertOrUpdate(table As String, values As String, Target As String) As Boolean
 
 '   Readme: use always [[ key = value, key = value, key = value ]] syntax!
 '   note: spaces are extremely important!
@@ -265,7 +265,7 @@ Public Function InsertOrUpdate(Table As String, Values As String, Target As Stri
         toInsert = True
     Else
         Dim checkforrows As Integer
-        checkforrows = Common.CheckIfRecordFound(Table, Target)
+        checkforrows = Common.CheckIfRecordFound(table, Target)
         'MsgBox (checkforrows)
         
         If (checkforrows > 1) Or (checkforrows < 1) Then
@@ -290,7 +290,7 @@ Public Function InsertOrUpdate(Table As String, Values As String, Target As Stri
         
         Dim insertValues As String
         
-        array1 = Split(Values, ", ") ' separate each value pair as its own unit
+        array1 = Split(values, ", ") ' separate each value pair as its own unit
         
         Dim first As Boolean
         first = True
@@ -316,10 +316,10 @@ Public Function InsertOrUpdate(Table As String, Values As String, Target As Stri
         part2 = part2 & " ) "
         insertValues = part1 & part2
         
-        queryString = "INSERT INTO " & Table & " " & insertValues
+        queryString = "INSERT INTO " & table & " " & insertValues
         
     Else
-        queryString = "UPDATE " & Table & " SET " & Values & " WHERE " & Target
+        queryString = "UPDATE " & table & " SET " & values & " WHERE " & Target
 
     End If
     
@@ -562,18 +562,18 @@ End Function
 
 Public Function GetCardOwner(cardNumber As String) As Integer
     Dim cardOwner As Integer
-    Dim Table As String
+    Dim table As String
     Dim wantedColumn As String
     Dim criteria As String
     
-    Table = "Kortit"
+    table = "Kortit"
     wantedColumn = "Omistaja"
     criteria = "Kortti = '" & cardNumber & "'"
     
-    If (Common.CheckIfRecordFound(Table, criteria) < 1) Then
+    If (Common.CheckIfRecordFound(table, criteria) < 1) Then
         GetCardOwner = -1
     Else
-        GetCardOwner = Common.FetchGeneralID(Table, wantedColumn, criteria)
+        GetCardOwner = Common.FetchGeneralID(table, wantedColumn, criteria)
     End If
 
 End Function
@@ -799,15 +799,15 @@ Public Function GetDBPath() As String
     '---------------------------------------------------------------------------------------
     'https://www.access-programmers.co.uk/forums/threads/get-current-path-of-linked-table.198057/
     
-    Dim Table As String
+    Dim table As String
     Dim db As DAO.Database
     Dim tdf As DAO.TableDef
     Dim i As Long
     
-    Table = "Kortit" ' just a fixed table name
+    table = "Kortit" ' just a fixed table name
     
     Set db = DBEngine.Workspaces(0).Databases(0)
-    Set tdf = db.TableDefs(Table)
+    Set tdf = db.TableDefs(table)
     
     GetDBPath = Mid(tdf.Connect, InStr(1, tdf.Connect, "=") + 1)
 

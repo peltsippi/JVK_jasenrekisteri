@@ -16,10 +16,10 @@ Begin Form
     GridY =10
     Width =6827
     DatasheetFontHeight =11
-    ItemSuffix =419
+    ItemSuffix =421
     Left =4740
     Top =3468
-    Right =18432
+    Right =22788
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -28,7 +28,6 @@ Begin Form
     Caption ="Rekisteröi lataus"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
-    OnGotFocus ="[Event Procedure]"
     OnLoad ="[Event Procedure]"
     AllowDatasheetView =0
     FilterOnLoad =0
@@ -335,7 +334,7 @@ Begin Form
                     Top =108
                     Width =3768
                     Height =336
-                    TabIndex =6
+                    TabIndex =5
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Kortti"
@@ -392,23 +391,22 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3876
+                    Top =3888
                     Width =3768
                     Height =336
-                    TabIndex =7
+                    TabIndex =6
                     ForeColor =4210752
                     Name ="Hinta"
                     Format ="#,##0.00 €;-#,##0.00 €"
                     FontName ="Calibri"
-                    OnChange ="[Event Procedure]"
                     GroupTable =2
                     BottomPadding =150
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3876
+                    LayoutCachedTop =3888
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =4212
+                    LayoutCachedHeight =4224
                     RowStart =6
                     RowEnd =6
                     ColumnStart =1
@@ -426,7 +424,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3876
+                            Top =3888
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -438,9 +436,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3876
+                            LayoutCachedTop =3888
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4212
+                            LayoutCachedHeight =4224
                             RowStart =6
                             RowEnd =6
                             LayoutGroup =2
@@ -457,10 +455,10 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =4428
+                    Top =4440
                     Width =3768
                     Height =336
-                    TabIndex =8
+                    TabIndex =7
                     ForeColor =4210752
                     Name ="Voimassa"
                     Format ="Short Date"
@@ -472,9 +470,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =4428
+                    LayoutCachedTop =4440
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =4764
+                    LayoutCachedHeight =4776
                     RowStart =7
                     RowEnd =7
                     ColumnStart =1
@@ -491,7 +489,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =4428
+                            Top =4440
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -503,9 +501,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =4428
+                            LayoutCachedTop =4440
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =4764
+                            LayoutCachedHeight =4776
                             RowStart =7
                             RowEnd =7
                             LayoutGroup =2
@@ -550,7 +548,7 @@ Begin Form
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =3372
+                    Top =3384
                     Width =3768
                     Height =288
                     TabIndex =3
@@ -564,9 +562,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =3372
+                    LayoutCachedTop =3384
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =3660
+                    LayoutCachedHeight =3672
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -583,7 +581,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =3372
+                            Top =3384
                             Width =1980
                             Height =288
                             Name ="Selite176"
@@ -593,9 +591,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =3372
+                            LayoutCachedTop =3384
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3660
+                            LayoutCachedHeight =3672
                             RowStart =5
                             RowEnd =5
                             LayoutGroup =2
@@ -652,7 +650,7 @@ Begin Form
                     Top =7368
                     Width =5952
                     Height =672
-                    TabIndex =5
+                    TabIndex =9
                     ForeColor =4210752
                     Name ="ragequit"
                     Caption ="Sulje"
@@ -757,6 +755,7 @@ Begin Form
                     RowSource ="\"0\""
                     DefaultValue ="\"0\""
                     FontName ="Calibri"
+                    OnGotFocus ="[Event Procedure]"
                     OnChange ="[Event Procedure]"
                     GroupTable =2
                     BottomPadding =150
@@ -813,17 +812,16 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     Locked = NotDefault
-                    BorderWidth =3
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =4980
+                    Top =4968
                     Width =3768
                     Height =336
-                    TabIndex =9
+                    TabIndex =8
                     ForeColor =4210752
                     Name ="Korttityyppi"
                     FontName ="Calibri"
@@ -832,9 +830,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =4980
+                    LayoutCachedTop =4968
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =5316
+                    LayoutCachedHeight =5304
                     RowStart =8
                     RowEnd =8
                     ColumnStart =1
@@ -851,7 +849,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =4980
+                            Top =4968
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -863,9 +861,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =4980
+                            LayoutCachedTop =4968
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =5316
+                            LayoutCachedHeight =5304
                             RowStart =8
                             RowEnd =8
                             LayoutGroup =2
@@ -904,16 +902,17 @@ Begin Form
                     GroupTable =13
                 End
                 Begin TextBox
+                    BorderWidth =2
                     OverlapFlags =215
                     TextFontCharSet =177
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
                     Left =2412
-                    Top =2820
+                    Top =2832
                     Width =3768
                     Height =336
-                    BorderColor =10921638
+                    BorderColor =5167783
                     ForeColor =4210752
                     Name ="aloituspvm"
                     Format ="Short Date"
@@ -924,14 +923,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2412
-                    LayoutCachedTop =2820
+                    LayoutCachedTop =2832
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =3156
+                    LayoutCachedHeight =3168
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
+                    BorderThemeColorIndex =-1
+                    BorderShade =100.0
                     GroupTable =2
                     Begin
                         Begin Label
@@ -941,7 +942,7 @@ Begin Form
                             TextAlign =1
                             TextFontFamily =0
                             Left =336
-                            Top =2820
+                            Top =2832
                             Width =1980
                             Height =336
                             BorderColor =8355711
@@ -953,9 +954,9 @@ Begin Form
                             BottomPadding =150
                             GridlineColor =10921638
                             LayoutCachedLeft =336
-                            LayoutCachedTop =2820
+                            LayoutCachedTop =2832
                             LayoutCachedWidth =2316
-                            LayoutCachedHeight =3156
+                            LayoutCachedHeight =3168
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =2
@@ -983,6 +984,7 @@ Begin Form
                     RowSourceType ="Table/Query"
                     RowSource ="haeKorttiTyypit"
                     FontName ="Calibri"
+                    OnGotFocus ="[Event Procedure]"
                     OnChange ="[Event Procedure]"
                     GroupTable =2
                     BottomPadding =150
@@ -1055,10 +1057,7 @@ Private Sub aloituspvm_Change()
     checksum = Paivita_UI()
 End Sub
 
-Private Sub Form_GotFocus()
-    [Form_RekisteroiLataus].aloituspvm.SelStart = 0
-    [Form_RekisteroiLataus].aloituspvm.SelLength = 5
-End Sub
+
 
 Private Sub Form_Load()
     Dim checksum As Integer
@@ -1087,6 +1086,10 @@ Private Sub KKmaara_Change()
     checksum = Paivita_UI()
 End Sub
 
+Private Sub KKmaara_GotFocus()
+    [Form_RekisteroiLataus].KKmaara.Dropdown
+End Sub
+
 Private Sub korttiTyyppiValinta_Change()
     'add code to switch stuff here...
     [Form_RekisteroiLataus].KKmaara.RowSourceType = "Table/Query"
@@ -1105,6 +1108,10 @@ Private Sub korttiTyyppiValinta_Change()
         [Form_RekisteroiLataus].pituusSelite.Caption = "Kuukautta"
     End If
     [Form_RekisteroiLataus].Puumerkki.Visible = True
+End Sub
+
+Private Sub korttiTyyppiValinta_GotFocus()
+    [Form_RekisteroiLataus].korttiTyyppivalinta.Dropdown
 End Sub
 
 Private Sub Puumerkki_AfterUpdate()
@@ -1130,16 +1137,26 @@ Public Sub SaveStuff()
     Dim Hinta As Currency
     Dim voimassaOlo As Date
     Dim arvot As String
+    Dim vanhanKortinVoimassaOlo As Date
+    Dim startDate As Date
     
-    
+
     'check that all required info is ok
     
+    
+    If IsNull([Form_RekisteroiLataus].aloituspvm) Then
+        MsgBox ("Päivämäärää ei asetettu, peruutetaan toiminto!")
+        Exit Sub
+    Else
+        startDate = [Form_RekisteroiLataus].aloituspvm.Value
+    End If
     
     If IsNull([Form_Tervetuloa].Korttivalinta) Then
         MsgBox ("Korttia ei valittu pääikkunasta, ei voida jatkaa!")
         Exit Sub
     Else
         Kortti = [Form_RekisteroiLataus].Kortti.Value
+        vanhanKortinVoimassaOlo = Common.FetchExiprationDate(Kortti)
     End If
 
 
@@ -1188,7 +1205,50 @@ Public Sub SaveStuff()
     success = Common.InsertOrUpdate("Lataukset", arvot, "")
 
     Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & voimassaOlo & " ja hinta: " & Hinta)
-
+    
+    'If old charge date is newer than new charge start date do stuff
+    If (vanhanKortinVoimassaOlo > startDate) Then
+        Dim succs
+        
+        Dim criteria, table As String
+        
+        query = "UPDATE Lataukset SET Voimassa = '" & startDate & "' WHERE Voimassa = DateValue('" & vanhanKortinVoimassaOlo & " ') And Kortti = " & kortti_id
+        
+        succs = Common.SQLQuery(query)
+        
+        succs = Common.SaveToLog("Kortin " & card_id & " edellisen latauksen voimassaoloa lyhennetty samalla")
+        
+        'MsgBox (succs)
+        
+        
+        'Dim values, table, criteria As String
+        
+        'table = "Lataukset"
+        'criteria = "Voimassa = DateFormat('" & vanhanKortinVoimassaOlo & "') AND Kortti = " & kortti_id
+        'values = "Voimassa = '" & startDate & "'"
+        'succs = Common.InsertOrUpdate(table, values, criteria)
+        
+        'query = "SELECT PID FROM Lataukset WHERE Voimassa = '" & vanhanKortinVoimassaOlo & "' AND Kortti = " & kortti_id
+        
+        'MsgBox (query)
+        
+        'succs = Common.SQLQuery(query)
+        
+        'Dim values, criteria, table As String
+        'table = "Lataukset"
+        'values = "Voimassa = '" & startDate & "'"
+        'criteria = "Voimassa = '" & vanhanKortinVoimassaOlo & "' , Kortti = " & kortti_id
+        'criteria = "Kortti = " & kortti_id
+        'MsgBox (table)
+        'MsgBox (values)
+        'MsgBox (criteria)
+        'MsgBox (Voimassa)
+        'MsgBox (startDate)
+        'MsgBox ("Testi")
+        'succs = Common.InsertOrUpdate(table, values, criteria)
+        
+        
+    End If
     Dim retval
     retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
 
@@ -1240,6 +1300,16 @@ Else
 
 End If
 
+
+'and update calculations if enough data in form
+    'if
+If Not (IsNull([Form_RekisteroiLataus].korttiTyyppivalinta.Value) Or IsNull([Form_RekisteroiLataus].aloituspvm.Value) Or IsNull([Form_RekisteroiLataus].korttiTyyppivalinta) Or IsNull([Form_RekisteroiLataus].KKmaara)) Then
+    'MsgBox ("All data properly filled")
+    Dim succs
+    succs = UpdateCardPrice()
+    succs = UpdateDueDate()
+End If
+    
 
 End Function
 
