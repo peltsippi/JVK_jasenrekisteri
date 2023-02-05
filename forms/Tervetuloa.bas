@@ -18,10 +18,10 @@ Begin Form
     Width =9708
     DatasheetFontHeight =11
     ItemSuffix =295
-    Left =6552
-    Top =144
-    Right =16260
-    Bottom =11400
+    Left =4740
+    Top =3468
+    Right =18432
+    Bottom =11712
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -31,7 +31,6 @@ Begin Form
     OnClose ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     OnGotFocus ="[Event Procedure]"
-    AllowDatasheetView =0
     OnSelectionChange ="[Event Procedure]"
     FilterOnLoad =0
     ShowPageMargins =0

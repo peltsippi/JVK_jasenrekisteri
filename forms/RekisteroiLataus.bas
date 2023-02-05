@@ -18,8 +18,8 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =419
     Left =4740
-    Top =3456
-    Right =22788
+    Top =3468
+    Right =18432
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -28,6 +28,7 @@ Begin Form
     Caption ="Rekisteröi lataus"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
+    OnGotFocus ="[Event Procedure]"
     OnLoad ="[Event Procedure]"
     AllowDatasheetView =0
     FilterOnLoad =0
@@ -334,6 +335,7 @@ Begin Form
                     Top =108
                     Width =3768
                     Height =336
+                    TabIndex =6
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Kortti"
@@ -393,7 +395,7 @@ Begin Form
                     Top =3876
                     Width =3768
                     Height =336
-                    TabIndex =4
+                    TabIndex =7
                     ForeColor =4210752
                     Name ="Hinta"
                     Format ="#,##0.00 €;-#,##0.00 €"
@@ -458,7 +460,7 @@ Begin Form
                     Top =4428
                     Width =3768
                     Height =336
-                    TabIndex =5
+                    TabIndex =8
                     ForeColor =4210752
                     Name ="Voimassa"
                     Format ="Short Date"
@@ -612,7 +614,7 @@ Begin Form
                     Top =6480
                     Width =5952
                     Height =696
-                    TabIndex =7
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Save"
                     Caption ="Tallenna"
@@ -650,7 +652,7 @@ Begin Form
                     Top =7368
                     Width =5952
                     Height =672
-                    TabIndex =8
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="ragequit"
                     Caption ="Sulje"
@@ -821,7 +823,7 @@ Begin Form
                     Top =4980
                     Width =3768
                     Height =336
-                    TabIndex =6
+                    TabIndex =9
                     ForeColor =4210752
                     Name ="Korttityyppi"
                     FontName ="Calibri"
@@ -911,7 +913,6 @@ Begin Form
                     Top =2820
                     Width =3768
                     Height =336
-                    TabIndex =9
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="aloituspvm"
@@ -1052,6 +1053,11 @@ Option Compare Database
 Private Sub aloituspvm_Change()
     Dim checksum As Integer
     checksum = Paivita_UI()
+End Sub
+
+Private Sub Form_GotFocus()
+    [Form_RekisteroiLataus].aloituspvm.SelStart = 0
+    [Form_RekisteroiLataus].aloituspvm.SelLength = 5
 End Sub
 
 Private Sub Form_Load()

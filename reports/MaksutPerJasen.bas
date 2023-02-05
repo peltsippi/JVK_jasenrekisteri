@@ -12,8 +12,8 @@ Begin Report
     GridY =10
     Width =11520
     DatasheetFontHeight =11
-    ItemSuffix =17
-    Left =2556
+    ItemSuffix =19
+    Left =4740
     Top =3468
     RecSrcDt = Begin
         0x6afb30f83cd6e540
@@ -102,8 +102,6 @@ Begin Report
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =2
-            BackTint =20.0
             Begin
                 Begin Label
                     Left =57
@@ -137,17 +135,40 @@ Begin Report
                     LayoutCachedTop =113
                     LayoutCachedWidth =5553
                     LayoutCachedHeight =850
+                    TabIndex =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =6236
+                    Top =170
+                    Width =4706
+                    Height =576
+                    FontWeight =700
+                    BackColor =14277081
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus18"
+                    ControlSource ="=[Forms]![Tervetuloa]![RaportitAlku] & \" - \" & [Forms]![Tervetuloa]![RaportitL"
+                        "oppu]"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6236
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =10942
+                    LayoutCachedHeight =746
+                    BackShade =85.0
                 End
             End
         End
         Begin PageHeader
             Visible = NotDefault
             Height =414
+            BackColor =15527148
             Name ="SivunYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
             Begin
                 Begin Label
                     TextAlign =1
@@ -249,10 +270,10 @@ Begin Report
         Begin BreakHeader
             KeepTogether = NotDefault
             Height =369
-            BackColor =-2147483611
+            BackColor =15527148
             Name ="RyhmänYlätunniste0"
             AutoHeight =1
-            AlternateBackColor =-2147483611
+            AlternateBackColor =15527148
             Begin
                 Begin TextBox
                     OldBorderStyle =0
@@ -298,7 +319,6 @@ Begin Report
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
         End
         Begin BreakHeader
             KeepTogether = NotDefault
@@ -309,11 +329,9 @@ Begin Report
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
         End
         Begin Section
             Height =369
-            BackColor =-2147483610
             Name ="Tiedot"
             AutoHeight =1
             AlternateBackColor =-2147483610

@@ -14,7 +14,7 @@ Begin Report
     Width =15120
     DatasheetFontHeight =11
     ItemSuffix =16
-    Left =4044
+    Left =4740
     Top =3468
     RecSrcDt = Begin
         0x8f0bb9bd5ec7e540
@@ -90,8 +90,6 @@ Begin Report
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =2
-            BackTint =20.0
             Begin
                 Begin Label
                     Left =1360
@@ -129,8 +127,8 @@ Begin Report
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =6066
-                    Top =283
+                    Left =6916
+                    Top =113
                     Width =4706
                     Height =576
                     FontWeight =700
@@ -143,21 +141,21 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =6066
-                    LayoutCachedTop =283
-                    LayoutCachedWidth =10772
-                    LayoutCachedHeight =859
+                    LayoutCachedLeft =6916
+                    LayoutCachedTop =113
+                    LayoutCachedWidth =11622
+                    LayoutCachedHeight =689
                     BackShade =85.0
                 End
             End
         End
         Begin PageHeader
             Height =414
+            BackColor =15527148
             Name ="SivunYlätunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
             Begin
                 Begin Label
                     TextAlign =3
@@ -261,9 +259,7 @@ Begin Report
             Height =426
             Name ="Tiedot"
             AutoHeight =1
-            AlternateBackThemeColorIndex =1
-            AlternateBackShade =95.0
-            BackThemeColorIndex =1
+            AlternateBackColor =14211288
             Begin
                 Begin TextBox
                     OldBorderStyle =0
@@ -372,11 +368,11 @@ Begin Report
         End
         Begin PageFooter
             Height =540
+            BackColor =15527148
             Name ="SivunAlatunniste"
             AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
             Begin
                 Begin TextBox
                     OldBorderStyle =0
