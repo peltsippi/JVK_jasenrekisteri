@@ -19,8 +19,8 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =295
     Left =4740
-    Top =3468
-    Right =18432
+    Top =3456
+    Right =22788
     Bottom =11712
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
@@ -1728,7 +1728,7 @@ End Sub
 
 Private Sub Form_Close()
     Dim succs
-    succs = Common.DoBackup(1)  'do not back up unless latest is over 1 days old!
+    succs = Common.DoBackup(0)  'undo the time check... just do the backup..
     succs = Common.WriteStats 'write stats to own table
     succs = Common.SaveToLog("Sovellus suljettu")
 End Sub
@@ -1743,7 +1743,6 @@ End Sub
 
 Private Sub Form_Open(Cancel As Integer)
     Dim succs
-    succs = Common.Reconnect()
     succs = Common.EnableDisableButtons()
     succs = Common.SendMessageToMainScreen("Tervetuloa!")
     succs = Common.SaveToLog("Jäsenrekisteri avattiin")
@@ -1785,77 +1784,26 @@ Private Sub KorjaaTietoja_Click()
 End Sub
 
 Private Sub korjaaTietokannanLinkitys_Click()
-    'NOTE TO SELF: lisää toiminnallisuus tähän!
-    '1. pop-up kysymään tietokannan nimi ja polku?
-    '2. oletko varma ok ja cancel
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " aloitti tietokannan uudelleenlinkitystoiminnon")
-    'Dim fDialog As Office.FileDialog
-    Const msoFileDialogFilePicker As Long = 3
-    Dim FD As Object
-    Dim file As Variant
     
-    'Dim varFile As Variant
-    'Me.FileList.RowSource = ""
-    'Set fDialog = Application.FileDialog(msoFileDialogFilePicker)
-    Set FD = Application.FileDialog(msoFileDialogFilePicker)
-    With FD
- 
-      ' Allow user to make multiple selections in dialog box
-      .AllowMultiSelect = False
-             
-      ' Set the title of the dialog box.
-      .Title = "Valitse tietokantatiedosto"
- 
-      ' Clear out the current filters, and add our own.
-      .Filters.Clear
-      .Filters.Add "Access Databases", "*.accdb"
- 
-      ' Show the dialog box. If the .Show method returns True, the
-      ' user picked at least one file. If the .Show method returns
-      ' False, the user clicked Cancel.
-      If .Show = True Then
-      
-        Dim response
-        For Each entry In .selectedItems  ' Grab the path/name of the selected file
-            file = entry 'only last file is picked... not sure how to hande this more sensibly..
-        Next
-
-        response = MsgBox("Valittu tiedosto: " & file & ", oletko varma?", vbOKCancel, "Vahvista tietokannan valinta")
-        
-        'MsgBox (response)
-        If response = 1 Then
-        
-            'then just refresh db link to actual database...
+    Dim returnValue
+    returnValue = Common.ReplaceDatabaseFile()
             
-            Dim connectionString As String
-            Dim tbl As TableDef
-            Dim db As Database
-            
-            connectionString = ("MS Access;DATABASE=" & file)
-            Set db = CurrentDb
-            For Each tbl In db.TableDefs
-                If Len(tbl.Connect) > 0 Then
-                    'MsgBox tbl.Connect 'If you're getting errors, uncomment this to see connection string syntax
-                    tbl.Connect = connectionString
-                    tbl.RefreshLink
-                End If
-            Next
-            succs = Common.SaveToLog("Tietokantatiedostoksi päivitetty " & file)
-            succs = Common.SendMessageToMainScreen("Tietokantatiedosto päivitetty")
-            
-        Else
-            'peruutettu
-            succs = Common.SaveToLog("Toiminto peruutettu vahvistusikkunasta (2/2)")
-            succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
-            
-        End If
- 
-      Else
-         succs = Common.SaveToLog("Toiminto peruutettu tiedostonvalintaikkunasta (1/2)")
-         succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
-      End If
-   End With
+    If (returnValue = 0) Then
+        succs = Common.SaveToLog("Tietokantatiedostoksi päivitetty " & File)
+        succs = Common.SendMessageToMainScreen("Tietokantatiedosto päivitetty")
+    End If
+    
+    If (returnValue = 1) Then
+        succs = Common.SaveToLog("Toiminto peruutettu vahvistusikkunasta (2/2)")
+        succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
+    End If
+    
+    If (returnValue = 2) Then
+        succs = Common.SaveToLog("Toiminto peruutettu tiedostonvalintaikkunasta (1/2)")
+        succs = Common.SendMessageToMainScreen("Tietokantatiedoston päivitys peruutettu")
+    End If
 End Sub
     
 
@@ -1917,68 +1865,7 @@ End Sub
 Private Sub KorvaaRikkinainenKortti_Click()
     DoCmd.OpenForm "KorvaaKortti"
     
-    'MsgBox ("Humpan juoni: " & vbNewLine _
-    '& "1. tehdään uusi kortti " & vbNewLine _
-    '& "2. tehdään uudelle kortille lataus " & vbNewLine _
-    '& "3. korjataan kortin maksuihin liittyvät jutut " & vbNewLine _
-    '& "4. merkataan vanha kortti rikkinäiseksi/kadonneeksi." & vbNewLine _
-    '& "Täytä vaan ruutuja sitä mukaa, kun niitä hyppii ja kaikki menee hyvin!")
-    'vai: varmista, että ruuduissa olevat tiedot on ok ja paina ok?!?
-    
-    
-    
-    'Dim oldCard As String
-    'oldCard = Form_Tervetuloa.Korttivalinta.Value
-    
-    'Dim initials As String
-    'initials = InputBox("Nimikirjaimet tai jotain vastaavaa", "Anna puumerkkisi", "NN")
-    
-    'Dim newCard As String
-    'newCard = InputBox("Kortti muodossa 4 numeroa", "Anna uuden kortin numero", 1234)
-    
-    'Dim succs
-    'succs = Common.SaveToLog(initials & " aloitti kortin " & oldCard & " korvaamisen kortilla " & newCard)
-    'logitus jo tästä pisteestä asti ihan vaan siksi..
-    
-    'If MsgBox("Tehdään uusi kortti " & newCard & vbNewLine & "Meneehän varmasti oikein?", vbYesNo) = vbNo Then Exit Sub
-
-    
-    'DoCmd.OpenForm "LisaaKortinLinkitys"
-    'Form_LisaaKortinLinkitys.Korttinro.Value = newCard
-    'Form_LisaaKortinLinkitys.Puumerkki.Value = initials
-    'Form_LisaaKortinLinkitys.Refresh
-    'Form_LisaaKortinLinkitys.Puumerkki.Visible = True
-    'Form_LisaaKortinLinkitys.Linkita.Visible = True
-    'Form_LisaaKortinLinkitys.Linkita_Click
-    
-    
-    'If MsgBox("Siirretään kaikki lataukset ja maksut kortilta " & oldCard & " kortille " & newCard & vbNewLine & "Tätä on hankala korjata jälkikäteen, oletko aivan varma?", vbYesNo) = vbNo Then Exit Sub
-    
-    'Dim oldCardID As Integer
-    'Dim newCardID As Integer
-    
-    'oldCardID = Common.FetchCardID(oldCard)
-    'newCardID = Common.FetchCardID(newCard)
-    
-    'Dim Table As String
-    'Table = "Lataukset"
-    'Dim Values As String
-    'Values = "Kortti=" & newCardID
-    'Dim Target As String
-    'Target = "Kortti=" & oldCardID
-    'succs = Common.InsertOrUpdate(Table, Values, Target)
-    'Table = "Maksut"
-    'succs = Common.InsertOrUpdate(Table, Values, Target)
-    
-    'MsgBox ("Vanhan kortin lataukset ja suoritetut maksut siirretty uudelle kortille")
-    
-    'DoCmd.OpenForm "PoistaKortinLinkitys"
-    'Form_PoistaKortinLinkitys.Puumerkki.Value = initials
-    'Form_PoistaKortinLinkitys.discard.Value = True
-    'Form_PoistaKortinLinkitys.Muistiinpano.Value = "Kortin korvaus"
-    'Form_PoistaKortinLinkitys.Poista_Click
-    
-    'MsgBox ("Valmista tuli!")
+ 
     
 End Sub
 

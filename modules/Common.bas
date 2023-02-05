@@ -681,3 +681,134 @@ For i = 0 To db.TableDefs.Count - 1
     End If
 Next
 End Function
+
+Public Function ReplaceDatabaseFile() As Integer
+
+Const msoFileDialogFilePicker As Long = 3
+    Dim FD As Object
+    Dim File As Variant
+    
+    'Dim varFile As Variant
+    'Me.FileList.RowSource = ""
+    'Set fDialog = Application.FileDialog(msoFileDialogFilePicker)
+    Set FD = Application.FileDialog(msoFileDialogFilePicker)
+    With FD
+ 
+      ' Allow user to make multiple selections in dialog box
+      .AllowMultiSelect = False
+             
+      ' Set the title of the dialog box.
+      .Title = "Valitse tietokantatiedosto"
+ 
+      ' Clear out the current filters, and add our own.
+      .Filters.Clear
+      .Filters.Add "Access Databases", "*.accdb"
+ 
+      ' Show the dialog box. If the .Show method returns True, the
+      ' user picked at least one file. If the .Show method returns
+      ' False, the user clicked Cancel.
+      If .Show = True Then
+      
+        Dim response
+        For Each entry In .selectedItems  ' Grab the path/name of the selected file
+            File = entry 'only last file is picked... not sure how to hande this more sensibly..
+        Next
+
+        response = MsgBox("Valittu tiedosto: " & File & ", oletko varma?", vbOKCancel, "Vahvista tietokannan valinta")
+        
+        'MsgBox (response)
+        If response = 1 Then
+        
+            'then just refresh db link to actual database...
+            
+            Dim connectionString As String
+            Dim tbl As TableDef
+            Dim db As Database
+            
+            connectionString = ("MS Access;DATABASE=" & File)
+            Set db = CurrentDb
+            For Each tbl In db.TableDefs
+                If Len(tbl.Connect) > 0 Then
+                    'MsgBox tbl.Connect 'If you're getting errors, uncomment this to see connection string syntax
+                    tbl.Connect = connectionString
+                    tbl.RefreshLink
+                End If
+            Next
+            ReplaceDatabaseFile = 0
+        Else
+            'peruutettu
+            ReplaceDatabaseFile = 1
+            
+        End If
+ 
+      Else
+         ReplaceDatabaseFile = 2
+      End If
+   End With
+End Function
+
+Public Function CheckIfFileExists(ByVal path_ As String) As Boolean
+    CheckIfFileExists = (Len(Dir(path_)) > 0)
+
+End Function
+
+Public Function CheckDatabaseFile()
+    
+     Dim DBFile As String
+     
+     DBFile = Common.GetDBPath
+     
+     If Not (CheckIfFileExists(DBFile)) Then
+        MsgBox ("Tietokantatiedosto hukassa, tiedosto on etsittävä ennen kuin voit jatkaa. " & vbNewLine _
+        & "Alkuperäinen tiedosto: " & DBFile)
+        Dim succs
+        succs = ReplaceDatabaseFile
+        MsgBox ("Tietokantatiedosto vaihdettu, käynnistä jäsenrekisteri uusiksi että muutokset astuu voimaan")
+        'DoCmd.CloseDatabase
+        DoCmd.Quit
+        'CurrentProject.CloseConnection
+        'Dim project As String
+        'project = CurrentProject.FullName
+        'CurrentProject.CloseConnection
+        'CurrentProject.OpenConnection
+        'DoCmd.OpenForm ([Form_Tervetuloa])
+     End If
+     'MsgBox (Common.GetDBPath)
+    'If Not (CheckIfFileExists(Application.CurrentProject.FullName)) Then
+    '    MsgBox ("Tietokantatiedosto hukassa, tiedosto on etsittävä ennen kuin voit jatkaa.")
+    '    Dim succs
+    '    succs = ReplaceDatabaseFile
+    'End If
+    
+End Function
+
+Public Function GetDBPath() As String
+
+    'thx http://www.ammara.com/access_image_faq/get_mdb_database_path.html
+    'and
+    '---------------------------------------------------------------------------------------
+    ' Procedure : GetLinkedTablePath
+    ' Author    : Daniel Pineault, CARDA Consultants Inc.
+    ' Website   : http://www.cardaconsultants.com
+    'plus:
+    '---------------------------------------------------------------------------------------
+    ' Procedure : GetCurrentPath
+    ' DateTime  : 08/23/2010
+    ' Author    : Rx
+    ' Purpose   : Returns Current Path of a Linked Table in Access
+    '---------------------------------------------------------------------------------------
+    'https://www.access-programmers.co.uk/forums/threads/get-current-path-of-linked-table.198057/
+    
+    Dim Table As String
+    Dim db As DAO.Database
+    Dim tdf As DAO.TableDef
+    Dim i As Long
+    
+    Table = "Kortit" ' just a fixed table name
+    
+    Set db = DBEngine.Workspaces(0).Databases(0)
+    Set tdf = db.TableDefs(Table)
+    
+    GetDBPath = Mid(tdf.Connect, InStr(1, tdf.Connect, "=") + 1)
+
+End Function
