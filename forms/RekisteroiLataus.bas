@@ -1084,6 +1084,8 @@ End Sub
 Private Sub KKmaara_Change()
     Dim checksum As Integer
     checksum = Paivita_UI()
+    [Form_RekisteroiLataus].Puumerkki.SetFocus
+    
 End Sub
 
 Private Sub KKmaara_GotFocus()
@@ -1108,6 +1110,8 @@ Private Sub korttiTyyppiValinta_Change()
         [Form_RekisteroiLataus].pituusSelite.Caption = "Kuukautta"
     End If
     [Form_RekisteroiLataus].Puumerkki.Visible = True
+    
+    [Form_RekisteroiLataus].KKmaara.SetFocus
 End Sub
 
 Private Sub korttiTyyppiValinta_GotFocus()
@@ -1122,6 +1126,8 @@ End Sub
 Private Sub Puumerkki_Change()
     Dim checksum As Integer
     checksum = Paivita_UI()
+    '[Form_RekisteroiLataus].Save.SetFocus 'this does not work! And seems to be hard to implement...
+    
     
 End Sub
 
@@ -1193,7 +1199,7 @@ Public Sub SaveStuff()
     Dim kortti_id As Integer
     kortti_id = Common.FetchCardID(Kortti)
     'MsgBox (kortti_id)
-    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & voimassaOlo & "' , Puumerkki = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & Date & "'")
+    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & voimassaOlo & "' , Puumerkki = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & startDate & "'")
     'MsgBox (arvot)
     
     'Dim preventDuplicates As String
