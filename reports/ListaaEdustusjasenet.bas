@@ -13,9 +13,9 @@ Begin Report
     GridY =10
     Width =11520
     DatasheetFontHeight =11
-    ItemSuffix =7
-    Left =4044
-    Top =3456
+    ItemSuffix =12
+    Left =4740
+    Top =3468
     RecSrcDt = Begin
         0x811cbb66ffc6e540
     End
@@ -83,6 +83,17 @@ Begin Report
         Begin BreakLevel
             ControlSource ="Sukunimi"
         End
+        Begin BreakLevel
+            ControlSource ="Sukunimi"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            ControlSource ="Sukunimi"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            ControlSource ="Kortti"
+        End
         Begin FormHeader
             KeepTogether = NotDefault
             Height =927
@@ -94,6 +105,8 @@ Begin Report
             BackTint =20.0
             Begin
                 Begin Label
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =1984
                     Top =226
                     Width =3444
@@ -2766,70 +2779,30 @@ Begin Report
             End
         End
         Begin PageHeader
-            Height =414
+            Height =0
             Name ="SivunYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
-            Begin
-                Begin Label
-                    TextAlign =1
-                    Left =342
-                    Top =57
-                    Width =3288
-                    Height =300
-                    FontWeight =700
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="Sukunimi_Selite"
-                    Caption ="Sukunimi"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =342
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =3630
-                    LayoutCachedHeight =357
-                End
-                Begin Label
-                    TextAlign =1
-                    Left =3687
-                    Top =57
-                    Width =3288
-                    Height =300
-                    FontWeight =700
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="Etunimi_Selite"
-                    Caption ="Etunimi"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3687
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =6975
-                    LayoutCachedHeight =357
-                End
-            End
         End
-        Begin Section
+        Begin BreakHeader
             KeepTogether = NotDefault
-            Height =426
-            Name ="Tiedot"
-            AutoHeight =1
-            AlternateBackThemeColorIndex =1
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =396
+            BreakLevel =2
+            BackColor =12566463
+            Name ="RyhmänYlätunniste1"
             AlternateBackShade =95.0
-            BackThemeColorIndex =1
             Begin
                 Begin TextBox
                     OldBorderStyle =0
-                    Left =342
-                    Top =57
+                    BackStyle =0
+                    Left =113
+                    Top =56
                     Width =3288
                     Height =312
+                    FontWeight =700
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Sukunimi"
@@ -2837,17 +2810,19 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =342
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =3630
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =113
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3401
+                    LayoutCachedHeight =368
                 End
                 Begin TextBox
                     OldBorderStyle =0
-                    Left =3687
-                    Top =57
+                    BackStyle =0
+                    Left =3458
+                    Top =56
                     Width =3288
                     Height =312
+                    FontWeight =700
                     TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
@@ -2856,10 +2831,109 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3687
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =6975
-                    LayoutCachedHeight =369
+                    LayoutCachedLeft =3458
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =6746
+                    LayoutCachedHeight =368
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =453
+            BreakLevel =3
+            Name ="RyhmänYlätunniste0"
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    Left =3344
+                    Top =56
+                    Width =3288
+                    Height =312
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus9"
+                    ControlSource ="Kortti"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3344
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =6632
+                    LayoutCachedHeight =368
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =113
+                            Top =56
+                            Width =3012
+                            Height =276
+                            FontWeight =700
+                            BorderColor =8355711
+                            ForeColor =6710886
+                            Name ="Selite11"
+                            Caption ="Kortti:"
+                            FontName ="Calibri"
+                            Tag ="DetachedLabel"
+                            GridlineStyleBottom =1
+                            GridlineColor =10921638
+                            LayoutCachedLeft =113
+                            LayoutCachedTop =56
+                            LayoutCachedWidth =3125
+                            LayoutCachedHeight =332
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =396
+            Name ="Tiedot"
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    Left =56
+                    Top =56
+                    Width =3288
+                    Height =312
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus7"
+                    ControlSource ="Ajankohta"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =56
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3344
+                    LayoutCachedHeight =368
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    Left =3458
+                    Top =56
+                    Width =3288
+                    Height =312
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus8"
+                    ControlSource ="Korttityyppi"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3458
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =6746
+                    LayoutCachedHeight =368
                 End
             End
         End
@@ -2873,7 +2947,9 @@ Begin Report
             Begin
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =1
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =57
                     Top =228
@@ -2894,7 +2970,9 @@ Begin Report
                 End
                 Begin TextBox
                     OldBorderStyle =0
+                    TextFontCharSet =177
                     TextAlign =3
+                    TextFontFamily =0
                     IMESentenceMode =3
                     Left =6423
                     Top =228

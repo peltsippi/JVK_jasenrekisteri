@@ -3,7 +3,7 @@ Beginning Export of all Source
 JVK_jasenrekisteri.accdb
 VCS Version 3.4.20
 Using Fast Save
-5.2.2023 21.28.46
+8.2.2023 15.29.53
 -------------------------------------
 -------------------------------------
 Exporting project...          
@@ -45,23 +45,40 @@ No modified imex specs found in this database.
 No modified tables found in this database.
 -------------------------------------
 Exporting queries...          
-  haeKorttiTyypit
+  Hae nimi
+Source: modSanitize.SanitizeFile
     Sanitized in 0,006 seconds.
+  Hae nimi (SQL)
+  haeKorttiTyypit
+    Sanitized in 0,004 seconds.
   haeKorttiTyypit (SQL)
-[1]
+  KaikkiLatauksetKorttinumerolla
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,004 seconds.
+  KaikkiLatauksetKorttinumerolla (SQL)
+  ListaaEdustusjasenet
+Source: modSanitize.SanitizeFile
+    Sanitized in 0,002 seconds.
+  ListaaEdustusjasenet (SQL)
+[4]
 -------------------------------------
 Exporting forms...            
   RekisteroiLataus
-    Sanitized in 0,037 seconds.
-[1]
+    Sanitized in 0,047 seconds.
+  LatausOhje
+    Sanitized in 0,018 seconds.
+[2]
 -------------------------------------
 No modified macros found in this database.
 -------------------------------------
-No modified reports found in this database.
+Exporting reports...          
+  ListaaEdustusjasenet
+    Sanitized in 0,021 seconds.
+[1]
 -------------------------------------
 Exporting table data...       
   Hinnasto
-    Sanitized in 0,042 seconds.
+    Sanitized in 0,043 seconds.
 [1]
 -------------------------------------
 No modified modules found in this database.
@@ -80,58 +97,60 @@ Exporting nav pane groups...
 -------------------------------------
 No modified hidden attributes found in this database.
 -------------------------------------
-Done. (5,22 seconds)
+Done. (9,79 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Object Type                   Count     Seconds
 --------------------------------------------------
-Project                       1         0,03
-VB Project                    1         0,03
-VBE References                2         0,04
-DB Properties                 53        0,30
-Shared Images                 4         0,10
-Themes                        1         1,75
-Queries                       1         0,21
-Forms                         1         1,71
-Table Data                    1         0,29
+Project                       1         0,13
+VB Project                    1         0,04
+VBE References                2         0,05
+DB Properties                 53        0,42
+Shared Images                 4         0,12
+Themes                        1         2,07
+Queries                       4         1,04
+Forms                         2         1,66
+Reports                       1         0,15
+Table Data                    1         0,33
 Doc Properties                2         0,04
-Nav Pane Groups               1         0,03
+Nav Pane Groups               1         0,04
 --------------------------------------------------
-TOTALS:                       68        4,51
+TOTALS:                       73        6,08
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Read File                     15        0,14
-Parse JSON                    11        0,03
-Convert to JSON               521       0,37
-Compute SHA256                25        0,00
-Console Updates               4         0,14
-Compare Dictionary            9         0,00
-Get Modified Date             5         0,00
-Get File Property Hash        5         0,00
-Clear Orphaned                8         0,35
-Verify Path                   13        0,00
+Read File                     23        0,28
+Parse JSON                    12        0,03
+Convert to JSON               593       0,57
+Compute SHA256                32        0,03
+Console Updates               5         3,05
+Compare Dictionary            10        0,00
+Get Modified Date             10        0,01
+Get File Property Hash        10        0,01
+Clear Orphaned                8         0,42
+Verify Path                   26        0,01
 Write to Disk                 4         0,01
 Create Folder                 1         0,00
 Export Theme                  1         0,00
-Extract Theme                 1         1,70
-App.SaveAsText()              2         0,26
-Delete File                   4         0,00
-Read File Bytes               3         0,10
-Sanitize File                 2         0,04
-Write File                    5         0,01
-Save Query SQL                1         0,00
-Get VBA Hash                  28        0,02
-Read File DevMode             1         0,00
-App.ExportXML()               1         0,21
+Extract Theme                 1         2,02
+App.SaveAsText()              7         0,70
+Delete File                   10        0,01
+Read File Bytes               10        0,29
+Sanitize File                 7         0,09
+Write File                    13        0,02
+Save Query SQL                4         0,01
+Increment Progress            2         0,13
+Get VBA Hash                  28        0,03
+Read File DevMode             3         0,01
+App.ExportXML()               1         0,24
 Sanitize XML                  1         0,01
-Format XML                    1         0,03
+Format XML                    1         0,04
 --------------------------------------------------
-Other Operations                        1,82
+Other Operations                        1,80
 --------------------------------------------------
 
 

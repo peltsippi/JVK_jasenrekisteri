@@ -15,7 +15,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =70
     Left =4740
-    Top =3456
+    Top =3468
     Right =18432
     Bottom =11712
     RecSrcDt = Begin
@@ -420,6 +420,7 @@ Private Sub Form_Open(Cancel As Integer)
     Dim krtMaara As Integer
     Dim AikaRyhma As String
     Dim voimassaOlo As String
+    Dim alkuPv As Date
     
     Dim kertaKortti As Boolean
     kertaKortti = False
@@ -431,6 +432,7 @@ Private Sub Form_Open(Cancel As Integer)
         KorttiNumero = [Form_RekisteroiLataus].Kortti.Value
         KorttiTyyppi = [Form_RekisteroiLataus].korttiTyyppivalinta.Value
         voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
+        alkuPv = [Form_RekisteroiLataus].aloituspvm.Value
         
         If (KorttiTyyppi = "krt") Then
             krtMaara = [Form_RekisteroiLataus].KKmaara.Value
@@ -460,7 +462,7 @@ Private Sub Form_Open(Cancel As Integer)
     End If
     
     [Form_LatausOhje].Voimassa.Value = voimassaOlo
-    [Form_LatausOhje].Tanaan.Value = Date
+    [Form_LatausOhje].Tanaan.Value = alkuPv
     
 End Sub
 

@@ -19,8 +19,8 @@ Begin Form
     ItemSuffix =421
     Left =4740
     Top =3468
-    Right =22788
-    Bottom =11712
+    Right =12108
+    Bottom =12372
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0x84756ccb9ec6e540
@@ -1213,6 +1213,7 @@ Public Sub SaveStuff()
     Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & voimassaOlo & " ja hinta: " & Hinta)
     
     'If old charge date is newer than new charge start date do stuff
+    If (startDate > Date) Then 'and this is so if you add a charge retroactively that things will not go badly sour...
     If (vanhanKortinVoimassaOlo > startDate) Then
         Dim succs
         
@@ -1224,36 +1225,8 @@ Public Sub SaveStuff()
         
         succs = Common.SaveToLog("Kortin " & card_id & " edellisen latauksen voimassaoloa lyhennetty samalla")
         
-        'MsgBox (succs)
         
-        
-        'Dim values, table, criteria As String
-        
-        'table = "Lataukset"
-        'criteria = "Voimassa = DateFormat('" & vanhanKortinVoimassaOlo & "') AND Kortti = " & kortti_id
-        'values = "Voimassa = '" & startDate & "'"
-        'succs = Common.InsertOrUpdate(table, values, criteria)
-        
-        'query = "SELECT PID FROM Lataukset WHERE Voimassa = '" & vanhanKortinVoimassaOlo & "' AND Kortti = " & kortti_id
-        
-        'MsgBox (query)
-        
-        'succs = Common.SQLQuery(query)
-        
-        'Dim values, criteria, table As String
-        'table = "Lataukset"
-        'values = "Voimassa = '" & startDate & "'"
-        'criteria = "Voimassa = '" & vanhanKortinVoimassaOlo & "' , Kortti = " & kortti_id
-        'criteria = "Kortti = " & kortti_id
-        'MsgBox (table)
-        'MsgBox (values)
-        'MsgBox (criteria)
-        'MsgBox (Voimassa)
-        'MsgBox (startDate)
-        'MsgBox ("Testi")
-        'succs = Common.InsertOrUpdate(table, values, criteria)
-        
-        
+    End If
     End If
     Dim retval
     retval = Common.SendMessageToMainScreen("Lataus kortille " & Kortti & " rekisteröity!")
@@ -1359,7 +1332,7 @@ Public Function UpdateDueDate()
     
     If ([Form_RekisteroiLataus].korttiTyyppivalinta.Value = "krt") Then
         months = 24
-        [Form_RekisteroiLataus].aloituspvm.Value = Date
+        '[Form_RekisteroiLataus].aloituspvm.Value = Date
     Else
         months = [Form_RekisteroiLataus].KKmaara.Value
     End If
