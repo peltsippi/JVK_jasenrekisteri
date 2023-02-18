@@ -176,8 +176,8 @@ Link cards:	User: Cameron Francis (98)
 
 Card 6963 (102):
 Add charge:
-		17.4.2019	10 krt	(30.4.2026)		50€
-		10.2.2023	3 kk	(15.5.2023)		100€
+		today		10 krt	(today + 2 y + rounded to 15./30.)		50€
+		today + 2w	3 kk	(today + 2w + 3m + rounded to 15./30.)		100€
 Add payments:
 		17.4.2019	käteinen	105 €
 
@@ -191,7 +191,7 @@ Link cards:	User: Keane Mendez (99)
 
 Card 9133 (103):
 Add charge:
-		18.11.2022	6 kk	(31.5.2023)		190€
+		today	6 kk	(today + 6m rounded to 15./30. day)		190€
 Add payments:
 		1.12.2022	tilisiirto	190 €
 
@@ -206,7 +206,7 @@ Link cards:	User: Chantale Alexander (100)
 
 Card 1142 (104):
 Add charge:
-		14.6.2021	12 kk	(15.6.2022)		320€
+		today	12 kk	(today + 12m rounded to 15./30. day)		330€
 Add payments:	
 	15.6.2021	käteinen	100 €
 	15.7.2021	käteinen	20 €
