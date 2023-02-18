@@ -13,9 +13,9 @@ Begin Report
     GridY =10
     Width =11520
     DatasheetFontHeight =11
-    ItemSuffix =12
+    ItemSuffix =14
     Left =4740
-    Top =3468
+    Top =3456
     RecSrcDt = Begin
         0x811cbb66ffc6e540
     End
@@ -96,9 +96,8 @@ Begin Report
         End
         Begin FormHeader
             KeepTogether = NotDefault
-            Height =927
+            Height =1077
             Name ="RaportinYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =2
@@ -2775,6 +2774,45 @@ Begin Report
                     LayoutCachedTop =56
                     LayoutCachedWidth =1077
                     LayoutCachedHeight =792
+                    TabIndex =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =6633
+                    Top =453
+                    Width =4706
+                    Height =576
+                    FontWeight =700
+                    BackColor =14277081
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Muokkaus14"
+                    ControlSource ="=[Forms]![Tervetuloa]![RaportitAlku] & \" - \" & [Forms]![Tervetuloa]![RaportitL"
+                        "oppu]"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6633
+                    LayoutCachedTop =453
+                    LayoutCachedWidth =11339
+                    LayoutCachedHeight =1029
+                    BackShade =85.0
+                End
+                Begin Label
+                    Left =6689
+                    Top =56
+                    Width =4422
+                    Height =397
+                    BorderColor =8355711
+                    ForeColor =6710886
+                    Name ="Selite13"
+                    Caption ="Korttien lataukset listattu ajanjaksolla:"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =6689
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =11111
+                    LayoutCachedHeight =453
                 End
             End
         End

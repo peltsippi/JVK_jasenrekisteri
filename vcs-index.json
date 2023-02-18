@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": "20.2.2022 21.03.11",
-    "ExportDate": "8.2.2023 15.30.00",
+    "ExportDate": "18.2.2023 22.25.04",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -127,7 +127,7 @@
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "8.2.2023 15.29.54",
+          "ExportDate": "18.2.2023 22.24.58",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "d8b2ae7",
           "ImportDate": "20.2.2022 21.03.04"
@@ -240,9 +240,9 @@
           "ImportDate": "20.2.2022 21.03.06"
         },
         "LatausLoppumassaAjanjaksolla.bas": {
-          "ExportDate": "12.10.2022 21.13.56",
-          "SourceModified": "12.10.2022 21.13.56",
-          "FilePropertiesHash": "e54d9ef"
+          "ExportDate": "18.2.2023 22.25.01",
+          "SourceModified": "18.2.2023 22.25.01",
+          "FilePropertiesHash": "bcd30ca"
         },
         "LataustaAjanjaksolla.bas": {
           "ExportDate": "12.10.2022 21.13.56",
@@ -250,9 +250,9 @@
           "FilePropertiesHash": "c19f93f"
         },
         "ListaaEdustusjasenet.bas": {
-          "ExportDate": "8.2.2023 15.29.58",
-          "SourceModified": "8.2.2023 15.29.58",
-          "FilePropertiesHash": "dd30000",
+          "ExportDate": "18.2.2023 22.25.02",
+          "SourceModified": "18.2.2023 22.25.02",
+          "FilePropertiesHash": "acd3715",
           "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaKaikkiYhteystiedot.bas": {
@@ -362,9 +362,9 @@
           "FilePropertiesHash": "accea5b"
         },
         "ListaaEdustusjasenet.bas": {
-          "ExportDate": "8.2.2023 15.30.00",
-          "SourceModified": "8.2.2023 15.30.00",
-          "FilePropertiesHash": "6c51bff",
+          "ExportDate": "18.2.2023 22.25.03",
+          "SourceModified": "18.2.2023 22.25.03",
+          "FilePropertiesHash": "11654ef",
           "ImportDate": "20.2.2022 21.03.08"
         },
         "ListaaMaksut.bas": {
@@ -483,7 +483,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "8.2.2023 15.29.54",
+          "ExportDate": "18.2.2023 22.24.58",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "2e1693d",
           "ImportDate": "20.2.2022 21.03.04"
@@ -492,7 +492,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "8.2.2023 15.29.54",
+          "ExportDate": "18.2.2023 22.24.59",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "f110692",
           "ImportDate": "20.2.2022 21.03.04"
