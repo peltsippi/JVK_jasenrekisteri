@@ -42,88 +42,88 @@ x=Done	Step	Task	Subtask
 
 Etunimi		Sukunimi	Email								Puhelin				Kotipaikka				Jäsenyys	Edustusjäsen
 -------------------------------------------------------------------------------------------------------------------------------------
-Alden		Mccall		vestibulum.massa@aol.org			(034578) 814263		Samsun					Jäsen		EPÄTOSI	
+x Alden		Mccall		vestibulum.massa@aol.org			(034578) 814263		Samsun					Jäsen		EPÄTOSI	
+x
+x Link cards:	User: Alden Mccall (91)
+x 		4085	
+x 		9756	!!This is wrong card, should not get through!!!
+x		8816
+x		
+xCard 4085 (91)	
+xAdd charge: 
+x		16.11.2019 	12 kk	(30.11.2020)		320€
+xAdd payments: 
+x		18.11.2019 	Edenred		280 €
+x		20.12.2019	Käteinen	40 €
 
-Link cards:	User: Alden Mccall (91)
-		4085	
-		9756	!!This is wrong card, should not get through!!!
-		8816
-		
-Card 4085 (91)	
-Add charge: 
-		16.11.2019 	12 kk	(30.11.2020)		320€
-Add payments: 
-		18.11.2019 	Edenred		280 €
-		20.12.2019	Käteinen	40 €
-
-Card 8816 (92)		
-Add charge: 
-		11.4.2013	6 kk	(15.10.2013)		180€
-Add payments:
-		16.4.2013	Tilisiirto	180 €
--------------------------------------------------------------------------------------------------------------------------------------
-
-Vincent		Vance		elit.nulla.facilisi@protonmail.org	(036656) 471644		Piemonte				Jäsen		EPÄTOSI	
-
-Link cards:	User: Vincent Vance (92)
-		6055	
-		3045
-
-Card 6055 (93):
-Add charge: 
-		25.1.2017	3 kk	(30.4.2017)		110€
-Add payments:
-		24.1.2017	Käteinen	50 €
-		15.2.2017	Tilisiirto	45 €
-		
-Card 3045 (94):		
-Add charge:	
-		11.6.2014	12 kk	(15.6.2015)		320€
-Add payments:
-		14.6.2014	tilisiirto	320 €
--------------------------------------------------------------------------------------------------------------------------------------
-	
-Armando		Farley		sed.pede.cum@icloud.ca				(02834) 3713551		Franche-Comté			Jäsen		EPÄTOSI	
-
-Link cards:	User: Armando Farley (93)
-		1410	
-		0763	!!This is wrong card, should not get through!!! If this goes through, your Kortit -import has failed!
-		1074	
-
-Card 1410 (95):
-Add charge:
-		11.12.2010	12 kk	(15.12.2011)		320€
-Add payments:
-		12.12.2010	käteinen	160 €
-		15.2.2011	käteinen	160 €
-		
-Card 1074 (96):
-Add charge:
-		1.3.2015	6 kk	(15.9.2015)		190€
-Add payments:
-		5.3.2015	tilisiirto	190 €
-		
--------------------------------------------------------------------------------------------------------------------------------------
-
-Zena		Buckner		magna.duis@protonmail.com			(025) 11150164		Vestfold og Telemark	Jäsen		EPÄTOSI	
-
-Link cards:	User: Zena Buckner (94)
-		6867
-		1010
-
-Card 6867 (97):
-Add charge:
-		6.11.2013	12 kk	(15.11.2014)		320€
-Add payments:
-		3.11.2013	tilisiirto	320 €
-
-
-Card 1010 (98):
-Add charge:
-		12.9.2021	6 kk	(15.3.2022)		190€
-Add payments:
-		15.9.2021	tilisiirto	190 €
-		
+xCard 8816 (92)		
+xAdd charge: 
+x		11.4.2013	6 kk	(15.10.2013)		180€
+xAdd payments:
+x		16.4.2013	Tilisiirto	180 €
+x------------------------------------------------------------------------------------------------------------------------------------
+x
+xVincent		Vance		elit.nulla.facilisi@protonmail.org	(036656) 471644		Piemonte				Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Vincent Vance (92)
+x		6055	
+x		3045
+x
+xCard 6055 (93):
+xAdd charge: 
+x		25.1.2017	3 kk	(30.4.2017)		110€
+xAdd payments:
+x		24.1.2017	Käteinen	50 €
+x		15.2.2017	Tilisiirto	45 €
+x		
+xCard 3045 (94):		
+xAdd charge:	
+x		11.6.2014	12 kk	(15.6.2015)		320€
+xAdd payments:
+x		14.6.2014	tilisiirto	320 €
+x-------------------------------------------------------------------------------------------------------------------------------------
+x	
+xArmando		Farley		sed.pede.cum@icloud.ca				(02834) 3713551		Franche-Comté			Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Armando Farley (93)
+x		1410	
+x		0763	!!This is wrong card, should not get through!!! If this goes through, your Kortit -import has failed!
+x		1074	
+x
+xCard 1410 (95):
+xAdd charge:
+x		11.12.2010	12 kk	(15.12.2011)		320€
+xAdd payments:
+x		12.12.2010	käteinen	160 €
+x		15.2.2011	käteinen	160 €
+x		
+xCard 1074 (96):
+xAdd charge:
+x		1.3.2015	6 kk	(15.9.2015)		190€
+xAdd payments:
+x		5.3.2015	tilisiirto	190 €
+x		
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xZena		Buckner		magna.duis@protonmail.com			(025) 11150164		Vestfold og Telemark	Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Zena Buckner (94)
+x		6867
+x		1010
+x
+xCard 6867 (97):
+xAdd charge:
+x		6.11.2013	12 kk	(15.11.2014)		320€
+xAdd payments:
+x		3.11.2013	tilisiirto	320 €
+x
+x
+xCard 1010 (98):
+xAdd charge:
+x		12.9.2021	6 kk	(15.3.2022)		190€
+xAdd payments:
+x		15.9.2021	tilisiirto	190 €
+x		
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Quemby		Cervantes	a.magna@yahoo.edu					(037745) 980571		Samsun					Jäsen		EPÄTOSI	
