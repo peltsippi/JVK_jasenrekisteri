@@ -18,7 +18,7 @@ Begin Form
     ItemSuffix =49
     Left =4740
     Top =3456
-    Right =22788
+    Right =18432
     Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
@@ -684,6 +684,7 @@ Public Sub Korvaa_Click()
     'MsgBox (chargeType)
     
     Form_LatausOhje.Voimassa.Value = expiration
+    Form_LatausOhje.Tanaan.Value = Date
     
     If (InStr(1, chargeType, "krt")) Then
         cardType = "Määräkortti"
