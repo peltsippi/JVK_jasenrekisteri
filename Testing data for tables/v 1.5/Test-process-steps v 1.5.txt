@@ -124,236 +124,243 @@ x		12.9.2021	6 kk	(15.3.2022)		190€
 xAdd payments:
 x		15.9.2021	tilisiirto	190 €
 x		
--------------------------------------------------------------------------------------------------------------------------------------
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xQuemby		Cervantes	a.magna@yahoo.edu					(037745) 980571		Samsun					Jäsen		EPÄTOSI	
+xx
+xLink cards:	User: Quemby Cervantes (95)
+x		8767
+x
+xCard 8767 (99):
+xAdd charge:
+x		27.5.2012	12 kk	(31.5.2013)		320€
+xAdd payments:
+x		30.5.2012	käteinen	200 €
+x		1.8.2012	tilisiirto	120 €
+x
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xDelilah		Trevino		tellus.justo@hotmail.org			(035335) 979555		West Bengal				Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Delilah Trevino (96)
+x		2640
+x
+xCard 2640 (100):
+xAdd charge:
+x		19.10.2013	9 kk	(31.7.2014)		260€
+xAdd payments:
+x		21.10.2013	tilisiirto	260 €
+x	
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xYuli		Tyler		nec.malesuada@aol.edu				(038321) 196169		Zhōngnán				Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Yuli Tyler (97)
+x		4672
+x
+xCard 4672 (101):
+xAdd charge:
+x		15.3.2014	12 kk	(15.3.2015)		320€
+x		now - 2 months)	10 krt	(now + 22 m)		50€
+**** Bug discovered: start date not calculated correctly!!!!******
+**
+**Actually... I just forgot how this is supposed to be used....
+** NOTE TO SELF: ONE NEEDS TO ALWAYS PUT CORRECT DATE TO START DATE!!!
+** Should we just add nagging popup to remind that start date is way off?
+**
+*******************
+x		now				10 krt	(now + 2 y)			50€
+x		
+xAdd payments:
+x		20.3.2014	tilisiirto	150 €
+x		20.5.2014	tilisiirto	150 €
+x		1.6.2014	smartum		120 €
+x
+x
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xCameron		Francis		facilisis.suspendisse@google.com	(01643) 5310603		Kogi					Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Cameron Francis (98)
+x		6963
+x
+xCard 6963 (102):
+xAdd charge:
+x		today		10 krt	(today + 2 y + rounded to 15./30.)		50€
+x		today + 2w	3 kk	(today + 2w + 3m + rounded to 15./30.)		110€
+xAdd payments:
+x		17.4.2019	käteinen	105 €
+x
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xKeane		Mendez		blandit.nam@outlook.ca				(032156) 585611		Paraíba					Jäsen		EPÄTOSI	
+x	
+x
+xLink cards:	User: Keane Mendez (99)
+x		9133
+x
+xCard 9133 (103):
+xAdd charge:
+x		today	6 kk	(today + 6m rounded to 15./30. day)		190€
+xAdd payments:
+x		1.12.2022	tilisiirto	190 €
+x
+x-------------------------------------------------------------------------------------------------------------------------------------
+x
+xChantale	Alexander	per@protonmail.couk					(0573) 21316848		Vestland				Jäsen		EPÄTOSI	
+x
+xLink cards:	User: Chantale Alexander (100)
+x		1142
+x
+x
+x
+xCard 1142 (104):
+xAdd charge:
+x		today	12 kk	(today + 12m rounded to 15./30. day)		330€
+x		31.12.2015	12 kk		20.12.2014			330€
+xAdd payments:	
+x	15.6.2021	käteinen	100 €
+x	15.7.2021	käteinen	20 €
+x	1.9.2021	smartum		430 €
+x
+x--------------------------------------------------------------------------------------------------------------------------------------
+x
+x
+x
+x
+x
+x	6.	Edit charges from cards (admin mode, initials ABC)
+x
+x		card 1809 (25)
+x		24.12.2018 -> 31.12.2018
+x
+x		card 0360 (37)
+x		14.1.2023 -> 15.1.2023
+x
+x		card 8894 (81)
+x		16.2.2018 -> 15.2.2018
+x
+x
+x	7.	Edit payments from cards (admin mode, initials ABC)
+x
+x		Card 6963 (102)
+x		17.4.2019	käteinen	5€ -> 50 €  *** this was 105€!!! edited to 150€!
+x
+x		card 0578 (75)
+x		24.1.2015	tilisiirto	324 € -> 150 €
+x
+x		card 0763 (12)
+x		19.5.2018	epassi		150 € -> 50 €
+x
+x
+x	8.	Replace cards (4 + 2 pcs)
+x
+x
+x		card 1987 (12) 
+x			-> 0238  !! This should fail and not complete at all!!
+x			-> 1445  (105)
+x
+x		card 0160 (38)
+x			-> 4073 !! This should fail and not complete at all!!
+x			-> 1745 (106)
+x
+x		card 5743 (26)
+x			-> 2512 (107)
+x
+x
+x	xx.	Delete cards
+x	
+x		Card 5424 (68)
+x			Initials: ABC
+x			Comment: Väärä kortti
+x		Card 8269 (80)
+x			Initials: ABC
+x			Comment: Väärä kortti
 
-Quemby		Cervantes	a.magna@yahoo.edu					(037745) 980571		Samsun					Jäsen		EPÄTOSI	
 
-Link cards:	User: Quemby Cervantes (95)
-		8767
-
-Card 8767 (99):
-Add charge:
-		27.5.2012	12 kk	(31.5.2013)		320€
-Add payments:
-		30.5.2012	käteinen	200 €
-		1.8.2012	tilisiirto	120 €
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Delilah		Trevino		tellus.justo@hotmail.org			(035335) 979555		West Bengal				Jäsen		EPÄTOSI	
-
-Link cards:	User: Delilah Trevino (96)
-		2640
-
-Card 2640 (100):
-Add charge:
-		19.10.2013	9 kk	(31.7.2014)		260€
-Add payments:
-		21.10.2013	tilisiirto	260 €
-	
--------------------------------------------------------------------------------------------------------------------------------------
-
-Yuli		Tyler		nec.malesuada@aol.edu				(038321) 196169		Zhōngnán				Jäsen		EPÄTOSI	
-
-Link cards:	User: Yuli Tyler (97)
-		4672
-
-Card 4672 (101):
-Add charge:
-		15.3.2014	12 kk	(15.3.2015)		320€
-		now - 2 months)	10 krt	(now + 22 m)		50€
-		now				10 krt	(now + 2 y)			50€
-		
-Add payments:
-		20.3.2014	tilisiirto	150 €
-		20.5.2014	tilisiirto	150 €
-		1.6.2014	smartum		120 €
-
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Cameron		Francis		facilisis.suspendisse@google.com	(01643) 5310603		Kogi					Jäsen		EPÄTOSI	
-
-Link cards:	User: Cameron Francis (98)
-		6963
-
-Card 6963 (102):
-Add charge:
-		today		10 krt	(today + 2 y + rounded to 15./30.)		50€
-		today + 2w	3 kk	(today + 2w + 3m + rounded to 15./30.)		100€
-Add payments:
-		17.4.2019	käteinen	105 €
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Keane		Mendez		blandit.nam@outlook.ca				(032156) 585611		Paraíba					Jäsen		EPÄTOSI	
-	
-
-Link cards:	User: Keane Mendez (99)
-		9133
-
-Card 9133 (103):
-Add charge:
-		today	6 kk	(today + 6m rounded to 15./30. day)		190€
-Add payments:
-		1.12.2022	tilisiirto	190 €
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Chantale	Alexander	per@protonmail.couk					(0573) 21316848		Vestland				Jäsen		EPÄTOSI	
-
-Link cards:	User: Chantale Alexander (100)
-		1142
-
-
-
-Card 1142 (104):
-Add charge:
-		today	12 kk	(today + 12m rounded to 15./30. day)		330€
-		31.12.2015	12 kk		20.12.2014			330€
-Add payments:	
-	15.6.2021	käteinen	100 €
-	15.7.2021	käteinen	20 €
-	1.9.2021	smartum		430 €
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-	6.	Edit charges from cards (admin mode, initials ABC)
-
-		card 1809 (25)
-		24.12.2018 -> 31.12.2018
-
-		card 0360 (37)
-		14.1.2023 -> 15.1.2023
-
-		card 8894 (81)
-		16.2.2018 -> 15.2.2018
-
-
-	7.	Edit payments from cards (admin mode, initials ABC)
-
-		Card 6963 (102)
-		17.4.2019	käteinen	5€ -> 50 €
-
-		card 0578 (75)
-		24.1.2015	tilisiirto	324 € -> 150 €
-
-		card 0763 (12)
-		19.5.2018	epassi		150 € -> 50 €
-
-
-	8.	Replace cards (4 + 2 pcs)
-
-
-		card 1987 (12) 
-			-> 0238  !! This should fail and not complete at all!!
-			-> 1445  (105)
-
-		card 0160 (38)
-			-> 4073 !! This should fail and not complete at all!!
-			-> 1745 (106)
-
-		card 5743 (26)
-			-> 2512 (107)
-
-
-	xx.	Delete cards
-	
-		Card 5424 (68)
-			Initials: ABC
-			Comment: Väärä kortti
-		Card 8269 (80)
-			Initials: ABC
-			Comment: Väärä kortti
-
-
-	xx.	Get all reports, save as pdf to folder you specified in the beginning..
-
-			* Valitun kortin tapahtumat - select card 4085 (91)
-				Maksut: 
-					edenred; 280,00 € ;ABC;18.11.2019
-					käteinen; 40,00 € ;ABC;20.12.2019
-				Lataukset:
-					30.11.2020;ABC;12kk; 320,00 € ;16.11.2019
-				
-				
-			* Tarkasta maksamattomat kortit
-				9935 (5) 1,00 € 
-				5497 (7) 2,00 €
-				1899 (11) 1,00 €
-				1445 (105) 12,00 €
-				2512 (107) 42,12 €
-				1745 (106) 42,12 €
-				6652 (70) 8,72 €
-
-			* Korttilatausten kokonaisraportti
-				Timespan: 1.1.2022 - 31.12.2022
-					1 kk x 2 (2 x 27 € =) 54 €
-					6 kk x 1 (1 x 180 € = ) 180 €
-					12 kk x 2 (2 z 324 € = ) 648 €
-					RIKKI/KADONNUT x 3
-
-			* Listaa kaikki maksut
-				Timespan: 1.1.2022 - 31.12.2022	
-					(59) tilisiirto; 324,00 € ;ABC;26.4.2022
-					(68) epassi; 324,00 € ;ABC;15.7.2022
-					(80) epassi; 27,00 € ;ABC;25.12.2022
-					(84) epassi; 27,00 € ;ABC;25.1.2022
-					(103) tilisiirto; 180,00 €;ABC;1.12.2022
-
-			* Listaa edustusjäsenet
-				Miranda Bush
-				Randall Shields
-				Ivan Cameron
-				Xyla Francis
-				Keane Pacheco
-				Ceraldine Kirk
-
-			* Listaa maksut per jäsen
-				Armando Farley (93) -> cards 1410 (95) & 1074 (96)
-					1410:	käteinen; 160,00 € ;ABC;12.12.2010
+x	xx.	Get all reports, save as pdf to folder you specified in the beginning..
+x
+x			* Valitun kortin tapahtumat - select card 4085 (91)
+x				Maksut: 
+x					edenred; 280,00 € ;ABC;18.11.2019
+x					käteinen; 40,00 € ;ABC;20.12.2019
+x				Lataukset:
+x					30.11.2020;ABC;12kk; 320,00 € ;16.11.2019
+x				
+x				
+x			* Tarkasta maksamattomat kortit
+x				9935 (5) 1,00 € 
+x				5497 (7) 2,00 €
+x				1899 (11) 1,00 €
+x				1445 (105) 12,00 €
+x				2512 (107) 42,12 €
+x				1745 (106) 42,12 €
+x				6652 (70) 8,72 €
+x
+x			* Korttilatausten kokonaisraportti
+x				Timespan: 1.1.2022 - 31.12.2022
+x					1 kk x 2 (2 x 27 € =) 54 €
+x					6 kk x 1 (1 x 180 € = ) 180 €
+x					12 kk x 2 (2 z 324 € = ) 648 €
+x					RIKKI/KADONNUT x 3
+x
+x			* Listaa kaikki maksut
+x				Timespan: 1.1.2022 - 31.12.2022	
+x					(59) tilisiirto; 324,00 € ;ABC;26.4.2022
+x					(68) epassi; 324,00 € ;ABC;15.7.2022
+x					(80) epassi; 27,00 € ;ABC;25.12.2022
+x					(84) epassi; 27,00 € ;ABC;25.1.2022
+x					(103) tilisiirto; 180,00 €;ABC;1.12.2022
+x
+x			* Listaa edustusjäsenet
+x				Miranda Bush
+x				Randall Shields
+x				Ivan Cameron
+x				Xyla Francis
+x				Keane Pacheco
+x				Ceraldine Kirk
+x
+NOPE			* Listaa maksut per jäsen
+BROKEN?			Armando Farley (93) -> cards 1410 (95) & 1074 (96)
+				1410:	käteinen; 160,00 € ;ABC;12.12.2010
 					1410: käteinen; 160,00 € ;ABC;15.2.2011
 					1074 tilisiirto; 180,00 €;ABC;5.3.2015
 
-			* Aikavälillä voimassa olleet kortit
-				Timespan: 15.5.2019 - 15.8.2019
-				Cards:
-					5606 (52)
-					8768 (74)
-					8914 (90)
-					6963 (102)
-
-			* Aikavälillä umpeen menevät kortit
-				Timespan: 1.1.2022-31.12.2022
-				Cards:
-					2558 (71)
-					8285 (84)
-					1010 (98)
-					1142 (104)
-
-			* Listaa ilmaiseksi ladattavat
-				Miranda Bush
-				Natalie Wright
-				Whoopi Love
-				Yoshio Nichols
-				Helen Hoover
-				Clarke Allen
-				Calista Evans
-
-			* Aktiiviset kortit ilman omistajaa (note: this is dated 31.8.2022 and report data will change when time passes..)
-				5424 (68)
-				8269 (80) (?!? don't remember the logic anymore if this should be visible or not..)
-
-			* Tarkasta lataamattomat kortit
-				5448 (1) 0,50 €
-				8123 (13) 0,01 €
-				2891 (19) 1,50 €
-				4669 (76) 73,00 €
-				
+x			* Aikavälillä voimassa olleet kortit
+x				Timespan: 15.5.2019 - 15.8.2019
+x				Cards:
+x					5606 (52)
+x					8768 (74)
+xxx					8914 (90)
+x					6963 (102)
+x
+x			* Aikavälillä umpeen menevät kortit
+x				Timespan: 1.1.2022-31.12.2022
+x				Cards:
+x					2558 (71)
+x					8285 (84)
+x					1010 (98)
+x					1142 (104)
+x
+x			* Listaa ilmaiseksi ladattavat
+x				Miranda Bush
+x				Natalie Wright
+x				Whoopi Love
+x				Yoshio Nichols
+x				Helen Hoover
+x				Clarke Allen
+x				Calista Evans
+x
+x			* Aktiiviset kortit ilman omistajaa (note: this is dated 31.8.2022 and report data will change when time passes..)
+x				5424 (68)
+x				8269 (80) (?!? don't remember the logic anymore if this should be visible or not..)
+x
+x			* Tarkasta lataamattomat kortit
+x				5448 (1) 0,50 €
+x				8123 (13) 0,01 €
+x				2891 (19) 1,50 €
+x				4669 (76) 73,00 €
+x				
 			* Näytä korttitilastot
 					NOTE: report dated for 31.8.2022, contents will change later on and tesing data needs to be updated!
 						There is probably also need to update testing data for getting more coverage for the report later on!

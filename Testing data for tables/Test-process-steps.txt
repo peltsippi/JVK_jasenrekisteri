@@ -1,3 +1,9 @@
+TODO for the database:
+edustusjäsenet puuttuu kokonaan
+UID alkaa 101 eikä 91 niin kuin pitäisi
+Oliko jotain muutakin?!?
+
+
 Basic stuff:
 
 1. 	Create folder based on release date or similar for files for your own records

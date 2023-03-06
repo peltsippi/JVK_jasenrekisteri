@@ -19,8 +19,8 @@ Begin Form
     ItemSuffix =421
     Left =4740
     Top =3468
-    Right =12108
-    Bottom =12372
+    Right =22788
+    Bottom =11712
     Picture ="bulldog_pienempi"
     RecSrcDt = Begin
         0x84756ccb9ec6e540
@@ -1309,6 +1309,22 @@ Private Function GetDefaultDate()
         initialDate = Date
     End If
     'MsgBox ("Initial date : " & initialDate)
+    
+    'TODO: add logic to handle situation where start date goes years to future...
+    
+    Dim naggingLogic As Date
+    
+    naggingLogic = DateAdd("m", 3, Date)
+    
+    If (naggingLogic < initialDate) Then
+        Dim answer As Integer
+        answer = MsgBox("Kortin edellinen lataus on voimassa vielä yli 3kk," & vbNewLine & "kirjataanko uusi lataus alkamaan tästä päivästä?", vbQuestion + vbYesNo, "Edellisen latauksen päättymiseen yli 3kk")
+        
+        If (answer = vbYes) Then
+            initialDate = Date
+        End If
+        
+    End If
     
     [Form_RekisteroiLataus].aloituspvm.Value = initialDate
     
