@@ -18,10 +18,9 @@ Begin Form
     Width =9708
     DatasheetFontHeight =11
     ItemSuffix =295
-    Left =4740
-    Top =3456
-    Right =22788
-    Bottom =11712
+    Left =6816
+    Right =16524
+    Bottom =11256
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -1983,7 +1982,7 @@ End Sub
 Private Sub umpeenMenevatRaportti_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " avasi listauksen tietyllä ajanjaksolla umpeen menevistä korteista")
-    DoCmd.OpenReport "LatausLoppumassaAjanjaksolla", acViewPreview
+    DoCmd.OpenReport "LatausLoppumassaAjanjaksolla", acViewReport
 End Sub
 
 Private Sub voimassaOlleetKorit_Click()

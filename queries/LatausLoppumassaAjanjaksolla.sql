@@ -1,3 +1,6 @@
-﻿SELECT Kortit.Kortti, Lataukset.Korttityyppi, Yhteystiedot.Sukunimi, Yhteystiedot.Etunimi
-FROM Yhteystiedot INNER JOIN (Kortit INNER JOIN Lataukset ON Kortit.[CID] = Lataukset.[Kortti]) ON Yhteystiedot.UID = Kortit.Omistaja
-WHERE (((Lataukset.Voimassa)>=Forms!Tervetuloa!RaportitAlku) And ((Lataukset.Voimassa)<=Forms!Tervetuloa!RaportitLoppu));
+﻿SELECT MAX(Lataukset.Voimassa) AS Voimassaolo, Kortit.Kortti, Yhteystiedot.Sukunimi & ", " & Yhteystiedot.Etunimi AS Nimi
+FROM (Lataukset INNER JOIN Kortit ON Kortit.CID = Lataukset.Kortti) INNER JOIN Yhteystiedot ON Yhteystiedot.UID = Kortit.Omistaja
+GROUP BY Kortit.Kortti, Yhteystiedot.Sukunimi, Yhteystiedot.Etunimi
+HAVING MAX(Lataukset.Voimassa)>=Forms!Tervetuloa!RaportitAlku
+AND
+MAX(Lataukset.Voimassa)<=Forms!Tervetuloa!RaportitLoppu;

@@ -13,11 +13,11 @@ Begin Report
     GridY =10
     Width =11520
     DatasheetFontHeight =11
-    ItemSuffix =12
+    ItemSuffix =15
     Left =4740
     Top =3468
     RecSrcDt = Begin
-        0x15076e609be0e540
+        0xc80ec84976f8e540
     End
     RecordSource ="LatausLoppumassaAjanjaksolla"
     Caption ="Kortit"
@@ -48,6 +48,34 @@ Begin Report
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            FontName ="Segoe UI"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
         Begin TextBox
             AddColon = NotDefault
             FELineBreak = NotDefault
@@ -73,9 +101,8 @@ Begin Report
         End
         Begin FormHeader
             KeepTogether = NotDefault
-            Height =927
+            Height =1020
             Name ="RaportinYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =2
@@ -169,12 +196,40 @@ Begin Report
                         End
                     End
                 End
+                Begin CommandButton
+                    Left =170
+                    Top =623
+                    Width =7483
+                    Height =397
+                    TabIndex =2
+                    ForeColor =4210752
+                    Name ="HideNames"
+                    Caption ="Piilota nimet"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =170
+                    LayoutCachedTop =623
+                    LayoutCachedWidth =7653
+                    LayoutCachedHeight =1020
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    PressedColor =11957550
+                    HoverForeColor =4210752
+                    PressedForeColor =4210752
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                    Overlaps =1
+                End
             End
         End
         Begin PageHeader
-            Height =414
+            Height =510
             Name ="SivunYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -183,7 +238,7 @@ Begin Report
                     TextAlign =1
                     Left =342
                     Top =57
-                    Width =3762
+                    Width =1986
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
@@ -195,65 +250,46 @@ Begin Report
                     GridlineColor =10921638
                     LayoutCachedLeft =342
                     LayoutCachedTop =57
-                    LayoutCachedWidth =4104
+                    LayoutCachedWidth =2328
                     LayoutCachedHeight =357
                 End
                 Begin Label
                     TextAlign =1
-                    Left =4161
-                    Top =57
-                    Width =1881
+                    Left =6292
+                    Top =56
+                    Width =741
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
                     Name ="Sukunimi_Selite"
-                    Caption ="Sukunimi"
+                    Caption ="Nimi"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =4161
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =6042
-                    LayoutCachedHeight =357
+                    LayoutCachedLeft =6292
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =7033
+                    LayoutCachedHeight =356
                 End
                 Begin Label
                     TextAlign =1
-                    Left =6099
-                    Top =57
-                    Width =1881
+                    Left =2437
+                    Top =56
+                    Width =1530
                     Height =300
                     BorderColor =8355711
                     ForeColor =6710886
-                    Name ="Etunimi_Selite"
-                    Caption ="Etunimi"
+                    Name ="Selite13"
+                    Caption ="Voimassa asti"
                     FontName ="Calibri"
                     Tag ="DetachedLabel"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =6099
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =7980
-                    LayoutCachedHeight =357
-                End
-                Begin Label
-                    TextAlign =1
-                    Left =8322
-                    Top =57
-                    Width =3141
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="Korttityyppi_Selite"
-                    Caption ="Korttityyppi"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8322
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =11463
-                    LayoutCachedHeight =357
+                    LayoutCachedLeft =2437
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3967
+                    LayoutCachedHeight =356
                 End
             End
         End
@@ -267,9 +303,8 @@ Begin Report
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =369
+            Height =312
             Name ="Tiedot"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -277,31 +312,9 @@ Begin Report
                 Begin TextBox
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Left =8277
-                    Top =56
-                    Width =3141
-                    Height =312
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Korttityyppi"
-                    ControlSource ="Korttityyppi"
-                    StatusBarText ="Mikä korttityyppi ladattiin"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =8277
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =11418
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    IMESentenceMode =3
                     Left =170
-                    Top =56
-                    Width =3762
+                    Width =2094
                     Height =312
-                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Kortti"
@@ -311,47 +324,44 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =170
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =3932
-                    LayoutCachedHeight =368
+                    LayoutCachedWidth =2264
+                    LayoutCachedHeight =312
                 End
                 Begin TextBox
                     OldBorderStyle =0
-                    Left =4025
-                    Top =56
-                    Width =1881
+                    Left =6236
+                    Width =5061
+                    Height =312
+                    TabIndex =1
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Nimi"
+                    ControlSource ="Nimi"
+                    FontName ="Calibri"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6236
+                    LayoutCachedWidth =11297
+                    LayoutCachedHeight =312
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =2324
+                    Width =1758
                     Height =312
                     TabIndex =2
                     BorderColor =10921638
                     ForeColor =4210752
-                    Name ="Sukunimi"
-                    ControlSource ="Sukunimi"
+                    Name ="Voimassaolo"
+                    ControlSource ="Voimassaolo"
+                    StatusBarText ="Kortin numero niin kuin se on kirjoitettu, esim 0285"
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4025
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =5906
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    Left =6122
-                    Top =56
-                    Width =1881
-                    Height =312
-                    TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Etunimi"
-                    ControlSource ="Etunimi"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =6122
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =8003
-                    LayoutCachedHeight =368
+                    LayoutCachedLeft =2324
+                    LayoutCachedWidth =4082
+                    LayoutCachedHeight =312
                 End
             End
         End
@@ -418,3 +428,17 @@ Begin Report
         End
     End
 End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub HideNames_Click()
+Dim previousstate As Boolean
+previousstate = [Report_LatausLoppumassaAjanjaksolla].Nimi.Visible
+previousstate = Not previousstate
+'MsgBox ("Previous status: " & previousstate)
+[Report_LatausLoppumassaAjanjaksolla].Nimi.Visible = previousstate
+End Sub

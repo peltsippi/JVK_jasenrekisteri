@@ -419,7 +419,7 @@ Private Sub Form_Open(Cancel As Integer)
     Dim KorttiTyyppi As String
     Dim krtMaara As Integer
     Dim AikaRyhma As String
-    Dim voimassaOlo As String
+    Dim Voimassaolo As String
     Dim alkuPv As Date
     
     Dim kertaKortti As Boolean
@@ -431,7 +431,7 @@ Private Sub Form_Open(Cancel As Integer)
     If CurrentProject.AllForms("RekisteroiLataus").IsLoaded Then
         KorttiNumero = [Form_RekisteroiLataus].Kortti.Value
         KorttiTyyppi = [Form_RekisteroiLataus].korttiTyyppivalinta.Value
-        voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
+        Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
         alkuPv = [Form_RekisteroiLataus].aloituspvm.Value
         
         If (KorttiTyyppi = "krt") Then
@@ -461,7 +461,7 @@ Private Sub Form_Open(Cancel As Integer)
         [Form_LatausOhje].AikaRyhma.Value = "Normaali"
     End If
     
-    [Form_LatausOhje].Voimassa.Value = voimassaOlo
+    [Form_LatausOhje].Voimassa.Value = Voimassaolo
     [Form_LatausOhje].Tanaan.Value = alkuPv
     
 End Sub

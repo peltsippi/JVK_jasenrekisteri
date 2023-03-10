@@ -1141,7 +1141,7 @@ Public Sub SaveStuff()
     Dim KorttiTyyppi As String
     Dim Puumerkki As String
     Dim Hinta As Currency
-    Dim voimassaOlo As Date
+    Dim Voimassaolo As Date
     Dim arvot As String
     Dim vanhanKortinVoimassaOlo As Date
     Dim startDate As Date
@@ -1192,14 +1192,14 @@ Public Sub SaveStuff()
         MsgBox ("Voimassaoloa ei määritelty!")
         Exit Sub
     Else
-        voimassaOlo = [Form_RekisteroiLataus].Voimassa.Value
+        Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
     End If
     
     
     Dim kortti_id As Integer
     kortti_id = Common.FetchCardID(Kortti)
     'MsgBox (kortti_id)
-    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & voimassaOlo & "' , Puumerkki = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & startDate & "'")
+    arvot = ("Kortti = " & kortti_id & " , Voimassa = '" & Voimassaolo & "' , Puumerkki = '" & Puumerkki & "' , Korttityyppi = '" & KorttiTyyppi & "' , KortinArvo = '" & Hinta & "' , Ajankohta = '" & startDate & "'")
     'MsgBox (arvot)
     
     'Dim preventDuplicates As String
@@ -1210,7 +1210,7 @@ Public Sub SaveStuff()
     
     success = Common.InsertOrUpdate("Lataukset", arvot, "")
 
-    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & voimassaOlo & " ja hinta: " & Hinta)
+    Common.SaveToLog (Puumerkki & " päivitti lataukset kortille " & Kortti & ", tyyppi: " & KorttiTyyppi & " , voimassa: " & Voimassaolo & " ja hinta: " & Hinta)
     
     'If old charge date is newer than new charge start date do stuff
     If (startDate > Date) Then 'and this is so if you add a charge retroactively that things will not go badly sour...
