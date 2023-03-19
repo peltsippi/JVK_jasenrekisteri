@@ -6,7 +6,7 @@
   "Items": {
     "MergeBuildDate": null,
     "FullBuildDate": "20.2.2022 21.03.11",
-    "ExportDate": "10.3.2023 17.08.41",
+    "ExportDate": "19.3.2023 10.14.41",
     "FullExportDate": "9.2.2022 11.50.13",
     "OptionsHash": "294517a",
     "LastMergedCommit": "",
@@ -127,7 +127,7 @@
       "Project": {
         "project.json": {
           "Hash": "19c3478",
-          "ExportDate": "10.3.2023 17.08.36",
+          "ExportDate": "19.3.2023 10.14.36",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "d8b2ae7",
           "ImportDate": "20.2.2022 21.03.04"
@@ -217,9 +217,9 @@
           "ImportDate": "20.2.2022 21.03.06"
         },
         "KorttitilastoKysely.bas": {
-          "ExportDate": "5.2.2023 12.06.01",
-          "SourceModified": "5.2.2023 12.06.01",
-          "FilePropertiesHash": "5721572"
+          "ExportDate": "19.3.2023 10.14.39",
+          "SourceModified": "19.3.2023 10.14.39",
+          "FilePropertiesHash": "a2ddf97"
         },
         "KrtKorttejaVoimassa.bas": {
           "ExportDate": "20.2.2022 23.44.10",
@@ -244,6 +244,11 @@
           "SourceModified": "10.3.2023 17.08.38",
           "FilePropertiesHash": "8bb950c"
         },
+        "LatausLoppumassaAjanjaksolla2.bas": {
+          "ExportDate": "19.3.2023 10.14.39",
+          "SourceModified": "19.3.2023 10.14.39",
+          "FilePropertiesHash": "a283e9a"
+        },
         "LataustaAjanjaksolla.bas": {
           "ExportDate": "12.10.2022 21.13.56",
           "SourceModified": "12.10.2022 21.13.56",
@@ -256,15 +261,15 @@
           "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaKaikkiYhteystiedot.bas": {
-          "ExportDate": "10.3.2023 17.08.39",
-          "SourceModified": "10.3.2023 17.08.39",
-          "FilePropertiesHash": "2b4c0cb",
+          "ExportDate": "19.3.2023 10.14.39",
+          "SourceModified": "19.3.2023 10.14.39",
+          "FilePropertiesHash": "06f845c",
           "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaKortitJaLataukset.bas": {
-          "ExportDate": "10.3.2023 17.08.39",
-          "SourceModified": "10.3.2023 17.08.39",
-          "FilePropertiesHash": "8e8bb98",
+          "ExportDate": "19.3.2023 10.14.39",
+          "SourceModified": "19.3.2023 10.14.39",
+          "FilePropertiesHash": "49b7cbc",
           "ImportDate": "20.2.2022 21.03.06"
         },
         "ListaaMaksut.bas": {
@@ -345,9 +350,9 @@
           "ImportDate": "20.2.2022 21.03.08"
         },
         "Korttitilasto.bas": {
-          "ExportDate": "5.2.2023 12.06.04",
-          "SourceModified": "5.2.2023 12.06.04",
-          "FilePropertiesHash": "152cbe9"
+          "ExportDate": "19.3.2023 10.14.41",
+          "SourceModified": "19.3.2023 10.14.41",
+          "FilePropertiesHash": "72a4092"
         },
         "LatauksetKaikki.bas": {
           "Hash": "4f07f79",
@@ -484,7 +489,7 @@
       "VB Project": {
         "vbe-project.json": {
           "Hash": "288a038",
-          "ExportDate": "10.3.2023 17.08.36",
+          "ExportDate": "19.3.2023 10.14.36",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "2e1693d",
           "ImportDate": "20.2.2022 21.03.04"
@@ -493,7 +498,7 @@
       "VBE References": {
         "vbe-references.json": {
           "Hash": "9521cdc",
-          "ExportDate": "10.3.2023 17.08.36",
+          "ExportDate": "19.3.2023 10.14.36",
           "SourceModified": "9.2.2022 11.50.03",
           "FilePropertiesHash": "f110692",
           "ImportDate": "20.2.2022 21.03.04"

@@ -11,7 +11,7 @@ Begin Report
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =15120
+    Width =15252
     DatasheetFontHeight =11
     ItemSuffix =24
     Left =4740
@@ -2780,165 +2780,16 @@ Begin Report
             End
         End
         Begin PageHeader
-            Height =3701
+            Height =9639
             Name ="SivunYlätunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =340
-                    Top =3344
-                    Width =2136
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="PVM_Selite"
-                    Caption ="PVM"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =340
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =2476
-                    LayoutCachedHeight =3644
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =2834
-                    Top =3344
-                    Width =1308
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="KkKortit_Selite"
-                    Caption ="Kuukausikortit"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2834
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =4142
-                    LayoutCachedHeight =3644
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =4365
-                    Top =3344
-                    Width =1548
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="ApKortit_Selite"
-                    Caption ="Aamupäiväkortit"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4365
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =5913
-                    LayoutCachedHeight =3644
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =6066
-                    Top =3344
-                    Width =1392
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="KrtKortit_Selite"
-                    Caption ="Kertakortit"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6066
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =7458
-                    LayoutCachedHeight =3644
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =8050
-                    Top =3344
-                    Width =1392
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="OpiskKortit_Selite"
-                    Caption ="Opiskeiljakortit"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8050
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =9442
-                    LayoutCachedHeight =3644
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =10601
-                    Top =3288
-                    Width =1392
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="MuuKortit_Selite"
-                    Caption ="Muut"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =10601
-                    LayoutCachedTop =3288
-                    LayoutCachedWidth =11993
-                    LayoutCachedHeight =3588
-                End
-                Begin Label
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    Left =12699
-                    Top =3344
-                    Width =1440
-                    Height =300
-                    BorderColor =8355711
-                    ForeColor =6710886
-                    Name ="Kaikki_Selite"
-                    Caption ="Kaikki yhteensä"
-                    FontName ="Calibri"
-                    Tag ="DetachedLabel"
-                    GridlineStyleBottom =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =12699
-                    LayoutCachedTop =3344
-                    LayoutCachedWidth =14139
-                    LayoutCachedHeight =3644
-                End
                 Begin ModernChart
-                    Top =56
                     Left =170
-                    Width =14230
-                    Height =3175
+                    Width =15082
+                    Height =9583
                     Name ="Kaavio23"
                     GridlineColor =10921638
                     RowSource ="KorttitilastoKysely"
@@ -2951,21 +2802,21 @@ Begin Report
                     End
                     ChartLegendData = Begin
                         0x060000005b0000000b000000530075006d004f0066004b00610069006b006b00 ,
-                        0x690000000000005b9bd5005b9bd500000000000000000000000000030000009f ,
+                        0x690000000000009292920092929200000000000000000000000000030000009f ,
                         0x6f00000a0000004b006f00720074006900740020007900680074000100000000 ,
                         0x0000004f0000000d000000530075006d004f0066004b006b004b006f00720074 ,
-                        0x00690074000000000001ed7d3100ed7d31000600000000000000060000000000 ,
+                        0x0069007400000000000100000000000000000600000000000000060000000000 ,
                         0x00009f6f0000020000004b004b0001000000000000004f0000000d0000005300 ,
                         0x75006d004f006600410070004b006f0072007400690074000000000000a5a5a5 ,
-                        0x00a5a5a500000000000000000006000000000000009f6f000002000000410050 ,
+                        0x00bfbfbf00000000000000000006000000000000009f6f000002000000410050 ,
                         0x000100000000000000530000000e000000530075006d004f0066004b00720074 ,
-                        0x004b006f0072007400690074000000000000ffc00000ffc00000000000000000 ,
-                        0x000006000000000000009f6f0000030000004b00720074000100000000000000 ,
+                        0x004b006f0072007400690074000000000000ffc0000059595900000000000000 ,
+                        0x000006000000040000009f6f0000030000004b00720074000100000000000000 ,
                         0x5b00000010000000530075006d004f0066004f007000690073006b004b006f00 ,
-                        0x720074006900740000000000014470c3004470c3000600000000000000060000 ,
+                        0x720074006900740000000000003f3f3f003f3f3f000600000000000000060000 ,
                         0x00000000009f6f0000050000004f007000690073006b00010000000000000055 ,
                         0x0000000e000000530075006d004f0066004d00750075004b006f007200740069 ,
-                        0x007400000000000070ad470070ad470000000000000000000600000000000000 ,
+                        0x007400000000000070ad47007272720000000000000000000600000002000000 ,
                         0x9f6f0000040000004d007500750074000100000000000000
                     End
                     ChartValueData = Begin
@@ -2992,173 +2843,15 @@ Begin Report
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =426
+            Height =0
             Name ="Tiedot"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
-            Begin
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =342
-                    Top =57
-                    Width =2136
-                    Height =312
-                    ColumnWidth =2328
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="PVM"
-                    ControlSource ="PVM"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-                    ShowDatePicker =1
-
-                    LayoutCachedLeft =342
-                    LayoutCachedTop =57
-                    LayoutCachedWidth =2478
-                    LayoutCachedHeight =369
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =2891
-                    Top =56
-                    Width =960
-                    Height =312
-                    TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="KkKortit"
-                    ControlSource ="KkKortit"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =2891
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =3851
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =4535
-                    Top =56
-                    Width =984
-                    Height =312
-                    TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="ApKortit"
-                    ControlSource ="ApKortit"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =4535
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =5519
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =6406
-                    Top =56
-                    Width =912
-                    Height =312
-                    TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="KrtKortit"
-                    ControlSource ="KrtKortit"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =6406
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =7318
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =7993
-                    Width =1392
-                    Height =312
-                    TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="OpiskKortit"
-                    ControlSource ="OpiskKortit"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =7993
-                    LayoutCachedWidth =9385
-                    LayoutCachedHeight =312
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =10601
-                    Top =56
-                    Width =1392
-                    Height =312
-                    TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="MuuKortit"
-                    ControlSource ="MuuKortit"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10601
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =11993
-                    LayoutCachedHeight =368
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =12755
-                    Top =56
-                    Width =1392
-                    Height =312
-                    ColumnWidth =1428
-                    TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Kaikki"
-                    ControlSource ="Kaikki"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =12755
-                    LayoutCachedTop =56
-                    LayoutCachedWidth =14147
-                    LayoutCachedHeight =368
-                End
-            End
         End
         Begin PageFooter
-            Height =540
+            Height =312
             Name ="SivunAlatunniste"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -3169,8 +2862,7 @@ Begin Report
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =57
-                    Top =228
+                    Left =56
                     Width =5040
                     Height =312
                     BorderColor =10921638
@@ -3181,33 +2873,9 @@ Begin Report
                     FontName ="Calibri"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =57
-                    LayoutCachedTop =228
-                    LayoutCachedWidth =5097
-                    LayoutCachedHeight =540
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    TextFontCharSet =177
-                    TextAlign =3
-                    TextFontFamily =0
-                    IMESentenceMode =3
-                    Left =10023
-                    Top =228
-                    Width =5040
-                    Height =312
-                    TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Muokkaus16"
-                    ControlSource ="=\"Sivu \" & [Page] & \"/\" & [Pages]"
-                    FontName ="Calibri"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10023
-                    LayoutCachedTop =228
-                    LayoutCachedWidth =15063
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =56
+                    LayoutCachedWidth =5096
+                    LayoutCachedHeight =312
                 End
             End
         End
