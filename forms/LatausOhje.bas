@@ -14,10 +14,10 @@ Begin Form
     Width =9456
     DatasheetFontHeight =11
     ItemSuffix =70
-    Left =4740
-    Top =3468
-    Right =18432
-    Bottom =11712
+    Left =6384
+    Top =456
+    Right =16380
+    Bottom =10464
     RecSrcDt = Begin
         0xf995cdd7bcc7e540
     End
@@ -169,6 +169,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =60
                     Top =36
                     Width =9360
@@ -210,6 +212,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
+                    TextFontCharSet =177
+                    TextFontFamily =0
                     Left =60
                     Top =792
                     Width =9360
@@ -421,7 +425,7 @@ Private Sub Form_Open(Cancel As Integer)
     Dim AikaRyhma As String
     Dim Voimassaolo As String
     Dim alkuPv As Date
-    
+    Dim previousEndDate As Date
     Dim kertaKortti As Boolean
     kertaKortti = False
 
@@ -432,7 +436,15 @@ Private Sub Form_Open(Cancel As Integer)
         KorttiNumero = [Form_RekisteroiLataus].Kortti.Value
         KorttiTyyppi = [Form_RekisteroiLataus].korttiTyyppivalinta.Value
         Voimassaolo = [Form_RekisteroiLataus].Voimassa.Value
-        alkuPv = [Form_RekisteroiLataus].aloituspvm.Value
+        
+        previousEndDate = Common.FetchExiprationDate(KorttiNumero)
+        'MsgBox ("Previous card end date: " & previousEndDate)
+        If (previousEndDate > Date) Then
+            alkuPv = Date
+        Else
+            alkuPv = [Form_RekisteroiLataus].aloituspvm.Value
+        End If
+        'add logic here
         
         If (KorttiTyyppi = "krt") Then
             krtMaara = [Form_RekisteroiLataus].KKmaara.Value
