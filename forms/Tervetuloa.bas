@@ -18,9 +18,10 @@ Begin Form
     Width =9708
     DatasheetFontHeight =11
     ItemSuffix =295
-    Left =6816
-    Right =16524
-    Bottom =11256
+    Left =2963
+    Top =3030
+    Right =14295
+    Bottom =9495
     RecSrcDt = Begin
         0x23fa53ee5dc7e540
     End
@@ -624,10 +625,10 @@ Begin Form
                     LayoutCachedTop =165
                     LayoutCachedWidth =9068
                     LayoutCachedHeight =729
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin ComboBox
@@ -693,10 +694,10 @@ Begin Form
                     LayoutCachedTop =803
                     LayoutCachedWidth =7650
                     LayoutCachedHeight =1488
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
@@ -715,10 +716,10 @@ Begin Form
                     LayoutCachedTop =803
                     LayoutCachedWidth =9081
                     LayoutCachedHeight =1487
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
@@ -743,10 +744,10 @@ Begin Form
                     HoverShade =85.0
                     PressedThemeColorIndex =1
                     PressedShade =85.0
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
@@ -787,10 +788,10 @@ Begin Form
                     LayoutCachedTop =2078
                     LayoutCachedWidth =9069
                     LayoutCachedHeight =2740
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
@@ -831,10 +832,10 @@ Begin Form
                     LayoutCachedTop =2102
                     LayoutCachedWidth =7652
                     LayoutCachedHeight =2740
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin Label
@@ -893,37 +894,37 @@ Begin Form
                 Begin CommandButton
                     Enabled = NotDefault
                     OverlapFlags =93
-                    Left =576
-                    Top =4116
-                    Width =1332
-                    Height =588
+                    Left =578
+                    Top =4118
+                    Width =1335
+                    Height =585
                     TabIndex =11
                     Name ="MuokkaaLatauksia"
                     Caption ="Muokkaa latauksia"
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =576
-                    LayoutCachedTop =4116
-                    LayoutCachedWidth =1908
-                    LayoutCachedHeight =4704
+                    LayoutCachedLeft =578
+                    LayoutCachedTop =4118
+                    LayoutCachedWidth =1913
+                    LayoutCachedHeight =4703
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =6
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     Enabled = NotDefault
                     OverlapFlags =93
                     Left =1980
-                    Top =4116
+                    Top =4118
                     Width =1212
-                    Height =588
+                    Height =585
                     TabIndex =12
                     Name ="MuokkaaMaksuja"
                     Caption ="Muokkaa maksuja"
@@ -931,19 +932,19 @@ Begin Form
                     GroupTable =6
 
                     LayoutCachedLeft =1980
-                    LayoutCachedTop =4116
+                    LayoutCachedTop =4118
                     LayoutCachedWidth =3192
-                    LayoutCachedHeight =4704
+                    LayoutCachedHeight =4703
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =6
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin Label
@@ -991,55 +992,55 @@ Begin Form
                     PressedColor =11957550
                     HoverForeColor =4210752
                     WebImagePaddingLeft =3
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =4
                     WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3264
-                    Top =4116
-                    Width =1236
-                    Height =588
+                    Left =3263
+                    Top =4118
+                    Width =1238
+                    Height =585
                     TabIndex =13
                     Name ="Hinnat"
                     Caption ="Muokkaa korttihintoja"
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =3264
-                    LayoutCachedTop =4116
-                    LayoutCachedWidth =4500
-                    LayoutCachedHeight =4704
+                    LayoutCachedLeft =3263
+                    LayoutCachedTop =4118
+                    LayoutCachedWidth =4501
+                    LayoutCachedHeight =4703
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =6
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =1872
-                    Top =4908
-                    Width =1236
-                    Height =816
-                    TabIndex =17
+                    Left =1868
+                    Top =4905
+                    Width =1238
+                    Height =818
+                    TabIndex =18
                     Name ="RaporttiMaksamatta"
                     Caption ="Tarkasta maksamattomat kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =1872
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =3108
-                    LayoutCachedHeight =5724
+                    LayoutCachedLeft =1868
+                    LayoutCachedTop =4905
+                    LayoutCachedWidth =3106
+                    LayoutCachedHeight =5723
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -1050,28 +1051,28 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =1872
-                    Top =5796
-                    Width =1236
-                    Height =816
-                    TabIndex =20
+                    Left =1868
+                    Top =5790
+                    Width =1238
+                    Height =818
+                    TabIndex =21
                     Name ="Historia"
                     Caption ="Sovelluksen täysi historia"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =1872
-                    LayoutCachedTop =5796
-                    LayoutCachedWidth =3108
-                    LayoutCachedHeight =6612
+                    LayoutCachedLeft =1868
+                    LayoutCachedTop =5790
+                    LayoutCachedWidth =3106
+                    LayoutCachedHeight =6608
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1084,10 +1085,10 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin TextBox
@@ -1142,7 +1143,7 @@ Begin Form
                     Top =5291
                     Width =1961
                     Height =300
-                    TabIndex =29
+                    TabIndex =16
                     BackColor =8435191
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1176,20 +1177,20 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3180
-                    Top =4908
-                    Width =1392
-                    Height =816
-                    TabIndex =18
+                    Left =3173
+                    Top =4905
+                    Width =1395
+                    Height =818
+                    TabIndex =19
                     Name ="LatauksetKaikki"
                     Caption ="Korttilatausten kokonais-raportti"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3180
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =4572
-                    LayoutCachedHeight =5724
+                    LayoutCachedLeft =3173
+                    LayoutCachedTop =4905
+                    LayoutCachedWidth =4568
+                    LayoutCachedHeight =5723
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -1200,29 +1201,29 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     Enabled = NotDefault
                     OverlapFlags =93
-                    Left =588
-                    Top =4908
-                    Width =1212
-                    Height =816
-                    TabIndex =16
+                    Left =585
+                    Top =4905
+                    Width =1215
+                    Height =818
+                    TabIndex =17
                     Name ="KortinTapahtumat"
                     Caption ="Kortin tapahtumat"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =588
-                    LayoutCachedTop =4908
+                    LayoutCachedLeft =585
+                    LayoutCachedTop =4905
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =5724
+                    LayoutCachedHeight =5723
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -1231,28 +1232,28 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3180
-                    Top =5796
-                    Width =1392
-                    Height =816
-                    TabIndex =21
+                    Left =3173
+                    Top =5790
+                    Width =1395
+                    Height =818
+                    TabIndex =22
                     Name ="ListaaEdustusj"
                     Caption ="Listaa edustusjäsenet"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3180
-                    LayoutCachedTop =5796
-                    LayoutCachedWidth =4572
-                    LayoutCachedHeight =6612
+                    LayoutCachedLeft =3173
+                    LayoutCachedTop =5790
+                    LayoutCachedWidth =4568
+                    LayoutCachedHeight =6608
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -1265,28 +1266,28 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =588
-                    Top =6684
-                    Width =1212
-                    Height =816
-                    TabIndex =24
+                    Left =585
+                    Top =6675
+                    Width =1215
+                    Height =818
+                    TabIndex =26
                     Name ="IlmaiseksiLadattavat"
                     Caption ="Listaa ilmaiseksi ladattavat"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =588
-                    LayoutCachedTop =6684
+                    LayoutCachedLeft =585
+                    LayoutCachedTop =6675
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =7500
+                    LayoutCachedHeight =7493
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =1
@@ -1297,56 +1298,56 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4572
-                    Top =4116
-                    Width =1248
-                    Height =588
+                    Left =4568
+                    Top =4118
+                    Width =1245
+                    Height =585
                     TabIndex =14
                     Name ="PaymentMethods"
                     Caption ="Muokkaa maksutapoja"
                     OnClick ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =4572
-                    LayoutCachedTop =4116
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =4704
+                    LayoutCachedLeft =4568
+                    LayoutCachedTop =4118
+                    LayoutCachedWidth =5813
+                    LayoutCachedHeight =4703
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =2
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =6
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =588
-                    Top =5796
-                    Width =1212
-                    Height =816
-                    TabIndex =19
+                    Left =585
+                    Top =5790
+                    Width =1215
+                    Height =818
+                    TabIndex =20
                     Name ="ListaaKaikkiMaksut"
                     Caption ="Listaa kaikki maksut"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =588
-                    LayoutCachedTop =5796
+                    LayoutCachedLeft =585
+                    LayoutCachedTop =5790
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =6612
+                    LayoutCachedHeight =6608
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1357,23 +1358,23 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =4644
-                    Top =4908
-                    Height =816
+                    Left =4635
+                    Top =4905
+                    Height =818
                     Name ="TyhjäSolu244"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =4644
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =6084
-                    LayoutCachedHeight =5724
+                    LayoutCachedLeft =4635
+                    LayoutCachedTop =4905
+                    LayoutCachedWidth =6075
+                    LayoutCachedHeight =5723
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -1381,20 +1382,20 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =1872
-                    Top =6684
-                    Width =1236
-                    Height =816
-                    TabIndex =25
+                    Left =1868
+                    Top =6675
+                    Width =1238
+                    Height =818
+                    TabIndex =27
                     Name ="kortitIlmanOmistajaa"
                     Caption ="Aktiiviset kortit ilman omistajaa"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =1872
-                    LayoutCachedTop =6684
-                    LayoutCachedWidth =3108
-                    LayoutCachedHeight =7500
+                    LayoutCachedLeft =1868
+                    LayoutCachedTop =6675
+                    LayoutCachedWidth =3106
+                    LayoutCachedHeight =7493
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1407,28 +1408,28 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =3180
-                    Top =6684
-                    Width =1392
-                    Height =816
-                    TabIndex =26
+                    Left =3173
+                    Top =6675
+                    Width =1395
+                    Height =818
+                    TabIndex =28
                     Name ="maksettuEiLadattu"
                     Caption ="Tarkasta lataamattomat kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =3180
-                    LayoutCachedTop =6684
-                    LayoutCachedWidth =4572
-                    LayoutCachedHeight =7500
+                    LayoutCachedLeft =3173
+                    LayoutCachedTop =6675
+                    LayoutCachedWidth =4568
+                    LayoutCachedHeight =7493
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -1441,27 +1442,27 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4644
-                    Top =6684
-                    Height =816
-                    TabIndex =27
+                    Left =4635
+                    Top =6675
+                    Height =818
+                    TabIndex =29
                     Name ="otaVarmuuskopio"
                     Caption ="Ota varmuuskopio"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =4644
-                    LayoutCachedTop =6684
-                    LayoutCachedWidth =6084
-                    LayoutCachedHeight =7500
+                    LayoutCachedLeft =4635
+                    LayoutCachedTop =6675
+                    LayoutCachedWidth =6075
+                    LayoutCachedHeight =7493
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -1474,27 +1475,27 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =6156
-                    Top =6684
-                    Height =816
-                    TabIndex =28
+                    Left =6143
+                    Top =6675
+                    Height =818
+                    TabIndex =30
                     Name ="korttiTilastot"
                     Caption ="Näytä korttitilastot"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =6156
-                    LayoutCachedTop =6684
-                    LayoutCachedWidth =7596
-                    LayoutCachedHeight =7500
+                    LayoutCachedLeft =6143
+                    LayoutCachedTop =6675
+                    LayoutCachedWidth =7583
+                    LayoutCachedHeight =7493
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -1507,23 +1508,23 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =6156
-                    Top =4908
-                    Height =816
+                    Left =6143
+                    Top =4905
+                    Height =818
                     Name ="TyhjäSolu266"
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =6156
-                    LayoutCachedTop =4908
-                    LayoutCachedWidth =7596
-                    LayoutCachedHeight =5724
+                    LayoutCachedLeft =6143
+                    LayoutCachedTop =4905
+                    LayoutCachedWidth =7583
+                    LayoutCachedHeight =5723
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -1531,19 +1532,19 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =4644
-                    Top =5796
-                    Height =816
-                    TabIndex =22
+                    Left =4635
+                    Top =5790
+                    Height =818
+                    TabIndex =23
                     Name ="MaksutPerJasen"
                     Caption ="Listaa maksut per jäsen"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =4644
-                    LayoutCachedTop =5796
-                    LayoutCachedWidth =6084
-                    LayoutCachedHeight =6612
+                    LayoutCachedLeft =4635
+                    LayoutCachedTop =5790
+                    LayoutCachedWidth =6075
+                    LayoutCachedHeight =6608
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1556,27 +1557,27 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =6156
-                    Top =5796
-                    Height =816
-                    TabIndex =23
+                    Left =6143
+                    Top =5790
+                    Height =818
+                    TabIndex =24
                     Name ="voimassaOlleetKorit"
                     Caption ="Aikavälillä voimassa olleet kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =6156
-                    LayoutCachedTop =5796
-                    LayoutCachedWidth =7596
-                    LayoutCachedHeight =6612
+                    LayoutCachedLeft =6143
+                    LayoutCachedTop =5790
+                    LayoutCachedWidth =7583
+                    LayoutCachedHeight =6608
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1589,10 +1590,10 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =1
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
@@ -1611,26 +1612,26 @@ Begin Form
                     LayoutCachedTop =1608
                     LayoutCachedWidth =8994
                     LayoutCachedHeight =1993
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
-                    Left =7632
+                    Left =7635
                     Top =5760
                     Height =804
-                    TabIndex =30
+                    TabIndex =25
                     Name ="umpeenMenevatRaportti"
                     Caption ="Aikavälillä umpeen menevät kortit"
                     OnClick ="[Event Procedure]"
                     GroupTable =7
 
-                    LayoutCachedLeft =7632
+                    LayoutCachedLeft =7635
                     LayoutCachedTop =5760
-                    LayoutCachedWidth =9072
+                    LayoutCachedWidth =9075
                     LayoutCachedHeight =6564
                     LayoutGroup =3
                     GridlineThemeColorIndex =1
@@ -1640,17 +1641,17 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =7
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =93
                     Left =7680
-                    Top =6684
-                    Height =816
+                    Top =6683
+                    Height =818
                     TabIndex =31
                     Name ="korjaaTietokannanLinkitys"
                     Caption ="Korjaa tietokannan linkitys"
@@ -1658,9 +1659,9 @@ Begin Form
                     GroupTable =8
 
                     LayoutCachedLeft =7680
-                    LayoutCachedTop =6684
+                    LayoutCachedTop =6683
                     LayoutCachedWidth =9120
-                    LayoutCachedHeight =7500
+                    LayoutCachedHeight =7501
                     LayoutGroup =4
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -1669,10 +1670,10 @@ Begin Form
                     HoverColor =8435191
                     PressedColor =8435191
                     GroupTable =8
-                    WebImagePaddingLeft =3
-                    WebImagePaddingTop =3
-                    WebImagePaddingRight =2
-                    WebImagePaddingBottom =2
+                    WebImagePaddingLeft =4
+                    WebImagePaddingTop =4
+                    WebImagePaddingRight =3
+                    WebImagePaddingBottom =3
                     Overlaps =1
                 End
                 Begin Image
@@ -1915,7 +1916,7 @@ End Sub
 Private Sub MaksutPerJasen_Click()
     Dim succs
     succs = Common.SaveToLog([Form_Tervetuloa].Puumerkki.Value & " pyysi listauksen kaikista maksuista jäsenittäin.")
-    DoCmd.OpenReport "MaksutPerJasen", acViewPreview
+    DoCmd.OpenReport "MaksutPerJasen2", acViewPreview
 End Sub
 
 Private Sub MuokkaaLatauksia_Click()
